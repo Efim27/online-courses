@@ -1,0 +1,62 @@
+//Заголовки
+@mixin title($type) {
+	font-family: $font_main;
+	color: $color_text_black;
+
+	@if $type == h1 {
+		font-size: 64px;
+		line-height: 140%;
+	} @else if $type == h2 {
+		font-size: 48px;
+		line-height: 140%;
+	} @else if $type == h3 {
+		font-size: 36px;
+		line-height: 140%;
+	} @else if $type == h4 {
+		font-size: 30px;
+		line-height: 140%;
+	} @else if $type == h5 {
+		font-size: 24px;
+		line-height: 140%;
+	} @else if $type == h6 {
+		font-size: 21px;
+		line-height: 160%;
+		opacity: 0.9;
+	} @else if $type == h7 {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 160%;
+		opacity: 0.7;
+	}
+}
+
+//Текст
+@mixin text($type) {
+	font-family: $font_main;
+	color: $color_text_black;
+
+	@if $type == p1 {
+		font-size: 24px;
+		line-height: 160%;
+		opacity: 0.9;
+	} @else if $type == p2 {
+		font-weight: 300;
+		font-size: 21px;
+		line-height: 160%;
+		opacity: 0.8;
+	} @else if $type == p3 {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 160%;
+		opacity: 0.8;
+	} @else if $type == p4 {
+		font-size: 18px;
+		line-height: 160%;
+		opacity: 0.9;
+	} @else if $type == p5 {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 160%;
+		opacity: 0.7;
+	}
+}

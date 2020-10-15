@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:hover, a:active, a:visited {
+  color: #252733;
+  text-decoration: none;
+}
+
+.main {
+  height: 150vh;
+}
+
+.header {
+  font-family: "Merriweather", serif;
+  white-space: nowrap;
+}
+
+.header__inner {
+  height: 130px;
+  max-width: 1330px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  max-width: 170px;
+}
+
+.header__nav {
+  margin-left: 10px;
+}
+
+.header__contacts {
+  margin-left: 10px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.main-nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-nav__link {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+  margin-left: 50px;
+  opacity: 0.9;
+}
+
+.main-nav__link:nth-child(1) {
+  margin-left: 0px;
+}
+
+.header-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-contacts__phone {
+  opacity: 1;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+  font-weight: normal;
+  opacity: 1;
+}
+
+.header-contacts__soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 48px;
+}
+
+.header-contacts__soc {
+  margin-left: 25px;
+}
+
+.header-contacts__soc:nth-child(1) {
+  margin-left: 0px;
+}
+
+.burger-dropdown {
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  cursor: pointer;
+  margin-left: 46px;
+}
+
+.profile-dropdown__content {
+  display: none;
+}
+
+.footer__words {
+  margin-top: 20px;
+}
+
+.footer__words img {
+  height: 130px;
+}
+
+.footer__inner {
+  margin: 0 auto;
+  margin-top: 70px;
+  height: 270px;
+  max-width: 1330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__content {
+  width: 100%;
+  max-width: 1140px;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__column {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__column_column1 {
+  max-width: 260px;
+}
+
+.footer__logo {
+  max-width: 250px;
+}
+
+.footer__regulations {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+}
+
+.footer__rights {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+}
+
+.footer__link > a {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 200%;
+}
+
+.footer__dev > a {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+  opacity: 0.9;
+}
+
+.footer-contacts__row {
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.9;
+}
+
+.footer-contacts__soc-icon {
+  margin-left: 20px;
+}
+
+.footer-contacts__soc-icon:nth-child(1) {
+  margin-left: 0px;
+}
+
+.footer-contacts__soc-icon a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-contacts__soc {
+  margin-left: 20px;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.footer-contacts__soc:nth-child(1) {
+  margin-left: 0px;
+}
+/*# sourceMappingURL=main.css.map */
