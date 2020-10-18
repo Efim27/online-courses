@@ -32,7 +32,7 @@
 
 //Текст
 @mixin text($type) {
-	font-family: $font_main;
+	font-family: $font_second;
 	color: $color_text_black;
 
 	@if $type == p1 {
