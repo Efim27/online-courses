@@ -17,11 +17,11 @@
 		line-height: 140%;
 	} @else if $type == h5 {
 		font-size: 24px;
-		line-height: 140%;
-	} @else if $type == h6 {
-		font-size: 21px;
 		line-height: 160%;
 		opacity: 0.9;
+	} @else if $type == h6 {
+		font-size: 21px;
+		line-height: 140%;
 	} @else if $type == h7 {
 		font-weight: 300;
 		font-size: 18px;

@@ -1,0 +1,74 @@
+.all-courses {
+	margin-top: 65px;
+	margin-bottom: 110px;
+
+	&__title {
+		@include title(h2);
+	}
+
+	&__cards {
+		margin-top: 54px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+.course-card {
+	margin-bottom: 52px;
+	max-width: 520px;
+
+	&__image {
+		position: relative;
+	}
+
+	&__types {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+	}
+
+	&__type {
+		margin-left: 20px;
+
+		&:nth-child(1) {
+			margin-left: 0px;
+		}
+	}
+
+	&__about {
+		margin-top: 30px;
+	}
+
+	&__name {
+		@include title(h4);
+	}
+
+	&__description {
+		margin-top: 22px;
+		@include text(p3);
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 31px;
+	}
+
+	&__tags {
+		max-width: 320px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__tag {
+		margin-right: 15px;
+		margin-bottom: 20px;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 20px;
+	}
+}
+

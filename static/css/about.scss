@@ -1,73 +1,241 @@
-.all-courses {
-	margin-top: 65px;
+.project-about {
+    margin-top: 25px;
 
-	&__title {
-		@include title(h2);
-	}
+    &__label {
+        @include text(p3);
+        opacity: 0.7;
+    }
 
-	&__cards {
-		margin-top: 54px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-}
-.course-card {
-	margin-bottom: 52px;
-	max-width: 520px;
+    &__row {
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-	&__image {
-		position: relative;
-	}
+    &__info {
+        flex: calc(50% - 10px);
+    }
 
-	&__types {
-		position: absolute;
-		top: 25px;
-		left: 25px;
-	}
+    &__title {
+        @include title(h2);
+    }
 
-	&__type {
-		margin-left: 20px;
+    &__description {
+        margin-top: 28px;
+        flex: calc(50% - 10px);
+        @include text(p1);
+    }
 
-		&:nth-child(1) {
-			margin-left: 0px;
-		}
-	}
+    &__statistics {
+        flex: calc(50% - 10px);
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
 
-	&__about {
-		margin-top: 30px;
-	}
+    &__cell {
+        flex: calc(50% - 10px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
 
-	&__name {
-		@include title(h4);
-	}
-
-	&__description {
-		margin-top: 22px;
-		@include text(p3);
-	}
-
-	&__bottom {
-		display: flex;
-		justify-content: space-between;
-		margin-top: 31px;
-	}
-
-	&__tags {
-		max-width: 320px;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	&__tag {
-		margin-right: 15px;
-		margin-bottom: 20px;
-	}
-
-	&__btn {
-		display: flex;
-		align-items: flex-end;
-		margin-bottom: 20px;
-	}
+    &__image {
+        margin-top: 60px;
+        border-radius: 20px;
+    }
 }
 
+.cell {
+    max-width: 219px;
+    height: 92px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2fffe;
+    border-radius: 10px;
+
+    &__value {
+        @include title(h4);
+        background: $gradient_main;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__label {
+        @include text(p4);
+    }
+}
+
+.project-aim {
+    margin-top: 112px;
+
+    &__row {
+        display: flex;
+    }
+
+    &__aim {
+        flex: 33.33%;
+        @include title(h3);
+    }
+
+    &__description {
+        flex: 66.66%;
+    }
+
+    &__title {
+        @include title(h5);
+    }
+
+    &__about {
+        margin-top: 22px;
+        @include text(p2);
+    }
+
+    &__images {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__image {
+        max-width: 540px;
+    }
+}
+
+.our-worth {
+    margin-top: 150px;
+
+    &__title {
+        text-align: center;
+        @include title(h3);
+    }
+
+    &__cards {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__card {
+        margin-bottom: 40px;
+    }
+}
+
+.worth-card {
+    position: relative;
+    max-width: 540px;
+    height: 200px;
+    background: #f2fffe;
+    border-radius: 20px;
+
+    &__circle {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background-color: #70cbd4;
+        border-radius: 50%;
+        left: 20px;
+        top: 40px;
+
+        &_bg-yellow {
+            background-color: #ffd566;
+        }
+    }
+
+    &__label {
+        margin-left: 56px;
+        margin-top: 66px;
+        @include text(p1);
+    }
+}
+
+.about-education {
+	margin-top: 120px;
+	margin-bottom: 100px;
+	padding-bottom: 111px;
+    background-color: #f2fffe;
+
+    &__algorithm {
+        margin-top: 111px;
+    }
+
+    &__videos {
+		margin-top: 70px;
+		display: flex;
+		justify-content: space-between;
+    }
+
+    &__videobox {
+		max-width: 520px;
+    }
+
+    &__video {
+		cursor: pointer;
+    }
+
+    &__label {
+		margin-top: 36px;
+		@include text(p2);
+    }
+}
+.algorithm-education {
+    &__row {
+        margin-top: 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        @include title(h3);
+    }
+
+    &__stages {
+        max-width: 610px;
+    }
+
+    &__stage {
+        margin-top: 22px;
+        padding-left: 36px;
+
+        &:nth-child(1) {
+            margin-top: 0px;
+        }
+    }
+
+    &__divider-top {
+		margin-bottom: 36px;
+	}
+	
+	&__divider-bottom {
+		margin-top: 36px;
+    }
+}
+
+.algorithm-stage {
+
+	&__row {
+		display: flex;
+	}
+
+    &__dot {
+		margin-top: 8px;
+        width: 20px;
+        height: 20px;
+        background: $gradient_main;
+		border-radius: 50%;
+		flex-shrink: 0;
+    }
+
+    &__label {
+		margin-left: 46px;
+		@include text(p2);
+		opacity: 0.9;
+	}
+	
+	&__divider {
+		margin-top: 36px;
+    }
+}

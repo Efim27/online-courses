@@ -3,8 +3,8 @@
 		<img class="header__logo logo" src="../static/img/main-logo.png" alt="Логотип" class="logo__image">
 		<nav class="header__nav main-nav">
 			<div class="main-nav__links">
-				<a href="#" class="main-nav__link">все курсы</a>
-				<a href="#" class="main-nav__link">о проекте</a>
+				<a href="/catalog.php" class="main-nav__link">все курсы</a>
+				<a href="/about.php" class="main-nav__link">о проекте</a>
 			</div>
 		</nav>
 		<div class="header__contacts header-contacts">
