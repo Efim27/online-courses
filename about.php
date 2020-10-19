@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Главная</title>
+	<title>О проекте</title>
 	<link rel="stylesheet" href="/static/css/main.css">
 	<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </head>
@@ -141,6 +141,70 @@
 					<div class="project-authors__author-about author-about">
 						<div class="author-about__name">Александ Караваев</div>
 						<div class="author-about__about">Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”. </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="project-reviews">
+			<div class="main__inner">
+				<div class="main__content project-reviews__content">
+					<div class="project-reviews__left">
+						<div class="project-reviews__title">Отзывы <br> о проекте</div>
+						<div class="project-reviews__submit btn-submit">
+							<object data="./static/img/btn-send.svg" type="image/svg+xml"></object>
+						</div>
+					</div>
+					<div class="project-reviews__right">
+						<div class="project-reviews__row">
+							<div class="project-reviews__type">музыка</div>
+							<div class="project-reviews__btns">
+								<div class="project-reviews__btn-left arrow-left">
+									<object data="./static/img/btn-arrow.svg" type="image/svg+xml"></object>
+								</div>
+								<div class="project-reviews__btn-right arrow-right">
+									<object data="./static/img/btn-arrow.svg" type="image/svg+xml"></object>
+								</div>
+							</div>
+						</div>
+						<div class="project-reviews__sender">Александра, Нижний Новгород</div>
+						<div class="project-reviews__review">
+							«Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом” Проведи время креативно
+							и необычно на нашем развлекательно - образовательном проекте “Мир рядом”. Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”...»
+						</div>
+						<div class="project-reviews__btn-more">
+							<a href="#">Подробнее <img src="./static/img/icons/plus.png" alt="Подробнее"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main__inner">
+			<div class="main__content">
+				<div class="news">
+					<div class="news__title">Новости</div>
+					<div class="news__row">
+						<div class="news__news-card news-card">
+							<div class="news-card__image">
+								<img src="./static/img/card-news1.png" alt="Музыкальный конструктор">
+							</div>
+							<div class="news-card__date">12 октября 2020</div>
+							<div class="news-card__title">Музыкальный конструктор</div>
+							<div class="news-card__about">Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”</div>
+							<div class="news-card__btn-view btn-send">
+								<object data="./static/img/btn-send.svg" type="image/svg+xml"></object>
+							</div>
+						</div>
+						<div class="news__news-card news-card">
+							<div class="news-card__image">
+								<img src="./static/img/card-news2.png" alt="Музыкальный конструктор">
+							</div>
+							<div class="news-card__date">12 октября 2020</div>
+							<div class="news-card__title">Музыкальный конструктор</div>
+							<div class="news-card__about">Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”</div>
+							<div class="news-card__btn-view btn-send">
+								<object data="./static/img/btn-send.svg" type="image/svg+xml"></object>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

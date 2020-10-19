@@ -220,6 +220,10 @@ a, a:hover, a:active, a:visited {
   border-radius: 20px;
 }
 
+.project-about__image img {
+  width: 100%;
+}
+
 .cell {
   max-width: 219px;
   height: 92px;
@@ -574,6 +578,193 @@ a, a:hover, a:active, a:visited {
   opacity: 0.8;
 }
 
+.project-reviews {
+  margin-top: 125px;
+  padding: 110px 0;
+  background-color: #F2FFFE;
+}
+
+.project-reviews__content {
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-reviews__left {
+  width: calc(100% / 12 * 3 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.project-reviews__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.project-reviews__submit {
+  margin-top: 48px;
+}
+
+.project-reviews__right {
+  width: calc(100% / 12 * 8 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.project-reviews__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-reviews__type {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.project-reviews__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-reviews__btn-right {
+  margin-left: 50px;
+}
+
+.project-reviews__sender {
+  margin-top: 22px;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.9;
+}
+
+.project-reviews__review {
+  margin-top: 38px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.project-reviews__btn-more {
+  margin-top: 45px;
+}
+
+.project-reviews__btn-more a {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-reviews__btn-more img {
+  width: 21px;
+  height: 21px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.news {
+  margin-top: 120px;
+  margin-bottom: 170px;
+}
+
+.news__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.news__row {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.news__news-card {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.news-card__image {
+  border-radius: 20px;
+}
+
+.news-card__image img {
+  width: 100%;
+}
+
+.news-card__date {
+  margin-top: 45px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.news-card__title {
+  margin-top: 10px;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.9;
+}
+
+.news-card__about {
+  margin-top: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.news-card__btn-view {
+  margin-top: 30px;
+}
+
 .all-courses {
   margin-top: 65px;
   margin-bottom: 110px;
@@ -679,11 +870,12 @@ a, a:hover, a:active, a:visited {
 .header {
   font-family: "Merriweather", serif;
   white-space: nowrap;
+  padding: 0 10px;
 }
 
 .header__inner {
   height: 130px;
-  max-width: 1345px;
+  max-width: 1770px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -785,7 +977,12 @@ a, a:hover, a:active, a:visited {
   display: none;
 }
 
+.footer {
+  padding: 0 10px;
+}
+
 .footer__words {
+  margin: 0 auto;
   margin-top: 20px;
 }
 
@@ -798,18 +995,13 @@ a, a:hover, a:active, a:visited {
   margin: 0 auto;
   margin-top: 70px;
   height: 270px;
-  max-width: 1330px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  max-width: 1770px;
 }
 
 .footer__content {
+  margin: 0 auto;
   width: 100%;
-  max-width: 1160px;
+  max-width: 1390px;
   height: 100%;
   padding-top: 40px;
   padding-bottom: 30px;
@@ -931,7 +1123,7 @@ a, a:hover, a:active, a:visited {
 
 .main__inner {
   margin: 0 auto;
-  max-width: 1330px;
+  max-width: 1770px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -940,10 +1132,42 @@ a, a:hover, a:active, a:visited {
           justify-content: center;
 }
 
+.main__inner_soc-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .main__content {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1390px;
   height: 100%;
+}
+
+.main__soc-links {
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transform: rotate(-90deg) translateX(-45px);
+          transform: rotate(-90deg) translateX(-45px);
+  margin-top: 200px;
+}
+
+.main__soc-link {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.9;
+  margin-left: 10px;
+}
+
+.main__soc-link:nth-child(1) {
+  margin-left: 0px;
 }
 
 .type {
@@ -1000,5 +1224,10 @@ a, a:hover, a:active, a:visited {
           transform: scaleY(0.5);
   background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
   opacity: 0.8;
+}
+
+.arrow-right object {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */

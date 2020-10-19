@@ -1,8 +1,8 @@
 <footer class="footer">
-	<div class="footer__words">
-		<img src="./static/img/content-words.png" alt="Музыка, фото, искусство, дизайн">
-	</div>
 	<div class="footer__inner">
+		<div class="footer__words">
+			<img src="./static/img/content-words.png" alt="Музыка, фото, искусство, дизайн">
+		</div>
 		<div class="footer__content">
 			<div class="footer__column footer__column_column1">
 				<img class="footer__logo logo" src="../static/img/main-logo.png" alt="Логотип" class="logo__image">
@@ -25,8 +25,8 @@
 			</div>
 			<div class="footer__column footer__column_column3">
 				<div class="footer__links">
-					<div class="footer__link"><a href="#">все курсы</a></div>
-					<div class="footer__link"><a href="#">о проекте</a></div>
+					<div class="footer__link"><a href="/catalog.php">все курсы</a></div>
+					<div class="footer__link"><a href="/about.php">о проекте</a></div>
 					<div class="footer__link"><a href="#">контакты</a></div>
 					<div class="footer__link"><a href="#">вопрос-ответ</a></div>
 				</div>

@@ -60,3 +60,14 @@
 		opacity: 0.7;
 	}
 }
+
+@mixin grid-width($cols_num) {
+	width: calc(100% / #{$grid_columns_num} * #{$cols_num} - #{$grid_column_margin});
+	margin-left: calc(#{$grid_column_margin} / 2);
+	margin-right: calc(#{$grid_column_margin} / 2);
+}
+
+@mixin grid-row() {
+	margin-left: calc(-1 * #{$grid_column_margin} / 2);
+	margin-right: calc(-1 * #{$grid_column_margin} / 2);
+}

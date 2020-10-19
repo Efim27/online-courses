@@ -10,10 +10,11 @@
 .header {
     font-family: $font_main;
     white-space: nowrap;
+    padding: 0 10px;
 
     &__inner {
         height: 130px;
-        max-width: 1345px;
+        max-width: $page_inner_width;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -101,7 +102,10 @@
 
 //footer
 .footer {
+    padding: 0 10px;
+
     &__words {
+        margin: 0 auto;
         margin-top: 20px;
 
         img {
@@ -114,14 +118,13 @@
         margin: 0 auto;
         margin-top: 70px;
         height: 270px;
-        max-width: 1330px;
-        display: flex;
-        justify-content: center;
+        max-width: $page_inner_width;
     }
 
     &__content {
+        margin: 0 auto;
         width: 100%;
-        max-width: 1160px;
+        max-width: $page_content_width;
         height: 100%;
         padding-top: 40px;
         padding-bottom: 30px;
@@ -223,15 +226,36 @@
 .main {
     &__inner {
         margin: 0 auto;
-        max-width: 1330px;
+        max-width: $page_inner_width;
         display: flex;
         justify-content: center;
+
+        &_soc-links {
+            display: flex;
+        }
     }
 
     &__content {
         width: 100%;
-        max-width: 1160px;
+        max-width: $page_content_width;
         height: 100%;
+    }
+
+    &__soc-links {
+        height: 170px;
+        display: flex;
+        align-items: flex-start;
+        transform: rotate(-90deg) translateX(-45px);
+        margin-top: 200px;
+    }
+
+    &__soc-link {
+        @include text(p4);
+        margin-left: 10px;
+
+        &:nth-child(1) {
+            margin-left: 0px;
+        }
     }
 }
 
@@ -278,4 +302,14 @@
     transform: scaleY(0.5);
     background: $gradient_main;
     opacity: 0.8;
+}
+
+.btn-submit {
+}
+.arrow-left {
+}
+.arrow-right {
+	object {
+		transform: rotate(180deg);
+	}
 }

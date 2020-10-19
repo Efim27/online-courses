@@ -41,7 +41,11 @@
 
     &__image {
         margin-top: 60px;
-        border-radius: 20px;
+		border-radius: 20px;
+		
+		img {
+			width: 100%;
+		}
     }
 }
 
@@ -299,5 +303,138 @@
 	&__about {
 		margin-top: 12px;
 		@include text(p2);
+	}
+}
+
+.project-reviews {
+	margin-top: 125px;
+	padding: 110px 0;
+	background-color: #F2FFFE;
+
+	&__content {
+		@include grid-row();
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__left {
+		@include grid-width(3);
+	}
+
+	&__title {
+		@include title(h3);
+	}
+
+	&__submit {
+		margin-top: 48px;
+	}
+
+	&__right {
+		@include grid-width(8);
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__type {
+		@include text(p3);
+	}
+
+	&__btns {
+		display: flex;
+		align-items: center;
+	}
+
+	&__btn-left {
+	}
+
+	&__btn-right {
+		margin-left: 50px;
+	}
+
+	&__sender {
+		margin-top: 22px;
+		@include title(h5);
+	}
+
+	&__review {
+		margin-top: 38px;
+		@include text(p2);
+	}
+
+	&__btn-more {
+		margin-top: 45px;
+		
+		a {
+			@include text(p2);
+			display: flex;
+			align-items: center;
+		}
+
+		img {
+			width: 21px;
+			height: 21px;
+			flex-shrink: 0;
+			margin-left: 20px;
+		}
+	}
+}
+.main {
+
+	&__inner {
+	}
+
+	&__content {
+	}
+}
+
+.news {
+	margin-top: 120px;
+	margin-bottom: 170px;
+
+	&__title {
+		@include title(h3);
+	}
+
+	&__row {
+		margin-top: 60px;
+		display: flex;
+		@include grid-row();
+	}
+
+	&__news-card {
+		@include grid-width(6);
+	}
+}
+.news-card {
+
+	&__image {
+		border-radius: 20px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__date {
+		margin-top: 45px;
+		@include text(p3);
+	}
+
+	&__title {
+		margin-top: 10px;
+		@include title(h5);
+	}
+
+	&__about {
+		margin-top: 22px;
+		@include text(p2);
+	}
+
+	&__btn-view {
+		margin-top: 30px;
 	}
 }
