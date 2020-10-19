@@ -129,6 +129,22 @@
 				</div>
 			</div>
 		</div>
+		<div class="main__inner">
+			<div class="main__content">
+				<div class="project-authors">
+					<div class="project-authors__title">Авторы курсов</div>
+					<div class="project-authors__authors">
+						<div class="project-authors__author"><img src="./static/img/about_author.png" alt="Автор"></div>
+						<div class="project-authors__active-author"><img src="./static/img/about_author.png" alt="Автор"></div>
+						<div class="project-authors__author"><img src="./static/img/about_author.png" alt="Автор"></div>
+					</div>
+					<div class="project-authors__author-about author-about">
+						<div class="author-about__name">Александ Караваев</div>
+						<div class="author-about__about">Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”. </div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 	<?php require('./parts/footer.php'); ?>
 </body>
