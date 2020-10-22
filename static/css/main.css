@@ -601,6 +601,18 @@ a, a:hover, a:active, a:visited {
   -webkit-text-fill-color: transparent;
 }
 
+div.project-authors-block {
+  margin-top: 140px;
+  padding-top: 110px;
+  padding-bottom: 120px;
+  display: block;
+  background-color: #F2FFFE;
+}
+
+div.project-authors-block__left-links {
+  margin-top: 220px;
+}
+
 .project-about {
   margin-top: 25px;
 }
@@ -945,94 +957,8 @@ a, a:hover, a:active, a:visited {
   margin-top: 36px;
 }
 
-.project-authors {
+.project-authors-about {
   margin-top: 110px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.project-authors__title {
-  font-family: "Merriweather", serif;
-  color: #252733;
-  font-size: 36px;
-  line-height: 140%;
-  text-align: center;
-}
-
-.project-authors__authors {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 1040px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.project-authors__author img {
-  max-width: 150px;
-  height: 150px;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  border-radius: 50%;
-}
-
-.project-authors__active-author {
-  width: 700px;
-  height: 450px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: url(../img/about_center_author.png) no-repeat 50% 50%/cover #ffffff;
-  background-size: 700px;
-}
-
-.project-authors__active-author img {
-  width: 330px;
-  border-radius: 50%;
-}
-
-.project-authors__author-about {
-  margin-top: 50px;
-  max-width: 500px;
-  text-align: center;
-}
-
-.author-about__name {
-  font-family: "Merriweather", serif;
-  color: #252733;
-  font-size: 24px;
-  line-height: 160%;
-  opacity: 0.9;
-}
-
-.author-about__about {
-  margin-top: 12px;
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-weight: 300;
-  font-size: 21px;
-  line-height: 160%;
-  opacity: 0.8;
 }
 
 .project-reviews {
@@ -1734,6 +1660,95 @@ a, a:hover, a:active, a:visited {
 
 .videobox__label {
   margin-top: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.project-authors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-authors__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.project-authors__authors {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1040px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-authors__author img {
+  max-width: 150px;
+  height: 150px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  border-radius: 50%;
+}
+
+.project-authors__active-author {
+  width: 700px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/about_center_author.png) no-repeat 50% 50%/cover;
+  background-size: 700px;
+}
+
+.project-authors__active-author img {
+  width: 330px;
+  border-radius: 50%;
+}
+
+.project-authors__author-about {
+  margin-top: 50px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.author-about__name {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.9;
+}
+
+.author-about__about {
+  margin-top: 12px;
   font-family: "Montserrat", sans-serif;
   color: #252733;
   font-weight: 300;

@@ -131,7 +131,7 @@
 		</div>
 		<div class="main__inner">
 			<div class="main__content">
-				<div class="project-authors">
+				<div class="project-authors-about project-authors">
 					<div class="project-authors__title">Авторы курсов</div>
 					<div class="project-authors__authors">
 						<div class="project-authors__author"><img src="./static/img/about_author.png" alt="Автор"></div>

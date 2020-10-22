@@ -230,10 +230,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="work-examples">
+		<div class="project-authors-block">
 			<div class="main__inner main__inner_soc-links">
 				<div class="main__left">
-					<div class="work-examples__left-links left-links">
+					<div class="project-authors-block__left-links left-links">
 						<div class="left-links__soc-links">
 							<a class="left-links__soc-link" href="#">facebook</a>
 							<a class="left-links__soc-link" href="#">instagram</a>
@@ -241,9 +241,18 @@
 					</div>
 				</div>
 				<div class="main__content">
-					<br>
-					<br>
-					<br>
+					<div class="project-authors">
+						<div class="project-authors__title">Авторы курсов</div>
+						<div class="project-authors__authors">
+							<div class="project-authors__author"><img src="./static/img/about_author.png" alt="Автор"></div>
+							<div class="project-authors__active-author"><img src="./static/img/about_author.png" alt="Автор"></div>
+							<div class="project-authors__author"><img src="./static/img/about_author.png" alt="Автор"></div>
+						</div>
+						<div class="project-authors__author-about author-about">
+							<div class="author-about__name">Александ Караваев</div>
+							<div class="author-about__about">Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”. </div>
+						</div>
+					</div>
 				</div>
 				<div class="main__right"></div>
 			</div>
