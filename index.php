@@ -240,7 +240,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="main__content">qq</div>
+				<div class="main__content">
+					<br>
+					<br>
+					<br>
+				</div>
 				<div class="main__right"></div>
 			</div>
 		</div>

@@ -571,14 +571,12 @@ a, a:hover, a:active, a:visited {
 }
 
 .our-telegram__icons_right1 {
-  margin-left: 30px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
 .our-telegram__icons_right2 {
-  margin-left: 30px;
   margin-top: 190px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
