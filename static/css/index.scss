@@ -1,0 +1,343 @@
+.welcome {
+    margin-top: 30px;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include grid-row();
+    }
+
+    &__left {
+        @include grid-width(6);
+    }
+
+    &__right {
+        @include grid-width(5);
+    }
+
+    &__icons {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-left: 35px;
+
+        &:nth-child(1) {
+            margin-left: 0px;
+            width: 25px;
+            height: 25px;
+        }
+
+        &:nth-child(2) {
+            width: 28px;
+            height: 25px;
+        }
+
+        &:nth-child(3) {
+            width: 25px;
+            height: 20px;
+        }
+    }
+
+    &__about {
+        @include text(p1);
+        margin-top: 30px;
+    }
+
+    &__image {
+        position: relative;
+        margin-top: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__arrow-in-circle {
+        position: absolute;
+        top: 82px;
+        right: 70px;
+    }
+}
+.welcome-title {
+    @include title(h1);
+    position: relative;
+
+    &__circle {
+        position: absolute;
+    }
+}
+
+.musical-constructor {
+    margin-top: 120px;
+    padding: 75px 0px;
+    background-color: $color_bg_cream;
+
+    &__left-links {
+        margin-top: 120px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        @include grid-row();
+    }
+
+    &__info {
+        @include grid-width(5);
+    }
+
+    &__tag {
+        margin: 10px;
+    }
+
+    &__title {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        @include title(h3);
+
+        img {
+            margin-left: 10px;
+        }
+    }
+
+    &__about {
+        margin-top: 25px;
+        @include text(p3);
+    }
+
+    &__tags {
+        margin: -10px;
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__btn-submit {
+        margin-top: 55px;
+    }
+
+    &__image {
+        border-radius: 20px;
+        @include grid-width(5);
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.about-project {
+    margin-top: 115px;
+
+    &__left-links {
+        margin-top: 135px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        @include grid-row();
+    }
+
+    &__left {
+        @include grid-width(3);
+    }
+
+    &__title {
+        @include title(h3);
+    }
+
+    &__btn-send {
+        margin-top: 50px;
+    }
+
+    &__right {
+        @include grid-width(8);
+    }
+
+    &__about1 {
+        @include text(p1);
+    }
+
+    &__about2 {
+        margin-top: 50px;
+        @include text(p2);
+    }
+
+    &__row {
+        margin-top: 85px;
+        display: flex;
+        justify-content: space-between;
+        @include grid-row();
+    }
+
+    &__videobox {
+        @include grid-width(6);
+    }
+}
+
+.about-education {
+    &__left-links {
+        margin-top: 235px;
+    }
+}
+
+.creative-result {
+    background-color: $color_bg_pink;
+    padding: 110px 0px;
+
+    &__schema {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image {
+        position: relative;
+    }
+
+    &__title {
+        position: absolute;
+        @include title(h3);
+        background: $gradient_main;
+        -webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		width: 250px;
+		height: 100px;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 250px;
+        height: 100px;
+        margin: auto;
+    }
+
+    &__label {
+        position: absolute;
+    }
+}
+.creative-result-label {
+    max-width: 350px;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	
+	&_n1 {
+		margin-left: -650px;
+		margin-top: -300px;
+
+		.creative-result-label__dot {
+			order: 1;
+		}
+	}
+
+	&_n2 {
+		margin-left: -810px;
+
+		.creative-result-label__dot {
+			order: 1;
+		}
+	}
+
+	&_n3 {
+		margin-left: -690px;
+		margin-top: 300px;
+
+		.creative-result-label__dot {
+			order: 1;
+		}
+	}
+
+	&_n4 {
+		margin-left: 690px;
+		margin-top: -300px;
+
+		.creative-result-label__text {
+			margin-left: 42px;
+		}
+	}
+
+	&_n5 {
+		margin-left: 810px;
+
+		.creative-result-label__text {
+			margin-left: 42px;
+		}
+	}
+
+	&_n6 {
+		margin-left: 660px;
+		margin-top: 300px;
+
+		.creative-result-label__text {
+			margin-left: 42px;
+		}
+	}
+
+    &__dot {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    &__text {
+        @include text(p2);
+    }
+}
+
+.our-telegram {
+	margin-top: 100px;
+
+	.main__left, .main__right {
+		flex-shrink: 1;
+	}
+
+	&__icons {
+		width: 100%;
+		display: flex;
+		margin: 0 -30px;
+
+		&_left1 {
+			justify-content: flex-end;
+			margin-right: 30px;
+		}
+
+		&_left2 {
+			justify-content: flex-start;
+		}
+
+		&_right1 {
+			margin-left: 30px;
+			justify-content: flex-end;
+		}
+
+		&_right2 {
+			margin-left: 30px;
+			margin-top: 190px;
+			justify-content: flex-start;
+		}
+	}
+
+	&__icon {
+		width: 30px;
+		height: 30px;
+		margin: 0 30px;
+	}
+
+	&__title {
+		margin: 55px 0px;
+		@include title(h3);
+		text-align: center;
+		background: $gradient_main;
+        -webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}

@@ -113,17 +113,17 @@
 						<div class="algorithm-education__divider-bottom divider"></div>
 					</div>
 					<div class="about-education__videos">
-						<div class="about-education__videobox">
-							<div class="about-education__video">
+						<div class="about-education__videobox videobox">
+							<div class="videobox__video">
 								<img src="./static/img/about_video1.png" alt="Видео 1">
 							</div>
-							<div class="about-education__label">Видео о нашем проекте</div>
+							<div class="videobox__label">Видео о нашем проекте</div>
 						</div>
-						<div class="about-education__videobox">
-							<div class="about-education__video">
+						<div class="about-education__videobox videobox">
+							<div class="videobox__video">
 								<img src="./static/img/about_video2.png" alt="Видео 2">
 							</div>
-							<div class="about-education__label">Создаем трек в стиле эмбиент</div>
+							<div class="videobox__label">Создаем трек в стиле эмбиент</div>
 						</div>
 					</div>
 				</div>
