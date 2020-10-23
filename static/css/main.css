@@ -1181,6 +1181,10 @@ div.project-authors-block__left-links {
   position: relative;
 }
 
+.course-card__image img {
+  width: 100%;
+}
+
 .course-card__types {
   position: absolute;
   top: 25px;
@@ -1220,6 +1224,8 @@ div.project-authors-block__left-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1360,18 +1366,11 @@ div.project-authors-block__left-links {
   display: none;
 }
 
-.footer {
-  padding: 0 10px;
-}
-
 .footer__words {
   margin: 0 auto;
   margin-top: 20px;
-}
-
-.footer__words img {
-  width: 100%;
   height: 130px;
+  background: url(../img/content-words.png) no-repeat 50% 50%/cover;
 }
 
 .footer__inner {
@@ -1383,20 +1382,23 @@ div.project-authors-block__left-links {
 
 .footer__content {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1390px;
-  height: 100%;
-  padding-top: 40px;
+  padding: 0 20px;
+  padding-top: 10px;
   padding-bottom: 30px;
+  max-width: 1390px;
+  min-height: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__column {
+  margin-top: 30px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1419,6 +1421,7 @@ div.project-authors-block__left-links {
 }
 
 .footer__regulations {
+  margin-top: 25px;
   font-family: "Montserrat", sans-serif;
   color: #252733;
   font-weight: 300;
@@ -1428,6 +1431,7 @@ div.project-authors-block__left-links {
 }
 
 .footer__rights {
+  margin-top: 44px;
   font-family: "Montserrat", sans-serif;
   color: #252733;
   font-weight: 300;
@@ -1446,6 +1450,10 @@ div.project-authors-block__left-links {
   font-size: 16px;
   opacity: 0.9;
   line-height: 200%;
+}
+
+.footer__dev {
+  margin-top: 41px;
 }
 
 .footer__dev > a {
@@ -1526,10 +1534,14 @@ div.project-authors-block__left-links {
 
 .main__left {
   width: 100%;
-  min-width: 100px;
+  min-width: 20px;
   max-width: 190px;
   -ms-flex-negative: 20;
       flex-shrink: 20;
+}
+
+.main__left_links {
+  min-width: 100px;
 }
 
 .main__right {
@@ -1755,5 +1767,31 @@ div.project-authors-block__left-links {
   font-size: 21px;
   line-height: 160%;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 992px) {
+  .header__nav {
+    display: none;
+  }
+  .header__contacts {
+    display: none;
+  }
+  .all-courses__title {
+    text-align: center;
+  }
+  .all-courses__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .profile-dropdown {
+    margin-left: 10px;
+  }
+  .footer__rights {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

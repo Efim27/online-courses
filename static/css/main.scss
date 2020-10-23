@@ -102,16 +102,12 @@
 
 //footer
 .footer {
-    padding: 0 10px;
 
     &__words {
         margin: 0 auto;
         margin-top: 20px;
-
-        img {
-            width: 100%;
-            height: 130px;
-        }
+        height: 130px;
+        background: url(../img/content-words.png) no-repeat 50% 50% / cover;
     }
 
     &__inner {
@@ -123,16 +119,18 @@
 
     &__content {
         margin: 0 auto;
-        width: 100%;
-        max-width: $page_content_width;
-        height: 100%;
-        padding-top: 40px;
+        padding: 0 20px;
+        padding-top: 10px;
         padding-bottom: 30px;
+        max-width: $page_content_width;
+        min-height: 270px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__column {
+        margin-top: 30px;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -148,6 +146,7 @@
     }
 
     &__regulations {
+        margin-top: 25px;
         @include text(p5);
     }
 
@@ -158,6 +157,7 @@
     }
 
     &__rights {
+        margin-top: 44px;
         @include text(p5);
     }
 
@@ -180,6 +180,8 @@
     }
 
     &__dev {
+        margin-top: 41px;
+
         & > a {
             @include text(p5);
             opacity: 0.9;
@@ -238,9 +240,13 @@
 
     &__left {
         width: 100%;
-        min-width: 100px;
+        min-width: 20px;
         max-width: 190px;
         flex-shrink: 20;
+
+        &_links {
+            min-width: 100px;
+        }
     }
 
     &__right {
@@ -417,4 +423,38 @@
 		margin-top: 12px;
 		@include text(p2);
 	}
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        &__nav {
+            display: none;
+        }
+
+        &__contacts {
+            display: none;
+        }
+    }
+
+    .all-courses {
+        &__title {
+            text-align: center;
+        }
+
+        &__cards {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .profile-dropdown {
+        margin-left: 10px;
+    }
+
+    .footer {
+        &__rights {
+            margin-top: 20px;
+        }
+    }
 }

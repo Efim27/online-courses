@@ -12,6 +12,7 @@
 	<?php require('./parts/header.php'); ?>
 	<main class="main">
 		<div class="main__inner">
+			<div class="main__left"></div>
 			<div class="main__content">
 				<div class="all-courses">
 					<div class="all-courses__title">Все курсы</div>
@@ -119,6 +120,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="main__right"></div>
 		</div>
 	</main>
 	<?php require('./parts/footer.php'); ?>

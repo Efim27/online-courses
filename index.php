@@ -257,6 +257,50 @@
 				<div class="main__right"></div>
 			</div>
 		</div>
+		<div class="faq">
+			<div class="main__inner main__inner_soc-links">
+				<div class="main__left">
+					<div class="faq__left-links left-links">
+						<div class="left-links__soc-links">
+							<a class="left-links__soc-link" href="#">facebook</a>
+							<a class="left-links__soc-link" href="#">instagram</a>
+						</div>
+					</div>
+				</div>
+				<div class="main__content">
+					<div class="about-education__algorithm algorithm-education">
+						<div class="algorithm-education__divider-top divider"></div>
+						<div class="algorithm-education__row">
+							<div class="algorithm-education__title">Вопрос - ответ</div>
+							<div class="algorithm-education__stages">
+								<div class="algorithm-education__stage algorithm-stage">
+									<div class="algorithm-stage__row">
+										<div class="algorithm-stage__dot"></div>
+										<div class="algorithm-stage__label">Вы получаете доступ к видео и дополнительным материалам. </div>
+									</div>
+									<div class="algorithm-stage__divider divider"></div>
+								</div>
+								<div class="algorithm-education__stage algorithm-stage">
+									<div class="algorithm-stage__row">
+										<div class="algorithm-stage__dot"></div>
+										<div class="algorithm-stage__label">Изучаете материал в подходящем вам темпе и в удобное для вас время.</div>
+									</div>
+									<div class="algorithm-stage__divider divider"></div>
+								</div>
+								<div class="algorithm-education__stage algorithm-stage">
+									<div class="algorithm-stage__row">
+										<div class="algorithm-stage__dot"></div>
+										<div class="algorithm-stage__label">Cоздаете свой креатив, следуя видео инструкции и дополнительному материалу</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="algorithm-education__divider-bottom divider"></div>
+					</div>
+				</div>
+				<div class="main__right"></div>
+			</div>
+		</div>
 	</main>
 	<?php require('./parts/footer.php'); ?>
 </body>

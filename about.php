@@ -178,7 +178,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="main__inner">
+		<div class="main__inner ">
+			<div class="main__left"></div>
 			<div class="main__content">
 				<div class="news">
 					<div class="news__title">Новости</div>
@@ -208,6 +209,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="main__right"></div>
 		</div>
 	</main>
 	<?php require('./parts/footer.php'); ?>

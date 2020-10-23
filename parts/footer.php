@@ -1,7 +1,6 @@
 <footer class="footer">
 	<div class="footer__inner">
 		<div class="footer__words">
-			<img src="./static/img/content-words.png" alt="Музыка, фото, искусство, дизайн">
 		</div>
 		<div class="footer__content">
 			<div class="footer__column footer__column_column1">
