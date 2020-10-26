@@ -396,12 +396,6 @@ a, a:hover, a:active, a:visited {
   margin-right: calc(-1 * 50px / 2);
 }
 
-.about-project__videobox {
-  width: calc(100% / 12 * 6 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-}
-
 .about-education__left-links {
   margin-top: 235px;
 }

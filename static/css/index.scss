@@ -173,11 +173,9 @@
         margin-top: 85px;
         display: flex;
         justify-content: space-between;
-        @include grid-row();
     }
 
     &__videobox {
-        @include grid-width(6);
     }
 }
 
