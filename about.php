@@ -13,6 +13,7 @@
 	<?php require('./parts/header.php'); ?>
 	<main class="main">
 		<div class="main__inner">
+			<div class="main__left"></div>
 			<div class="main__content">
 				<div class="project-about">
 					<div class="project-about__label">о проекте</div>
@@ -79,11 +80,16 @@
 					</div>
 				</div>
 			</div>
+			<div class="main__right"></div>
 		</div>
 		<div class="about-education">
 			<div class="main__inner">
+				<div class="main__left"></div>
 				<div class="main__content">
 					<div class="about-education__algorithm algorithm-education">
+						<div class="algorithm-education__mini-title">
+							Как проходит обучение
+						</div>
 						<div class="algorithm-education__divider-top divider"></div>
 						<div class="algorithm-education__row">
 							<div class="algorithm-education__title">Как проходит<br>обучение</div>
@@ -127,26 +133,32 @@
 						</div>
 					</div>
 				</div>
+				<div class="main__right"></div>
 			</div>
 		</div>
-		<div class="main__inner">
-			<div class="main__content">
-				<div class="project-authors-about project-authors">
-					<div class="project-authors__title">Авторы курсов</div>
-					<div class="project-authors__authors">
-						<div class="project-authors__author"><img src="./static/img/about_author.png" alt="Автор"></div>
-						<div class="project-authors__active-author"><img src="./static/img/about_author.png" alt="Автор"></div>
-						<div class="project-authors__author"><img src="./static/img/about_author.png" alt="Автор"></div>
-					</div>
-					<div class="project-authors__author-about author-about">
-						<div class="author-about__name">Александ Караваев</div>
-						<div class="author-about__about">Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”. </div>
+		<div class="project-authors-block">
+			<div class="main__inner">
+				<div class="main__left"></div>
+				<div class="main__content">
+					<div class="project-authors-about project-authors">
+						<div class="project-authors__title">Авторы курсов</div>
+						<div class="project-authors__authors">
+							<div class="project-authors__author"><img src="./static/img/about_author.png" alt="Автор"></div>
+							<div class="project-authors__active-author"><img src="./static/img/about_author.png" alt="Автор"></div>
+							<div class="project-authors__author"><img src="./static/img/about_author.png" alt="Автор"></div>
+						</div>
+						<div class="project-authors__author-about author-about">
+							<div class="author-about__name">Александ Караваев</div>
+							<div class="author-about__about">Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”. </div>
+						</div>
 					</div>
 				</div>
+				<div class="main__right"></div>
 			</div>
 		</div>
 		<div class="project-reviews">
 			<div class="main__inner">
+				<div class="main__left"></div>
 				<div class="main__content project-reviews__content">
 					<div class="project-reviews__left">
 						<div class="project-reviews__title">Отзывы <br> о проекте</div>
@@ -157,7 +169,7 @@
 					<div class="project-reviews__right">
 						<div class="project-reviews__row">
 							<div class="project-reviews__type">музыка</div>
-							<div class="project-reviews__btns">
+							<div class="project-reviews__btns project-reviews__btns_main">
 								<div class="project-reviews__btn-left arrow-left">
 									<object data="./static/img/btn-arrow.svg" type="image/svg+xml"></object>
 								</div>
@@ -174,8 +186,17 @@
 						<div class="project-reviews__btn-more">
 							<a href="#">Подробнее <img src="./static/img/icons/plus.png" alt="Подробнее"></a>
 						</div>
+						<div class="project-reviews__btns project-reviews__btns_mini">
+							<div class="project-reviews__btn-left arrow-left">
+								<object data="./static/img/btn-arrow.svg" type="image/svg+xml"></object>
+							</div>
+							<div class="project-reviews__btn-right arrow-right">
+								<object data="./static/img/btn-arrow.svg" type="image/svg+xml"></object>
+							</div>
+						</div>
 					</div>
 				</div>
+				<div class="main__right"></div>
 			</div>
 		</div>
 		<div class="main__inner ">

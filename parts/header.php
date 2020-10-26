@@ -15,9 +15,6 @@
 			</div>
 		</div>
 		<div class="header__menu">
-			<div class="burger-dropdown">
-				<img src="./static/img/icons/burger.png" alt="Профиль" class="header-dropdown__icon">
-			</div>
 			<div class="profile-dropdown">
 				<img src="./static/img/icons/profile.png" alt="Профиль" class="header-dropdown__icon">
 				<div class="profile-dropdown__content">
@@ -25,6 +22,9 @@
 					<a href="#" class="profile-dropdown__link">Настройки профиля</a>
 					<a href="#" class="profile-dropdown__link">Выход</a>
 				</div>
+			</div>
+			<div class="burger-dropdown">
+				<img src="./static/img/icons/burger.png" alt="Профиль" class="header-dropdown__icon">
 			</div>
 		</div>
 	</div>

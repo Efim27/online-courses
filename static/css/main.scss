@@ -80,14 +80,8 @@
     }
 }
 
-.burger-dropdown {
-    cursor: pointer;
-}
-
 .profile-dropdown {
     cursor: pointer;
-
-    margin-left: 46px;
 
     &__icon {
     }
@@ -100,8 +94,14 @@
     }
 }
 
+.burger-dropdown {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
 //footer
 .footer {
+    margin-top: 70px;
 
     &__words {
         margin: 0 auto;
@@ -112,7 +112,6 @@
 
     &__inner {
         margin: 0 auto;
-        margin-top: 70px;
         height: 270px;
         max-width: $page_inner_width;
     }
@@ -226,6 +225,8 @@
 }
 
 .main {
+    overflow-x: hidden;
+
     &__inner {
         margin: 0 auto;
         max-width: $page_inner_width;
@@ -269,10 +270,16 @@
 
 .type {
     padding: 3px 20px;
-    background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
+    background: linear-gradient(
+        125.47deg,
+        #0032c3 -14.22%,
+        #0077ba 26.9%,
+        #00b1b2 65.53%,
+        #00c8af 83.95%
+    );
     border-radius: 20px;
     @include text(p4);
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .tag {
@@ -293,15 +300,15 @@
     }
 
     &_border-red {
-        border-color: #E84941;
+        border-color: #e84941;
     }
 
     &_border-violet {
-        border-color: #BD9BD2;
+        border-color: #bd9bd2;
     }
 
     &_border-green {
-        border-color: #00C8AF;
+        border-color: #00c8af;
     }
 }
 
@@ -317,9 +324,9 @@
 .arrow-left {
 }
 .arrow-right {
-	object {
-		transform: rotate(180deg);
-	}
+    object {
+        transform: rotate(180deg);
+    }
 }
 
 .left-links {
@@ -352,77 +359,341 @@
 }
 
 .videobox {
+    margin-left: 20px;
 
-	&__video {
+    &:nth-child(1) {
+        margin-left: 0px;
+    }
+
+    &__video {
         cursor: pointer;
-	}
 
-	&__label {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__label {
         margin-top: 36px;
-		@include text(p2);
-	}
+        @include text(p2);
+    }
 }
 
 .project-authors {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-	&__title {
-		@include title(h3);
-		text-align: center;
-	}
+    &__title {
+        @include title(h3);
+        text-align: center;
+    }
 
-	&__authors {
-		margin-top: 40px;
-		width: 100%;
-		max-width: 1040px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+    &__authors {
+        display: flex;
+        justify-content: space-between;
+        @include grid-row();
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-	&__author {
+    &__author {
+        @include grid-width(3);
+        display: flex;
+        justify-content: center;
 
-		img {
-			max-width: 150px;
-			height: 150px;
-			filter: grayscale(100%);
-			border-radius: 50%;
-		}
-	}
+        img {
+            max-width: 150px;
+            height: 150px;
+            filter: grayscale(100%);
+            border-radius: 50%;
+        }
+    }
 
-	&__active-author {
-		width: 700px;
-		height: 450px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: url(../img/about_center_author.png) no-repeat 50% 50% / cover;
-		background-size: 700px;
+    &__active-author {
+        @include grid-width(6);
+        max-width: 700px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/about_center_author.png) no-repeat 50% 50% /
+            cover;
+        background-size: 700px;
 
-		img {
-			width: 330px;
-			border-radius: 50%;
-		}
-	}
+        img {
+            width: 330px;
+            border-radius: 50%;
+        }
+    }
 
-	&__author-about {
-		margin-top: 50px;
-		max-width: 500px;
-		text-align: center;
-	}
+    &__author-about {
+        margin-top: 50px;
+        max-width: 500px;
+        text-align: center;
+    }
 }
 .author-about {
+    &__name {
+        @include title(h5);
+    }
 
-	&__name {
-		@include title(h5);
-	}
+    &__about {
+        margin-top: 12px;
+        @include text(p2);
+    }
+}
 
-	&__about {
-		margin-top: 12px;
-		@include text(p2);
-	}
+.project-authors-block {
+    display: block;
+
+    &_index {
+        margin-top: 140px;
+        padding-top: 110px;
+        padding-bottom: 120px;
+    }
+
+    &_bg-blue {
+        background-color: $color_bg_blue;
+    }
+
+    &__left-links {
+        margin-top: 220px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-about {
+        &__statistics {
+            justify-content: center;
+        }
+    }
+
+    .our-worth {
+        &__label {
+            @include text(p4);
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .profile-dropdown {
+        margin-left: 10px;
+    }
+
+    .footer {
+        margin-top: 20px;
+
+        &__rights {
+            margin-top: 20px;
+        }
+    }
+
+    .all-courses {
+        margin-bottom: 40px;
+    }
+
+    .algorithm-education {
+        margin-top: 40px;
+
+        &__mini-title {
+            display: block;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__stage {
+            padding-left: 0px;
+        }
+    }
+
+    .about-education {
+        &__videos {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__videobox {
+            margin-left: 0px;
+        }
+    }
+
+    .videobox {
+        margin-top: 35px;
+
+        &:nth-child(1) {
+            margin-top: 0px;
+        }
+
+        &__label {
+            margin-top: 20px;
+        }
+    }
+
+    .project-aim {
+        &__row {
+            flex-direction: column;
+        }
+
+        &__description {
+            margin-top: 30px;
+        }
+    }
+
+    .project-about {
+        &__row {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__statistics {
+            margin-top: 20px;
+            margin-left: -20px;
+            justify-content: space-between;
+        }
+
+        &__image {
+            margin-top: 30px;
+
+            img {
+                height: 320px;
+            }
+        }
+    }
+
+    .project-aim {
+        margin-top: 45px;
+
+        &__images {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__image {
+            &:nth-child(1) {
+                margin-top: 0px;
+            }
+
+            margin-top: 30px;
+            margin-left: 0px;
+        }
+    }
+
+    .our-worth {
+        margin-top: 60px;
+
+        &__cards {
+            margin-top: 40px;
+        }
+
+        &__card {
+            margin-bottom: 15px;
+        }
+    }
+
+    .about-education {
+        margin-top: 55px;
+    }
+
+    .project-authors {
+        margin-top: 40px;
+    }
+
+    .project-authors {
+        &__authors {
+            justify-content: center;
+        }
+
+        &__active-author {
+            @include grid-width(12);
+        }
+
+        &__author {
+            display: none;
+        }
+    }
+
+    .project-reviews {
+        padding: 50px 0px;
+
+        &__content {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__left {
+            width: 100%;
+            display: flex;
+            margin: 0px;
+            justify-content: space-between;
+        }
+
+        &__row {
+            margin-top: 30px;
+        }
+
+        &__btns_main {
+            display: none;
+        }
+
+        &__sender {
+            margin-top: 10px;
+        }
+
+        &__review {
+            margin-top: 16px;
+        }
+
+        &__submit {
+            margin-top: 5px;
+        }
+
+        &__right {
+            width: 100%;
+            margin: 0px;
+        }
+
+        &__btn-more {
+            margin-top: 28px;
+        }
+
+        &__btns_mini {
+            margin-top: 40px;
+        }
+    }
+
+    .news {
+        margin-top: 55px;
+        margin-bottom: 80px;
+
+        &__row {
+            margin-top: 40px;
+        }
+
+        &__news-card {
+            width: 100%;
+            display: none;
+
+            &:nth-child(1) {
+                display: block;
+            }
+        }
+    }
+
+    .algorithm-stage {
+
+        &__label {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 992px) {
@@ -445,16 +716,10 @@
             justify-content: center;
         }
     }
-}
 
-@media screen and (max-width: 576px) {
-    .profile-dropdown {
-        margin-left: 10px;
-    }
-
-    .footer {
-        &__rights {
-            margin-top: 20px;
+    .our-worth {
+        &__cards {
+            justify-content: center;
         }
     }
 }

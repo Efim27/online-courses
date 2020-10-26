@@ -10,7 +10,7 @@
         margin-top: 18px;
         display: flex;
         justify-content: space-between;
-    }
+	}
 
     &__info {
         flex: calc(50% - 10px);
@@ -44,7 +44,7 @@
 		border-radius: 20px;
 		
 		img {
-			width: 100%;
+			max-width: 100%;
 		}
     }
 }
@@ -104,7 +104,16 @@
     }
 
     &__image {
-        max-width: 540px;
+		max-width: 540px;
+		margin-left: 20px;
+
+		&:nth-child(1) {
+			margin-left: 0px;
+		}
+		
+		img {
+			max-width: 100%;
+		}
     }
 }
 
@@ -177,6 +186,15 @@
 
     &__video {
 		cursor: pointer;
+		margin-left: 20px;
+
+		&:nth-child(1) {
+			margin-left: 0px;
+		}
+
+		img {
+			max-width: 100%;
+		}
     }
 
     &__label {
@@ -189,7 +207,14 @@
         margin-top: 28px;
         display: flex;
         justify-content: space-between;
-    }
+	}
+	
+	&__mini-title {
+		display: none;
+		@include title(h3);
+		text-align: center;
+		margin-bottom: 20px;
+	}
 
     &__title {
         @include title(h3);

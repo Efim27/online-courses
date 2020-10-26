@@ -230,7 +230,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-authors-block">
+		<div class="project-authors-block project-authors-block_bg-blue project-authors-block_index">
 			<div class="main__inner main__inner_soc-links">
 				<div class="main__left">
 					<div class="project-authors-block__left-links left-links">

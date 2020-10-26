@@ -17,6 +17,10 @@
 	margin-bottom: 52px;
 	max-width: 520px;
 
+	&:nth-last-child() {
+		margin-bottom: 20px;
+	}
+
 	&__image {
 		position: relative;
 
