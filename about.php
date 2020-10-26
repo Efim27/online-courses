@@ -41,9 +41,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="project-about__image">
-						<img src="./static/img/project_about_image.png" alt="Мир рядом">
-					</div>
+					<div class="project-about__image"></div>
 				</div>
 				<div class="project-aim">
 					<div class="project-aim__row">
@@ -65,11 +63,11 @@
 								<div class="worth-card__label">Стань музыкантом, режиссерром, фотографом.</div>
 							</div>
 							<div class="our-worth__card worth-card">
-								<div class="worth-card__circle worth-card__circle_bg-yellow"></div>
+								<div class="worth-card__circle"></div>
 								<div class="worth-card__label">Стань музыкантом, режиссерром, фотографом.</div>
 							</div>
 							<div class="our-worth__card worth-card">
-								<div class="worth-card__circle worth-card__circle_bg-yellow"></div>
+								<div class="worth-card__circle"></div>
 								<div class="worth-card__label">Стань музыкантом, режиссерром, фотографом.</div>
 							</div>
 							<div class="our-worth__card worth-card">

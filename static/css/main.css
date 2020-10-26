@@ -673,12 +673,10 @@ a, a:hover, a:active, a:visited {
 }
 
 .project-about__image {
+  height: 400px;
   margin-top: 60px;
   border-radius: 20px;
-}
-
-.project-about__image img {
-  max-width: 100%;
+  background: url(../img/project_about_image.png) no-repeat 50% 50%/cover;
 }
 
 .cell {
@@ -833,7 +831,7 @@ a, a:hover, a:active, a:visited {
   top: 40px;
 }
 
-.worth-card__circle_bg-yellow {
+.worth-card:nth-child(2n) .worth-card__circle {
   background-color: #ffd566;
 }
 
@@ -1844,18 +1842,25 @@ a, a:hover, a:active, a:visited {
   margin-top: 220px;
 }
 
-@media screen and (max-width: 480px) {
-  .project-about__statistics {
+@media screen and (max-width: 992px) {
+  .header__nav {
+    display: none;
+  }
+  .header__contacts {
+    display: none;
+  }
+  .all-courses__title {
+    text-align: center;
+  }
+  .all-courses__cards {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .our-worth__label {
-    font-family: "Montserrat", sans-serif;
-    color: #252733;
-    font-size: 18px;
-    line-height: 160%;
-    opacity: 0.9;
+  .our-worth__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1929,10 +1934,8 @@ a, a:hover, a:active, a:visited {
             justify-content: space-between;
   }
   .project-about__image {
-    margin-top: 30px;
-  }
-  .project-about__image img {
     height: 320px;
+    margin-top: 30px;
   }
   .project-aim {
     margin-top: 45px;
@@ -2047,25 +2050,18 @@ a, a:hover, a:active, a:visited {
   }
 }
 
-@media screen and (max-width: 992px) {
-  .header__nav {
-    display: none;
-  }
-  .header__contacts {
-    display: none;
-  }
-  .all-courses__title {
-    text-align: center;
-  }
-  .all-courses__cards {
+@media screen and (max-width: 480px) {
+  .project-about__statistics {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .our-worth__cards {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .worth-card__label {
+    font-family: "Montserrat", sans-serif;
+    color: #252733;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.9;
   }
 }
 /*# sourceMappingURL=main.css.map */
