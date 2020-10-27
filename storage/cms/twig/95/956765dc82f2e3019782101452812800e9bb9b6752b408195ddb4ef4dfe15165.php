@@ -65,29 +65,29 @@ class __TwigTemplate_ca18fbb41e39a5a9db1dea5d66a4d7155f237788d35676d9247a4c4361e
 \t\t</div>
 \t\t<div class=\"footer__content\">
 \t\t\t<div class=\"footer__column footer__column_column1\">
-\t\t\t\t<img class=\"footer__logo logo\" src=\"";
+\t\t\t\t<a href=\"/\"><img class=\"footer__logo logo\" src=\"";
         // line 7
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/main-logo.png");
-        echo "\" alt=\"Логотип\" class=\"logo__image\">
+        echo "\" alt=\"Логотип\" class=\"logo__image\"></a>
 \t\t\t\t<a href=\"#\" class=\"footer__regulations\">Политика конфиденциальности и обработки персональных данных.</a>
 \t\t\t</div>
 \t\t\t<div class=\"footer__column footer__column_column2\">
 \t\t\t\t<div class=\"footer__contacts footer-contacts\">
 \t\t\t\t\t<div class=\"footer-contacts__row\">
 \t\t\t\t\t\t<div class=\"footer-contacts__phone\"><a href=\"tel:+74951234556\">+7 (495) 123 45 56</a></div>
-\t\t\t\t\t\t<div class=\"footer-contacts__soc-icon\"><a href=\"#\"><img src=\"";
+\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc-icon\"><img src=\"";
         // line 14
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram.png");
-        echo "\" alt=\"Телеграм\"></a></div>
-\t\t\t\t\t\t<div class=\"footer-contacts__soc-icon\"><a href=\"#\"><img src=\"";
+        echo "\" alt=\"Телеграм\"></a>
+\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc-icon\"><img src=\"";
         // line 15
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/whatsapp.png");
-        echo "\" alt=\"Whatsapp\"></a></div>
+        echo "\" alt=\"WhatsApp\"></a>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"footer-contacts__row\"><a href=\"mailto:hello@world.com\">hello@world.com</a></div>
 \t\t\t\t\t<div class=\"footer-contacts__row\">
-\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc\">facebook</a>
-\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc\">instagram</a>
+\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc soc-link\">facebook</a>
+\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc soc-link\">instagram</a>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"footer__rights\">2020©Все права защищены.</div>
@@ -137,20 +137,20 @@ class __TwigTemplate_ca18fbb41e39a5a9db1dea5d66a4d7155f237788d35676d9247a4c4361e
 \t\t</div>
 \t\t<div class=\"footer__content\">
 \t\t\t<div class=\"footer__column footer__column_column1\">
-\t\t\t\t<img class=\"footer__logo logo\" src=\"{{ 'assets/images/main-logo.png'|theme }}\" alt=\"Логотип\" class=\"logo__image\">
+\t\t\t\t<a href=\"/\"><img class=\"footer__logo logo\" src=\"{{ 'assets/images/main-logo.png'|theme }}\" alt=\"Логотип\" class=\"logo__image\"></a>
 \t\t\t\t<a href=\"#\" class=\"footer__regulations\">Политика конфиденциальности и обработки персональных данных.</a>
 \t\t\t</div>
 \t\t\t<div class=\"footer__column footer__column_column2\">
 \t\t\t\t<div class=\"footer__contacts footer-contacts\">
 \t\t\t\t\t<div class=\"footer-contacts__row\">
 \t\t\t\t\t\t<div class=\"footer-contacts__phone\"><a href=\"tel:+74951234556\">+7 (495) 123 45 56</a></div>
-\t\t\t\t\t\t<div class=\"footer-contacts__soc-icon\"><a href=\"#\"><img src=\"{{ 'assets/images/icons/soc/telegram.png'|theme }}\" alt=\"Телеграм\"></a></div>
-\t\t\t\t\t\t<div class=\"footer-contacts__soc-icon\"><a href=\"#\"><img src=\"{{ 'assets/images/icons/soc/whatsapp.png'|theme }}\" alt=\"Whatsapp\"></a></div>
+\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc-icon\"><img src=\"{{ 'assets/images/icons/soc/telegram.png'|theme }}\" alt=\"Телеграм\"></a>
+\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc-icon\"><img src=\"{{ 'assets/images/icons/soc/whatsapp.png'|theme }}\" alt=\"WhatsApp\"></a>
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"footer-contacts__row\"><a href=\"mailto:hello@world.com\">hello@world.com</a></div>
 \t\t\t\t\t<div class=\"footer-contacts__row\">
-\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc\">facebook</a>
-\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc\">instagram</a>
+\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc soc-link\">facebook</a>
+\t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc soc-link\">instagram</a>
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"footer__rights\">2020©Все права защищены.</div>

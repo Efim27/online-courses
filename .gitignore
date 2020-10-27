@@ -1,3 +1,4 @@
 .req
 .DS_Store
 *.log
+./config

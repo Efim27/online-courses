@@ -61,10 +61,10 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
         // line 1
         echo "<header class=\"header\">
 \t<div class=\"header__inner\">
-\t\t<img class=\"header__logo logo\" src=\"";
+\t\t<a href=\"/\"><img class=\"header__logo logo\" src=\"";
         // line 3
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/main-logo.png");
-        echo "\" alt=\"Логотип\" class=\"logo__image\">
+        echo "\" alt=\"Логотип\" class=\"logo__image\"></a>
 \t\t<nav class=\"header__nav main-nav\">
 \t\t\t<div class=\"main-nav__links\">
 \t\t\t\t<a href=\"/catalog\" class=\"main-nav__link\">все курсы</a>
@@ -81,7 +81,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
 \t\t\t\t<a href=\"#\" class=\"header-contacts__soc\"><img src=\"";
         // line 14
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/whatsapp.png");
-        echo "\" alt=\"Whatsapp\"></a>
+        echo "\" alt=\"WhatsApp\"></a>
 \t\t\t</div>
 \t\t</div>
 \t\t<div class=\"header__menu\">
@@ -126,7 +126,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
     {
         return new Source("<header class=\"header\">
 \t<div class=\"header__inner\">
-\t\t<img class=\"header__logo logo\" src=\"{{ 'assets/images/main-logo.png'|theme }}\" alt=\"Логотип\" class=\"logo__image\">
+\t\t<a href=\"/\"><img class=\"header__logo logo\" src=\"{{ 'assets/images/main-logo.png'|theme }}\" alt=\"Логотип\" class=\"logo__image\"></a>
 \t\t<nav class=\"header__nav main-nav\">
 \t\t\t<div class=\"main-nav__links\">
 \t\t\t\t<a href=\"/catalog\" class=\"main-nav__link\">все курсы</a>
@@ -137,7 +137,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
 \t\t\t<a class=\"header-contacts__phone\" href=\"tel:+74951234556\">+7 (495) 123 45 56</a>
 \t\t\t<div class=\"header-contacts__soc-list\">
 \t\t\t\t<a href=\"#\" class=\"header-contacts__soc\"><img src=\"{{ 'assets/images/icons/soc/telegram.png'|theme }}\" alt=\"Телеграм\"></a>
-\t\t\t\t<a href=\"#\" class=\"header-contacts__soc\"><img src=\"{{ 'assets/images/icons/soc/whatsapp.png'|theme }}\" alt=\"Whatsapp\"></a>
+\t\t\t\t<a href=\"#\" class=\"header-contacts__soc\"><img src=\"{{ 'assets/images/icons/soc/whatsapp.png'|theme }}\" alt=\"WhatsApp\"></a>
 \t\t\t</div>
 \t\t</div>
 \t\t<div class=\"header__menu\">

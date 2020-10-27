@@ -175,7 +175,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"algorithm-education__stages\">
                         <div class=\"algorithm-education__stage algorithm-stage\">
                             <div class=\"algorithm-stage__row\">
-                                <div class=\"algorithm-stage__dot\"></div>
+                                <div class=\"algorithm-stage__dot dot\"></div>
                                 <div class=\"algorithm-stage__label\">
                                     Вы получаете доступ к видео <br />
                                     и дополнительным материалам.
@@ -185,7 +185,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         </div>
                         <div class=\"algorithm-education__stage algorithm-stage\">
                             <div class=\"algorithm-stage__row\">
-                                <div class=\"algorithm-stage__dot\"></div>
+                                <div class=\"algorithm-stage__dot dot\"></div>
                                 <div class=\"algorithm-stage__label\">
                                     Изучаете материал в подходящем вам темпе и в
                                     удобное для вас время.
@@ -195,7 +195,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         </div>
                         <div class=\"algorithm-education__stage algorithm-stage\">
                             <div class=\"algorithm-stage__row\">
-                                <div class=\"algorithm-stage__dot\"></div>
+                                <div class=\"algorithm-stage__dot dot\"></div>
                                 <div class=\"algorithm-stage__label\">
                                     Cоздаете свой креатив, следуя видео
                                     инструкции и дополнительному материалу
@@ -558,7 +558,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"algorithm-education__stages\">
                         <div class=\"algorithm-education__stage algorithm-stage\">
                             <div class=\"algorithm-stage__row\">
-                                <div class=\"algorithm-stage__dot\"></div>
+                                <div class=\"algorithm-stage__dot dot\"></div>
                                 <div class=\"algorithm-stage__label\">
                                     Вы получаете доступ к видео <br />
                                     и дополнительным материалам.
@@ -568,7 +568,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         </div>
                         <div class=\"algorithm-education__stage algorithm-stage\">
                             <div class=\"algorithm-stage__row\">
-                                <div class=\"algorithm-stage__dot\"></div>
+                                <div class=\"algorithm-stage__dot dot\"></div>
                                 <div class=\"algorithm-stage__label\">
                                     Изучаете материал в подходящем вам темпе и в
                                     удобное для вас время.
@@ -578,7 +578,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         </div>
                         <div class=\"algorithm-education__stage algorithm-stage\">
                             <div class=\"algorithm-stage__row\">
-                                <div class=\"algorithm-stage__dot\"></div>
+                                <div class=\"algorithm-stage__dot dot\"></div>
                                 <div class=\"algorithm-stage__label\">
                                     Cоздаете свой креатив, следуя видео
                                     инструкции и дополнительному материалу
