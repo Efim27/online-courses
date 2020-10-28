@@ -299,7 +299,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-reviews__row\">
                     <div class=\"project-reviews__type\">музыка</div>
                     <div
-                        class=\"project-reviews__btns project-reviews__btns_main\"
+                        class=\"project-reviews__btns project-reviews__btns_main arrows-pagination\"
                     >
                         <div class=\"project-reviews__btn-left arrow-left\">
                             <object
@@ -341,7 +341,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
         echo "\" alt=\"Подробнее\"
                     /></a>
                 </div>
-                <div class=\"project-reviews__btns project-reviews__btns_mini\">
+                <div class=\"project-reviews__btns project-reviews__btns_mini arrows-pagination\">
                     <div class=\"project-reviews__btn-left arrow-left\">
                         <object
                             data=\"";
@@ -664,7 +664,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-reviews__row\">
                     <div class=\"project-reviews__type\">музыка</div>
                     <div
-                        class=\"project-reviews__btns project-reviews__btns_main\"
+                        class=\"project-reviews__btns project-reviews__btns_main arrows-pagination\"
                     >
                         <div class=\"project-reviews__btn-left arrow-left\">
                             <object
@@ -697,7 +697,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         <img src=\"{{ 'assets/images/icons/plus.png'|theme }}\" alt=\"Подробнее\"
                     /></a>
                 </div>
-                <div class=\"project-reviews__btns project-reviews__btns_mini\">
+                <div class=\"project-reviews__btns project-reviews__btns_mini arrows-pagination\">
                     <div class=\"project-reviews__btn-left arrow-left\">
                         <object
                             data=\"{{ 'assets/images/btn-arrow.svg'|theme }}\"

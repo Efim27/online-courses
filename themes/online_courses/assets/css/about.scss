@@ -302,11 +302,6 @@
 		@include text(p3);
 	}
 
-	&__btns {
-		display: flex;
-		align-items: center;
-	}
-
 	&__btns_mini {
 		display: none;
 	}

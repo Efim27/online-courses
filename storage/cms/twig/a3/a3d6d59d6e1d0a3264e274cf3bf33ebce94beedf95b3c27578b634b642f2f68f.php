@@ -275,7 +275,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 class=\"algorithm-education__stage algorithm-stage\"
                             >
                                 <div class=\"algorithm-stage__row\">
-                                    <div class=\"algorithm-stage__dot\"></div>
+                                    <div class=\"algorithm-stage__dot dot\"></div>
                                     <div class=\"algorithm-stage__label\">
                                         Вы получаете доступ к видео <br />
                                         и дополнительным материалам.
@@ -289,7 +289,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 class=\"algorithm-education__stage algorithm-stage\"
                             >
                                 <div class=\"algorithm-stage__row\">
-                                    <div class=\"algorithm-stage__dot\"></div>
+                                    <div class=\"algorithm-stage__dot dot\"></div>
                                     <div class=\"algorithm-stage__label\">
                                         Изучаете материал в подходящем вам темпе
                                         и в удобное для вас время.
@@ -303,7 +303,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 class=\"algorithm-education__stage algorithm-stage\"
                             >
                                 <div class=\"algorithm-stage__row\">
-                                    <div class=\"algorithm-stage__dot\"></div>
+                                    <div class=\"algorithm-stage__dot dot\"></div>
                                     <div class=\"algorithm-stage__label\">
                                         Cоздаете свой креатив, следуя видео
                                         инструкции и дополнительному материалу
@@ -534,6 +534,158 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
         </div>
     </div>
 </div>
+<div class=\"work-examples\">
+    <div class=\"main__inner main__inner_soc-links\">
+        <div class=\"main__left\">
+            <div class=\"work-examples__left-links left-links\">
+                <div class=\"left-links__soc-links\">
+                    <a class=\"left-links__soc-link\" href=\"#\">facebook</a>
+                    <a class=\"left-links__soc-link\" href=\"#\">instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class=\"main__content\">
+            <div class=\"work-examples__row\">
+                <div class=\"work-examples__left\">
+                    <div class=\"work-examples__title\">Примеры<br>работ</div>
+                    <div class=\"work-examples__btn-submit btn-submit\">
+                        <object
+                            data=\"";
+        // line 411
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        echo "\"
+                            type=\"image/svg+xml\"
+                        ></object>
+                    </div>
+                </div>
+                <div class=\"work-examples__right\">
+                    <div class=\"work-examples__right-row\">
+                        <div class=\"work-examples__label\">музыка</div>
+                        <div class=\"work-examples__pagination arrows-pagination\">
+                            <div class=\"work-examples__btn-left arrow-left\">
+                                <object
+                                    data=\"";
+        // line 422
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
+        echo "\"
+                                    type=\"image/svg+xml\"
+                                ></object>
+                            </div>
+                            <div class=\"work-examples__btn-right arrow-right\">
+                                <object
+                                    data=\"";
+        // line 428
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
+        echo "\"
+                                    type=\"image/svg+xml\"
+                                ></object>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"work-examples__music-players\">
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"";
+        // line 437
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
+        echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"";
+        // line 446
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
+        echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"";
+        // line 455
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
+        echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"";
+        // line 464
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
+        echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"";
+        // line 473
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
+        echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"";
+        // line 482
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
+        echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"";
+        // line 491
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
+        echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"";
+        // line 500
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
+        echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\"main__right\"></div>
+    </div>
+</div>
 <div
     class=\"project-authors-block project-authors-block_bg-blue project-authors-block_index\"
 >
@@ -553,7 +705,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"project-authors__author\">
                         <img
                             src=\"";
-        // line 413
+        // line 532
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
         echo "\"
                             alt=\"Автор\"
@@ -562,7 +714,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"project-authors__active-author\">
                         <img
                             src=\"";
-        // line 419
+        // line 538
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
         echo "\"
                             alt=\"Автор\"
@@ -571,7 +723,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"project-authors__author\">
                         <img
                             src=\"";
-        // line 425
+        // line 544
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
         echo "\"
                             alt=\"Автор\"
@@ -609,7 +761,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"faq__btn-submit btn-submit\">
                             <object
                                 data=\"";
-        // line 460
+        // line 579
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
         echo "\"
                                 type=\"image/svg+xml\"
@@ -626,7 +778,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 <img
                                     class=\"faq-stage__more-btn more-btn\"
                                     src=\"";
-        // line 474
+        // line 593
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
         echo "\"
                                     alt=\"Развернуть\"
@@ -643,7 +795,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 <img
                                     class=\"faq-stage__more-btn more-btn\"
                                     src=\"";
-        // line 488
+        // line 607
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
         echo "\"
                                     alt=\"Развернуть\"
@@ -660,7 +812,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 <img
                                     class=\"faq-stage__more-btn more-btn\"
                                     src=\"";
-        // line 502
+        // line 621
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
         echo "\"
                                     alt=\"Развернуть\"
@@ -675,7 +827,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                             <div class=\"more-questions-btn__icon\">
                                 <img
                                     src=\"";
-        // line 514
+        // line 633
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
         echo "\"
                                     alt=\"Ещё вопросы\"
@@ -707,11 +859,11 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"contacts__phone-row\">
                         <a href=\"tel:+74951234556\" class=\"contacts__phone\">+7 (495) 123 45 56</a>
                         <a href=\"#\" class=\"contacts__soc-icon\"><img src=\"";
-        // line 543
+        // line 662
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram.png");
         echo "\" alt=\"Телеграм\"></a>
                         <a href=\"#\" class=\"contacts__soc-icon\"><img src=\"";
-        // line 544
+        // line 663
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/whatsapp.png");
         echo "\" alt=\"WhatsApp\"></a>
                     </div>
@@ -742,7 +894,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                             <div class=\"contacts__btn-submit btn-submit\">
                                 <object
                                     data=\"";
-        // line 572
+        // line 691
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
         echo "\"
                                     type=\"image/svg+xml\"
@@ -770,7 +922,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
 
     public function getDebugInfo()
     {
-        return array (  746 => 572,  715 => 544,  711 => 543,  679 => 514,  664 => 502,  647 => 488,  630 => 474,  613 => 460,  575 => 425,  566 => 419,  557 => 413,  528 => 387,  520 => 382,  508 => 373,  500 => 368,  492 => 363,  479 => 353,  471 => 348,  463 => 343,  451 => 334,  443 => 329,  421 => 310,  406 => 298,  391 => 286,  376 => 274,  361 => 262,  346 => 250,  332 => 239,  243 => 153,  232 => 145,  209 => 125,  181 => 100,  171 => 93,  122 => 47,  114 => 42,  99 => 30,  91 => 25,  83 => 20,  62 => 1,);
+        return array (  898 => 691,  867 => 663,  863 => 662,  831 => 633,  816 => 621,  799 => 607,  782 => 593,  765 => 579,  727 => 544,  718 => 538,  709 => 532,  674 => 500,  662 => 491,  650 => 482,  638 => 473,  626 => 464,  614 => 455,  602 => 446,  590 => 437,  578 => 428,  569 => 422,  555 => 411,  528 => 387,  520 => 382,  508 => 373,  500 => 368,  492 => 363,  479 => 353,  471 => 348,  463 => 343,  451 => 334,  443 => 329,  421 => 310,  406 => 298,  391 => 286,  376 => 274,  361 => 262,  346 => 250,  332 => 239,  243 => 153,  232 => 145,  209 => 125,  181 => 100,  171 => 93,  122 => 47,  114 => 42,  99 => 30,  91 => 25,  83 => 20,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -961,7 +1113,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 class=\"algorithm-education__stage algorithm-stage\"
                             >
                                 <div class=\"algorithm-stage__row\">
-                                    <div class=\"algorithm-stage__dot\"></div>
+                                    <div class=\"algorithm-stage__dot dot\"></div>
                                     <div class=\"algorithm-stage__label\">
                                         Вы получаете доступ к видео <br />
                                         и дополнительным материалам.
@@ -975,7 +1127,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 class=\"algorithm-education__stage algorithm-stage\"
                             >
                                 <div class=\"algorithm-stage__row\">
-                                    <div class=\"algorithm-stage__dot\"></div>
+                                    <div class=\"algorithm-stage__dot dot\"></div>
                                     <div class=\"algorithm-stage__label\">
                                         Изучаете материал в подходящем вам темпе
                                         и в удобное для вас время.
@@ -989,7 +1141,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 class=\"algorithm-education__stage algorithm-stage\"
                             >
                                 <div class=\"algorithm-stage__row\">
-                                    <div class=\"algorithm-stage__dot\"></div>
+                                    <div class=\"algorithm-stage__dot dot\"></div>
                                     <div class=\"algorithm-stage__label\">
                                         Cоздаете свой креатив, следуя видео
                                         инструкции и дополнительному материалу
@@ -1167,6 +1319,125 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 ></object>
             </div>
         </div>
+    </div>
+</div>
+<div class=\"work-examples\">
+    <div class=\"main__inner main__inner_soc-links\">
+        <div class=\"main__left\">
+            <div class=\"work-examples__left-links left-links\">
+                <div class=\"left-links__soc-links\">
+                    <a class=\"left-links__soc-link\" href=\"#\">facebook</a>
+                    <a class=\"left-links__soc-link\" href=\"#\">instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class=\"main__content\">
+            <div class=\"work-examples__row\">
+                <div class=\"work-examples__left\">
+                    <div class=\"work-examples__title\">Примеры<br>работ</div>
+                    <div class=\"work-examples__btn-submit btn-submit\">
+                        <object
+                            data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                            type=\"image/svg+xml\"
+                        ></object>
+                    </div>
+                </div>
+                <div class=\"work-examples__right\">
+                    <div class=\"work-examples__right-row\">
+                        <div class=\"work-examples__label\">музыка</div>
+                        <div class=\"work-examples__pagination arrows-pagination\">
+                            <div class=\"work-examples__btn-left arrow-left\">
+                                <object
+                                    data=\"{{ 'assets/images/btn-arrow.svg'|theme }}\"
+                                    type=\"image/svg+xml\"
+                                ></object>
+                            </div>
+                            <div class=\"work-examples__btn-right arrow-right\">
+                                <object
+                                    data=\"{{ 'assets/images/btn-arrow.svg'|theme }}\"
+                                    type=\"image/svg+xml\"
+                                ></object>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=\"work-examples__music-players\">
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"{{ 'assets/images/icons/music_play.png'|theme }}\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"{{ 'assets/images/icons/music_play.png'|theme }}\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"{{ 'assets/images/icons/music_play.png'|theme }}\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"{{ 'assets/images/icons/music_play.png'|theme }}\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"{{ 'assets/images/icons/music_play.png'|theme }}\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"{{ 'assets/images/icons/music_play.png'|theme }}\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"{{ 'assets/images/icons/music_play.png'|theme }}\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=\"work-examples__music-player music-player\">
+                            <div class=\"music-player__inner\">
+                                <div class=\"music-player__circle\"><img src=\"{{ 'assets/images/icons/music_play.png'|theme }}\" alt=\"Плеер\" class=\"music-player__play\"></div>
+                                <div class=\"music-player__music\">
+                                    <div class=\"music-player__music-name\">One South Right</div>
+                                    <div class=\"music-player__music-type\">эмбиент</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=\"main__right\"></div>
     </div>
 </div>
 <div

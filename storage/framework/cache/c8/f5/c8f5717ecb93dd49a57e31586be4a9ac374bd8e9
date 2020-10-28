@@ -1,4 +1,4 @@
-1603801254a:1:{s:9:"about.htm";a:8:{s:8:"fileName";s:9:"about.htm";s:7:"content";s:17123:"title = "О проекте"
+1603871732a:1:{s:9:"about.htm";a:8:{s:8:"fileName";s:9:"about.htm";s:7:"content";s:17159:"title = "О проекте"
 url = "/about"
 layout = "main"
 ==
@@ -218,7 +218,7 @@ layout = "main"
                 <div class="project-reviews__row">
                     <div class="project-reviews__type">музыка</div>
                     <div
-                        class="project-reviews__btns project-reviews__btns_main"
+                        class="project-reviews__btns project-reviews__btns_main arrows-pagination"
                     >
                         <div class="project-reviews__btn-left arrow-left">
                             <object
@@ -251,7 +251,7 @@ layout = "main"
                         <img src="{{ 'assets/images/icons/plus.png'|theme }}" alt="Подробнее"
                     /></a>
                 </div>
-                <div class="project-reviews__btns project-reviews__btns_mini">
+                <div class="project-reviews__btns project-reviews__btns_mini arrows-pagination">
                     <div class="project-reviews__btn-left arrow-left">
                         <object
                             data="{{ 'assets/images/btn-arrow.svg'|theme }}"
@@ -321,7 +321,7 @@ layout = "main"
     </div>
     <div class="main__right"></div>
 </div>
-";s:5:"mtime";i:1603788626;s:6:"markup";s:17055:"<div class="main__inner">
+";s:5:"mtime";i:1603820106;s:6:"markup";s:17091:"<div class="main__inner">
     <div class="main__left"></div>
     <div class="main__content">
         <div class="project-about">
@@ -537,7 +537,7 @@ layout = "main"
                 <div class="project-reviews__row">
                     <div class="project-reviews__type">музыка</div>
                     <div
-                        class="project-reviews__btns project-reviews__btns_main"
+                        class="project-reviews__btns project-reviews__btns_main arrows-pagination"
                     >
                         <div class="project-reviews__btn-left arrow-left">
                             <object
@@ -570,7 +570,7 @@ layout = "main"
                         <img src="{{ 'assets/images/icons/plus.png'|theme }}" alt="Подробнее"
                     /></a>
                 </div>
-                <div class="project-reviews__btns project-reviews__btns_mini">
+                <div class="project-reviews__btns project-reviews__btns_mini arrows-pagination">
                     <div class="project-reviews__btn-left arrow-left">
                         <object
                             data="{{ 'assets/images/btn-arrow.svg'|theme }}"

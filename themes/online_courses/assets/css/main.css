@@ -881,6 +881,97 @@ a, a:hover, a:active, a:visited {
           justify-content: flex-end;
 }
 
+.work-examples {
+  margin-top: 140px;
+}
+
+.work-examples__left-links {
+  margin-top: 130px;
+}
+
+.work-examples__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.work-examples__left {
+  width: calc(100% / 12 * 4 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.work-examples__right {
+  width: calc(100% / 12 * 8 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.work-examples__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.work-examples__btn-submit {
+  margin-top: 50px;
+}
+
+.work-examples__right-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work-examples__label {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.9;
+  opacity: 0.7;
+}
+
+.work-examples__pagination {
+  margin-left: 10px;
+}
+
+.work-examples__btn-right {
+  margin-left: 50px;
+}
+
+.work-examples__music-players {
+  margin: -5px -15px;
+  margin-top: 25px;
+  padding-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.work-examples__music-player {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+  margin: 5px 15px;
+}
+
 .project-about {
   margin-top: 25px;
 }
@@ -1307,15 +1398,6 @@ a, a:hover, a:active, a:visited {
   font-size: 18px;
   line-height: 160%;
   opacity: 0.8;
-}
-
-.project-reviews__btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .project-reviews__btns_mini {
@@ -1916,6 +1998,15 @@ a, a:hover, a:active, a:visited {
   opacity: 0.8;
 }
 
+.arrows-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .arrow-right object {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -2422,5 +2513,57 @@ a, a:hover, a:active, a:visited {
     line-height: 160%;
     opacity: 0.9;
   }
+}
+
+.music-player__inner {
+  padding: 25px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  background-color: #F2FFFE;
+}
+
+.music-player__circle {
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #FFD566;
+  cursor: pointer;
+}
+
+.music-player__play {
+  width: 17px;
+}
+
+.music-player__music {
+  margin-left: 25px;
+}
+
+.music-player__music-name {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 21px;
+  line-height: 140%;
+}
+
+.music-player__music-type {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.9;
+  font-size: 16px;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */
