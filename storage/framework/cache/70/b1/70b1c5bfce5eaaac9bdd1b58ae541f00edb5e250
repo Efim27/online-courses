@@ -1,4 +1,4 @@
-1603903866a:1:{s:10:"footer.htm";a:5:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2364:"<footer class="footer">
+1603905031a:1:{s:10:"footer.htm";a:5:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:2364:"<footer class="footer">
 	<div class="footer__inner">
 		<div class="footer__words">
 		</div>
@@ -26,22 +26,22 @@
 				<div class="footer__links">
 					<div class="footer__link"><a href="/catalog">все курсы</a></div>
 					<div class="footer__link"><a href="/about">о проекте</a></div>
-					<div class="footer__link"><a href="#">контакты</a></div>
-					<div class="footer__link"><a href="#">вопрос-ответ</a></div>
+					<div class="footer__link"><a href="/">контакты</a></div>
+					<div class="footer__link"><a href="/">вопрос-ответ</a></div>
 				</div>
 			</div>
 			<div class="footer__column footer__column_column4">
 				<div class="footer__links">
-					<div class="footer__link"><a href="#">личный кабинет</a></div>
-					<div class="footer__link"><a href="#">оплата</a></div>
-					<div class="footer__link"><a href="#">контакты</a></div>
-					<div class="footer__link"><a href="#">вопрос-ответ</a></div>
+					<div class="footer__link"><a href="/">личный кабинет</a></div>
+					<div class="footer__link"><a href="/">оплата</a></div>
+					<div class="footer__link"><a href="/">контакты</a></div>
+					<div class="footer__link"><a href="/">вопрос-ответ</a></div>
 				</div>
 				<div class="footer__dev"><a href="#">made by webfam.ru</a></div>
 			</div>
 		</div>
 	</div>
-</footer>";s:5:"mtime";i:1603799627;s:6:"markup";s:2364:"<footer class="footer">
+</footer>";s:5:"mtime";i:1603904345;s:6:"markup";s:2364:"<footer class="footer">
 	<div class="footer__inner">
 		<div class="footer__words">
 		</div>
@@ -69,16 +69,16 @@
 				<div class="footer__links">
 					<div class="footer__link"><a href="/catalog">все курсы</a></div>
 					<div class="footer__link"><a href="/about">о проекте</a></div>
-					<div class="footer__link"><a href="#">контакты</a></div>
-					<div class="footer__link"><a href="#">вопрос-ответ</a></div>
+					<div class="footer__link"><a href="/">контакты</a></div>
+					<div class="footer__link"><a href="/">вопрос-ответ</a></div>
 				</div>
 			</div>
 			<div class="footer__column footer__column_column4">
 				<div class="footer__links">
-					<div class="footer__link"><a href="#">личный кабинет</a></div>
-					<div class="footer__link"><a href="#">оплата</a></div>
-					<div class="footer__link"><a href="#">контакты</a></div>
-					<div class="footer__link"><a href="#">вопрос-ответ</a></div>
+					<div class="footer__link"><a href="/">личный кабинет</a></div>
+					<div class="footer__link"><a href="/">оплата</a></div>
+					<div class="footer__link"><a href="/">контакты</a></div>
+					<div class="footer__link"><a href="/">вопрос-ответ</a></div>
 				</div>
 				<div class="footer__dev"><a href="#">made by webfam.ru</a></div>
 			</div>

@@ -588,6 +588,10 @@ a, a:hover, a:active, a:visited {
       flex-shrink: 1;
 }
 
+.our-telegram .main__right {
+  position: relative;
+}
+
 .our-telegram__icons {
   width: 100%;
   display: -webkit-box;
@@ -616,7 +620,8 @@ a, a:hover, a:active, a:visited {
 }
 
 .our-telegram__icons_right2 {
-  margin-top: 190px;
+  position: absolute;
+  bottom: 0px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;

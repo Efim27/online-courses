@@ -1,4 +1,4 @@
-1603903866a:1:{s:10:"header.htm";a:5:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:1543:"<header class="header">
+1603905031a:1:{s:10:"header.htm";a:5:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:1543:"<header class="header">
 	<div class="header__inner">
 		<a href="/"><img class="header__logo logo" src="{{ 'assets/images/main-logo.png'|theme }}" alt="Логотип" class="logo__image"></a>
 		<nav class="header__nav main-nav">

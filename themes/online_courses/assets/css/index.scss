@@ -326,7 +326,11 @@
 
 	.main__left, .main__right {
 		flex-shrink: 1;
-	}
+    }
+    
+    .main__right {
+        position: relative;
+    }
 
 	&__icons {
 		width: 100%;
@@ -347,7 +351,8 @@
 		}
 
 		&_right2 {
-			margin-top: 190px;
+            position: absolute;
+			bottom: 0px;
 			justify-content: flex-start;
 		}
 	}

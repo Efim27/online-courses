@@ -96,16 +96,16 @@ class __TwigTemplate_ca18fbb41e39a5a9db1dea5d66a4d7155f237788d35676d9247a4c4361e
 \t\t\t\t<div class=\"footer__links\">
 \t\t\t\t\t<div class=\"footer__link\"><a href=\"/catalog\">все курсы</a></div>
 \t\t\t\t\t<div class=\"footer__link\"><a href=\"/about\">о проекте</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">контакты</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">вопрос-ответ</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">контакты</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">вопрос-ответ</a></div>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"footer__column footer__column_column4\">
 \t\t\t\t<div class=\"footer__links\">
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">личный кабинет</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">оплата</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">контакты</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">вопрос-ответ</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">личный кабинет</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">оплата</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">контакты</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">вопрос-ответ</a></div>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"footer__dev\"><a href=\"#\">made by webfam.ru</a></div>
 \t\t\t</div>
@@ -159,16 +159,16 @@ class __TwigTemplate_ca18fbb41e39a5a9db1dea5d66a4d7155f237788d35676d9247a4c4361e
 \t\t\t\t<div class=\"footer__links\">
 \t\t\t\t\t<div class=\"footer__link\"><a href=\"/catalog\">все курсы</a></div>
 \t\t\t\t\t<div class=\"footer__link\"><a href=\"/about\">о проекте</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">контакты</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">вопрос-ответ</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">контакты</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">вопрос-ответ</a></div>
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t\t<div class=\"footer__column footer__column_column4\">
 \t\t\t\t<div class=\"footer__links\">
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">личный кабинет</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">оплата</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">контакты</a></div>
-\t\t\t\t\t<div class=\"footer__link\"><a href=\"#\">вопрос-ответ</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">личный кабинет</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">оплата</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">контакты</a></div>
+\t\t\t\t\t<div class=\"footer__link\"><a href=\"/\">вопрос-ответ</a></div>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"footer__dev\"><a href=\"#\">made by webfam.ru</a></div>
 \t\t\t</div>
