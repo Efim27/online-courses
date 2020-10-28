@@ -1,4 +1,4 @@
-1603909126a:1:{s:8:"main.htm";a:6:{s:8:"fileName";s:8:"main.htm";s:7:"content";s:777:"description = "Главный шаблон"
+1603925894a:1:{s:8:"main.htm";a:6:{s:8:"fileName";s:8:"main.htm";s:7:"content";s:776:"description = "Главный шаблон"
 ==
 <!DOCTYPE html>
 <html lang="ru">
@@ -21,12 +21,12 @@
 	</main>
 	{% partial 'footer' %}
 
-	<script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+	<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
     {% framework extras %}
     {% scripts %}
 </body>
 
-</html>";s:5:"mtime";i:1603756763;s:6:"markup";s:728:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1603913191;s:6:"markup";s:727:"<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -47,7 +47,7 @@
 	</main>
 	{% partial 'footer' %}
 
-	<script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+	<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
     {% framework extras %}
     {% scripts %}
 </body>

@@ -1,6 +1,9 @@
-1603909126a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:41480:"title = "Главная"
+1603925894a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:41444:"title = "Главная"
 url = "/"
 layout = "main"
+is_hidden = 0
+
+[contenteditor]
 ==
 
 <div class="main__inner main__inner_soc-links">
@@ -16,7 +19,7 @@ layout = "main"
         <div class="welcome">
             <div class="welcome__row">
                 <div class="welcome__left welcome-title">
-                    Мир творчества рядом с вами
+                    {% component 'contenteditor' file="home/welcome-title.htm" %}
                     <div class="welcome-title__circle"></div>
                 </div>
                 <div class="welcome__right">
@@ -37,9 +40,7 @@ layout = "main"
                             class="welcome__icon"
                         />
                     </div>
-                    <div class="welcome__about">
-                        Авторские видео-инструкции для креатива и творчества
-                    </div>
+                    {% component 'contenteditor' file="home/welcome__about.htm" fixture="div" class="welcome__about" %}
                 </div>
             </div>
             <div class="welcome__image">
@@ -787,7 +788,7 @@ layout = "main"
         <div class="main__right"></div>
     </div>
 </div>
-";s:5:"mtime";i:1603901176;s:6:"markup";s:41418:"<div class="main__inner main__inner_soc-links">
+";s:5:"mtime";i:1603925130;s:6:"markup";s:41348:"<div class="main__inner main__inner_soc-links">
     <div class="main__left">
         <div class="main__left-links left-links left-links_bold">
             <div class="left-links__soc-links">
@@ -800,7 +801,7 @@ layout = "main"
         <div class="welcome">
             <div class="welcome__row">
                 <div class="welcome__left welcome-title">
-                    Мир творчества рядом с вами
+                    {% component 'contenteditor' file="home/welcome-title.htm" %}
                     <div class="welcome-title__circle"></div>
                 </div>
                 <div class="welcome__right">
@@ -821,9 +822,7 @@ layout = "main"
                             class="welcome__icon"
                         />
                     </div>
-                    <div class="welcome__about">
-                        Авторские видео-инструкции для креатива и творчества
-                    </div>
+                    {% component 'contenteditor' file="home/welcome__about.htm" fixture="div" class="welcome__about" %}
                 </div>
             </div>
             <div class="welcome__image">
@@ -1570,4 +1569,4 @@ layout = "main"
         </div>
         <div class="main__right"></div>
     </div>
-</div>";s:4:"code";N;s:5:"title";s:14:"Главная";s:3:"url";s:1:"/";s:6:"layout";s:4:"main";}}
+</div>";s:4:"code";N;s:5:"title";s:14:"Главная";s:3:"url";s:1:"/";s:6:"layout";s:4:"main";s:9:"is_hidden";s:1:"0";s:13:"contenteditor";a:0:{}}}
