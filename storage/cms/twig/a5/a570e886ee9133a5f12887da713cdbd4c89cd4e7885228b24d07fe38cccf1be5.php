@@ -30,7 +30,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("theme" => 56);
+        $filters = array("theme" => 57);
         $functions = array();
 
         try {
@@ -114,16 +114,22 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
             </div>
             <div class=\"project-aim__images\">
                 <div class=\"project-aim__image\">
-                    <img src=\"";
-        // line 56
+                    <img
+                        src=\"";
+        // line 57
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/project_aim1.png");
-        echo "\" alt=\"Цель\" />
+        echo "\"
+                        alt=\"Цель\"
+                    />
                 </div>
                 <div class=\"project-aim__image\">
-                    <img src=\"";
-        // line 59
+                    <img
+                        src=\"";
+        // line 63
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/project_aim2.png");
-        echo "\" alt=\"Цель\" />
+        echo "\"
+                        alt=\"Цель\"
+                    />
                 </div>
             </div>
             <div class=\"our-worth\">
@@ -208,27 +214,25 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
             </div>
             <div class=\"about-education__videos\">
                 <div class=\"about-education__videobox videobox\">
-                    <div class=\"videobox__video\">
-                        <img
-                            src=\"";
-        // line 146
+                    <img
+                        class=\"videobox__video\"
+                        src=\"";
+        // line 152
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_video1.png");
         echo "\"
-                            alt=\"Видео 1\"
-                        />
-                    </div>
+                        alt=\"Видео 1\"
+                    />
                     <div class=\"videobox__label\">Видео о нашем проекте</div>
                 </div>
                 <div class=\"about-education__videobox videobox\">
-                    <div class=\"videobox__video\">
-                        <img
-                            src=\"";
-        // line 155
+                    <img
+                        class=\"videobox__video\"
+                        src=\"";
+        // line 160
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_video2.png");
         echo "\"
-                            alt=\"Видео 2\"
-                        />
-                    </div>
+                        alt=\"Видео 2\"
+                    />
                     <div class=\"videobox__label\">
                         Создаем трек в стиле эмбиент
                     </div>
@@ -246,22 +250,31 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-authors__title\">Авторы курсов</div>
                 <div class=\"project-authors__authors\">
                     <div class=\"project-authors__author\">
-                        <img src=\"";
-        // line 176
+                        <img
+                            src=\"";
+        // line 181
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
-        echo "\" alt=\"Автор\" />
+        echo "\"
+                            alt=\"Автор\"
+                        />
                     </div>
                     <div class=\"project-authors__active-author\">
-                        <img src=\"";
-        // line 179
+                        <img
+                            src=\"";
+        // line 187
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
-        echo "\" alt=\"Автор\" />
+        echo "\"
+                            alt=\"Автор\"
+                        />
                     </div>
                     <div class=\"project-authors__author\">
-                        <img src=\"";
-        // line 182
+                        <img
+                            src=\"";
+        // line 193
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
-        echo "\" alt=\"Автор\" />
+        echo "\"
+                            alt=\"Автор\"
+                        />
                     </div>
                 </div>
                 <div class=\"project-authors__author-about author-about\">
@@ -288,7 +301,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-reviews__submit btn-submit\">
                     <object
                         data=\"";
-        // line 208
+        // line 221
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
         echo "\"
                         type=\"image/svg+xml\"
@@ -304,7 +317,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         <div class=\"project-reviews__btn-left arrow-left\">
                             <object
                                 data=\"";
-        // line 221
+        // line 234
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                                 type=\"image/svg+xml\"
@@ -313,7 +326,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         <div class=\"project-reviews__btn-right arrow-right\">
                             <object
                                 data=\"";
-        // line 227
+        // line 240
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                                 type=\"image/svg+xml\"
@@ -335,17 +348,21 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-reviews__btn-more\">
                     <a href=\"#\"
                         >Подробнее
-                        <img src=\"";
-        // line 247
+                        <img
+                            src=\"";
+        // line 261
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
-        echo "\" alt=\"Подробнее\"
+        echo "\"
+                            alt=\"Подробнее\"
                     /></a>
                 </div>
-                <div class=\"project-reviews__btns project-reviews__btns_mini arrows-pagination\">
+                <div
+                    class=\"project-reviews__btns project-reviews__btns_mini arrows-pagination\"
+                >
                     <div class=\"project-reviews__btn-left arrow-left\">
                         <object
                             data=\"";
-        // line 253
+        // line 270
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                             type=\"image/svg+xml\"
@@ -354,7 +371,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"project-reviews__btn-right arrow-right\">
                         <object
                             data=\"";
-        // line 259
+        // line 276
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                             type=\"image/svg+xml\"
@@ -376,7 +393,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"news-card__image\">
                         <img
                             src=\"";
-        // line 278
+        // line 295
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card-news1.png");
         echo "\"
                             alt=\"Музыкальный конструктор\"
@@ -391,7 +408,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"news-card__btn-view btn-send\">
                         <object
                             data=\"";
-        // line 290
+        // line 307
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
         echo "\"
                             type=\"image/svg+xml\"
@@ -402,7 +419,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"news-card__image\">
                         <img
                             src=\"";
-        // line 298
+        // line 315
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card-news2.png");
         echo "\"
                             alt=\"Музыкальный конструктор\"
@@ -417,7 +434,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"news-card__btn-view btn-send\">
                         <object
                             data=\"";
-        // line 310
+        // line 327
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
         echo "\"
                             type=\"image/svg+xml\"
@@ -443,7 +460,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
 
     public function getDebugInfo()
     {
-        return array (  421 => 310,  406 => 298,  395 => 290,  380 => 278,  358 => 259,  349 => 253,  340 => 247,  317 => 227,  308 => 221,  292 => 208,  263 => 182,  257 => 179,  251 => 176,  227 => 155,  215 => 146,  125 => 59,  119 => 56,  62 => 1,);
+        return array (  438 => 327,  423 => 315,  412 => 307,  397 => 295,  375 => 276,  366 => 270,  354 => 261,  330 => 240,  321 => 234,  305 => 221,  274 => 193,  265 => 187,  256 => 181,  232 => 160,  221 => 152,  129 => 63,  120 => 57,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -503,10 +520,16 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
             </div>
             <div class=\"project-aim__images\">
                 <div class=\"project-aim__image\">
-                    <img src=\"{{ 'assets/images/project_aim1.png'|theme }}\" alt=\"Цель\" />
+                    <img
+                        src=\"{{ 'assets/images/project_aim1.png'|theme }}\"
+                        alt=\"Цель\"
+                    />
                 </div>
                 <div class=\"project-aim__image\">
-                    <img src=\"{{ 'assets/images/project_aim2.png'|theme }}\" alt=\"Цель\" />
+                    <img
+                        src=\"{{ 'assets/images/project_aim2.png'|theme }}\"
+                        alt=\"Цель\"
+                    />
                 </div>
             </div>
             <div class=\"our-worth\">
@@ -591,21 +614,19 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
             </div>
             <div class=\"about-education__videos\">
                 <div class=\"about-education__videobox videobox\">
-                    <div class=\"videobox__video\">
-                        <img
-                            src=\"{{ 'assets/images/about_video1.png'|theme }}\"
-                            alt=\"Видео 1\"
-                        />
-                    </div>
+                    <img
+                        class=\"videobox__video\"
+                        src=\"{{ 'assets/images/about_video1.png'|theme }}\"
+                        alt=\"Видео 1\"
+                    />
                     <div class=\"videobox__label\">Видео о нашем проекте</div>
                 </div>
                 <div class=\"about-education__videobox videobox\">
-                    <div class=\"videobox__video\">
-                        <img
-                            src=\"{{ 'assets/images/about_video2.png'|theme }}\"
-                            alt=\"Видео 2\"
-                        />
-                    </div>
+                    <img
+                        class=\"videobox__video\"
+                        src=\"{{ 'assets/images/about_video2.png'|theme }}\"
+                        alt=\"Видео 2\"
+                    />
                     <div class=\"videobox__label\">
                         Создаем трек в стиле эмбиент
                     </div>
@@ -623,13 +644,22 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-authors__title\">Авторы курсов</div>
                 <div class=\"project-authors__authors\">
                     <div class=\"project-authors__author\">
-                        <img src=\"{{ 'assets/images/about_author.png'|theme }}\" alt=\"Автор\" />
+                        <img
+                            src=\"{{ 'assets/images/about_author.png'|theme }}\"
+                            alt=\"Автор\"
+                        />
                     </div>
                     <div class=\"project-authors__active-author\">
-                        <img src=\"{{ 'assets/images/about_author.png'|theme }}\" alt=\"Автор\" />
+                        <img
+                            src=\"{{ 'assets/images/about_author.png'|theme }}\"
+                            alt=\"Автор\"
+                        />
                     </div>
                     <div class=\"project-authors__author\">
-                        <img src=\"{{ 'assets/images/about_author.png'|theme }}\" alt=\"Автор\" />
+                        <img
+                            src=\"{{ 'assets/images/about_author.png'|theme }}\"
+                            alt=\"Автор\"
+                        />
                     </div>
                 </div>
                 <div class=\"project-authors__author-about author-about\">
@@ -694,10 +724,14 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-reviews__btn-more\">
                     <a href=\"#\"
                         >Подробнее
-                        <img src=\"{{ 'assets/images/icons/plus.png'|theme }}\" alt=\"Подробнее\"
+                        <img
+                            src=\"{{ 'assets/images/icons/plus.png'|theme }}\"
+                            alt=\"Подробнее\"
                     /></a>
                 </div>
-                <div class=\"project-reviews__btns project-reviews__btns_mini arrows-pagination\">
+                <div
+                    class=\"project-reviews__btns project-reviews__btns_mini arrows-pagination\"
+                >
                     <div class=\"project-reviews__btn-left arrow-left\">
                         <object
                             data=\"{{ 'assets/images/btn-arrow.svg'|theme }}\"

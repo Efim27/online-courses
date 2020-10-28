@@ -1,4 +1,4 @@
-1603871451a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:37063:"title = "Главная"
+1603903866a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:41480:"title = "Главная"
 url = "/"
 layout = "main"
 ==
@@ -43,10 +43,6 @@ layout = "main"
                 </div>
             </div>
             <div class="welcome__image">
-                <img
-                    src="{{ 'assets/images/index_welcome.png'|theme }}"
-                    alt="Главная"
-                />
                 <div class="welcome__arrow-in-circle">
                     <object
                         data="{{ 'assets/images/arrow-in-circle.svg'|theme }}"
@@ -179,6 +175,9 @@ layout = "main"
             </div>
             <div class="main__content">
                 <div class="about-education__algorithm algorithm-education">
+                    <div class="algorithm-education__mini-title">
+                        Как проходит обучение
+                    </div>
                     <div class="algorithm-education__divider-top divider"></div>
                     <div class="algorithm-education__row">
                         <div class="algorithm-education__title">
@@ -321,6 +320,68 @@ layout = "main"
                         </div>
                     </div>
                 </div>
+                <div class="creative-result__mini-labels">
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="main__right"></div>
         </div>
@@ -360,8 +421,15 @@ layout = "main"
                     class="our-telegram__icon"
                 ></object>
             </div>
+            <div class="our-telegram__main-icon">
+                <object
+                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+                    type="image/svg+xml"
+                    class="our-telegram__icon"
+                ></object>
+            </div>
             <div class="our-telegram__title">
-                Закрытый телеграм- канал для каждого потока
+                Закрытый телеграм - канал для каждого потока
             </div>
             <div class="our-telegram__icons our-telegram__icons_right1">
                 <object
@@ -508,6 +576,20 @@ layout = "main"
                                     <div class="music-player__music-type">эмбиент</div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="work-examples__pagination-mini arrows-pagination">
+                        <div class="work-examples__btn-left arrow-left">
+                            <object
+                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+                                type="image/svg+xml"
+                            ></object>
+                        </div>
+                        <div class="work-examples__btn-right arrow-right">
+                            <object
+                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+                                type="image/svg+xml"
+                            ></object>
                         </div>
                     </div>
                 </div>
@@ -669,8 +751,8 @@ layout = "main"
                     </div>
                     <div class="contacts__email">hello@world.com</div>
                     <div class="contacts__links">
-                        <a class="contacts__link soc-link">facebook</a>
-                        <a class="contacts__link soc-link">instagram</a>
+                        <a href="#" class="contacts__link soc-link">facebook</a>
+                        <a href="#" class="contacts__link soc-link">instagram</a>
                     </div>
                 </div>
                 <div class="contacts__right">
@@ -705,7 +787,7 @@ layout = "main"
         <div class="main__right"></div>
     </div>
 </div>
-";s:5:"mtime";i:1603870835;s:6:"markup";s:37001:"<div class="main__inner main__inner_soc-links">
+";s:5:"mtime";i:1603901176;s:6:"markup";s:41418:"<div class="main__inner main__inner_soc-links">
     <div class="main__left">
         <div class="main__left-links left-links left-links_bold">
             <div class="left-links__soc-links">
@@ -745,10 +827,6 @@ layout = "main"
                 </div>
             </div>
             <div class="welcome__image">
-                <img
-                    src="{{ 'assets/images/index_welcome.png'|theme }}"
-                    alt="Главная"
-                />
                 <div class="welcome__arrow-in-circle">
                     <object
                         data="{{ 'assets/images/arrow-in-circle.svg'|theme }}"
@@ -881,6 +959,9 @@ layout = "main"
             </div>
             <div class="main__content">
                 <div class="about-education__algorithm algorithm-education">
+                    <div class="algorithm-education__mini-title">
+                        Как проходит обучение
+                    </div>
                     <div class="algorithm-education__divider-top divider"></div>
                     <div class="algorithm-education__row">
                         <div class="algorithm-education__title">
@@ -1023,6 +1104,68 @@ layout = "main"
                         </div>
                     </div>
                 </div>
+                <div class="creative-result__mini-labels">
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                    <div
+                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
+                    >
+                        <img
+                            src="{{ 'assets/images/dot.png'|theme }}"
+                            alt="Творческий результат"
+                            class="creative-result-label__dot"
+                        />
+                        <div class="creative-result-label__text">
+                            Проведете время креативно и необычно
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="main__right"></div>
         </div>
@@ -1062,8 +1205,15 @@ layout = "main"
                     class="our-telegram__icon"
                 ></object>
             </div>
+            <div class="our-telegram__main-icon">
+                <object
+                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+                    type="image/svg+xml"
+                    class="our-telegram__icon"
+                ></object>
+            </div>
             <div class="our-telegram__title">
-                Закрытый телеграм- канал для каждого потока
+                Закрытый телеграм - канал для каждого потока
             </div>
             <div class="our-telegram__icons our-telegram__icons_right1">
                 <object
@@ -1210,6 +1360,20 @@ layout = "main"
                                     <div class="music-player__music-type">эмбиент</div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="work-examples__pagination-mini arrows-pagination">
+                        <div class="work-examples__btn-left arrow-left">
+                            <object
+                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+                                type="image/svg+xml"
+                            ></object>
+                        </div>
+                        <div class="work-examples__btn-right arrow-right">
+                            <object
+                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+                                type="image/svg+xml"
+                            ></object>
                         </div>
                     </div>
                 </div>
@@ -1371,8 +1535,8 @@ layout = "main"
                     </div>
                     <div class="contacts__email">hello@world.com</div>
                     <div class="contacts__links">
-                        <a class="contacts__link soc-link">facebook</a>
-                        <a class="contacts__link soc-link">instagram</a>
+                        <a href="#" class="contacts__link soc-link">facebook</a>
+                        <a href="#" class="contacts__link soc-link">instagram</a>
                     </div>
                 </div>
                 <div class="contacts__right">

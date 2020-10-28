@@ -3,7 +3,7 @@
 *.log
 ./config
 
-*/storage/
-*/vendor/
-*/install_files/
-*/bower_components/
+./storage
+./vendor
+./install_files
+./bower_components
