@@ -2902,8 +2902,15 @@ div .project-reviews__btns_mini {
   .about-education {
     padding-bottom: 50px;
   }
-  .creative-result {
-    margin-top: 30px;
+  .algorithm-education__title {
+    font-size: 24px;
+  }
+  .algorithm-stage__dot {
+    width: 10px;
+    height: 10px;
+  }
+  .algorithm-stage__label {
+    font-size: 14px;
   }
   .our-telegram {
     margin-top: 50px;
@@ -2997,6 +3004,10 @@ div .project-reviews__btns_mini {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .creative-result-label_mini .creative-result-label__dot {
+    width: 10px;
+    height: 10px;
   }
   .creative-result-label_mini .creative-result-label__text {
     font-size: 16px;

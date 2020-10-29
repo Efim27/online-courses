@@ -1104,7 +1104,24 @@
     }
 
     .creative-result {
-        margin-top: 30px;
+    }
+
+    .algorithm-education {
+        &__title {
+            font-size: 24px;
+        }
+    }
+
+    .algorithm-stage {
+
+        &__dot {
+            width: 10px;
+            height: 10px;
+        }
+
+        &__label {
+            font-size: 14px;
+        }
     }
 
     .our-telegram {
@@ -1200,6 +1217,11 @@
     .creative-result-label {
 
         &_mini {
+            .creative-result-label__dot {
+                width: 10px;
+                height: 10px;
+            }
+
             .creative-result-label__text {
                 font-size: 16px;
             }
