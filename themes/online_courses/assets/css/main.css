@@ -1046,6 +1046,36 @@ a, a:hover, a:active, a:visited {
   margin: 5px 15px;
 }
 
+.header-profile-dropdown {
+  margin-left: 30px;
+}
+
+.header-profile-dropdown__filler {
+  height: 20px;
+}
+
+.header-profile-dropdown__inner {
+  background-color: #EDF5F4;
+  padding: 25px 20px;
+  border-radius: 10px;
+}
+
+.header-profile-dropdown__link {
+  display: block;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+  opacity: 0.9;
+}
+
+.header-profile-dropdown__link:nth-child(1) {
+  margin-top: 0px;
+}
+
 .project-about {
   margin-top: 25px;
 }
@@ -1804,17 +1834,23 @@ div .project-reviews__btns_mini {
   width: 17px;
 }
 
-.profile-dropdown {
-  cursor: pointer;
+.dropdown {
+  position: relative;
 }
 
-.profile-dropdown__content {
-  display: none;
+.dropdown__content {
+  position: absolute;
+  top: -9999em;
+  right: 0px;
+  opacity: 0;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
 }
 
-.burger-dropdown {
-  margin-left: 30px;
-  cursor: pointer;
+.dropdown:hover .dropdown__content, .dropdown__content:hover {
+  top: 20px;
+  opacity: 1;
+  height: auto;
 }
 
 .footer {

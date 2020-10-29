@@ -15,16 +15,27 @@
 			</div>
 		</div>
 		<div class="header__menu">
-			<div class="profile-dropdown">
-				<img src="{{ 'assets/images/icons/profile.png'|theme }}" alt="Профиль" class="header-dropdown__icon">
-				<div class="profile-dropdown__content">
-					<a href="#" class="profile-dropdown__link">Мои курсы</a>
-					<a href="#" class="profile-dropdown__link">Настройки профиля</a>
-					<a href="#" class="profile-dropdown__link">Выход</a>
-				</div>
+			<div class="dropdown">
+				<object
+					data="{{ 'assets/images/icons/burger.svg'|theme }}"
+					class="header-dropdown__icon"
+                    type="image/svg+xml"
+				></object>
 			</div>
-			<div class="burger-dropdown">
-				<img src="{{ 'assets/images/icons/burger.png'|theme }}" alt="Профиль" class="header-dropdown__icon">
+			<div class="dropdown header-profile-dropdown">
+				<object
+					data="{{ 'assets/images/icons/profile.svg'|theme }}"
+					class="header-dropdown__icon"
+                    type="image/svg+xml"
+                ></object>
+				<div class="dropdown__content header-profile-dropdown__content">
+					<div class="header-profile-dropdown__filler"></div>
+					<div class="header-profile-dropdown__inner">
+						<a href="#" class="header-profile-dropdown__link">Мои курсы</a>
+						<a href="#" class="header-profile-dropdown__link">Настройки профиля</a>
+						<a href="#" class="header-profile-dropdown__link">Выход</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -85,22 +85,33 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
 \t\t\t</div>
 \t\t</div>
 \t\t<div class=\"header__menu\">
-\t\t\t<div class=\"profile-dropdown\">
-\t\t\t\t<img src=\"";
-        // line 19
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/profile.png");
-        echo "\" alt=\"Профиль\" class=\"header-dropdown__icon\">
-\t\t\t\t<div class=\"profile-dropdown__content\">
-\t\t\t\t\t<a href=\"#\" class=\"profile-dropdown__link\">Мои курсы</a>
-\t\t\t\t\t<a href=\"#\" class=\"profile-dropdown__link\">Настройки профиля</a>
-\t\t\t\t\t<a href=\"#\" class=\"profile-dropdown__link\">Выход</a>
-\t\t\t\t</div>
+\t\t\t<div class=\"dropdown\">
+\t\t\t\t<object
+\t\t\t\t\tdata=\"";
+        // line 20
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/burger.svg");
+        echo "\"
+\t\t\t\t\tclass=\"header-dropdown__icon\"
+                    type=\"image/svg+xml\"
+\t\t\t\t></object>
 \t\t\t</div>
-\t\t\t<div class=\"burger-dropdown\">
-\t\t\t\t<img src=\"";
+\t\t\t<div class=\"dropdown header-profile-dropdown\">
+\t\t\t\t<object
+\t\t\t\t\tdata=\"";
         // line 27
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/burger.png");
-        echo "\" alt=\"Профиль\" class=\"header-dropdown__icon\">
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/profile.svg");
+        echo "\"
+\t\t\t\t\tclass=\"header-dropdown__icon\"
+                    type=\"image/svg+xml\"
+                ></object>
+\t\t\t\t<div class=\"dropdown__content header-profile-dropdown__content\">
+\t\t\t\t\t<div class=\"header-profile-dropdown__filler\"></div>
+\t\t\t\t\t<div class=\"header-profile-dropdown__inner\">
+\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Мои курсы</a>
+\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Настройки профиля</a>
+\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Выход</a>
+\t\t\t\t\t</div>
+\t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
 \t</div>
@@ -119,7 +130,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
 
     public function getDebugInfo()
     {
-        return array (  102 => 27,  91 => 19,  83 => 14,  79 => 13,  66 => 3,  62 => 1,);
+        return array (  102 => 27,  92 => 20,  83 => 14,  79 => 13,  66 => 3,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -141,16 +152,27 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
 \t\t\t</div>
 \t\t</div>
 \t\t<div class=\"header__menu\">
-\t\t\t<div class=\"profile-dropdown\">
-\t\t\t\t<img src=\"{{ 'assets/images/icons/profile.png'|theme }}\" alt=\"Профиль\" class=\"header-dropdown__icon\">
-\t\t\t\t<div class=\"profile-dropdown__content\">
-\t\t\t\t\t<a href=\"#\" class=\"profile-dropdown__link\">Мои курсы</a>
-\t\t\t\t\t<a href=\"#\" class=\"profile-dropdown__link\">Настройки профиля</a>
-\t\t\t\t\t<a href=\"#\" class=\"profile-dropdown__link\">Выход</a>
-\t\t\t\t</div>
+\t\t\t<div class=\"dropdown\">
+\t\t\t\t<object
+\t\t\t\t\tdata=\"{{ 'assets/images/icons/burger.svg'|theme }}\"
+\t\t\t\t\tclass=\"header-dropdown__icon\"
+                    type=\"image/svg+xml\"
+\t\t\t\t></object>
 \t\t\t</div>
-\t\t\t<div class=\"burger-dropdown\">
-\t\t\t\t<img src=\"{{ 'assets/images/icons/burger.png'|theme }}\" alt=\"Профиль\" class=\"header-dropdown__icon\">
+\t\t\t<div class=\"dropdown header-profile-dropdown\">
+\t\t\t\t<object
+\t\t\t\t\tdata=\"{{ 'assets/images/icons/profile.svg'|theme }}\"
+\t\t\t\t\tclass=\"header-dropdown__icon\"
+                    type=\"image/svg+xml\"
+                ></object>
+\t\t\t\t<div class=\"dropdown__content header-profile-dropdown__content\">
+\t\t\t\t\t<div class=\"header-profile-dropdown__filler\"></div>
+\t\t\t\t\t<div class=\"header-profile-dropdown__inner\">
+\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Мои курсы</a>
+\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Настройки профиля</a>
+\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Выход</a>
+\t\t\t\t\t</div>
+\t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
 \t</div>

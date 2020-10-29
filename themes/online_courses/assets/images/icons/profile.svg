@@ -1,0 +1,30 @@
+<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+	svg {
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+
+	svg:hover circle {
+		stroke: url(#paint0_linear);
+	}
+
+	svg:hover path {
+		stroke: url(#paint1_linear);
+	}
+</style>
+<circle cx="8.93349" cy="3.96669" r="3.46669" stroke="#252733"/>
+<path d="M16.8668 17C16.8668 14.6149 14.6782 8.07495 8.93338 8.07495C3.18852 8.07495 1 14.6149 1 17" stroke="#252733"/>
+<linearGradient id="paint0_linear" x1="13.904" y1="39.9829" x2="13.9985" y2="42.3389" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0032C3"/>
+<stop offset="0.4188" stop-color="#0077BA"/>
+<stop offset="0.8123" stop-color="#00B1B2"/>
+<stop offset="1" stop-color="#00C8AF"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="-18.2739" y1="-1.35128" x2="69.8248" y2="61.4095" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0032C3"/>
+<stop offset="0.4188" stop-color="#0077BA"/>
+<stop offset="0.8123" stop-color="#00B1B2"/>
+<stop offset="1" stop-color="#00C8AF"/>
+</linearGradient>
+</svg>

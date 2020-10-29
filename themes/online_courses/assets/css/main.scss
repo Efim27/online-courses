@@ -84,23 +84,25 @@
     }
 }
 
-.profile-dropdown {
-    cursor: pointer;
-
-    &__icon {
-    }
+.dropdown {
+    position: relative;
 
     &__content {
-        display: none;
+        position: absolute;
+        top: -9999em;
+        right: 0px;
+        opacity: 0;
+        transition: 1s opacity;
     }
 
-    &__link {
+    &:hover &__content, &__content:hover {
+        top: 20px;
+        opacity: 1;
+        height: auto;
     }
 }
 
 .burger-dropdown {
-    margin-left: 30px;
-    cursor: pointer;
 }
 
 //footer

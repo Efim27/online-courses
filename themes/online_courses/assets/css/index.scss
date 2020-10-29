@@ -656,3 +656,28 @@
         margin: 5px 15px;
     }
 }
+
+.header-profile-dropdown {
+    margin-left: 30px;
+
+    &__filler {
+        height: 20px;
+    }
+
+    &__inner {
+        background-color: $color_bg_secondary;
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+
+    &__link {
+        display: block;
+        margin-top: 20px;
+        @include text(p5);
+        opacity: 0.9;
+
+        &:nth-child(1) {
+            margin-top: 0px;
+        }
+    }
+}
