@@ -1843,8 +1843,8 @@ div .project-reviews__btns_mini {
   top: -9999em;
   right: 0px;
   opacity: 0;
-  -webkit-transition: 1s opacity;
-  transition: 1s opacity;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
 }
 
 .dropdown:hover .dropdown__content, .dropdown__content:hover {
