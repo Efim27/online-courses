@@ -692,7 +692,7 @@
             align-items: center;
         }
 
-        &__btn-send {
+        &__btn-submit {
             margin-top: 0px;
         }
 
@@ -1033,7 +1033,11 @@
 }
 
 @media screen and (max-width: 480px) {
-    .btn-send, .btn-submit {
+    .tag {
+        font-size: 14px;
+    }
+
+    .btn-submit {
         object {
             width: 50px;
         }
@@ -1069,6 +1073,18 @@
     .musical-constructor {
         margin-top: 45px;
         padding: 35px 0px;
+
+        &__title {
+            font-size: 24px;
+
+            img {
+                width: 24px;
+            }
+        }
+
+        &__about {
+            font-size: 16px;
+        }
     }
 
     .about-project {

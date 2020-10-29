@@ -97,11 +97,12 @@
 
     &__title {
         margin-top: 24px;
-        display: flex;
-        align-items: center;
+        display: inline-block;
+        width: 100%;
         @include title(h3);
 
         img {
+            width: 32px;
             margin-left: 10px;
         }
     }
@@ -154,7 +155,7 @@
         @include title(h3);
     }
 
-    &__btn-send {
+    &__btn-submit {
         margin-top: 50px;
     }
 
@@ -304,6 +305,11 @@
     &_mini {
         margin-top: 10px;
         @include grid-width(6);
+        align-items: flex-start;
+
+        .creative-result-label__dot {
+            margin-top: 10px;
+        }
 
         .creative-result-label__text {
             margin-left: 20px;

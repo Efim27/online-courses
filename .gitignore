@@ -1,9 +1,9 @@
 .req
 .DS_Store
 *.log
-./config
+/config/database.php
 
-./storage/
-./vendor
-./install_files
-./bower_components
+/storage/**/*
+/vendor
+/install_files
+/bower_components

@@ -1,0 +1,30 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+	svg {
+		cursor: pointer;
+		transition: all 0.3s;
+	}
+
+	svg:hover circle {
+		stroke: url(#paint1_linear);
+	}
+
+	svg:hover path {
+		fill: url(#paint0_linear);
+	}
+</style>
+<path d="M58.0749 40.8599C58.2702 40.6646 58.2702 40.3481 58.0749 40.1528L54.8929 36.9708C54.6977 36.7755 54.3811 36.7755 54.1858 36.9708C53.9906 37.1661 53.9906 37.4827 54.1858 37.6779L57.0143 40.5063L54.1858 43.3348C53.9906 43.53 53.9906 43.8466 54.1858 44.0419C54.3811 44.2371 54.6977 44.2371 54.8929 44.0419L58.0749 40.8599ZM22.2783 41.0063L57.7214 41.0063L57.7214 40.0063L22.2783 40.0063L22.2783 41.0063Z" fill="black"/>
+<circle cx="40" cy="40" r="39.75" transform="rotate(-90 40 40)" stroke="black" stroke-width="0.5"/>
+<linearGradient id="paint0_linear" x1="13.904" y1="39.9829" x2="13.9985" y2="42.3389" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0032C3"/>
+<stop offset="0.4188" stop-color="#0077BA"/>
+<stop offset="0.8123" stop-color="#00B1B2"/>
+<stop offset="1" stop-color="#00C8AF"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="-18.2739" y1="-1.35128" x2="69.8248" y2="61.4095" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0032C3"/>
+<stop offset="0.4188" stop-color="#0077BA"/>
+<stop offset="0.8123" stop-color="#00B1B2"/>
+<stop offset="1" stop-color="#00C8AF"/>
+</linearGradient>
+</svg>

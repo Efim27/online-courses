@@ -29,13 +29,13 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array();
+        $tags = array("component" => 14);
         $filters = array("theme" => 20);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                [],
+                ['component'],
                 ['theme'],
                 []
             );
@@ -72,8 +72,14 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
         <div class=\"welcome\">
             <div class=\"welcome__row\">
                 <div class=\"welcome__left welcome-title\">
-                    Мир творчества рядом с вами
-                    <div class=\"welcome-title__circle\"></div>
+                    ";
+        // line 14
+        $context['__cms_component_params'] = [];
+        $context['__cms_component_params']['file'] = "home/welcome-title.htm"        ;
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 15
+        echo "                    <div class=\"welcome-title__circle\"></div>
                 </div>
                 <div class=\"welcome__right\">
                     <div class=\"welcome__icons\">
@@ -102,16 +108,22 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                             class=\"welcome__icon\"
                         />
                     </div>
-                    <div class=\"welcome__about\">
-                        Авторские видео-инструкции для креатива и творчества
-                    </div>
-                </div>
+                    ";
+        // line 35
+        $context['__cms_component_params'] = [];
+        $context['__cms_component_params']['file'] = "home/welcome__about.htm"        ;
+        $context['__cms_component_params']['fixture'] = "div"        ;
+        $context['__cms_component_params']['class'] = "welcome__about"        ;
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("contenteditor"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 36
+        echo "                </div>
             </div>
             <div class=\"welcome__image\">
                 <div class=\"welcome__arrow-in-circle\">
                     <object
                         data=\"";
-        // line 43
+        // line 41
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/arrow-in-circle.svg");
         echo "\"
                         type=\"image/svg+xml\"
@@ -139,7 +151,10 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         >музыка</span
                     >
                     <div class=\"musical-constructor__title\">
-                        Музыкальный конструктор
+                        Музыкальный <br>конструктор <img src=\"";
+        // line 67
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_black.png");
+        echo "\" alt=\"Музыкальный конструктор\">
                     </div>
                     <div class=\"musical-constructor__about\">
                         Стань музыкантом. Собери 21 музыкальную композицию в
@@ -160,8 +175,8 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"musical-constructor__btn-submit btn-submit\">
                         <object
                             data=\"";
-        // line 89
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 87
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                             type=\"image/svg+xml\"
                         ></object>
@@ -170,7 +185,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 <div class=\"musical-constructor__image\">
                     <img
                         src=\"";
-        // line 96
+        // line 94
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/musical_constructor.png");
         echo "\"
                         alt=\"Музыкальный конструктор\"
@@ -195,11 +210,11 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
             <div class=\"about-project__info\">
                 <div class=\"about-project__left\">
                     <div class=\"about-project__title\">О проекте</div>
-                    <div class=\"about-project__btn-send btn-send\">
+                    <div class=\"about-project__btn-submit btn-submit\">
                         <object
                             data=\"";
-        // line 121
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 119
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                             type=\"image/svg+xml\"
                         ></object>
@@ -221,7 +236,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 <div class=\"about-project__videobox videobox\">
                     <img
                         src=\"";
-        // line 141
+        // line 139
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_video1.png");
         echo "\"
                         alt=\"Видео 1\"
@@ -232,7 +247,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 <div class=\"about-project__videobox videobox\">
                     <img
                         src=\"";
-        // line 149
+        // line 147
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_video2.png");
         echo "\"
                         alt=\"Видео 2\"
@@ -324,7 +339,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"creative-result__image\">
                         <object
                             data=\"";
-        // line 238
+        // line 236
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/creative-result.svg");
         echo "\"
                             type=\"image/svg+xml\"
@@ -338,7 +353,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 249
+        // line 247
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -353,7 +368,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 261
+        // line 259
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -368,7 +383,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 273
+        // line 271
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -383,7 +398,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 285
+        // line 283
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -398,7 +413,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 297
+        // line 295
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -413,7 +428,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 309
+        // line 307
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -430,7 +445,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 323
+        // line 321
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -445,7 +460,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 335
+        // line 333
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -460,7 +475,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 347
+        // line 345
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -475,7 +490,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 359
+        // line 357
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -490,7 +505,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     >
                         <img
                             src=\"";
-        // line 371
+        // line 369
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/dot.png");
         echo "\"
                             alt=\"Творческий результат\"
@@ -512,7 +527,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
             <div class=\"our-telegram__icons our-telegram__icons_left1\">
                 <object
                     data=\"";
-        // line 390
+        // line 388
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -520,7 +535,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 ></object>
                 <object
                     data=\"";
-        // line 395
+        // line 393
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -532,7 +547,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
             <div class=\"our-telegram__icons our-telegram__icons_left2\">
                 <object
                     data=\"";
-        // line 404
+        // line 402
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue_filled.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -540,7 +555,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 ></object>
                 <object
                     data=\"";
-        // line 409
+        // line 407
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -548,7 +563,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 ></object>
                 <object
                     data=\"";
-        // line 414
+        // line 412
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -558,7 +573,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
             <div class=\"our-telegram__main-icon\">
                 <object
                     data=\"";
-        // line 421
+        // line 419
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -571,7 +586,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
             <div class=\"our-telegram__icons our-telegram__icons_right1\">
                 <object
                     data=\"";
-        // line 431
+        // line 429
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -579,7 +594,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 ></object>
                 <object
                     data=\"";
-        // line 436
+        // line 434
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -587,7 +602,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 ></object>
                 <object
                     data=\"";
-        // line 441
+        // line 439
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue_filled.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -599,7 +614,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
             <div class=\"our-telegram__icons our-telegram__icons_right2\">
                 <object
                     data=\"";
-        // line 450
+        // line 448
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -607,7 +622,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                 ></object>
                 <object
                     data=\"";
-        // line 455
+        // line 453
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram_blue.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -634,8 +649,8 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"work-examples__btn-submit btn-submit\">
                         <object
                             data=\"";
-        // line 479
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 477
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                             type=\"image/svg+xml\"
                         ></object>
@@ -648,7 +663,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                             <div class=\"work-examples__btn-left arrow-left\">
                                 <object
                                     data=\"";
-        // line 490
+        // line 488
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                                     type=\"image/svg+xml\"
@@ -657,7 +672,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                             <div class=\"work-examples__btn-right arrow-right\">
                                 <object
                                     data=\"";
-        // line 496
+        // line 494
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                                     type=\"image/svg+xml\"
@@ -669,7 +684,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__music-player music-player\">
                             <div class=\"music-player__inner\">
                                 <div class=\"music-player__circle\"><img src=\"";
-        // line 505
+        // line 503
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
         echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
                                 <div class=\"music-player__music\">
@@ -681,7 +696,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__music-player music-player\">
                             <div class=\"music-player__inner\">
                                 <div class=\"music-player__circle\"><img src=\"";
-        // line 514
+        // line 512
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
         echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
                                 <div class=\"music-player__music\">
@@ -693,7 +708,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__music-player music-player\">
                             <div class=\"music-player__inner\">
                                 <div class=\"music-player__circle\"><img src=\"";
-        // line 523
+        // line 521
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
         echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
                                 <div class=\"music-player__music\">
@@ -705,7 +720,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__music-player music-player\">
                             <div class=\"music-player__inner\">
                                 <div class=\"music-player__circle\"><img src=\"";
-        // line 532
+        // line 530
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
         echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
                                 <div class=\"music-player__music\">
@@ -717,7 +732,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__music-player music-player\">
                             <div class=\"music-player__inner\">
                                 <div class=\"music-player__circle\"><img src=\"";
-        // line 541
+        // line 539
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
         echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
                                 <div class=\"music-player__music\">
@@ -729,7 +744,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__music-player music-player\">
                             <div class=\"music-player__inner\">
                                 <div class=\"music-player__circle\"><img src=\"";
-        // line 550
+        // line 548
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
         echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
                                 <div class=\"music-player__music\">
@@ -741,7 +756,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__music-player music-player\">
                             <div class=\"music-player__inner\">
                                 <div class=\"music-player__circle\"><img src=\"";
-        // line 559
+        // line 557
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
         echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
                                 <div class=\"music-player__music\">
@@ -753,7 +768,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__music-player music-player\">
                             <div class=\"music-player__inner\">
                                 <div class=\"music-player__circle\"><img src=\"";
-        // line 568
+        // line 566
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/music_play.png");
         echo "\" alt=\"Плеер\" class=\"music-player__play\"></div>
                                 <div class=\"music-player__music\">
@@ -767,7 +782,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__btn-left arrow-left\">
                             <object
                                 data=\"";
-        // line 579
+        // line 577
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                                 type=\"image/svg+xml\"
@@ -776,7 +791,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"work-examples__btn-right arrow-right\">
                             <object
                                 data=\"";
-        // line 585
+        // line 583
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                                 type=\"image/svg+xml\"
@@ -808,7 +823,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"project-authors__author\">
                         <img
                             src=\"";
-        // line 614
+        // line 612
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
         echo "\"
                             alt=\"Автор\"
@@ -817,7 +832,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"project-authors__active-author\">
                         <img
                             src=\"";
-        // line 620
+        // line 618
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
         echo "\"
                             alt=\"Автор\"
@@ -826,7 +841,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"project-authors__author\">
                         <img
                             src=\"";
-        // line 626
+        // line 624
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
         echo "\"
                             alt=\"Автор\"
@@ -864,8 +879,8 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"faq__btn-submit btn-submit\">
                             <object
                                 data=\"";
-        // line 661
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 659
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                                 type=\"image/svg+xml\"
                             ></object>
@@ -881,7 +896,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 <img
                                     class=\"faq-stage__more-btn more-btn\"
                                     src=\"";
-        // line 675
+        // line 673
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
         echo "\"
                                     alt=\"Развернуть\"
@@ -898,7 +913,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 <img
                                     class=\"faq-stage__more-btn more-btn\"
                                     src=\"";
-        // line 689
+        // line 687
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
         echo "\"
                                     alt=\"Развернуть\"
@@ -915,7 +930,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                                 <img
                                     class=\"faq-stage__more-btn more-btn\"
                                     src=\"";
-        // line 703
+        // line 701
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
         echo "\"
                                     alt=\"Развернуть\"
@@ -930,7 +945,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                             <div class=\"more-questions-btn__icon\">
                                 <img
                                     src=\"";
-        // line 715
+        // line 713
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
         echo "\"
                                     alt=\"Ещё вопросы\"
@@ -962,11 +977,11 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"contacts__phone-row\">
                         <a href=\"tel:+74951234556\" class=\"contacts__phone\">+7 (495) 123 45 56</a>
                         <a href=\"#\" class=\"contacts__soc-icon\"><img src=\"";
-        // line 744
+        // line 742
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram.png");
         echo "\" alt=\"Телеграм\"></a>
                         <a href=\"#\" class=\"contacts__soc-icon\"><img src=\"";
-        // line 745
+        // line 743
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/whatsapp.png");
         echo "\" alt=\"WhatsApp\"></a>
                     </div>
@@ -997,8 +1012,8 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                             <div class=\"contacts__btn-submit btn-submit\">
                                 <object
                                     data=\"";
-        // line 773
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 771
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                                     type=\"image/svg+xml\"
                                 ></object>
@@ -1025,7 +1040,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
 
     public function getDebugInfo()
     {
-        return array (  1001 => 773,  970 => 745,  966 => 744,  934 => 715,  919 => 703,  902 => 689,  885 => 675,  868 => 661,  830 => 626,  821 => 620,  812 => 614,  780 => 585,  771 => 579,  757 => 568,  745 => 559,  733 => 550,  721 => 541,  709 => 532,  697 => 523,  685 => 514,  673 => 505,  661 => 496,  652 => 490,  638 => 479,  611 => 455,  603 => 450,  591 => 441,  583 => 436,  575 => 431,  562 => 421,  552 => 414,  544 => 409,  536 => 404,  524 => 395,  516 => 390,  494 => 371,  479 => 359,  464 => 347,  449 => 335,  434 => 323,  417 => 309,  402 => 297,  387 => 285,  372 => 273,  357 => 261,  342 => 249,  328 => 238,  236 => 149,  225 => 141,  202 => 121,  174 => 96,  164 => 89,  115 => 43,  99 => 30,  91 => 25,  83 => 20,  62 => 1,);
+        return array (  1016 => 771,  985 => 743,  981 => 742,  949 => 713,  934 => 701,  917 => 687,  900 => 673,  883 => 659,  845 => 624,  836 => 618,  827 => 612,  795 => 583,  786 => 577,  772 => 566,  760 => 557,  748 => 548,  736 => 539,  724 => 530,  712 => 521,  700 => 512,  688 => 503,  676 => 494,  667 => 488,  653 => 477,  626 => 453,  618 => 448,  606 => 439,  598 => 434,  590 => 429,  577 => 419,  567 => 412,  559 => 407,  551 => 402,  539 => 393,  531 => 388,  509 => 369,  494 => 357,  479 => 345,  464 => 333,  449 => 321,  432 => 307,  417 => 295,  402 => 283,  387 => 271,  372 => 259,  357 => 247,  343 => 236,  251 => 147,  240 => 139,  217 => 119,  189 => 94,  179 => 87,  156 => 67,  127 => 41,  120 => 36,  113 => 35,  105 => 30,  97 => 25,  89 => 20,  82 => 15,  77 => 14,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -1043,7 +1058,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
         <div class=\"welcome\">
             <div class=\"welcome__row\">
                 <div class=\"welcome__left welcome-title\">
-                    Мир творчества рядом с вами
+                    {% component 'contenteditor' file=\"home/welcome-title.htm\" %}
                     <div class=\"welcome-title__circle\"></div>
                 </div>
                 <div class=\"welcome__right\">
@@ -1064,9 +1079,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                             class=\"welcome__icon\"
                         />
                     </div>
-                    <div class=\"welcome__about\">
-                        Авторские видео-инструкции для креатива и творчества
-                    </div>
+                    {% component 'contenteditor' file=\"home/welcome__about.htm\" fixture=\"div\" class=\"welcome__about\" %}
                 </div>
             </div>
             <div class=\"welcome__image\">
@@ -1098,7 +1111,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         >музыка</span
                     >
                     <div class=\"musical-constructor__title\">
-                        Музыкальный конструктор
+                        Музыкальный <br>конструктор <img src=\"{{ 'assets/images/icons/music_black.png'|theme }}\" alt=\"Музыкальный конструктор\">
                     </div>
                     <div class=\"musical-constructor__about\">
                         Стань музыкантом. Собери 21 музыкальную композицию в
@@ -1118,7 +1131,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     </div>
                     <div class=\"musical-constructor__btn-submit btn-submit\">
                         <object
-                            data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                            data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                             type=\"image/svg+xml\"
                         ></object>
                     </div>
@@ -1148,9 +1161,9 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
             <div class=\"about-project__info\">
                 <div class=\"about-project__left\">
                     <div class=\"about-project__title\">О проекте</div>
-                    <div class=\"about-project__btn-send btn-send\">
+                    <div class=\"about-project__btn-submit btn-submit\">
                         <object
-                            data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                            data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                             type=\"image/svg+xml\"
                         ></object>
                     </div>
@@ -1508,7 +1521,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                     <div class=\"work-examples__title\">Примеры<br>работ</div>
                     <div class=\"work-examples__btn-submit btn-submit\">
                         <object
-                            data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                            data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                             type=\"image/svg+xml\"
                         ></object>
                     </div>
@@ -1690,7 +1703,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                         <div class=\"faq__title\">Вопрос - ответ</div>
                         <div class=\"faq__btn-submit btn-submit\">
                             <object
-                                data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                                data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                                 type=\"image/svg+xml\"
                             ></object>
                         </div>
@@ -1802,7 +1815,7 @@ class __TwigTemplate_a94aa5540f2bb586c466992c3b92d707b6a601d26b5044410f7d98cdc75
                             <div class=\"contacts__agree\">Нажимая на кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
                             <div class=\"contacts__btn-submit btn-submit\">
                                 <object
-                                    data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                                    data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                                     type=\"image/svg+xml\"
                                 ></object>
                             </div>

@@ -274,12 +274,8 @@ a, a:hover, a:active, a:visited {
 
 .musical-constructor__title {
   margin-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-block;
+  width: 100%;
   font-family: "Merriweather", serif;
   color: #252733;
   font-size: 36px;
@@ -287,6 +283,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .musical-constructor__title img {
+  width: 32px;
   margin-left: 10px;
 }
 
@@ -359,7 +356,7 @@ a, a:hover, a:active, a:visited {
   line-height: 140%;
 }
 
-.about-project__btn-send {
+.about-project__btn-submit {
   margin-top: 50px;
 }
 
@@ -557,6 +554,13 @@ a, a:hover, a:active, a:visited {
   width: calc(100% / 12 * 6 - 50px);
   margin-left: calc(50px / 2);
   margin-right: calc(50px / 2);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.creative-result-label_mini .creative-result-label__dot {
+  margin-top: 10px;
 }
 
 .creative-result-label_mini .creative-result-label__text {
@@ -2519,7 +2523,7 @@ div .project-reviews__btns_mini {
         -ms-flex-align: center;
             align-items: center;
   }
-  .about-project__btn-send {
+  .about-project__btn-submit {
     margin-top: 0px;
   }
   .about-project__right {
@@ -2838,7 +2842,10 @@ div .project-reviews__btns_mini {
 }
 
 @media screen and (max-width: 480px) {
-  .btn-send object, .btn-submit object {
+  .tag {
+    font-size: 14px;
+  }
+  .btn-submit object {
     width: 50px;
   }
   .project-about__statistics {
@@ -2873,6 +2880,15 @@ div .project-reviews__btns_mini {
   .musical-constructor {
     margin-top: 45px;
     padding: 35px 0px;
+  }
+  .musical-constructor__title {
+    font-size: 24px;
+  }
+  .musical-constructor__title img {
+    width: 24px;
+  }
+  .musical-constructor__about {
+    font-size: 16px;
   }
   .about-project {
     margin-top: 35px;

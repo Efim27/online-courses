@@ -29,7 +29,7 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("styles" => 12, "partial" => 16, "page" => 18, "framework" => 23, "scripts" => 24);
+        $tags = array("styles" => 12, "partial" => 16, "page" => 18, "framework" => 24, "scripts" => 25);
         $filters = array("escape" => 6, "theme" => 10);
         $functions = array();
 
@@ -114,10 +114,14 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
         echo "
 \t<script src=\"";
         // line 22
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
+        echo "\"></script>
+\t<script src=\"";
+        // line 23
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/app.js");
         echo "\"></script>
     ";
-        // line 23
+        // line 24
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -128,11 +132,11 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 24
+        // line 25
         echo "    ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 25
+        // line 26
         echo "</body>
 
 </html>";
@@ -150,7 +154,7 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
 
     public function getDebugInfo()
     {
-        return array (  136 => 25,  132 => 24,  121 => 23,  117 => 22,  114 => 21,  110 => 20,  107 => 19,  105 => 18,  102 => 17,  98 => 16,  93 => 13,  90 => 12,  86 => 11,  82 => 10,  78 => 9,  74 => 8,  69 => 6,  62 => 1,);
+        return array (  140 => 26,  136 => 25,  125 => 24,  121 => 23,  117 => 22,  114 => 21,  110 => 20,  107 => 19,  105 => 18,  102 => 17,  98 => 16,  93 => 13,  90 => 12,  86 => 11,  82 => 10,  78 => 9,  74 => 8,  69 => 6,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -176,7 +180,8 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
 \t</main>
 \t{% partial 'footer' %}
 
-\t<script src=\"{{ 'assets/javascript/app.js'|theme }}\"></script>
+\t<script src=\"{{ 'assets/vendor/jquery.js'|theme }}\"></script>
+\t<script src=\"{{ 'assets/vendor/app.js'|theme }}\"></script>
     {% framework extras %}
     {% scripts %}
 </body>
