@@ -30,7 +30,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("theme" => 3);
+        $filters = array("theme" => 6);
         $functions = array();
 
         try {
@@ -60,61 +60,82 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
         $macros = $this->macros;
         // line 1
         echo "<header class=\"header\">
-\t<div class=\"header__inner\">
-\t\t<a href=\"/\"><img class=\"header__logo logo\" src=\"";
-        // line 3
+    <div class=\"header__inner\">
+        <a href=\"/\"
+            ><img
+                class=\"header__logo logo\"
+                src=\"";
+        // line 6
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/main-logo.png");
-        echo "\" alt=\"Логотип\" class=\"logo__image\"></a>
-\t\t<nav class=\"header__nav main-nav\">
-\t\t\t<div class=\"main-nav__links\">
-\t\t\t\t<a href=\"/catalog\" class=\"main-nav__link\">все курсы</a>
-\t\t\t\t<a href=\"/about\" class=\"main-nav__link\">о проекте</a>
-\t\t\t</div>
-\t\t</nav>
-\t\t<div class=\"header__contacts header-contacts\">
-\t\t\t<a class=\"header-contacts__phone\" href=\"tel:+74951234556\">+7 (495) 123 45 56</a>
-\t\t\t<div class=\"header-contacts__soc-list\">
-\t\t\t\t<a href=\"#\" class=\"header-contacts__soc\"><img src=\"";
-        // line 13
+        echo "\"
+                alt=\"Логотип\"
+                class=\"logo__image\"
+        /></a>
+        <nav class=\"header__nav main-nav\">
+            <div class=\"main-nav__links\">
+                <a href=\"/catalog\" class=\"main-nav__link\">все курсы</a>
+                <a href=\"/about\" class=\"main-nav__link\">о проекте</a>
+            </div>
+        </nav>
+        <div class=\"header__contacts header-contacts\">
+            <a class=\"header-contacts__phone\" href=\"tel:+74951234556\"
+                >+7 (495) 123 45 56</a
+            >
+            <div class=\"header-contacts__soc-list\">
+                <a href=\"#\" class=\"header-contacts__soc\"
+                    ><img
+                        src=\"";
+        // line 23
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram.png");
-        echo "\" alt=\"Телеграм\"></a>
-\t\t\t\t<a href=\"#\" class=\"header-contacts__soc\"><img src=\"";
-        // line 14
+        echo "\"
+                        alt=\"Телеграм\"
+                /></a>
+                <a href=\"#\" class=\"header-contacts__soc\"
+                    ><img
+                        src=\"";
+        // line 28
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/whatsapp.png");
-        echo "\" alt=\"WhatsApp\"></a>
-\t\t\t</div>
-\t\t</div>
-\t\t<div class=\"header__menu\">
-\t\t\t<div class=\"dropdown\">
-\t\t\t\t<object
-\t\t\t\t\tdata=\"";
-        // line 20
+        echo "\"
+                        alt=\"WhatsApp\"
+                /></a>
+            </div>
+        </div>
+        <div class=\"header__menu\">
+            <div class=\"side-menu-btn\">
+                <object
+                    data=\"";
+        // line 36
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/burger.svg");
         echo "\"
-\t\t\t\t\tclass=\"header-dropdown__icon\"
-                    type=\"image/svg+xml\"
-\t\t\t\t></object>
-\t\t\t</div>
-\t\t\t<div class=\"dropdown header-profile-dropdown\">
-\t\t\t\t<object
-\t\t\t\t\tdata=\"";
-        // line 27
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/profile.svg");
-        echo "\"
-\t\t\t\t\tclass=\"header-dropdown__icon\"
                     type=\"image/svg+xml\"
                 ></object>
-\t\t\t\t<div class=\"dropdown__content header-profile-dropdown__content\">
-\t\t\t\t\t<div class=\"header-profile-dropdown__filler\"></div>
-\t\t\t\t\t<div class=\"header-profile-dropdown__inner\">
-\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Мои курсы</a>
-\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Настройки профиля</a>
-\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Выход</a>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-\t\t</div>
-\t</div>
+            </div>
+            <div class=\"dropdown header-profile-dropdown\">
+                <object
+                    data=\"";
+        // line 42
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/profile.svg");
+        echo "\"
+                    class=\"header-dropdown__icon\"
+                    type=\"image/svg+xml\"
+                ></object>
+                <div class=\"dropdown__content header-profile-dropdown__content\">
+                    <div class=\"header-profile-dropdown__filler\"></div>
+                    <div class=\"header-profile-dropdown__inner\">
+                        <a href=\"#\" class=\"header-profile-dropdown__link\"
+                            >Мои курсы</a
+                        >
+                        <a href=\"#\" class=\"header-profile-dropdown__link\"
+                            >Настройки профиля</a
+                        >
+                        <a href=\"#\" class=\"header-profile-dropdown__link\"
+                            >Выход</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>";
     }
 
@@ -130,52 +151,73 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
 
     public function getDebugInfo()
     {
-        return array (  102 => 27,  92 => 20,  83 => 14,  79 => 13,  66 => 3,  62 => 1,);
+        return array (  117 => 42,  108 => 36,  97 => 28,  89 => 23,  69 => 6,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<header class=\"header\">
-\t<div class=\"header__inner\">
-\t\t<a href=\"/\"><img class=\"header__logo logo\" src=\"{{ 'assets/images/main-logo.png'|theme }}\" alt=\"Логотип\" class=\"logo__image\"></a>
-\t\t<nav class=\"header__nav main-nav\">
-\t\t\t<div class=\"main-nav__links\">
-\t\t\t\t<a href=\"/catalog\" class=\"main-nav__link\">все курсы</a>
-\t\t\t\t<a href=\"/about\" class=\"main-nav__link\">о проекте</a>
-\t\t\t</div>
-\t\t</nav>
-\t\t<div class=\"header__contacts header-contacts\">
-\t\t\t<a class=\"header-contacts__phone\" href=\"tel:+74951234556\">+7 (495) 123 45 56</a>
-\t\t\t<div class=\"header-contacts__soc-list\">
-\t\t\t\t<a href=\"#\" class=\"header-contacts__soc\"><img src=\"{{ 'assets/images/icons/soc/telegram.png'|theme }}\" alt=\"Телеграм\"></a>
-\t\t\t\t<a href=\"#\" class=\"header-contacts__soc\"><img src=\"{{ 'assets/images/icons/soc/whatsapp.png'|theme }}\" alt=\"WhatsApp\"></a>
-\t\t\t</div>
-\t\t</div>
-\t\t<div class=\"header__menu\">
-\t\t\t<div class=\"dropdown\">
-\t\t\t\t<object
-\t\t\t\t\tdata=\"{{ 'assets/images/icons/burger.svg'|theme }}\"
-\t\t\t\t\tclass=\"header-dropdown__icon\"
-                    type=\"image/svg+xml\"
-\t\t\t\t></object>
-\t\t\t</div>
-\t\t\t<div class=\"dropdown header-profile-dropdown\">
-\t\t\t\t<object
-\t\t\t\t\tdata=\"{{ 'assets/images/icons/profile.svg'|theme }}\"
-\t\t\t\t\tclass=\"header-dropdown__icon\"
+    <div class=\"header__inner\">
+        <a href=\"/\"
+            ><img
+                class=\"header__logo logo\"
+                src=\"{{ 'assets/images/main-logo.png'|theme }}\"
+                alt=\"Логотип\"
+                class=\"logo__image\"
+        /></a>
+        <nav class=\"header__nav main-nav\">
+            <div class=\"main-nav__links\">
+                <a href=\"/catalog\" class=\"main-nav__link\">все курсы</a>
+                <a href=\"/about\" class=\"main-nav__link\">о проекте</a>
+            </div>
+        </nav>
+        <div class=\"header__contacts header-contacts\">
+            <a class=\"header-contacts__phone\" href=\"tel:+74951234556\"
+                >+7 (495) 123 45 56</a
+            >
+            <div class=\"header-contacts__soc-list\">
+                <a href=\"#\" class=\"header-contacts__soc\"
+                    ><img
+                        src=\"{{ 'assets/images/icons/soc/telegram.png'|theme }}\"
+                        alt=\"Телеграм\"
+                /></a>
+                <a href=\"#\" class=\"header-contacts__soc\"
+                    ><img
+                        src=\"{{ 'assets/images/icons/soc/whatsapp.png'|theme }}\"
+                        alt=\"WhatsApp\"
+                /></a>
+            </div>
+        </div>
+        <div class=\"header__menu\">
+            <div class=\"side-menu-btn\">
+                <object
+                    data=\"{{ 'assets/images/icons/burger.svg'|theme }}\"
                     type=\"image/svg+xml\"
                 ></object>
-\t\t\t\t<div class=\"dropdown__content header-profile-dropdown__content\">
-\t\t\t\t\t<div class=\"header-profile-dropdown__filler\"></div>
-\t\t\t\t\t<div class=\"header-profile-dropdown__inner\">
-\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Мои курсы</a>
-\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Настройки профиля</a>
-\t\t\t\t\t\t<a href=\"#\" class=\"header-profile-dropdown__link\">Выход</a>
-\t\t\t\t\t</div>
-\t\t\t\t</div>
-\t\t\t</div>
-\t\t</div>
-\t</div>
+            </div>
+            <div class=\"dropdown header-profile-dropdown\">
+                <object
+                    data=\"{{ 'assets/images/icons/profile.svg'|theme }}\"
+                    class=\"header-dropdown__icon\"
+                    type=\"image/svg+xml\"
+                ></object>
+                <div class=\"dropdown__content header-profile-dropdown__content\">
+                    <div class=\"header-profile-dropdown__filler\"></div>
+                    <div class=\"header-profile-dropdown__inner\">
+                        <a href=\"#\" class=\"header-profile-dropdown__link\"
+                            >Мои курсы</a
+                        >
+                        <a href=\"#\" class=\"header-profile-dropdown__link\"
+                            >Настройки профиля</a
+                        >
+                        <a href=\"#\" class=\"header-profile-dropdown__link\"
+                            >Выход</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>", "C:\\Users\\efim-\\Desktop\\projects\\online-courses/themes/online_courses/partials/header.htm", "");
     }
 }

@@ -1,5 +1,6 @@
 description = "Главный шаблон"
 ==
+{##}
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -16,15 +17,14 @@ description = "Главный шаблон"
 
 <body>
 	{% partial 'header' %}
+	{% partial 'side_menu' %}
 	<main class="main">
 		{% page %}
 	</main>
 	{% partial 'footer' %}
-
 	<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
-	<script src="{{ 'assets/vendor/app.js'|theme }}"></script>
+	<script src="{{ 'assets/javascript/main.js'|theme }}"></script>
     {% framework extras %}
     {% scripts %}
 </body>
-
 </html>

@@ -30,7 +30,7 @@ class __TwigTemplate_ca18fbb41e39a5a9db1dea5d66a4d7155f237788d35676d9247a4c4361e
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("theme" => 7);
+        $filters = array("theme" => 8);
         $functions = array();
 
         try {
@@ -58,7 +58,7 @@ class __TwigTemplate_ca18fbb41e39a5a9db1dea5d66a4d7155f237788d35676d9247a4c4361e
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 1
+        // line 2
         echo "<footer class=\"footer\">
 \t<div class=\"footer__inner\">
 \t\t<div class=\"footer__words\">
@@ -66,7 +66,7 @@ class __TwigTemplate_ca18fbb41e39a5a9db1dea5d66a4d7155f237788d35676d9247a4c4361e
 \t\t<div class=\"footer__content\">
 \t\t\t<div class=\"footer__column footer__column_column1\">
 \t\t\t\t<a href=\"/\"><img class=\"footer__logo logo\" src=\"";
-        // line 7
+        // line 8
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/main-logo.png");
         echo "\" alt=\"Логотип\" class=\"logo__image\"></a>
 \t\t\t\t<a href=\"#\" class=\"footer__regulations\">Политика конфиденциальности и обработки персональных данных.</a>
@@ -76,11 +76,11 @@ class __TwigTemplate_ca18fbb41e39a5a9db1dea5d66a4d7155f237788d35676d9247a4c4361e
 \t\t\t\t\t<div class=\"footer-contacts__row\">
 \t\t\t\t\t\t<div class=\"footer-contacts__phone\"><a href=\"tel:+74951234556\">+7 (495) 123 45 56</a></div>
 \t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc-icon\"><img src=\"";
-        // line 14
+        // line 15
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram.png");
         echo "\" alt=\"Телеграм\"></a>
 \t\t\t\t\t\t<a href=\"#\" class=\"footer-contacts__soc-icon\"><img src=\"";
-        // line 15
+        // line 16
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/whatsapp.png");
         echo "\" alt=\"WhatsApp\"></a>
 \t\t\t\t\t</div>
@@ -126,12 +126,13 @@ class __TwigTemplate_ca18fbb41e39a5a9db1dea5d66a4d7155f237788d35676d9247a4c4361e
 
     public function getDebugInfo()
     {
-        return array (  84 => 15,  80 => 14,  70 => 7,  62 => 1,);
+        return array (  84 => 16,  80 => 15,  70 => 8,  62 => 2,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<footer class=\"footer\">
+        return new Source("{##}
+<footer class=\"footer\">
 \t<div class=\"footer__inner\">
 \t\t<div class=\"footer__words\">
 \t\t</div>
