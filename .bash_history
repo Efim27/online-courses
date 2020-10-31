@@ -280,3 +280,25 @@ ls
 nano gitp.sh
 bash gitp.sh 
 bash gitp.sh 
+ls
+ls
+cd config/
+ls
+nano database.php 
+tail -n 100 database.php 
+tail -n 1000 database.php 
+cd .
+cd ..
+git add .
+git commit -m "Плагины"
+git push
+git pull
+bash gitp.sh 
+cd config/
+ls
+cp database_bak.php database.php 
+nano database.php 
+git pull
+git pull
+git pull
+git pull
