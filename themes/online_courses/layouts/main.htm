@@ -1,5 +1,10 @@
 description = "Главный шаблон"
 ==
+function onStart()
+{
+    $this['backend_user'] = BackendAuth::getUser();
+}
+==
 {##}
 <!DOCTYPE html>
 <html lang="ru">

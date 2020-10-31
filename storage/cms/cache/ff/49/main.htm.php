@@ -1,5 +1,8 @@
 <?php 
-class Cms5f9c88f323e47494710231_f1e9f60cb0079ecc6c28f663b520b978Class extends Cms\Classes\LayoutCode
+class Cms5f9df4cef11c0448428373_fd765de9c85df06e10152fdc7aa760b5Class extends Cms\Classes\LayoutCode
 {
-
+public function onStart()
+{
+    $this['backend_user'] = BackendAuth::getUser();
+}
 }

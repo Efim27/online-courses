@@ -1,3 +1,4 @@
+{##}
 <header class="header">
     <div class="header__inner">
         <a href="/"
@@ -52,6 +53,11 @@
                         <a href="#" class="header-profile-dropdown__link"
                             >Настройки профиля</a
                         >
+                        {% if backend_user %}
+                            <a href="/backend" class="header-profile-dropdown__link"
+                            >Админ панель</a
+                            >
+                        {% endif %}
                         <a href="#" class="header-profile-dropdown__link"
                             >Выход</a
                         >
