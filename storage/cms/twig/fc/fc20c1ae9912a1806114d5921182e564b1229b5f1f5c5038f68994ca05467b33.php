@@ -29,13 +29,13 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array();
-        $filters = array("theme" => 6);
+        $tags = array("if" => 56);
+        $filters = array("theme" => 7);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                [],
+                ['if'],
                 ['theme'],
                 []
             );
@@ -58,14 +58,14 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 1
+        // line 2
         echo "<header class=\"header\">
     <div class=\"header__inner\">
         <a href=\"/\"
             ><img
                 class=\"header__logo logo\"
                 src=\"";
-        // line 6
+        // line 7
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/main-logo.png");
         echo "\"
                 alt=\"Логотип\"
@@ -85,7 +85,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
                 <a href=\"#\" class=\"header-contacts__soc\"
                     ><img
                         src=\"";
-        // line 23
+        // line 24
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/telegram.png");
         echo "\"
                         alt=\"Телеграм\"
@@ -93,7 +93,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
                 <a href=\"#\" class=\"header-contacts__soc\"
                     ><img
                         src=\"";
-        // line 28
+        // line 29
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/soc/whatsapp.png");
         echo "\"
                         alt=\"WhatsApp\"
@@ -104,7 +104,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
             <div class=\"side-menu-btn\">
                 <object
                     data=\"";
-        // line 36
+        // line 37
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/burger.svg");
         echo "\"
                     type=\"image/svg+xml\"
@@ -113,7 +113,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
             <div class=\"dropdown header-profile-dropdown\">
                 <object
                     data=\"";
-        // line 42
+        // line 43
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/profile.svg");
         echo "\"
                     class=\"header-dropdown__icon\"
@@ -128,7 +128,17 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
                         <a href=\"#\" class=\"header-profile-dropdown__link\"
                             >Настройки профиля</a
                         >
-                        <a href=\"#\" class=\"header-profile-dropdown__link\"
+                        ";
+        // line 56
+        if (($context["backend_user"] ?? null)) {
+            // line 57
+            echo "                            <a href=\"/backend\" class=\"header-profile-dropdown__link\"
+                            >Админ панель</a
+                            >
+                        ";
+        }
+        // line 61
+        echo "                        <a href=\"#\" class=\"header-profile-dropdown__link\"
                             >Выход</a
                         >
                     </div>
@@ -151,12 +161,13 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
 
     public function getDebugInfo()
     {
-        return array (  117 => 42,  108 => 36,  97 => 28,  89 => 23,  69 => 6,  62 => 1,);
+        return array (  141 => 61,  135 => 57,  133 => 56,  117 => 43,  108 => 37,  97 => 29,  89 => 24,  69 => 7,  62 => 2,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<header class=\"header\">
+        return new Source("{##}
+<header class=\"header\">
     <div class=\"header__inner\">
         <a href=\"/\"
             ><img
@@ -210,6 +221,11 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
                         <a href=\"#\" class=\"header-profile-dropdown__link\"
                             >Настройки профиля</a
                         >
+                        {% if backend_user %}
+                            <a href=\"/backend\" class=\"header-profile-dropdown__link\"
+                            >Админ панель</a
+                            >
+                        {% endif %}
                         <a href=\"#\" class=\"header-profile-dropdown__link\"
                             >Выход</a
                         >
