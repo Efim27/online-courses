@@ -30,7 +30,7 @@ function get_div_by_svg(div_selector, svg) {
 
 $(document).ready(function () {
 
-	$(document).mouseup(function (e){
+	$(document).mousedown(function (e){
 		var popup = $('.popup__content');
 		if (!popup.is(e.target) && popup.has(e.target).length === 0) {
 			popup.parent().hide('slow');
