@@ -30,7 +30,7 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("theme" => 9);
+        $filters = array("theme" => 10);
         $functions = array();
 
         try {
@@ -58,7 +58,7 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 1
+        // line 2
         echo "<div class=\"main__inner\">
     <div class=\"main__left\"></div>
     <div class=\"main__content\">
@@ -68,7 +68,7 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                 <div class=\"all-courses__card course-card\">
                     <div class=\"course-card__image\">
                         <img src=\"";
-        // line 9
+        // line 10
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/course_card1.png");
         echo "\" alt=\"...\" />
                         <div class=\"course-card__types\">
@@ -95,11 +95,11 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                                 <div class=\"course-card__tag tag\">24 видео</div>
                             </div>
                             <div class=\"course-card__btn\">
-                                <div class=\"btn-send\">
+                                <div class=\"btn-submit\">
                                     <object
                                         data=\"";
-        // line 36
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 37
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                                         type=\"image/svg+xml\"
                                     ></object>
@@ -111,7 +111,7 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                 <div class=\"all-courses__card course-card\">
                     <div class=\"course-card__image\">
                         <img src=\"";
-        // line 46
+        // line 47
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/course_card2.png");
         echo "\" alt=\"...\" />
                         <div class=\"course-card__types\">
@@ -150,11 +150,11 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                                 </div>
                             </div>
                             <div class=\"course-card__btn\">
-                                <div class=\"btn-send\">
+                                <div class=\"btn-submit\">
                                     <object
                                         data=\"";
-        // line 85
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 86
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                                         type=\"image/svg+xml\"
                                     ></object>
@@ -166,7 +166,7 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                 <div class=\"all-courses__card course-card\">
                     <div class=\"course-card__image\">
                         <img src=\"";
-        // line 95
+        // line 96
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/course_card3.png");
         echo "\" alt=\"...\" />
                         <div class=\"course-card__types\">
@@ -205,11 +205,11 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                                 </div>
                             </div>
                             <div class=\"course-card__btn\">
-                                <div class=\"btn-send\">
+                                <div class=\"btn-submit\">
                                     <object
                                         data=\"";
-        // line 134
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 135
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                                         type=\"image/svg+xml\"
                                     ></object>
@@ -221,7 +221,7 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                 <div class=\"all-courses__card course-card\">
                     <div class=\"course-card__image\">
                         <img src=\"";
-        // line 144
+        // line 145
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/course_card4.png");
         echo "\" alt=\"...\" />
                         <div class=\"course-card__types\">
@@ -260,11 +260,11 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                                 </div>
                             </div>
                             <div class=\"course-card__btn\">
-                                <div class=\"btn-send\">
+                                <div class=\"btn-submit\">
                                     <object
                                         data=\"";
-        // line 183
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 184
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                                         type=\"image/svg+xml\"
                                     ></object>
@@ -292,12 +292,13 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
 
     public function getDebugInfo()
     {
-        return array (  267 => 183,  225 => 144,  212 => 134,  170 => 95,  157 => 85,  115 => 46,  102 => 36,  72 => 9,  62 => 1,);
+        return array (  267 => 184,  225 => 145,  212 => 135,  170 => 96,  157 => 86,  115 => 47,  102 => 37,  72 => 10,  62 => 2,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"main__inner\">
+        return new Source("{##}
+<div class=\"main__inner\">
     <div class=\"main__left\"></div>
     <div class=\"main__content\">
         <div class=\"all-courses\">
@@ -330,9 +331,9 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                                 <div class=\"course-card__tag tag\">24 видео</div>
                             </div>
                             <div class=\"course-card__btn\">
-                                <div class=\"btn-send\">
+                                <div class=\"btn-submit\">
                                     <object
-                                        data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                                        data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                                         type=\"image/svg+xml\"
                                     ></object>
                                 </div>
@@ -379,9 +380,9 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                                 </div>
                             </div>
                             <div class=\"course-card__btn\">
-                                <div class=\"btn-send\">
+                                <div class=\"btn-submit\">
                                     <object
-                                        data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                                        data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                                         type=\"image/svg+xml\"
                                     ></object>
                                 </div>
@@ -428,9 +429,9 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                                 </div>
                             </div>
                             <div class=\"course-card__btn\">
-                                <div class=\"btn-send\">
+                                <div class=\"btn-submit\">
                                     <object
-                                        data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                                        data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                                         type=\"image/svg+xml\"
                                     ></object>
                                 </div>
@@ -477,9 +478,9 @@ class __TwigTemplate_137ca797320e9f4741d0b4d306f38429434b96fdd671ae829823c8e4c86
                                 </div>
                             </div>
                             <div class=\"course-card__btn\">
-                                <div class=\"btn-send\">
+                                <div class=\"btn-submit\">
                                     <object
-                                        data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                                        data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                                         type=\"image/svg+xml\"
                                     ></object>
                                 </div>

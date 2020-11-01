@@ -1,0 +1,128 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EDF5F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+
+    &_loaded {
+        opacity: 1;
+        z-index: 1111;
+        display: none;
+    }
+
+    &__content {
+        padding: 50px 40px;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    &__first-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        @include title(h4);
+    }
+
+    &__close {
+    }
+}
+
+.popup-signin {
+
+    &__content {
+        max-width: 450px;
+    }
+
+    &__form {
+        margin-top: 35px;
+    }
+
+    &__input-email {
+    }
+
+    &__input-password {
+        margin-top: 32px;
+    }
+
+    &__btn {
+        margin-top: 45px;
+    }
+
+    &__regulations {
+        margin-top: 20px;
+        @include text(p5);
+    }
+
+    div &__no-account {
+        margin-top: 26px;
+    }
+}
+
+.popup-signup {
+
+    &__content {
+        max-width: 450px;
+    }
+
+    &__form {
+        margin-top: 35px;
+    }
+
+    &__input-email {
+    }
+
+    &__input-phone {
+        margin-top: 25px;
+    }
+
+    &__input-password {
+        margin-top: 25px;
+    }
+
+    &__input-password2 {
+        margin-top: 25px;
+    }
+
+    &__btn {
+        margin-top: 50px;
+    }
+
+    &__regulations {
+        margin-top: 20px;
+        @include text(p5);
+    }
+
+    div &__have-account {
+        margin-top: 26px;
+    }
+}
+
+.havent-or-have-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @include text(p4);
+    margin: -10px;
+
+    &__text {
+        margin: 10px;
+        opacity: 0.9;
+    }
+
+    &__link {
+        margin: 10px;
+        text-decoration-line: underline;
+        opacity: 0.9;
+    }
+}

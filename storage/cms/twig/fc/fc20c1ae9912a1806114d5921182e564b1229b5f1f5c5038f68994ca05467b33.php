@@ -29,7 +29,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("if" => 56);
+        $tags = array("if" => 50);
         $filters = array("theme" => 7);
         $functions = array();
 
@@ -122,26 +122,41 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
                 <div class=\"dropdown__content header-profile-dropdown__content\">
                     <div class=\"header-profile-dropdown__filler\"></div>
                     <div class=\"header-profile-dropdown__inner\">
-                        <a href=\"#\" class=\"header-profile-dropdown__link\"
-                            >Мои курсы</a
-                        >
-                        <a href=\"#\" class=\"header-profile-dropdown__link\"
-                            >Настройки профиля</a
-                        >
                         ";
-        // line 56
+        // line 50
         if (($context["backend_user"] ?? null)) {
-            // line 57
+            // line 51
             echo "                            <a href=\"/backend\" class=\"header-profile-dropdown__link\"
                             >Админ панель</a
                             >
                         ";
         }
-        // line 61
-        echo "                        <a href=\"#\" class=\"header-profile-dropdown__link\"
-                            >Выход</a
-                        >
-                    </div>
+        // line 55
+        echo "                        ";
+        if (($context["user"] ?? null)) {
+            // line 56
+            echo "                            <a href=\"#\" class=\"header-profile-dropdown__link\"
+                                >Мои курсы</a
+                            >
+                            <a href=\"#\" class=\"header-profile-dropdown__link\"
+                                >Настройки профиля</a
+                            >
+                            <a href=\"#\" class=\"header-profile-dropdown__link\" data-request=\"onLogout\"  data-request-data=\"redirect: '/'\"
+                                >Выход</a
+                            >
+                        ";
+        } else {
+            // line 66
+            echo "                            <a href=\"#\" class=\"header-profile-dropdown__link signin-link\"
+                                >Войти</a
+                            >
+                            <a href=\"#\" class=\"header-profile-dropdown__link signup-link\"
+                                >Регистрация</a
+                            >
+                        ";
+        }
+        // line 73
+        echo "                    </div>
                 </div>
             </div>
         </div>
@@ -161,7 +176,7 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
 
     public function getDebugInfo()
     {
-        return array (  141 => 61,  135 => 57,  133 => 56,  117 => 43,  108 => 37,  97 => 29,  89 => 24,  69 => 7,  62 => 2,);
+        return array (  159 => 73,  150 => 66,  138 => 56,  135 => 55,  129 => 51,  127 => 50,  117 => 43,  108 => 37,  97 => 29,  89 => 24,  69 => 7,  62 => 2,);
     }
 
     public function getSourceContext()
@@ -215,20 +230,29 @@ class __TwigTemplate_afc03d3cd340efb0f7f3ebcb63630903249a2a44e0b1609f97de9f48036
                 <div class=\"dropdown__content header-profile-dropdown__content\">
                     <div class=\"header-profile-dropdown__filler\"></div>
                     <div class=\"header-profile-dropdown__inner\">
-                        <a href=\"#\" class=\"header-profile-dropdown__link\"
-                            >Мои курсы</a
-                        >
-                        <a href=\"#\" class=\"header-profile-dropdown__link\"
-                            >Настройки профиля</a
-                        >
                         {% if backend_user %}
                             <a href=\"/backend\" class=\"header-profile-dropdown__link\"
                             >Админ панель</a
                             >
                         {% endif %}
-                        <a href=\"#\" class=\"header-profile-dropdown__link\"
-                            >Выход</a
-                        >
+                        {% if user %}
+                            <a href=\"#\" class=\"header-profile-dropdown__link\"
+                                >Мои курсы</a
+                            >
+                            <a href=\"#\" class=\"header-profile-dropdown__link\"
+                                >Настройки профиля</a
+                            >
+                            <a href=\"#\" class=\"header-profile-dropdown__link\" data-request=\"onLogout\"  data-request-data=\"redirect: '/'\"
+                                >Выход</a
+                            >
+                        {% else %}
+                            <a href=\"#\" class=\"header-profile-dropdown__link signin-link\"
+                                >Войти</a
+                            >
+                            <a href=\"#\" class=\"header-profile-dropdown__link signup-link\"
+                                >Регистрация</a
+                            >
+                        {% endif %}
                     </div>
                 </div>
             </div>

@@ -30,7 +30,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("theme" => 57);
+        $filters = array("theme" => 58);
         $functions = array();
 
         try {
@@ -58,7 +58,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 1
+        // line 2
         echo "<div class=\"main__inner\">
     <div class=\"main__left\"></div>
     <div class=\"main__content\">
@@ -116,7 +116,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-aim__image\">
                     <img
                         src=\"";
-        // line 57
+        // line 58
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/project_aim1.png");
         echo "\"
                         alt=\"Цель\"
@@ -125,7 +125,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-aim__image\">
                     <img
                         src=\"";
-        // line 63
+        // line 64
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/project_aim2.png");
         echo "\"
                         alt=\"Цель\"
@@ -217,7 +217,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <img
                         class=\"videobox__video\"
                         src=\"";
-        // line 152
+        // line 153
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_video1.png");
         echo "\"
                         alt=\"Видео 1\"
@@ -228,7 +228,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <img
                         class=\"videobox__video\"
                         src=\"";
-        // line 160
+        // line 161
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_video2.png");
         echo "\"
                         alt=\"Видео 2\"
@@ -252,7 +252,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"project-authors__author\">
                         <img
                             src=\"";
-        // line 181
+        // line 182
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
         echo "\"
                             alt=\"Автор\"
@@ -261,7 +261,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"project-authors__active-author\">
                         <img
                             src=\"";
-        // line 187
+        // line 188
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
         echo "\"
                             alt=\"Автор\"
@@ -270,7 +270,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"project-authors__author\">
                         <img
                             src=\"";
-        // line 193
+        // line 194
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/about_author.png");
         echo "\"
                             alt=\"Автор\"
@@ -301,8 +301,8 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 <div class=\"project-reviews__submit btn-submit\">
                     <object
                         data=\"";
-        // line 221
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 222
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                         type=\"image/svg+xml\"
                     ></object>
@@ -317,7 +317,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         <div class=\"project-reviews__btn-left arrow-left\">
                             <object
                                 data=\"";
-        // line 234
+        // line 235
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                                 type=\"image/svg+xml\"
@@ -326,7 +326,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         <div class=\"project-reviews__btn-right arrow-right\">
                             <object
                                 data=\"";
-        // line 240
+        // line 241
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                                 type=\"image/svg+xml\"
@@ -350,7 +350,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         >Подробнее
                         <img
                             src=\"";
-        // line 261
+        // line 262
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/icons/plus.png");
         echo "\"
                             alt=\"Подробнее\"
@@ -362,7 +362,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"project-reviews__btn-left arrow-left\">
                         <object
                             data=\"";
-        // line 270
+        // line 271
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                             type=\"image/svg+xml\"
@@ -371,7 +371,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"project-reviews__btn-right arrow-right\">
                         <object
                             data=\"";
-        // line 276
+        // line 277
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-arrow.svg");
         echo "\"
                             type=\"image/svg+xml\"
@@ -393,7 +393,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"news-card__image\">
                         <img
                             src=\"";
-        // line 295
+        // line 296
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card-news1.png");
         echo "\"
                             alt=\"Музыкальный конструктор\"
@@ -405,11 +405,11 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         Проведи время креативно и необычно на нашем
                         развлекательно - образовательном проекте “Мир рядом”
                     </div>
-                    <div class=\"news-card__btn-view btn-send\">
+                    <div class=\"news-card__btn-view btn-submit\">
                         <object
                             data=\"";
-        // line 307
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 308
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                             type=\"image/svg+xml\"
                         ></object>
@@ -419,7 +419,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                     <div class=\"news-card__image\">
                         <img
                             src=\"";
-        // line 315
+        // line 316
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/card-news2.png");
         echo "\"
                             alt=\"Музыкальный конструктор\"
@@ -431,11 +431,11 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         Проведи время креативно и необычно на нашем
                         развлекательно - образовательном проекте “Мир рядом”
                     </div>
-                    <div class=\"news-card__btn-view btn-send\">
+                    <div class=\"news-card__btn-view btn-submit\">
                         <object
                             data=\"";
-        // line 327
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-send.svg");
+        // line 328
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/btn-submit.svg");
         echo "\"
                             type=\"image/svg+xml\"
                         ></object>
@@ -460,12 +460,13 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
 
     public function getDebugInfo()
     {
-        return array (  438 => 327,  423 => 315,  412 => 307,  397 => 295,  375 => 276,  366 => 270,  354 => 261,  330 => 240,  321 => 234,  305 => 221,  274 => 193,  265 => 187,  256 => 181,  232 => 160,  221 => 152,  129 => 63,  120 => 57,  62 => 1,);
+        return array (  438 => 328,  423 => 316,  412 => 308,  397 => 296,  375 => 277,  366 => 271,  354 => 262,  330 => 241,  321 => 235,  305 => 222,  274 => 194,  265 => 188,  256 => 182,  232 => 161,  221 => 153,  129 => 64,  120 => 58,  62 => 2,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"main__inner\">
+        return new Source("{##}
+<div class=\"main__inner\">
     <div class=\"main__left\"></div>
     <div class=\"main__content\">
         <div class=\"project-about\">
@@ -685,7 +686,7 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                 </div>
                 <div class=\"project-reviews__submit btn-submit\">
                     <object
-                        data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                        data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                         type=\"image/svg+xml\"
                     ></object>
                 </div>
@@ -769,9 +770,9 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         Проведи время креативно и необычно на нашем
                         развлекательно - образовательном проекте “Мир рядом”
                     </div>
-                    <div class=\"news-card__btn-view btn-send\">
+                    <div class=\"news-card__btn-view btn-submit\">
                         <object
-                            data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                            data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                             type=\"image/svg+xml\"
                         ></object>
                     </div>
@@ -789,9 +790,9 @@ class __TwigTemplate_6b6cce4d1e44d7fb439c5aa7f8ca8696815883b07bdcfaa4a8fbe07440f
                         Проведи время креативно и необычно на нашем
                         развлекательно - образовательном проекте “Мир рядом”
                     </div>
-                    <div class=\"news-card__btn-view btn-send\">
+                    <div class=\"news-card__btn-view btn-submit\">
                         <object
-                            data=\"{{ 'assets/images/btn-send.svg'|theme }}\"
+                            data=\"{{ 'assets/images/btn-submit.svg'|theme }}\"
                             type=\"image/svg+xml\"
                         ></object>
                     </div>

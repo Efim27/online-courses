@@ -1,0 +1,54 @@
+<div class="popup popup-signup">
+    <div class="popup__content popup-signup__content">
+        <div class="popup__first-row">
+            <div class="popup__title">Регистрация</div>
+            <div class="popup__close">
+                <object
+                    data="{{ 'assets/images/icons/close.svg'|theme }}"
+                    type="image/svg+xml"
+                ></object>
+            </div>
+        </div>
+        <div class="popup-signup__form">
+            <div class="popup-signup__input-email text-input">
+                <input class="text-input__input" id="signup-email" type="text" required>
+                <label for="signup-email" class="text-input__label">Введите Email</label>
+            </div>
+            <div class="popup-signup__input-phone text-input">
+                <input class="text-input__input" id="signup-phone" type="text" required>
+                <label for="signup-phone" class="text-input__label">Введите телефон</label>
+            </div>
+            <div class="popup-signup__input-password text-input">
+                <input class="text-input__input" id="signup-password" type="password" required>
+                <label for="signup-password" class="text-input__label">Придумайте пароль</label>
+                <div class="text-input__toggle-pswd">
+                    <object
+                        data="{{ 'assets/images/icons/toggle_pswd.svg'|theme }}"
+                        type="image/svg+xml"
+                    ></object>
+                </div>
+            </div>
+            <div class="text-input__rule">Не менее 8 символов</div>
+            <div class="popup-signup__input-password2 text-input">
+                <input class="text-input__input" id="signup-password2" type="password" required>
+                <label for="signup-password2" class="text-input__label">Повторите пароль</label>
+                <div class="text-input__toggle-pswd">
+                    <object
+                        data="{{ 'assets/images/icons/toggle_pswd.svg'|theme }}"
+                        type="image/svg+xml"
+                    ></object>
+                </div>
+            </div>
+            <button class="popup-signup__btn main-btn">
+                <div class="main-btn__content">
+                    <div class="main-btn__text">Зарегистрироваться</div>
+                </div>
+            </button>
+            <div class="popup-signup__regulations">Нажимая на кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
+            <div class="havent-or-have-account popup-signup__have-account">
+                <div class="havent-or-have-account__text">Уже есть аккаунт?</div>
+                <a href="#" class="havent-or-have-account__link signin-link">Войти</a>
+            </div>
+        </div>
+    </div>
+</div>

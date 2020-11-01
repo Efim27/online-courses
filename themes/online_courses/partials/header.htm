@@ -47,20 +47,29 @@
                 <div class="dropdown__content header-profile-dropdown__content">
                     <div class="header-profile-dropdown__filler"></div>
                     <div class="header-profile-dropdown__inner">
-                        <a href="#" class="header-profile-dropdown__link"
-                            >Мои курсы</a
-                        >
-                        <a href="#" class="header-profile-dropdown__link"
-                            >Настройки профиля</a
-                        >
                         {% if backend_user %}
                             <a href="/backend" class="header-profile-dropdown__link"
                             >Админ панель</a
                             >
                         {% endif %}
-                        <a href="#" class="header-profile-dropdown__link"
-                            >Выход</a
-                        >
+                        {% if user %}
+                            <a href="#" class="header-profile-dropdown__link"
+                                >Мои курсы</a
+                            >
+                            <a href="#" class="header-profile-dropdown__link"
+                                >Настройки профиля</a
+                            >
+                            <a href="#" class="header-profile-dropdown__link" data-request="onLogout"  data-request-data="redirect: '/'"
+                                >Выход</a
+                            >
+                        {% else %}
+                            <a href="#" class="header-profile-dropdown__link signin-link"
+                                >Войти</a
+                            >
+                            <a href="#" class="header-profile-dropdown__link signup-link"
+                                >Регистрация</a
+                            >
+                        {% endif %}
                     </div>
                 </div>
             </div>
