@@ -29,13 +29,13 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("styles" => 13, "partial" => 17, "page" => 20, "framework" => 25, "scripts" => 26);
+        $tags = array("styles" => 13, "partial" => 17, "page" => 20, "if" => 21, "framework" => 29, "scripts" => 30);
         $filters = array("escape" => 7, "theme" => 11);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['styles', 'partial', 'page', 'framework', 'scripts'],
+                ['styles', 'partial', 'page', 'if', 'framework', 'scripts'],
                 ['escape', 'theme'],
                 []
             );
@@ -109,22 +109,38 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
         // line 20
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 21
+        echo "\t\t";
+        if ( !($context["user"] ?? null)) {
+            // line 22
+            echo "\t\t\t";
+            $context['__cms_partial_params'] = [];
+            echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction((($context["account"] ?? null) . "::signin")            , $context['__cms_partial_params']            , true            );
+            unset($context['__cms_partial_params']);
+            // line 23
+            echo "\t\t\t";
+            $context['__cms_partial_params'] = [];
+            echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction((($context["account"] ?? null) . "::register")            , $context['__cms_partial_params']            , true            );
+            unset($context['__cms_partial_params']);
+            // line 24
+            echo "\t\t";
+        }
+        // line 25
         echo "\t</main>
 \t";
-        // line 22
+        // line 26
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 23
+        // line 27
         echo "\t<script src=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
 \t<script src=\"";
-        // line 24
+        // line 28
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/main.js");
         echo "\"></script>
     ";
-        // line 25
+        // line 29
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -135,11 +151,11 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 26
+        // line 30
         echo "    ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 27
+        // line 31
         echo "</body>
 </html>";
     }
@@ -156,7 +172,7 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
 
     public function getDebugInfo()
     {
-        return array (  143 => 27,  139 => 26,  128 => 25,  124 => 24,  119 => 23,  115 => 22,  112 => 21,  110 => 20,  107 => 19,  102 => 18,  98 => 17,  93 => 14,  90 => 13,  86 => 12,  82 => 11,  78 => 10,  74 => 9,  69 => 7,  62 => 2,);
+        return array (  159 => 31,  155 => 30,  144 => 29,  140 => 28,  135 => 27,  131 => 26,  128 => 25,  125 => 24,  120 => 23,  115 => 22,  112 => 21,  110 => 20,  107 => 19,  102 => 18,  98 => 17,  93 => 14,  90 => 13,  86 => 12,  82 => 11,  78 => 10,  74 => 9,  69 => 7,  62 => 2,);
     }
 
     public function getSourceContext()
@@ -181,6 +197,10 @@ class __TwigTemplate_d5b67cbb128dcc083187123da3287c588f8c4c51ea70f5857f62fdbdcce
 \t{% partial 'side_menu' %}
 \t<main class=\"main\">
 \t\t{% page %}
+\t\t{% if not user %}
+\t\t\t{% partial account ~ '::signin' %}
+\t\t\t{% partial account ~ '::register' %}
+\t\t{% endif %}
 \t</main>
 \t{% partial 'footer' %}
 \t<script src=\"{{ 'assets/vendor/jquery.js'|theme }}\"></script>

@@ -1,10 +1,19 @@
 description = "Главный шаблон"
+
 [session]
+security = "all"
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 1
 ==
+<?php
 function onStart()
 {
     $this['backend_user'] = BackendAuth::getUser();
 }
+?>
 ==
 {##}
 <!DOCTYPE html>
@@ -26,6 +35,10 @@ function onStart()
 	{% partial 'side_menu' %}
 	<main class="main">
 		{% page %}
+		{% if not user %}
+			{% partial account ~ '::signin' %}
+			{% partial account ~ '::register' %}
+		{% endif %}
 	</main>
 	{% partial 'footer' %}
 	<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>

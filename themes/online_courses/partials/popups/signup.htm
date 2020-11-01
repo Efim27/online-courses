@@ -1,3 +1,4 @@
+{{ form_ajax('onRegister') }}
 <div class="popup popup-signup">
     <div class="popup__content popup-signup__content">
         <div class="popup__first-row">
@@ -11,15 +12,23 @@
         </div>
         <div class="popup-signup__form">
             <div class="popup-signup__input-email text-input">
-                <input class="text-input__input" id="signup-email" type="text" required>
+                <input class="text-input__input" id="signup-email" type="text" name="email" required>
                 <label for="signup-email" class="text-input__label">Введите Email</label>
             </div>
             <div class="popup-signup__input-phone text-input">
-                <input class="text-input__input" id="signup-phone" type="text" required>
+                <input class="text-input__input" id="signup-phone" type="text" name="iu_telephone" required>
                 <label for="signup-phone" class="text-input__label">Введите телефон</label>
             </div>
+            <div class="popup-signup__input-name text-input">
+                <input class="text-input__input" id="signup-name" type="text" name="name" required>
+                <label for="signup-name" class="text-input__label">Введите имя</label>
+            </div>
+            <div class="popup-signup__input-surname text-input">
+                <input class="text-input__input" id="signup-surname" type="text" name="surname" required>
+                <label for="signup-surname" class="text-input__label">Введите фамилию</label>
+            </div>
             <div class="popup-signup__input-password text-input">
-                <input class="text-input__input" id="signup-password" type="password" required>
+                <input class="text-input__input" id="signup-password" type="password" name="password" required>
                 <label for="signup-password" class="text-input__label">Придумайте пароль</label>
                 <div class="text-input__toggle-pswd">
                     <object
@@ -30,7 +39,7 @@
             </div>
             <div class="text-input__rule">Не менее 8 символов</div>
             <div class="popup-signup__input-password2 text-input">
-                <input class="text-input__input" id="signup-password2" type="password" required>
+                <input class="text-input__input" id="signup-password2" type="password" name="password2" required>
                 <label for="signup-password2" class="text-input__label">Повторите пароль</label>
                 <div class="text-input__toggle-pswd">
                     <object
@@ -52,3 +61,4 @@
         </div>
     </div>
 </div>
+{{ form_close() }}

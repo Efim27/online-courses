@@ -233,6 +233,14 @@ div .popup-signin__no-account {
   margin-top: 35px;
 }
 
+.popup-signup__input-name {
+  margin-top: 25px;
+}
+
+.popup-signup__input-surname {
+  margin-top: 25px;
+}
+
 .popup-signup__input-phone {
   margin-top: 25px;
 }
@@ -3258,6 +3266,12 @@ div .project-reviews__btns_mini {
   }
   .popup-signup__form {
     margin-top: 35px;
+  }
+  .popup-signup__input-name {
+    margin-top: 30px;
+  }
+  .popup-signup__input-surname {
+    margin-top: 30px;
   }
   .popup-signup__input-phone {
     margin-top: 30px;

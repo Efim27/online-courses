@@ -1,3 +1,4 @@
+{{ form_ajax('onSignin') }}
 <div class="popup popup-signin">
     <div class="popup__content popup-signin__content">
         <div class="popup__first-row">
@@ -11,11 +12,11 @@
         </div>
         <div class="popup-signin__form">
             <div class="popup-signin__input-phone text-input">
-                <input class="text-input__input" id="signin-email" type="text" required>
+                <input class="text-input__input" id="signin-email" type="text" name="login" required>
                 <label for="signin-email" class="text-input__label">Введите Email</label>
             </div>
             <div class="popup-signin__input-password text-input">
-                <input class="text-input__input" id="signin-password" type="password" required>
+                <input class="text-input__input" id="signin-password" type="password" name="password" required>
                 <label for="signin-password" class="text-input__label">Введите пароль</label>
                 <div class="text-input__toggle-pswd">
                     <object
@@ -38,3 +39,4 @@
         </div>
     </div>
 </div>
+{{ form_close() }}
