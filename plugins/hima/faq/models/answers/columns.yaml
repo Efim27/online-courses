@@ -1,0 +1,7 @@
+columns:
+    question:
+        label: Вопрос
+        type: text
+    answer:
+        label: Ответ
+        type: text

@@ -1,0 +1,10 @@
+name: Faq
+form: $/hima/faq/models/answers/fields.yaml
+modelClass: Hima\Faq\Models\Answers
+defaultRedirect: hima/faq/faq
+create:
+    redirect: 'hima/faq/faq/update/:id'
+    redirectClose: hima/faq/faq
+update:
+    redirect: hima/faq/faq
+    redirectClose: hima/faq/faq
