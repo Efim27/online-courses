@@ -1,0 +1,13 @@
+columns:
+    course_type:
+        label: 'Тип курса'
+        type: text
+    owner_name:
+        label: 'Имя отправителя'
+        type: text
+    owner_city:
+        label: 'Город отправителя'
+        type: text
+    review_text:
+        label: Текст
+        type: text

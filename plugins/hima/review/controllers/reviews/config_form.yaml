@@ -1,0 +1,10 @@
+name: Reviews
+form: $/hima/review/models/reviews/fields.yaml
+modelClass: Hima\Review\Models\Reviews
+defaultRedirect: hima/review/reviews
+create:
+    redirect: 'hima/review/reviews/update/:id'
+    redirectClose: hima/review/reviews
+update:
+    redirect: hima/review/reviews
+    redirectClose: hima/review/reviews

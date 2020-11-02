@@ -1,0 +1,12 @@
+plugin:
+    name: 'hima.review::lang.plugin.name'
+    description: 'hima.review::lang.plugin.description'
+    author: Hima
+    icon: oc-icon-stack-exchange
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Отзывы
+        url: hima/review/reviews
+        icon: icon-stack-exchange
+        order: 100

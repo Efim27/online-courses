@@ -302,3 +302,10 @@ git pull
 git pull
 git pull
 git pull
+git pull
+git pull
+bsh gitp.sh 
+bash gitp.sh 
+git pull
+git pull
+git pull

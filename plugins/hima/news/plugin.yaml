@@ -1,0 +1,11 @@
+plugin:
+    name: 'hima.news::lang.plugin.name'
+    description: 'hima.news::lang.plugin.description'
+    author: Hima
+    icon: oc-icon-newspaper-o
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Новости
+        url: hima/news/news
+        icon: icon-newspaper-o

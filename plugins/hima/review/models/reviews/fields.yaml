@@ -1,0 +1,27 @@
+tabs:
+    fields:
+        owner_name:
+            label: 'Имя отправителя'
+            span: auto
+            required: 1
+            type: text
+            tab: Отправитель
+        owner_city:
+            label: Город
+            span: auto
+            required: 1
+            type: text
+            tab: Отправитель
+        course_type:
+            label: 'Тип курса'
+            span: auto
+            required: 1
+            type: text
+            tab: Отзыв
+        review_text:
+            label: 'Текст отзыва'
+            size: large
+            span: auto
+            required: 1
+            type: textarea
+            tab: Отзыв

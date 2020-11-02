@@ -1,0 +1,16 @@
+columns:
+    title:
+        label: Заголовок
+        type: text
+    about:
+        label: 'Мини описание'
+        type: text
+    news_text:
+        label: Контент
+        type: text
+    created_at:
+        label: 'Дата создания'
+        type: date
+    updated_at:
+        label: 'Дата изменения'
+        type: date

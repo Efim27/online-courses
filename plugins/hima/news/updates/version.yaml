@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table hima_news_news'
+    - builder_table_create_hima_news_news.php
+1.0.3:
+    - 'Updated table hima_news_news'
+    - builder_table_update_hima_news_news.php
+1.0.4:
+    - 'Updated table hima_news_news +timestamps'
+    - builder_table_update_hima_news_news_2.php

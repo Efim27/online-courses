@@ -1,0 +1,10 @@
+name: News
+form: $/hima/news/models/news/fields.yaml
+modelClass: Hima\News\Models\News
+defaultRedirect: hima/news/news
+create:
+    redirect: 'hima/news/news/update/:id'
+    redirectClose: hima/news/news
+update:
+    redirect: hima/news/news
+    redirectClose: hima/news/news
