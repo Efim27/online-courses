@@ -433,33 +433,6 @@
     }
 }
 
-.faq-stage {
-
-    &__row {
-        @include grid-row();
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-    }
-
-    &__label {
-        @include grid-width(7);
-        @include text(p2);
-		opacity: 0.8;
-    }
-
-    &__more-btn {
-        @include grid-width(1);
-        flex-shrink: 0;
-        width: 25px;
-        height: 25px;
-    }
-
-    &__divider {
-        margin-top: 30px;
-    }
-}
-
 .more-questions-btn {
     display: flex;
     align-items: center;

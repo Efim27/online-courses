@@ -557,6 +557,11 @@
 
 .more-btn {
 	cursor: pointer;
+	transform: 0.5s all;
+
+	&_close {
+		transform: rotate(45deg);
+	}
 }
 
 .soc-link {
@@ -676,6 +681,70 @@
 		font-size: 16px;
 		opacity: 0.5;
 	}
+}
+
+.algorithm-stage {
+
+	&__row {
+		display: flex;
+	}
+
+    &__dot {
+		margin-top: 8px;
+    }
+
+    &__label {
+		margin-left: 46px;
+		@include text(p2);
+		opacity: 0.9;
+	}
+	
+	&__divider {
+		margin-top: 36px;
+    }
+}
+
+.faq-stage {
+
+    &__row {
+        @include grid-row();
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+    }
+
+    &__label {
+        @include grid-width(7);
+        @include text(p2);
+		opacity: 0.8;
+	}
+
+	&__block {
+		@include grid-width(7);
+	}
+
+	&__question {
+		@include text(p2);
+		opacity: 0.8;
+	}
+
+	&__answer {
+		display: none;
+		margin-top: 20px;
+		@include text(p4);
+		opacity: 0.8;
+	}
+
+    &__more-btn {
+        @include grid-width(1);
+        flex-shrink: 0;
+        width: 25px;
+        height: 25px;
+    }
+
+    &__divider {
+        margin-top: 30px;
+    }
 }
 
 //media styles

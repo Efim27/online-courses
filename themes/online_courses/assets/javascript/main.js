@@ -53,6 +53,11 @@ $(document).ready(function () {
 		$('.popup-signup').show('slow').css('display', 'flex');
 	});
 
+	$('.faq-stage__more-btn').click(function () {
+		$(this).toggleClass('more-btn_close');
+		$(this).prev().find('.faq-stage__answer').toggle('slow');
+	});
+
 	$(window).load(function () {
 		$(".side-menu").addClass('side-menu_loaded');
 		$(".popup").addClass('popup_loaded');

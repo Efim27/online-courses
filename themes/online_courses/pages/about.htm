@@ -2,6 +2,16 @@
 title = "О проекте"
 url = "/about"
 layout = "main"
+
+[builderList news]
+modelClass = "Hima\News\Models\News"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "Новости не найдены"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 {##}
 <div class="main__inner">
@@ -295,18 +305,18 @@ layout = "main"
         <div class="news">
             <div class="news__title">Новости</div>
             <div class="news__row">
+                {% for one_news in news.records %}
                 <div class="news__news-card news-card">
                     <div class="news-card__image">
                         <img
-                            src="{{ 'assets/images/card-news1.png'|theme }}"
-                            alt="Музыкальный конструктор"
+                            src="{{ one_news.attachment.path }}"
+                            alt="{{ one_news.title }}"
                         />
                     </div>
-                    <div class="news-card__date">12 октября 2020</div>
-                    <div class="news-card__title">Музыкальный конструктор</div>
+                    <div class="news-card__date">{{ one_news.created_at|date("d.m.Y") }}</div>
+                    <div class="news-card__title">{{ one_news.title }}</div>
                     <div class="news-card__about">
-                        Проведи время креативно и необычно на нашем
-                        развлекательно - образовательном проекте “Мир рядом”
+                        {{ one_news.about }}
                     </div>
                     <div class="news-card__btn-view btn-submit">
                         <object
@@ -315,26 +325,7 @@ layout = "main"
                         ></object>
                     </div>
                 </div>
-                <div class="news__news-card news-card">
-                    <div class="news-card__image">
-                        <img
-                            src="{{ 'assets/images/card-news2.png'|theme }}"
-                            alt="Музыкальный конструктор"
-                        />
-                    </div>
-                    <div class="news-card__date">12 октября 2020</div>
-                    <div class="news-card__title">Музыкальный конструктор</div>
-                    <div class="news-card__about">
-                        Проведи время креативно и необычно на нашем
-                        развлекательно - образовательном проекте “Мир рядом”
-                    </div>
-                    <div class="news-card__btn-view btn-submit">
-                        <object
-                            data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                            type="image/svg+xml"
-                        ></object>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

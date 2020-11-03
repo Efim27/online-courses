@@ -233,27 +233,6 @@
     }
 }
 
-.algorithm-stage {
-
-	&__row {
-		display: flex;
-	}
-
-    &__dot {
-		margin-top: 8px;
-    }
-
-    &__label {
-		margin-left: 46px;
-		@include text(p2);
-		opacity: 0.9;
-	}
-	
-	&__divider {
-		margin-top: 36px;
-    }
-}
-
 .project-authors-about{
 	margin-top: 110px;
 }

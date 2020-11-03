@@ -4,7 +4,14 @@ layout = "main"
 is_hidden = 0
 
 [contenteditor]
-security = "all"
+
+[builderList faqs]
+modelClass = "Hima\Faq\Models\Answers"
+scopeValue = "{{ :scope }}"
+displayColumn = "answer,question"
+noRecordsMessage = "Ответы на вопросы не найдены"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 {##}
 <div class="main__inner main__inner_soc-links">
@@ -671,11 +678,16 @@ security = "all"
                         </div>
                     </div>
                     <div class="faq__right">
+                        {% for faq in faqs.records %}
                         <div class="faq__stage faq-stage">
                             <div class="faq-stage__row">
-                                <div class="faq-stage__label">
-                                    Вы получаете доступ к видео и дополнительным
-                                    материалам.
+                                <div class="faq-stage__block">
+                                    <div class="faq-stage__question">
+                                        {{ faq.question }}
+                                    </div>
+                                    <div class="faq-stage__answer">
+                                        {{ faq.answer }}
+                                    </div>
                                 </div>
                                 <img
                                     class="faq-stage__more-btn more-btn"
@@ -685,34 +697,7 @@ security = "all"
                             </div>
                             <div class="faq-stage__divider divider"></div>
                         </div>
-                        <div class="faq__stage faq-stage">
-                            <div class="faq-stage__row">
-                                <div class="faq-stage__label">
-                                    Изучаете материал в подходящем вам темпе и в
-                                    удобное для вас время.
-                                </div>
-                                <img
-                                    class="faq-stage__more-btn more-btn"
-                                    src="{{ 'assets/images/icons/plus.png'|theme }}"
-                                    alt="Развернуть"
-                                />
-                            </div>
-                            <div class="faq-stage__divider divider"></div>
-                        </div>
-                        <div class="faq__stage faq-stage">
-                            <div class="faq-stage__row">
-                                <div class="faq-stage__label">
-                                    Cоздаете свой креатив, следуя видео
-                                    инструкции и дополнительному материалу
-                                </div>
-                                <img
-                                    class="faq-stage__more-btn more-btn"
-                                    src="{{ 'assets/images/icons/plus.png'|theme }}"
-                                    alt="Развернуть"
-                                />
-                            </div>
-                            <div class="faq-stage__divider divider"></div>
-                        </div>
+                        {% endfor %}
                         <div class="faq__more-questions more-questions-btn">
                             <div class="more-questions-btn__label">
                                 Ещё вопросы
