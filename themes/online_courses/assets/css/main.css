@@ -1564,6 +1564,15 @@ div .project-reviews__btns_mini {
   opacity: 0.9;
 }
 
+.contacts-cells__soc-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .contacts-cells__soc-link {
   margin-right: 20px;
 }
@@ -1751,6 +1760,9 @@ div .project-reviews__btns_mini {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3583,6 +3595,43 @@ div .popup-signup__have-account {
   }
   .creative-result-label_mini .creative-result-label__text {
     font-size: 16px;
+  }
+  .contacts-cells {
+    margin-top: 15px;
+  }
+  .contacts-cells__title {
+    font-family: "Merriweather", serif;
+    color: #252733;
+    font-size: 30px;
+    line-height: 140%;
+  }
+  .contacts-cells__text {
+    font-family: "Montserrat", sans-serif;
+    color: #252733;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.9;
+  }
+  .contacts__contacts-us {
+    margin-top: 60px;
+  }
+  .phone-row {
+    margin: -15px;
+  }
+  .phone-row__phone {
+    font-family: "Montserrat", sans-serif;
+    color: #252733;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.9;
+    opacity: 1;
+  }
+  .phone-row__soc-icon {
+    margin: 10px;
+  }
+  .phone-row__soc-icon svg {
+    width: 21px;
+    height: 21px;
   }
 }
 /*# sourceMappingURL=main.css.map */

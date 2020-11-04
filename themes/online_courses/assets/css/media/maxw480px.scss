@@ -363,9 +363,39 @@
 		}
 	}
 
+	.contacts-cells {
+		margin-top: 15px;
+
+		&__title {
+			@include title(h4);
+		}
+
+		&__text {
+			@include text(p4);
+		}
+	}
+
 	.contacts {
 		&__contacts-us {
 			margin-top: 60px;
+		}
+	}
+
+	.phone-row {
+		margin: -15px;
+
+		&__phone {
+			@include text(p4);
+			opacity: 1;
+		}
+
+		&__soc-icon {
+			margin: 10px;
+
+			svg {
+				width: 21px;
+				height: 21px;
+			}
 		}
 	}
 }
