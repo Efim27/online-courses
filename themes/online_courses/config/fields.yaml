@@ -1,0 +1,44 @@
+tabs:
+    stretch: true
+    defaultTab: Контакты
+    icons:
+        Контакты: icon-sticky-note
+        Ценности: icon-sun-o
+
+    fields:
+        phone:
+            label: Телефон
+            default: +7 (495) 123 45 56
+            tab: Контакты
+        email:
+            label: E-mail
+            default: hello@world.com
+            tab: Контакты
+        tg_link:
+            label: Telegram
+            default: /
+            tab: Контакты
+        wapp_link:
+            label: WhatsApp
+            default: /
+            tab: Контакты
+        soc_links:
+          type: repeater
+          label: Ссылки на соц. сети
+          titleFrom: link
+          form:
+            fields:
+              link_name:
+                label: Название ссылки
+              link:
+                label: Ссылка
+        side_soc_links:
+          type: repeater
+          label: Боковые ссылки на соц. сети
+          titleFrom: link
+          form:
+            fields:
+              link_name:
+                label: Название ссылки
+              link:
+                label: Ссылка

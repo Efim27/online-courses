@@ -156,7 +156,12 @@
 		}
 
 		&__link {
+			margin-top: 20px;
 			@include text(p4);
+
+			&:nth-child(1) {
+				margin-top: 0px;
+			}
 		}
 
 		&__phone-row {
@@ -177,8 +182,11 @@
 		}
 
 		&__email {
-			font-size: 18px;
 			margin-top: 15px;
+
+			a {
+				font-size: 18px;
+			}
 		}
 
 		&__soc-links {
@@ -392,7 +400,7 @@
 		&__soc-icon {
 			margin: 10px;
 
-			svg {
+			img, svg {
 				width: 21px;
 				height: 21px;
 			}

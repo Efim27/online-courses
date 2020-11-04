@@ -1556,6 +1556,12 @@ div .project-reviews__btns_mini {
           align-items: center;
 }
 
+.contacts-cells__phone-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .contacts-cells__text {
   font-family: "Montserrat", sans-serif;
   color: #252733;
@@ -1732,13 +1738,20 @@ div .project-reviews__btns_mini {
   -webkit-text-fill-color: transparent;
 }
 
+div .side-menu__phone-row {
+  margin-top: 65px;
+}
+
 .side-menu__email {
+  margin-top: 15px;
+}
+
+.side-menu__email a {
   font-family: "Montserrat", sans-serif;
   color: #252733;
   font-size: 24px;
   line-height: 160%;
   opacity: 0.9;
-  margin-top: 15px;
 }
 
 .side-menu__soc-links {
@@ -1760,9 +1773,6 @@ div .project-reviews__btns_mini {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1784,7 +1794,14 @@ div .project-reviews__btns_mini {
 
 .phone-row__soc-icon img {
   width: 24px;
-  max-width: 100%;
+}
+
+.phone-row_mini .phone-row__phone {
+  font-size: 18px;
+}
+
+.phone-row_mini .phone-row__soc-icon img {
+  width: 21px;
 }
 
 .dropdown {
@@ -3415,11 +3432,15 @@ div .popup-signup__have-account {
     padding-top: 65px;
   }
   .side-menu__link {
+    margin-top: 20px;
     font-family: "Montserrat", sans-serif;
     color: #252733;
     font-size: 18px;
     line-height: 160%;
     opacity: 0.9;
+  }
+  .side-menu__link:nth-child(1) {
+    margin-top: 0px;
   }
   .side-menu__phone-row {
     margin-top: 60px;
@@ -3435,8 +3456,10 @@ div .popup-signup__have-account {
     height: 20px;
   }
   .side-menu__email {
-    font-size: 18px;
     margin-top: 15px;
+  }
+  .side-menu__email a {
+    font-size: 18px;
   }
   .side-menu__soc-links {
     font-size: 16px;
@@ -3629,7 +3652,7 @@ div .popup-signup__have-account {
   .phone-row__soc-icon {
     margin: 10px;
   }
-  .phone-row__soc-icon svg {
+  .phone-row__soc-icon img, .phone-row__soc-icon svg {
     width: 21px;
     height: 21px;
   }

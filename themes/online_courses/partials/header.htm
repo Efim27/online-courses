@@ -15,16 +15,16 @@
             </div>
         </nav>
         <div class="header__contacts header-contacts">
-            <a class="header-contacts__phone" href="tel:+74951234556"
-                >+7 (495) 123 45 56</a
+            <a class="header-contacts__phone" href="tel:{{ this.theme.phone }}"
+                >{{ this.theme.phone }}</a
             >
             <div class="header-contacts__soc-list">
-                <a href="#" class="header-contacts__soc"
+                <a href="{{ this.theme.tg_link }}" class="header-contacts__soc"
                     ><img
                         src="{{ 'assets/images/icons/soc/telegram.png'|theme }}"
                         alt="Телеграм"
                 /></a>
-                <a href="#" class="header-contacts__soc"
+                <a href="{{ this.theme.wapp_link }}" class="header-contacts__soc"
                     ><img
                         src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}"
                         alt="WhatsApp"
@@ -53,10 +53,10 @@
                             >
                         {% endif %}
                         {% if user %}
-                            <a href="#" class="header-profile-dropdown__link"
+                            <a href="/homepage" class="header-profile-dropdown__link"
                                 >Мои курсы</a
                             >
-                            <a href="#" class="header-profile-dropdown__link"
+                            <a href="/settings" class="header-profile-dropdown__link"
                                 >Настройки профиля</a
                             >
                             <a href="#" class="header-profile-dropdown__link" data-request="onLogout"  data-request-data="redirect: '/'"

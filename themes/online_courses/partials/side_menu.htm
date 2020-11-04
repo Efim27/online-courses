@@ -8,25 +8,28 @@
             ></object>
 		</div>
 		<div class="side-menu__links">
-			<a href="#" class="side-menu__link">все курсы</a>
-			<a href="#" class="side-menu__link">о проекте</a>
-			<a href="#" class="side-menu__link">работы учеников</a>
-			<a href="#" class="side-menu__link">отзывы</a>
+			<a href="/catalog" class="side-menu__link">все курсы</a>
+			<a href="/about" class="side-menu__link">о проекте</a>
+			<a href="/work_examples" class="side-menu__link">работы учеников</a>
+			<a href="/reviews" class="side-menu__link">отзывы</a>
 			<a href="#" class="side-menu__link">оплата</a>
-			<a href="#" class="side-menu__link">вопрос-ответ</a>
-			<a href="#" class="side-menu__link">контакты</a>
+			<a href="/faq" class="side-menu__link">вопрос-ответ</a>
+			<a href="/contacts" class="side-menu__link">контакты</a>
 		</div>
 		<div class="side-menu__contacts">
-			<div class="side-menu__phone-row">
-				<a href="tel:+74951234556" class="side-menu__phone">+7 (495) 123 45 56</a>
-				<a href="#" class="side-menu__soc-icon"><img src="{{ 'assets/images/icons/soc/telegram.png'|theme }}" alt="Телеграм"></a>
-				<a href="#" class="side-menu__soc-icon"><img src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}" alt="WhatsApp"></a>
+			<div class="side-menu__phone-row phone-row">
+				<a href="tel:{{ this.theme.phone }}" class="phone-row__phone">{{ this.theme.phone }}</a>
+				<a href="{{ this.theme.tg_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/telegram.png'|theme }}" alt="Телеграм"></a>
+				<a href="{{ this.theme.wapp_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}" alt="WhatsApp"></a>
 			</div>
-			<div class="side-menu__email">hello@world.com</div>
+			<div class="side-menu__email">
+				<a href="mailto:{{ this.theme.email }}">{{ this.theme.email }}</a>
+			</div>
             <div class="side-menu__soc-links">
-                <a href="#" class="side-menu__soc-link soc-link">facebook</a>
-                <a href="#" class="side-menu__soc-link soc-link">instagram</a>
-            </div>
+				{% for soc_link in this.theme.soc_links %}
+					<a href="{{ soc_link.link }}" class="side-menu__soc-link soc-link">{{ soc_link.link_name }}</a>
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 </div>

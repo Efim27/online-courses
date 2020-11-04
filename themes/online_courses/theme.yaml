@@ -1,5 +1,7 @@
 name: online_courses
 description: ''
-author: ''
+author: 'Hima'
 homepage: ''
 code: ''
+
+form: config/fields.yaml

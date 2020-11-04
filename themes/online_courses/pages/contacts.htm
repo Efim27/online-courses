@@ -11,19 +11,20 @@ is_hidden = 0
             <div class="contacts-cells__title">Контакты</div>
             <div class="contacts-cells__row">
                 <div class="contacts-cells__cell">
-                    <div class="phone-row">
-                        <a href="tel:+74951234556" class="phone-row__phone">+7 (495) 123 45 56</a>
-                        <a href="#" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/telegram.png'|theme }}" alt="Телеграм"></a>
-                        <a href="#" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}" alt="WhatsApp"></a>
+                    <div class="contacts-cells__phone-row phone-row">
+                        <a href="tel:{{ this.theme.phone }}" class="phone-row__phone">{{ this.theme.phone }}</a>
+                        <a href="{{ this.theme.tg_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/telegram.png'|theme }}" alt="Телеграм"></a>
+                        <a href="{{ this.theme.wapp_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}" alt="WhatsApp"></a>
                     </div>
                 </div>
                 <div class="contacts-cells__cell">
-                    <a href="mailto:hello@world.com" class="contacts-cells__mail contacts-cells__text">hello@world.com</a>
+                    <a href="mailto:{{ this.theme.email }}" class="contacts-cells__mail contacts-cells__text">{{ this.theme.email }}</a>
                 </div>
                 <div class="contacts-cells__cell">
                     <div class="contacts-cells__soc-links">
-                        <a href="#" class="contacts-cells__soc-link contacts-cells__text">facebook</a>
-                        <a href="#" class="contacts-cells__soc-link contacts-cells__text">instagram</a>
+                        {% for soc_link in this.theme.side_soc_links %}
+                            <a href="{{ soc_link.link }}" class="contacts-cells__soc-link contacts-cells__text">{{ soc_link.link_name }}</a>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
