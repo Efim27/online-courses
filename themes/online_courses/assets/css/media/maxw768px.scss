@@ -1,0 +1,165 @@
+@media screen and (max-width: 768px) {
+	.videobox {
+		&__label {
+			margin-top: 20px;
+		}
+	}
+
+	.musical-constructor {
+		&__info {
+			@include grid-width(12);
+			margin-top: 35px;
+			order: 1;
+		}
+
+		&__image {
+			@include grid-width(12);
+		}
+	}
+
+	.about-education {
+		&__videos {
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__videobox {
+			margin-top: 35px;
+			@include grid-width(11);
+
+			&:nth-child(1) {
+				margin-top: 0px;
+			}
+		}
+	}
+
+	.about-project {
+		&__left {
+			@include grid-width(12);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__btn-submit {
+			margin-top: 0px;
+		}
+
+		&__right {
+			margin-top: 20px;
+			@include grid-width(12);
+		}
+
+		&__row {
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__videobox {
+			margin-top: 35px;
+			@include grid-width(11);
+
+			&:nth-child(1) {
+				margin-top: 0px;
+			}
+		}
+	}
+
+	.our-telegram {
+		&__icons {
+			display: none;
+		}
+
+		&__main-icon {
+			display: flex;
+		}
+
+		&__title {
+			margin-top: 15px;
+			margin-bottom: 0px;
+		}
+
+		.main__left,
+		.main__right {
+			flex-shrink: 20;
+		}
+	}
+
+	.work-examples {
+		&__left {
+			@include grid-width(12);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__btn-submit {
+			margin-top: 0px;
+		}
+
+		&__right {
+			@include grid-width(12);
+		}
+
+		&__right-row {
+			display: none;
+		}
+
+		&__pagination-mini {
+			display: flex;
+			margin-top: 50px;
+		}
+	}
+
+	.project-authors {
+		&__authors {
+			justify-content: center;
+		}
+
+		&__active-author {
+			@include grid-width(12);
+		}
+
+		&__author {
+			display: none;
+		}
+	}
+
+	.faq {
+		&__left {
+			@include grid-width(12);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__btn-submit {
+			margin-top: 0px;
+		}
+
+		&__right {
+			@include grid-width(12);
+			margin-top: 35px;
+		}
+	}
+
+	.contacts {
+		&__left {
+			@include grid-width(12);
+		}
+
+		&__right {
+			@include grid-width(12);
+		}
+
+		&__links {
+			margin-top: 20px;
+		}
+
+		&__form {
+			margin-top: 40px;
+		}
+	}
+}

@@ -1,0 +1,211 @@
+@media screen and (max-width: 576px) {
+	.profile-dropdown {
+		margin-left: 10px;
+	}
+
+	.footer {
+		margin-top: 20px;
+
+		&__rights {
+			margin-top: 20px;
+		}
+	}
+
+	.all-courses {
+		margin-bottom: 40px;
+	}
+
+	.algorithm-education {
+		margin-top: 40px;
+
+		&__mini-title {
+			display: block;
+		}
+
+		&__title {
+			display: none;
+		}
+
+		&__stage {
+			padding-left: 0px;
+		}
+	}
+
+	.videobox {
+		margin-top: 35px;
+
+		&:nth-child(1) {
+			margin-top: 0px;
+		}
+
+		&__label {
+			margin-top: 20px;
+		}
+	}
+
+	.project-aim {
+		&__row {
+			flex-direction: column;
+		}
+
+		&__description {
+			margin-top: 30px;
+		}
+	}
+
+	.project-about {
+		&__row {
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		&__statistics {
+			margin-top: 20px;
+			margin-left: -20px;
+			justify-content: space-between;
+		}
+
+		&__image {
+			height: 320px;
+			margin-top: 30px;
+		}
+	}
+
+	.project-aim {
+		margin-top: 45px;
+
+		&__images {
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		&__image {
+			&:nth-child(1) {
+				margin-top: 0px;
+			}
+
+			margin-top: 30px;
+			margin-left: 0px;
+		}
+	}
+
+	.our-worth {
+		margin-top: 60px;
+
+		&__cards {
+			margin-top: 40px;
+		}
+
+		&__card {
+			margin-bottom: 15px;
+		}
+	}
+
+	.about-education {
+		margin-top: 55px;
+	}
+
+	.project-authors {
+		margin-top: 40px;
+	}
+
+	.project-reviews {
+		padding: 50px 0px;
+
+		&__content {
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		&__left {
+			width: 100%;
+			display: flex;
+			margin: 0px;
+			justify-content: space-between;
+		}
+
+		&__row {
+			margin-top: 30px;
+		}
+
+		&__btns_main {
+			display: none;
+		}
+
+		div &__btns_mini {
+			display: flex;
+		}
+
+		&__sender {
+			margin-top: 10px;
+		}
+
+		&__review {
+			margin-top: 16px;
+		}
+
+		&__submit {
+			margin-top: 5px;
+		}
+
+		&__right {
+			width: 100%;
+			margin: 0px;
+		}
+
+		&__btn-more {
+			margin-top: 28px;
+		}
+
+		&__btns_mini {
+			margin-top: 40px;
+		}
+	}
+
+	.news {
+		margin-top: 55px;
+		margin-bottom: 80px;
+
+		&__row {
+			margin-top: 40px;
+		}
+
+		&__news-card {
+			width: 100%;
+			display: none;
+
+			&:nth-child(1) {
+				display: block;
+			}
+		}
+	}
+
+	.algorithm-stage {
+		&__label {
+			margin-left: 20px;
+		}
+	}
+
+	.welcome {
+		&__arrow-in-circle {
+			display: none;
+		}
+	}
+
+	.creative-result {
+		&__title {
+			height: 75px;
+			@include title(h5);
+		}
+
+		&__mini-labels {
+			justify-content: center;
+		}
+	}
+
+	.creative-result-label {
+		&_mini {
+			@include grid-width(12);
+		}
+	}
+}

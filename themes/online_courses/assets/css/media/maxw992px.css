@@ -1,0 +1,52 @@
+@media screen and (max-width: 992px) {
+  .main__left {
+    min-width: 20px;
+  }
+  .left-links {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__contacts {
+    display: none;
+  }
+  .all-courses__title {
+    text-align: center;
+  }
+  .all-courses__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .our-worth__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .welcome__row {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .welcome__left {
+    width: 100%;
+  }
+  .welcome__right {
+    width: 100%;
+  }
+  .welcome__icons {
+    margin-top: 25px;
+  }
+  .welcome__about {
+    margin-top: 15px;
+  }
+}
+/*# sourceMappingURL=maxw992px.css.map */

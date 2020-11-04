@@ -1,0 +1,382 @@
+@media screen and (max-width: 480px) {
+	.text-input {
+
+		&__label {
+			top: -20px;
+		}
+
+		&__toggle-pswd {
+			top: 2px;
+
+			object {
+				width: 24px;
+			}
+		}
+
+		& input, & label {
+			height: 30px;
+		}
+
+		& input:valid + label, & input:focus + label {
+			top: -25px;
+		}
+	}
+
+	.main-btn {
+		&__text {
+			font-size: 16px;
+		}
+	}
+
+	.popup {
+
+		&__content {
+		}
+	
+		&__first-row {
+		}
+	
+		&__title {
+			@include title(h6);
+		}
+	
+		&__close {
+			object {
+				width: 15px;
+				height: 15px;
+			}
+		}
+	}
+	
+	.popup-signin {
+	
+		&__content {
+		}
+	
+		&__form {
+			margin-top: 50px;
+		}
+	
+		&__input-email {
+		}
+	
+		&__input-password {
+			margin-top: 30px;
+		}
+	
+		&__btn {
+			margin-top: 30px;
+		}
+	
+		&__regulations {
+			margin-top: 15px;
+			font-size: 10px;
+		}
+	
+		div &__no-account {
+			margin-top: 26px;
+		}
+	}
+	
+	.popup-signup {
+	
+		&__content {
+			max-width: 450px;
+		}
+	
+		&__form {
+			margin-top: 35px;
+		}
+	
+		&__input-email {
+		}
+
+		&__input-name {
+			margin-top: 30px;
+		}
+	
+		&__input-surname {
+			margin-top: 30px;
+		}
+	
+		&__input-phone {
+			margin-top: 30px;
+		}
+	
+		&__input-password {
+			margin-top: 30px;
+		}
+	
+		&__input-password2 {
+			margin-top: 30px;
+		}
+	
+		&__btn {
+			margin-top: 30px;
+		}
+	
+		&__regulations {
+			font-size: 10px;
+		}
+	
+		div &__have-account {
+			margin-top: 30px;
+		}
+	}
+	
+	.havent-or-have-account {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		@include text(p4);
+		font-size: 16px;
+		margin: -5px;
+	
+		&__text {
+			margin: 5px;
+			opacity: 0.9;
+		}
+	
+		&__link {
+			margin: 5px;
+			text-decoration-line: underline;
+			opacity: 0.9;
+		}
+	}
+
+	.side-menu {
+		padding-top: 35px;
+		padding-left: 40px;
+		padding-right: 15px;
+		padding-bottom: 55px;
+
+		&__content {
+			padding-top: 65px;
+		}
+
+		&__link {
+			@include text(p4);
+		}
+
+		&__phone-row {
+			margin-top: 60px;
+		}
+
+		&__phone {
+			font-size: 18px;
+		}
+
+		&__soc-icon {
+			margin: 10px;
+
+			img {
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		&__email {
+			font-size: 18px;
+			margin-top: 15px;
+		}
+
+		&__soc-links {
+			font-size: 16px;
+			margin-top: 15px;
+			color: black;
+		}
+	}
+
+	.tag {
+		font-size: 14px;
+	}
+
+	.btn-submit {
+		object {
+			width: 50px;
+		}
+	}
+
+	.project-about {
+		&__statistics {
+			justify-content: center;
+		}
+	}
+
+	.worth-card {
+		&__label {
+			@include text(p4);
+		}
+	}
+
+	.welcome-title {
+		@include title(h4);
+	}
+
+	.welcome {
+		&__image {
+			height: 250px;
+		}
+
+		&__about {
+			@include text(p3);
+		}
+	}
+
+	.musical-constructor {
+		margin-top: 45px;
+		padding: 35px 0px;
+
+		&__title {
+			font-size: 24px;
+
+			img {
+				width: 24px;
+			}
+		}
+
+		&__about {
+			font-size: 16px;
+		}
+	}
+
+	.about-project {
+		margin-top: 35px;
+
+		&__about2 {
+			margin-top: 15px;
+		}
+
+		&__row {
+			margin-top: 40px;
+		}
+	}
+
+	.about-education {
+		padding-bottom: 50px;
+	}
+
+	.creative-result {
+	}
+
+	.algorithm-education {
+		&__title {
+			font-size: 24px;
+		}
+	}
+
+	.algorithm-stage {
+		&__dot {
+			width: 10px;
+			height: 10px;
+		}
+
+		&__label {
+			font-size: 14px;
+		}
+	}
+
+	.our-telegram {
+		margin-top: 50px;
+	}
+
+	.work-examples {
+		margin-top: 80px;
+
+		&__music-player {
+			@include grid-width(12);
+
+			&:nth-child(2n) {
+				display: none;
+			}
+		}
+	}
+
+	.project-authors-block {
+		&_index {
+			margin-top: 50px;
+			padding-top: 0px;
+			padding-bottom: 35px;
+		}
+	}
+
+	.faq {
+		margin-top: 35px;
+	}
+
+	.contacts {
+		margin-top: 50px;
+		margin-bottom: 35px;
+		padding-top: 35px;
+		padding-bottom: 50px;
+		font-style: 18px;
+
+		&__title {
+			@include title(h5);
+			opacity: 1;
+		}
+
+		&__phone {
+			@include text(p4);
+			margin-right: 10px;
+		}
+
+		&__soc-icon {
+			margin: 0px 10px;
+
+			img {
+				width: 21px;
+			}
+		}
+
+		&__email {
+			margin-top: 15px;
+			@include text(p4);
+		}
+
+		&__links {
+			margin-top: 15px;
+		}
+
+		&__phone-row {
+			margin-top: 35px;
+		}
+
+		&__input-email {
+			@include grid-width(12);
+		}
+
+		&__input-phone {
+			margin-top: 25px;
+			@include grid-width(12);
+		}
+
+		&__input-question {
+			margin-top: 25px;
+		}
+
+		&__agree {
+			@include grid-width(12);
+		}
+
+		&__btn-submit {
+			@include grid-width(12);
+			margin-top: 30px;
+			justify-content: flex-start;
+		}
+	}
+
+	.creative-result-label {
+		&_mini {
+			.creative-result-label__dot {
+				width: 10px;
+				height: 10px;
+			}
+
+			.creative-result-label__text {
+				font-size: 16px;
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@media screen and (max-width: 1200px) {
+	.creative-result-label {
+		display: none;
+	}
+
+	.creative-result {
+		&__mini-label {
+			display: flex;
+		}
+
+		&__mini-labels {
+			display: flex;
+		}
+	}
+}

@@ -2765,6 +2765,53 @@ div .project-reviews__btns_mini {
   margin-top: 30px;
 }
 
+.main-btn {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
+  border: none;
+  border-radius: 11px;
+  padding: 1px;
+  cursor: pointer;
+  outline: none;
+  opacity: 0.7;
+}
+
+.main-btn__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  background-color: white;
+  border-radius: 11px;
+}
+
+.main-btn__text {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 21px;
+  line-height: 140%;
+  background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 1200px) {
   .creative-result-label {
     display: none;
@@ -3201,53 +3248,6 @@ div .project-reviews__btns_mini {
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
-}
-
-.main-btn {
-  width: 100%;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
-  border: none;
-  border-radius: 11px;
-  padding: 1px;
-  cursor: pointer;
-  outline: none;
-  opacity: 0.7;
-}
-
-.main-btn__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: calc(100% - 1px);
-  height: calc(100% - 1px);
-  background-color: white;
-  border-radius: 11px;
-}
-
-.main-btn__text {
-  font-family: "Merriweather", serif;
-  color: #252733;
-  font-size: 21px;
-  line-height: 140%;
-  background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 480px) {
