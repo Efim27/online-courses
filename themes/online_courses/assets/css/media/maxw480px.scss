@@ -305,7 +305,7 @@
 		margin-top: 35px;
 	}
 
-	.contacts {
+	.contact-us {
 		margin-top: 50px;
 		margin-bottom: 35px;
 		padding-top: 35px;
@@ -317,19 +317,6 @@
 			opacity: 1;
 		}
 
-		&__phone {
-			@include text(p4);
-			margin-right: 10px;
-		}
-
-		&__soc-icon {
-			margin: 0px 10px;
-
-			img {
-				width: 21px;
-			}
-		}
-
 		&__email {
 			margin-top: 15px;
 			@include text(p4);
@@ -337,10 +324,6 @@
 
 		&__links {
 			margin-top: 15px;
-		}
-
-		&__phone-row {
-			margin-top: 35px;
 		}
 
 		&__input-email {
@@ -377,6 +360,12 @@
 			.creative-result-label__text {
 				font-size: 16px;
 			}
+		}
+	}
+
+	.contacts {
+		&__contacts-us {
+			margin-top: 60px;
 		}
 	}
 }

@@ -123,29 +123,6 @@
 		}
 	}
 
-	&__phone-row {
-		margin: -15px -15px;
-		margin-top: 70px;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-	}
-
-	&__phone {
-		margin: 0 15px;
-		@include text(p1);
-		white-space: nowrap;
-	}
-
-	&__soc-icon {
-		margin: 15px;
-
-		img {
-			width: 24px;
-			max-width: 100%;
-		}
-	}
-
 	&__email {
 		@include text(p1);
 		margin-top: 15px;
@@ -159,6 +136,28 @@
 
 	&__soc-link {
 		margin: 0px 10px;
+	}
+}
+
+.phone-row {
+	margin: -15px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&__phone {
+		margin: 0 15px;
+		@include text(p1);
+		white-space: nowrap;
+	}
+	
+	&__soc-icon {
+		margin: 15px;
+	
+		img {
+			width: 24px;
+			max-width: 100%;
+		}
 	}
 }
 
@@ -711,7 +710,7 @@
 	}
 
 	&__block {
-		@include grid-width(7);
+		@include grid-width(9);
 	}
 
 	&__question {
@@ -768,4 +767,87 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+}
+
+.contact-us {
+
+    &__left-links {
+        margin-top: 130px;
+    }
+
+    &__row {
+		margin-top: 45px;
+        @include grid-row();
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+    }
+
+    &__left {
+        @include grid-width(4);
+    }
+
+    &__right {
+        @include grid-width(6);
+    }
+
+    &__title {
+        @include title(h3);
+    }
+
+    &__email {
+        @include text(p1);
+        margin-top: 22px;
+    }
+
+    &__links {
+        display: flex;
+        margin: 0 -10px;
+        margin-top: 45px;
+    }
+
+    &__link {
+        margin: 10px;
+    }
+
+    &__form {
+    }
+
+    &__fields-row {
+        @include grid-row();
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__input-email {
+        @include grid-width(6);
+    }
+
+    &__input-phone {
+        @include grid-width(6);
+    }
+
+    &__input-question {
+        margin-top: 32px;
+    }
+
+    &__form-row {
+        margin-top: 30px;
+        @include grid-row();
+		display: flex;
+		flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__agree {
+        @include text(p5);
+        @include grid-width(8);
+    }
+
+    &__btn-submit {
+        @include grid-width(4);
+        display: flex;
+        justify-content: flex-end;
+    }
 }

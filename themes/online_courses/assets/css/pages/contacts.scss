@@ -1,0 +1,50 @@
+.contacts {
+    &__contacts-us {
+        margin-top: 110px;
+    }
+}
+
+.contacts-cells {
+	margin-top: 65px;
+
+	&__title {
+		@include title(h2);
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 35px;
+		@include grid-row();
+	}
+
+	&__cell {
+		@include grid-width(4);
+		background-color: $color_bg_blue;
+        border-radius: 20px;
+        margin-top: 20px;
+		padding: 45px 30px;
+		display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+
+	&__email {
+	}
+
+	&__text {
+		@include text(p1);
+	}
+
+	&__soc-links {
+	}
+
+	&__soc-link {
+		margin-right: 20px;
+
+		&:nth-last-child() {
+			margin-right: 0px;
+		}
+	}
+}

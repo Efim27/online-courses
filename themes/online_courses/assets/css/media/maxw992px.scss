@@ -58,4 +58,11 @@
 			margin-top: 15px;
 		}
 	}
+
+	.contacts-cells {
+
+		&__cell {
+			@include grid-width(6);
+		}
+	}
 }

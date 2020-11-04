@@ -5,5 +5,63 @@ is_hidden = 0
 ==
 {##}
 <div class="main__inner">
-    <div class="main__content"></div>
+    <div class="main__left"></div>
+    <div class="main__content contacts">
+        <div class="contacts-cells">
+            <div class="contacts-cells__title">Контакты</div>
+            <div class="contacts-cells__row">
+                <div class="contacts-cells__cell">
+                    <div class="phone-row">
+                        <a href="tel:+74951234556" class="phone-row__phone">+7 (495) 123 45 56</a>
+                        <a href="#" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/telegram.png'|theme }}" alt="Телеграм"></a>
+                        <a href="#" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}" alt="WhatsApp"></a>
+                    </div>
+                </div>
+                <div class="contacts-cells__cell">
+                    <a href="mailto:hello@world.com" class="contacts-cells__mail contacts-cells__text">hello@world.com</a>
+                </div>
+                <div class="contacts-cells__cell">
+                    <div class="contacts-cells__soc-links">
+                        <a href="#" class="contacts-cells__soc-link contacts-cells__text">facebook</a>
+                        <a href="#" class="contacts-cells__soc-link contacts-cells__text">instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts__contacts-us contacts-us">
+            <div class="contact-us__row">
+                <div class="contact-us__left">
+                    <div class="contact-us__title">Контакты</div>
+                </div>
+                <div class="contact-us__right">
+                    <form action="/" class="contact-us__form" method="POST">
+                        <div class="contact-us__fields-row">
+                            <div class="contact-us__input-email text-input">
+                                <input class="text-input__input" id="contact-us-email" type="text" required>
+                                <label for="contact-us-email" class="text-input__label">Email</label>
+                            </div>
+                            <div class="contact-us__input-phone text-input">
+                                <input class="text-input__input" id="contact-us-phone" type="text" required>
+                                <label for="contact-us-phone" class="text-input__label">Телефон</label>
+                            </div>
+                        </div>
+                        <div class="contact-us__input-question text-input">
+                            <input class="text-input__input" id="contact-us-question" type="text" required>
+                            <label for="contact-us-question" class="text-input__label">Вопрос</label>
+                        </div>
+                        <div class="contact-us__form-row">
+                            <div class="contact-us__agree">Нажимая на кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
+                            <div class="contact-us__btn-submit btn-submit">
+                                <object
+                                    data="{{ 'assets/images/btn-submit.svg'|theme }}"
+                                    type="image/svg+xml"
+                                ></object>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main__right"></div>
 </div>

@@ -144,165 +144,6 @@ a, a:hover, a:active, a:visited {
   text-decoration: none;
 }
 
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #EDF5F4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
-  z-index: -1;
-}
-
-.popup_loaded {
-  opacity: 1;
-  z-index: 1111;
-  display: none;
-}
-
-.popup__content {
-  padding: 50px 40px;
-  background-color: white;
-  border-radius: 20px;
-}
-
-.popup__first-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.popup__title {
-  font-family: "Merriweather", serif;
-  color: #252733;
-  font-size: 30px;
-  line-height: 140%;
-}
-
-.popup-signin__content {
-  max-width: 450px;
-}
-
-.popup-signin__form {
-  margin-top: 35px;
-}
-
-.popup-signin__input-password {
-  margin-top: 32px;
-}
-
-.popup-signin__btn {
-  margin-top: 45px;
-}
-
-.popup-signin__regulations {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 160%;
-  opacity: 0.7;
-}
-
-div .popup-signin__no-account {
-  margin-top: 26px;
-}
-
-.popup-signup__content {
-  max-width: 450px;
-}
-
-.popup-signup__form {
-  margin-top: 35px;
-}
-
-.popup-signup__input-name {
-  margin-top: 25px;
-}
-
-.popup-signup__input-surname {
-  margin-top: 25px;
-}
-
-.popup-signup__input-phone {
-  margin-top: 25px;
-}
-
-.popup-signup__input-password {
-  margin-top: 25px;
-}
-
-.popup-signup__input-password2 {
-  margin-top: 25px;
-}
-
-.popup-signup__btn {
-  margin-top: 50px;
-}
-
-.popup-signup__regulations {
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 160%;
-  opacity: 0.7;
-}
-
-div .popup-signup__have-account {
-  margin-top: 26px;
-}
-
-.havent-or-have-account {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-size: 18px;
-  line-height: 160%;
-  opacity: 0.9;
-  margin: -10px;
-}
-
-.havent-or-have-account__text {
-  margin: 10px;
-  opacity: 0.9;
-}
-
-.havent-or-have-account__link {
-  margin: 10px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-  opacity: 0.9;
-}
-
 .welcome {
   margin-top: 30px;
 }
@@ -901,171 +742,11 @@ div .popup-signup__have-account {
   height: 21px;
 }
 
-.contacts {
+.index-contacts {
   margin-top: 120px;
   background-color: #FFF3F9;
   padding-top: 120px;
   padding-bottom: 130px;
-}
-
-.contacts__left-links {
-  margin-top: 130px;
-}
-
-.contacts__row {
-  margin-left: calc(-1 * 50px / 2);
-  margin-right: calc(-1 * 50px / 2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contacts__left {
-  width: calc(100% / 12 * 4 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-}
-
-.contacts__right {
-  width: calc(100% / 12 * 6 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-}
-
-.contacts__title {
-  font-family: "Merriweather", serif;
-  color: #252733;
-  font-size: 36px;
-  line-height: 140%;
-}
-
-.contacts__phone-row {
-  margin: 0 -15px;
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contacts__phone {
-  margin: 0 15px;
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-size: 24px;
-  line-height: 160%;
-  opacity: 0.9;
-  white-space: nowrap;
-}
-
-.contacts__soc-icon {
-  margin: 0 15px;
-}
-
-.contacts__soc-icon img {
-  width: 24px;
-  max-width: 100%;
-}
-
-.contacts__email {
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-size: 24px;
-  line-height: 160%;
-  opacity: 0.9;
-  margin-top: 22px;
-}
-
-.contacts__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 -10px;
-  margin-top: 45px;
-}
-
-.contacts__link {
-  margin: 10px;
-}
-
-.contacts__form {
-  margin-top: 95px;
-}
-
-.contacts__fields-row {
-  margin-left: calc(-1 * 50px / 2);
-  margin-right: calc(-1 * 50px / 2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.contacts__input-email {
-  width: calc(100% / 12 * 6 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-}
-
-.contacts__input-phone {
-  width: calc(100% / 12 * 6 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-}
-
-.contacts__input-question {
-  margin-top: 32px;
-}
-
-.contacts__form-row {
-  margin-top: 30px;
-  margin-left: calc(-1 * 50px / 2);
-  margin-right: calc(-1 * 50px / 2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contacts__agree {
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 160%;
-  opacity: 0.7;
-  width: calc(100% / 12 * 8 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-}
-
-.contacts__btn-submit {
-  width: calc(100% / 12 * 4 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .work-examples {
@@ -1827,6 +1508,70 @@ div .project-reviews__btns_mini {
   margin-bottom: 20px;
 }
 
+.contacts__contacts-us {
+  margin-top: 110px;
+}
+
+.contacts-cells {
+  margin-top: 65px;
+}
+
+.contacts-cells__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 48px;
+  line-height: 140%;
+}
+
+.contacts-cells__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 35px;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.contacts-cells__cell {
+  width: calc(100% / 12 * 4 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+  background-color: #F2FFFE;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 45px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-cells__text {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.9;
+}
+
+.contacts-cells__soc-link {
+  margin-right: 20px;
+}
+
+.contacts-cells__soc-link:nth-last-child() {
+  margin-right: 0px;
+}
+
 .header {
   font-family: "Merriweather", serif;
   white-space: nowrap;
@@ -1978,38 +1723,6 @@ div .project-reviews__btns_mini {
   -webkit-text-fill-color: transparent;
 }
 
-.side-menu__phone-row {
-  margin: -15px -15px;
-  margin-top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.side-menu__phone {
-  margin: 0 15px;
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-size: 24px;
-  line-height: 160%;
-  opacity: 0.9;
-  white-space: nowrap;
-}
-
-.side-menu__soc-icon {
-  margin: 15px;
-}
-
-.side-menu__soc-icon img {
-  width: 24px;
-  max-width: 100%;
-}
-
 .side-menu__email {
   font-family: "Montserrat", sans-serif;
   color: #252733;
@@ -2029,6 +1742,37 @@ div .project-reviews__btns_mini {
 
 .side-menu__soc-link {
   margin: 0px 10px;
+}
+
+.phone-row {
+  margin: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone-row__phone {
+  margin: 0 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+.phone-row__soc-icon {
+  margin: 15px;
+}
+
+.phone-row__soc-icon img {
+  width: 24px;
+  max-width: 100%;
 }
 
 .dropdown {
@@ -2725,7 +2469,7 @@ div .project-reviews__btns_mini {
 }
 
 .faq-stage__block {
-  width: calc(100% / 12 * 7 - 50px);
+  width: calc(100% / 12 * 9 - 50px);
   margin-left: calc(50px / 2);
   margin-right: calc(50px / 2);
 }
@@ -2812,6 +2556,290 @@ div .project-reviews__btns_mini {
   -webkit-text-fill-color: transparent;
 }
 
+.contact-us__left-links {
+  margin-top: 130px;
+}
+
+.contact-us__row {
+  margin-top: 45px;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-us__left {
+  width: calc(100% / 12 * 4 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.contact-us__right {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.contact-us__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.contact-us__email {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.9;
+  margin-top: 22px;
+}
+
+.contact-us__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+  margin-top: 45px;
+}
+
+.contact-us__link {
+  margin: 10px;
+}
+
+.contact-us__fields-row {
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-us__input-email {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.contact-us__input-phone {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.contact-us__input-question {
+  margin-top: 32px;
+}
+
+.contact-us__form-row {
+  margin-top: 30px;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us__agree {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+  width: calc(100% / 12 * 8 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.contact-us__btn-submit {
+  width: calc(100% / 12 * 4 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EDF5F4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  z-index: -1;
+}
+
+.popup_loaded {
+  opacity: 1;
+  z-index: 1111;
+  display: none;
+}
+
+.popup__content {
+  padding: 50px 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.popup__first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 30px;
+  line-height: 140%;
+}
+
+.popup-signin__content {
+  max-width: 450px;
+}
+
+.popup-signin__form {
+  margin-top: 35px;
+}
+
+.popup-signin__input-password {
+  margin-top: 32px;
+}
+
+.popup-signin__btn {
+  margin-top: 45px;
+}
+
+.popup-signin__regulations {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+}
+
+div .popup-signin__no-account {
+  margin-top: 26px;
+}
+
+.popup-signup__content {
+  max-width: 450px;
+}
+
+.popup-signup__form {
+  margin-top: 35px;
+}
+
+.popup-signup__input-name {
+  margin-top: 25px;
+}
+
+.popup-signup__input-surname {
+  margin-top: 25px;
+}
+
+.popup-signup__input-phone {
+  margin-top: 25px;
+}
+
+.popup-signup__input-password {
+  margin-top: 25px;
+}
+
+.popup-signup__input-password2 {
+  margin-top: 25px;
+}
+
+.popup-signup__btn {
+  margin-top: 50px;
+}
+
+.popup-signup__regulations {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+}
+
+div .popup-signup__have-account {
+  margin-top: 26px;
+}
+
+.havent-or-have-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.9;
+  margin: -10px;
+}
+
+.havent-or-have-account__text {
+  margin: 10px;
+  opacity: 0.9;
+}
+
+.havent-or-have-account__link {
+  margin: 10px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  opacity: 0.9;
+}
+
 @media screen and (max-width: 1200px) {
   .creative-result-label {
     display: none;
@@ -2877,6 +2905,11 @@ div .project-reviews__btns_mini {
   }
   .welcome__about {
     margin-top: 15px;
+  }
+  .contacts-cells__cell {
+    width: calc(100% / 12 * 6 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
   }
 }
 
@@ -3043,20 +3076,20 @@ div .project-reviews__btns_mini {
     margin-right: calc(50px / 2);
     margin-top: 35px;
   }
-  .contacts__left {
+  .contact-us__left {
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
-  .contacts__right {
+  .contact-us__right {
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
-  .contacts__links {
+  .contact-us__links {
     margin-top: 20px;
   }
-  .contacts__form {
+  .contact-us__form {
     margin-top: 40px;
   }
 }
@@ -3244,6 +3277,11 @@ div .project-reviews__btns_mini {
             justify-content: center;
   }
   .creative-result-label_mini {
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
+  .contacts-cells__cell {
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
@@ -3485,14 +3523,14 @@ div .project-reviews__btns_mini {
   .faq {
     margin-top: 35px;
   }
-  .contacts {
+  .contact-us {
     margin-top: 50px;
     margin-bottom: 35px;
     padding-top: 35px;
     padding-bottom: 50px;
     font-style: 18px;
   }
-  .contacts__title {
+  .contact-us__title {
     font-family: "Merriweather", serif;
     color: #252733;
     font-size: 24px;
@@ -3500,21 +3538,7 @@ div .project-reviews__btns_mini {
     opacity: 0.9;
     opacity: 1;
   }
-  .contacts__phone {
-    font-family: "Montserrat", sans-serif;
-    color: #252733;
-    font-size: 18px;
-    line-height: 160%;
-    opacity: 0.9;
-    margin-right: 10px;
-  }
-  .contacts__soc-icon {
-    margin: 0px 10px;
-  }
-  .contacts__soc-icon img {
-    width: 21px;
-  }
-  .contacts__email {
+  .contact-us__email {
     margin-top: 15px;
     font-family: "Montserrat", sans-serif;
     color: #252733;
@@ -3522,32 +3546,29 @@ div .project-reviews__btns_mini {
     line-height: 160%;
     opacity: 0.9;
   }
-  .contacts__links {
+  .contact-us__links {
     margin-top: 15px;
   }
-  .contacts__phone-row {
-    margin-top: 35px;
-  }
-  .contacts__input-email {
+  .contact-us__input-email {
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
-  .contacts__input-phone {
+  .contact-us__input-phone {
     margin-top: 25px;
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
-  .contacts__input-question {
+  .contact-us__input-question {
     margin-top: 25px;
   }
-  .contacts__agree {
+  .contact-us__agree {
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
-  .contacts__btn-submit {
+  .contact-us__btn-submit {
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);

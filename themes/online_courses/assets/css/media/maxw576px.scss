@@ -208,4 +208,11 @@
 			@include grid-width(12);
 		}
 	}
+
+	.contacts-cells {
+
+		&__cell {
+			@include grid-width(12);
+		}
+	}
 }
