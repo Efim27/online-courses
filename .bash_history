@@ -309,3 +309,54 @@ bash gitp.sh
 git pull
 git pull
 git pull
+cd config/
+nano cms.php 
+ls
+cd ../plugins/
+ls
+cd hima/review/
+ls
+nano plugin.yaml 
+cd ../..
+ls
+cd indikator/user/
+nano Plugin.php 
+cd ..
+ls
+cd ..
+ls
+cd october/
+ls
+cd ..
+cd hima/review/
+ls
+nano Plugin.php 
+nano plugin.yaml 
+cd./../indikator/user/pl
+cd ../../indikator/user/
+ls
+ls
+cd -
+ls
+nano plugin.yaml 
+cd ~
+ls
+cd config/
+nano cms.php 
+cd ..
+git add .
+git commit -m '+plugins reviews and news'
+git push
+git pull
+git add .
+git commit -m "+plugin faq"
+git push
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+ды
+ls
+git pull

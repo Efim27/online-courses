@@ -1,0 +1,11 @@
+plugin:
+    name: 'hima.questions::lang.plugin.name'
+    description: 'hima.questions::lang.plugin.description'
+    author: Hima
+    icon: oc-icon-question
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Вопросы
+        url: hima/questions/questions
+        icon: icon-question
