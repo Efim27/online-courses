@@ -815,7 +815,7 @@ a, a:hover, a:active, a:visited {
   margin-left: 10px;
 }
 
-.work-examples__pagination-mini {
+div .work-examples__pagination-mini {
   display: none;
 }
 
@@ -3063,7 +3063,7 @@ div .popup-signup__have-account {
   .work-examples__right-row {
     display: none;
   }
-  .work-examples__pagination-mini {
+  div .work-examples__pagination-mini {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

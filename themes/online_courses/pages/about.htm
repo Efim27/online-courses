@@ -84,30 +84,14 @@ pageNumber = "{{ :page }}"
             <div class="our-worth">
                 <div class="our-worth__title">Наши ценности</div>
                 <div class="our-worth__cards">
+                    {% for our_worth in this.theme.our_worths %}
                     <div class="our-worth__card worth-card">
                         <div class="worth-card__circle"></div>
                         <div class="worth-card__label">
-                            Стань музыкантом, режиссерром, фотографом.
+                            {{ our_worth.about }}
                         </div>
                     </div>
-                    <div class="our-worth__card worth-card">
-                        <div class="worth-card__circle"></div>
-                        <div class="worth-card__label">
-                            Стань музыкантом, режиссерром, фотографом.
-                        </div>
-                    </div>
-                    <div class="our-worth__card worth-card">
-                        <div class="worth-card__circle"></div>
-                        <div class="worth-card__label">
-                            Стань музыкантом, режиссерром, фотографом.
-                        </div>
-                    </div>
-                    <div class="our-worth__card worth-card">
-                        <div class="worth-card__circle"></div>
-                        <div class="worth-card__label">
-                            Стань музыкантом, режиссерром, фотографом.
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

@@ -4,14 +4,6 @@ layout = "main"
 is_hidden = 0
 
 [contenteditor]
-
-[builderList faqs]
-modelClass = "Hima\Faq\Models\Answers"
-scopeValue = "{{ :scope }}"
-displayColumn = "answer,question"
-noRecordsMessage = "Ответы на вопросы не найдены"
-detailsUrlParameter = "id"
-pageNumber = "{{ :page }}"
 ==
 {##}
 <div class="main__inner main__inner_soc-links">
@@ -187,45 +179,23 @@ pageNumber = "{{ :page }}"
                             Как проходит<br />обучение
                         </div>
                         <div class="algorithm-education__stages">
+                            {% for algorithm_stage in this.theme.algorithm_stages %}
                             <div
                                 class="algorithm-education__stage algorithm-stage"
                             >
                                 <div class="algorithm-stage__row">
                                     <div class="algorithm-stage__dot dot"></div>
                                     <div class="algorithm-stage__label">
-                                        Вы получаете доступ к видео <br />
-                                        и дополнительным материалам.
+                                        {{ algorithm_stage.about }}
                                     </div>
                                 </div>
+                                {% if loop.last != true %}
                                 <div
                                     class="algorithm-stage__divider divider"
                                 ></div>
+                                {% endif %}
                             </div>
-                            <div
-                                class="algorithm-education__stage algorithm-stage"
-                            >
-                                <div class="algorithm-stage__row">
-                                    <div class="algorithm-stage__dot dot"></div>
-                                    <div class="algorithm-stage__label">
-                                        Изучаете материал в подходящем вам темпе
-                                        и в удобное для вас время.
-                                    </div>
-                                </div>
-                                <div
-                                    class="algorithm-stage__divider divider"
-                                ></div>
-                            </div>
-                            <div
-                                class="algorithm-education__stage algorithm-stage"
-                            >
-                                <div class="algorithm-stage__row">
-                                    <div class="algorithm-stage__dot dot"></div>
-                                    <div class="algorithm-stage__label">
-                                        Cоздаете свой креатив, следуя видео
-                                        инструкции и дополнительному материалу
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                     <div
@@ -505,78 +475,17 @@ pageNumber = "{{ :page }}"
                         </div>
                     </div>
                     <div class="work-examples__music-players">
+                        {% for work_example in this.theme.work_examples %}
                         <div class="work-examples__music-player music-player">
                             <div class="music-player__inner">
                                 <div class="music-player__circle"><img src="{{ 'assets/images/icons/music_play.png'|theme }}" alt="Плеер" class="music-player__play"></div>
                                 <div class="music-player__music">
-                                    <div class="music-player__music-name">One South Right</div>
-                                    <div class="music-player__music-type">эмбиент</div>
+                                    <div class="music-player__music-name">{{ work_example.name }}</div>
+                                    <div class="music-player__music-type">{{ work_example.type }}</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="work-examples__music-player music-player">
-                            <div class="music-player__inner">
-                                <div class="music-player__circle"><img src="{{ 'assets/images/icons/music_play.png'|theme }}" alt="Плеер" class="music-player__play"></div>
-                                <div class="music-player__music">
-                                    <div class="music-player__music-name">One South Right</div>
-                                    <div class="music-player__music-type">эмбиент</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="work-examples__music-player music-player">
-                            <div class="music-player__inner">
-                                <div class="music-player__circle"><img src="{{ 'assets/images/icons/music_play.png'|theme }}" alt="Плеер" class="music-player__play"></div>
-                                <div class="music-player__music">
-                                    <div class="music-player__music-name">One South Right</div>
-                                    <div class="music-player__music-type">эмбиент</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="work-examples__music-player music-player">
-                            <div class="music-player__inner">
-                                <div class="music-player__circle"><img src="{{ 'assets/images/icons/music_play.png'|theme }}" alt="Плеер" class="music-player__play"></div>
-                                <div class="music-player__music">
-                                    <div class="music-player__music-name">One South Right</div>
-                                    <div class="music-player__music-type">эмбиент</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="work-examples__music-player music-player">
-                            <div class="music-player__inner">
-                                <div class="music-player__circle"><img src="{{ 'assets/images/icons/music_play.png'|theme }}" alt="Плеер" class="music-player__play"></div>
-                                <div class="music-player__music">
-                                    <div class="music-player__music-name">One South Right</div>
-                                    <div class="music-player__music-type">эмбиент</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="work-examples__music-player music-player">
-                            <div class="music-player__inner">
-                                <div class="music-player__circle"><img src="{{ 'assets/images/icons/music_play.png'|theme }}" alt="Плеер" class="music-player__play"></div>
-                                <div class="music-player__music">
-                                    <div class="music-player__music-name">One South Right</div>
-                                    <div class="music-player__music-type">эмбиент</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="work-examples__music-player music-player">
-                            <div class="music-player__inner">
-                                <div class="music-player__circle"><img src="{{ 'assets/images/icons/music_play.png'|theme }}" alt="Плеер" class="music-player__play"></div>
-                                <div class="music-player__music">
-                                    <div class="music-player__music-name">One South Right</div>
-                                    <div class="music-player__music-type">эмбиент</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="work-examples__music-player music-player">
-                            <div class="music-player__inner">
-                                <div class="music-player__circle"><img src="{{ 'assets/images/icons/music_play.png'|theme }}" alt="Плеер" class="music-player__play"></div>
-                                <div class="music-player__music">
-                                    <div class="music-player__music-name">One South Right</div>
-                                    <div class="music-player__music-type">эмбиент</div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                     <div class="work-examples__pagination-mini arrows-pagination">
                         <div class="work-examples__btn-left arrow-left">
@@ -663,7 +572,7 @@ pageNumber = "{{ :page }}"
                         </div>
                     </div>
                     <div class="faq__right">
-                        {% for faq in faqs.records %}
+                        {% for faq in this.theme.faqs %}
                         <div class="faq__stage faq-stage">
                             <div class="faq-stage__row">
                                 <div class="faq-stage__block">

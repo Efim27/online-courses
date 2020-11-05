@@ -2,8 +2,10 @@ tabs:
     stretch: true
     defaultTab: Контакты
     icons:
-        Контакты: icon-sticky-note
-        Ценности: icon-sun-o
+        Контакты: icon-address-book-o
+        Соц. Сети: icon-comments
+        Контент: icon-pencil
+        Вопрос-ответ: icon-question-circle
 
     fields:
         phone:
@@ -25,7 +27,8 @@ tabs:
         soc_links:
           type: repeater
           label: Ссылки на соц. сети
-          titleFrom: link
+          titleFrom: link_name
+          tab: Соц. Сети
           form:
             fields:
               link_name:
@@ -35,10 +38,60 @@ tabs:
         side_soc_links:
           type: repeater
           label: Боковые ссылки на соц. сети
-          titleFrom: link
+          titleFrom: link_name
+          tab: Соц. Сети
           form:
             fields:
               link_name:
                 label: Название ссылки
               link:
                 label: Ссылка
+        work_examples:
+          type: repeater
+          label: Примеры работ
+          titleFrom: name
+          tab: Контент
+          form:
+            fields:
+              name:
+                label: Название
+              type:
+                label: Жанр
+        algorithm_stages:
+          type: repeater
+          label: Как проходит обучение
+          comment: Этапы обучения
+          titleFrom: about
+          tab: Контент
+          form:
+            fields:
+              about:
+                label: Описание
+                type: textarea
+                size: small
+        our_worths:
+          type: repeater
+          label: Наши ценности
+          titleFrom: about
+          tab: Контент
+          form:
+            fields:
+              about:
+                label: Описание
+                type: textarea
+                size: small
+        faqs:
+          type: repeater
+          label: Вопрос-ответ
+          titleFrom: question
+          tab: Вопрос-ответ
+          form:
+            fields:
+              question:
+                label: Вопрос
+                type: textarea
+                size: small
+              answer:
+                label: Ответ
+                type: textarea
+                size: large
