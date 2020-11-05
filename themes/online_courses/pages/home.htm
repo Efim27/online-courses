@@ -5,6 +5,13 @@ is_hidden = 0
 
 [contenteditor]
 ==
+function onTest()
+{
+    $value1 = post('value1');
+    $value2 = post('value2');
+    $this['result'] = $value1 + $value2;
+}
+==
 {##}
 <div class="main__inner main__inner_soc-links">
     <div class="main__left">
@@ -637,19 +644,19 @@ is_hidden = 0
                     </div>
                 </div>
                 <div class="contact-us__right">
-                    <form action="/" class="contact-us__form" method="POST">
+                    <form class="contact-us__form" data-request="onTest" data-request-success="contact_form_success()">
                         <div class="contact-us__fields-row">
                             <div class="contact-us__input-email text-input">
-                                <input class="text-input__input" id="contact-us-email" type="text" required>
+                                <input class="text-input__input" id="contact-us-email" name="email" type="text" required>
                                 <label for="contact-us-email" class="text-input__label">Email</label>
                             </div>
                             <div class="contact-us__input-phone text-input">
-                                <input class="text-input__input" id="contact-us-phone" type="text" required>
+                                <input class="text-input__input" id="contact-us-phone" name="phone" type="text" required>
                                 <label for="contact-us-phone" class="text-input__label">Телефон</label>
                             </div>
                         </div>
                         <div class="contact-us__input-question text-input">
-                            <input class="text-input__input" id="contact-us-question" type="text" required>
+                            <input class="text-input__input" id="contact-us-question" name="question" type="text" required>
                             <label for="contact-us-question" class="text-input__label">Вопрос</label>
                         </div>
                         <div class="contact-us__form-row">

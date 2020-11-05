@@ -55,7 +55,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f2fffe;
+    background-color: $color_bg_blue;
     border-radius: 10px;
 
     &__value {
@@ -139,21 +139,21 @@
     position: relative;
     max-width: 540px;
     height: 200px;
-    background: #f2fffe;
+    background: $color_bg_blue;
     border-radius: 20px;
 
     &__circle {
         position: absolute;
         width: 120px;
         height: 120px;
-        background-color: #70cbd4;
+        background-color: $color_other_yellow;
         border-radius: 50%;
         left: 20px;
         top: 40px;
 	}
 	
-	&:nth-child(2n) &__circle{
-		background-color: $color_other_yellow;
+	&:nth-child(4n - 2) &__circle, &:nth-child(4n - 1) &__circle{
+		background-color: $color_other_blue;
 	}
 
     &__label {
@@ -166,7 +166,7 @@
 .about-education {
 	margin-top: 120px;
 	padding-bottom: 111px;
-    background-color: #f2fffe;
+    background-color: $color_bg_blue;
 
     &__algorithm {
         margin-top: 111px;
@@ -240,7 +240,7 @@
 .project-reviews {
 	margin-top: 125px;
 	padding: 110px 0;
-	background-color: #f2fffe;
+	background-color: $color_bg_blue;
 
 	&__content {
 		@include grid-row();

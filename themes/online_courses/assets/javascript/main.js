@@ -28,6 +28,10 @@ function get_div_by_svg(div_selector, svg) {
 	return svg_div.parent();
 }
 
+function contact_form_success() {
+	alert('Вы успешно отправили нам вопрос');
+}
+
 $(document).ready(function () {
 
 	$(document).mousedown(function (e){
@@ -68,6 +72,10 @@ $(document).ready(function () {
 
 		$(".side-menu__close object").svg_click(function () {
 			$(".side-menu").hide("slow");
+		});
+
+		$(".contact-us__btn-submit object").svg_click(function () {
+			$(".contact-us__form").submit();
 		});
 
 		$('.popup__close object').svg_click(function () {
