@@ -112,35 +112,19 @@ pageNumber = "{{ :page }}"
                         Как проходит<br />обучение
                     </div>
                     <div class="algorithm-education__stages">
+                        {% for algorithm_stage in this.theme.algorithm_stages %}
                         <div class="algorithm-education__stage algorithm-stage">
                             <div class="algorithm-stage__row">
                                 <div class="algorithm-stage__dot dot"></div>
                                 <div class="algorithm-stage__label">
-                                    Вы получаете доступ к видео <br />
-                                    и дополнительным материалам.
+                                    {{ algorithm_stage.about }}
                                 </div>
                             </div>
+                            {% if loop.last != true %}
                             <div class="algorithm-stage__divider divider"></div>
+                            {% endif %}
                         </div>
-                        <div class="algorithm-education__stage algorithm-stage">
-                            <div class="algorithm-stage__row">
-                                <div class="algorithm-stage__dot dot"></div>
-                                <div class="algorithm-stage__label">
-                                    Изучаете материал в подходящем вам темпе и в
-                                    удобное для вас время.
-                                </div>
-                            </div>
-                            <div class="algorithm-stage__divider divider"></div>
-                        </div>
-                        <div class="algorithm-education__stage algorithm-stage">
-                            <div class="algorithm-stage__row">
-                                <div class="algorithm-stage__dot dot"></div>
-                                <div class="algorithm-stage__label">
-                                    Cоздаете свой креатив, следуя видео
-                                    инструкции и дополнительному материалу
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="algorithm-education__divider-bottom divider"></div>
