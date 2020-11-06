@@ -205,6 +205,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .welcome__about {
+  width: calc(100% - 50px);
   font-family: "Montserrat", sans-serif;
   color: #252733;
   font-size: 24px;
@@ -228,6 +229,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .welcome-title {
+  width: calc(100% - 50px);
   font-family: "Merriweather", serif;
   color: #252733;
   font-size: 64px;
@@ -2972,9 +2974,6 @@ div .popup-signup__have-account {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .welcome__left {
-    width: 100%;
   }
   .welcome__right {
     width: 100%;
