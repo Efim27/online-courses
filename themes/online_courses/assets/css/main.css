@@ -710,7 +710,7 @@ a, a:hover, a:active, a:visited {
 }
 
 .faq__stage:nth-child(1) {
-  margin-top: 29px;
+  margin-top: 10px;
 }
 
 .faq__more-questions {
@@ -1587,6 +1587,30 @@ div .project-reviews__btns_mini {
   margin-right: 0px;
 }
 
+.faq-page__title {
+  margin-top: 65px;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 48px;
+  line-height: 140%;
+}
+
+.faq-page__questions {
+  margin-top: 50px;
+}
+
+.faq-page__question {
+  margin-top: 35px;
+}
+
+.faq-page__question:nth-child(1) {
+  margin-top: 0px;
+}
+
+.faq-page__contacts-us {
+  margin-top: 90px;
+}
+
 .header {
   font-family: "Merriweather", serif;
   white-space: nowrap;
@@ -2085,6 +2109,21 @@ div .side-menu__phone-row {
   opacity: 0.8;
 }
 
+.svg-link {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.svg-link__span {
+  display: inline-block;
+}
+
+.svg-link__object {
+  position: relative;
+  z-index: -1;
+}
+
 .arrows-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2520,7 +2559,7 @@ div .side-menu__phone-row {
   font-size: 21px;
   line-height: 160%;
   opacity: 0.8;
-  opacity: 0.8;
+  font-weight: normal;
 }
 
 .faq-stage__answer {
@@ -2531,6 +2570,7 @@ div .side-menu__phone-row {
   font-size: 18px;
   line-height: 160%;
   opacity: 0.9;
+  font-weight: 300;
   opacity: 0.8;
 }
 

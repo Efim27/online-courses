@@ -4,7 +4,6 @@ layout = "main"
 is_hidden = 0
 
 [contenteditor]
-
 [ContactUs]
 ==
 <?php
@@ -18,664 +17,747 @@ function onTest()
 ==
 {##}
 <div class="main__inner main__inner_soc-links">
-    <div class="main__left">
-        <div class="main__left-links left-links left-links_bold">
-            <div class="left-links__soc-links">
-                <a class="left-links__soc-link" href="#">facebook</a>
-                <a class="left-links__soc-link" href="#">instagram</a>
-            </div>
-        </div>
-    </div>
-    <div class="main__content">
-        <div class="welcome">
-            <div class="welcome__row">
-                <div class="welcome__left welcome-title">
-                    {% component 'contenteditor' file="home/welcome-title.htm" %}
-                    <div class="welcome-title__circle"></div>
-                </div>
-                <div class="welcome__right">
-                    <div class="welcome__icons">
-                        <img
-                            src="{{ 'assets/images/icons/music.png'|theme }}"
-                            alt="Музыка"
-                            class="welcome__icon"
-                        />
-                        <img
-                            src="{{ 'assets/images/icons/image.png'|theme }}"
-                            alt="Творчество"
-                            class="welcome__icon"
-                        />
-                        <img
-                            src="{{ 'assets/images/icons/photo.png'|theme }}"
-                            alt="Фотография"
-                            class="welcome__icon"
-                        />
-                    </div>
-                    {% component 'contenteditor' file="home/welcome__about.htm" fixture="div" class="welcome__about" %}
-                </div>
-            </div>
-            <div class="welcome__image">
-                <div class="welcome__arrow-in-circle">
-                    <object
-                        data="{{ 'assets/images/arrow-in-circle.svg'|theme }}"
-                        type="image/svg+xml"
-                    ></object>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="main__right"></div>
+	<div class="main__left">
+		<div class="main__left-links left-links left-links_bold">
+			<div class="left-links__soc-links">
+				<a class="left-links__soc-link" href="#">facebook</a>
+				<a class="left-links__soc-link" href="#">instagram</a>
+			</div>
+		</div>
+	</div>
+	<div class="main__content">
+		<div class="welcome">
+			<div class="welcome__row">
+				<div class="welcome__left welcome-title">
+					{% component 'contenteditor' file="home/welcome-title.htm"
+					%}
+					<div class="welcome-title__circle"></div>
+				</div>
+				<div class="welcome__right">
+					<div class="welcome__icons">
+						<img
+							src="{{ 'assets/images/icons/music.png'|theme }}"
+							alt="Музыка"
+							class="welcome__icon"
+						/>
+						<img
+							src="{{ 'assets/images/icons/image.png'|theme }}"
+							alt="Творчество"
+							class="welcome__icon"
+						/>
+						<img
+							src="{{ 'assets/images/icons/photo.png'|theme }}"
+							alt="Фотография"
+							class="welcome__icon"
+						/>
+					</div>
+					{% component 'contenteditor' file="home/welcome__about.htm"
+					fixture="div" class="welcome__about" %}
+				</div>
+			</div>
+			<div class="welcome__image">
+				<div class="welcome__arrow-in-circle">
+					<object
+						data="{{ 'assets/images/arrow-in-circle.svg'|theme }}"
+						type="image/svg+xml"
+					></object>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main__right"></div>
 </div>
 <div class="musical-constructor">
-    <div class="main__inner main__inner_soc-links">
-        <div class="main__left">
-            <div class="musical-constructor__left-links left-links">
-                {% partial 'side_soc_links' %}
-            </div>
-        </div>
-        <div class="main__content">
-            <div class="musical-constructor__row">
-                <div class="musical-constructor__info">
-                    <span class="musical-constructor__tag-main tag"
-                        >музыка</span
-                    >
-                    <div class="musical-constructor__title">
-                        Музыкальный <br>конструктор <img src="{{ 'assets/images/icons/music_black.png'|theme }}" alt="Музыкальный конструктор">
-                    </div>
-                    <div class="musical-constructor__about">
-                        Стань музыкантом. Собери 21 музыкальную композицию в
-                        разных музыкальных стилях, с помощью наших видео и
-                        иллюстраций.
-                    </div>
-                    <div class="musical-constructor__tags">
-                        <div class="musical-constructor__tag tag tag_filled">
-                            24 видео
-                        </div>
-                        <div class="musical-constructor__tag tag tag_filled">
-                            21 композиция
-                        </div>
-                        <div class="musical-constructor__tag tag tag_filled">
-                            18 часов практики
-                        </div>
-                    </div>
-                    <div class="musical-constructor__btn-submit btn-submit">
-                        <object
-                            data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                            type="image/svg+xml"
-                        ></object>
-                    </div>
-                </div>
-                <div class="musical-constructor__image">
-                    <img
-                        src="{{ 'assets/images/musical_constructor.png'|theme }}"
-                        alt="Музыкальный конструктор"
-                    />
-                </div>
-            </div>
-        </div>
-        <div class="main__right"></div>
-    </div>
+	<div class="main__inner main__inner_soc-links">
+		<div class="main__left">
+			<div class="musical-constructor__left-links left-links">
+				{% partial 'side_soc_links' %}
+			</div>
+		</div>
+		<div class="main__content">
+			<div class="musical-constructor__row">
+				<div class="musical-constructor__info">
+					<span class="musical-constructor__tag-main tag"
+						>музыка</span
+					>
+					<div class="musical-constructor__title">
+						Музыкальный <br />конструктор
+						<img
+							src="{{ 'assets/images/icons/music_black.png'|theme }}"
+							alt="Музыкальный конструктор"
+						/>
+					</div>
+					<div class="musical-constructor__about">
+						Стань музыкантом. Собери 21 музыкальную композицию в
+						разных музыкальных стилях, с помощью наших видео и
+						иллюстраций.
+					</div>
+					<div class="musical-constructor__tags">
+						<div class="musical-constructor__tag tag tag_filled">
+							24 видео
+						</div>
+						<div class="musical-constructor__tag tag tag_filled">
+							21 композиция
+						</div>
+						<div class="musical-constructor__tag tag tag_filled">
+							18 часов практики
+						</div>
+					</div>
+					<div class="musical-constructor__btn-submit btn-submit">
+						<object
+							data="{{ 'assets/images/btn-submit.svg'|theme }}"
+							type="image/svg+xml"
+						></object>
+					</div>
+				</div>
+				<div class="musical-constructor__image">
+					<img
+						src="{{ 'assets/images/musical_constructor.png'|theme }}"
+						alt="Музыкальный конструктор"
+					/>
+				</div>
+			</div>
+		</div>
+		<div class="main__right"></div>
+	</div>
 </div>
 <div class="about-project">
-    <div class="main__inner main__inner_soc-links">
-        <div class="main__left">
-            <div class="about-project__left-links left-links">
-                {% partial 'side_soc_links' %}
-            </div>
-        </div>
-        <div class="main__content">
-            <div class="about-project__info">
-                <div class="about-project__left">
-                    <div class="about-project__title">О проекте</div>
-                    <div class="about-project__btn-submit btn-submit">
-                        <object
-                            data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                            type="image/svg+xml"
-                        ></object>
-                    </div>
-                </div>
-                <div class="about-project__right">
-                    <div class="about-project__about1">
-                        Заниматься творчеством может каждый. Стань музыкантом,
-                        режиссерром, фотографом. Добавь в каждую работу частицу
-                        себя.
-                    </div>
-                    <div class="about-project__about2">
-                        Проведи время креативно и необычно на нашем
-                        развлекательно - образовательном проекте “Мир рядом”.
-                    </div>
-                </div>
-            </div>
-            <div class="about-project__row">
-                <div class="about-project__videobox videobox">
-                    <img
-                        src="{{ 'assets/images/about_video1.png'|theme }}"
-                        alt="Видео 1"
-                        class="videobox__video"
-                    />
-                    <div class="videobox__label">Видео о нашем проекте</div>
-                </div>
-                <div class="about-project__videobox videobox">
-                    <img
-                        src="{{ 'assets/images/about_video2.png'|theme }}"
-                        alt="Видео 2"
-                        class="videobox__video"
-                    />
-                    <div class="videobox__label">
-                        Создаем трек в стиле эмбиент
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main__right"></div>
-    </div>
-    <div class="about-education">
-        <div class="main__inner main__inner_soc-links">
-            <div class="main__left">
-                <div class="about-education__left-links left-links">
-                    <div class="left-links__soc-links">
-                        <a class="left-links__soc-link" href="#">facebook</a>
-                        <a class="left-links__soc-link" href="#">instagram</a>
-                    </div>
-                </div>
-            </div>
-            <div class="main__content">
-                <div class="about-education__algorithm algorithm-education">
-                    <div class="algorithm-education__mini-title">
-                        Как проходит обучение
-                    </div>
-                    <div class="algorithm-education__divider-top divider"></div>
-                    <div class="algorithm-education__row">
-                        <div class="algorithm-education__title">
-                            Как проходит<br />обучение
-                        </div>
-                        <div class="algorithm-education__stages">
-                            {% for algorithm_stage in this.theme.algorithm_stages %}
-                            <div
-                                class="algorithm-education__stage algorithm-stage"
-                            >
-                                <div class="algorithm-stage__row">
-                                    <div class="algorithm-stage__dot dot"></div>
-                                    <div class="algorithm-stage__label">
-                                        {{ algorithm_stage.about }}
-                                    </div>
-                                </div>
-                                {% if loop.last != true %}
-                                <div
-                                    class="algorithm-stage__divider divider"
-                                ></div>
-                                {% endif %}
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div
-                        class="algorithm-education__divider-bottom divider"
-                    ></div>
-                </div>
-            </div>
-            <div class="main__right"></div>
-        </div>
-    </div>
-    <div class="creative-result">
-        <div class="main__inner">
-            <div class="main__left"></div>
-            <div class="main__content">
-                <div class="creative-result__schema">
-                    <div class="creative-result__image">
-                        <object
-                            data="{{ 'assets/images/creative-result.svg'|theme }}"
-                            type="image/svg+xml"
-                        ></object>
-                        <div class="creative-result__title">
-                            Творческий результат
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__label creative-result-label creative-result-label_n1"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__label creative-result-label creative-result-label_n2"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__label creative-result-label creative-result-label_n3"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__label creative-result-label creative-result-label_n4"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__label creative-result-label creative-result-label_n5"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__label creative-result-label creative-result-label_n6"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                </div>
-                <div class="creative-result__mini-labels">
-                    <div
-                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                    <div
-                        class="creative-result__mini-label creative-result-label creative-result-label_mini"
-                    >
-                        <img
-                            src="{{ 'assets/images/dot.png'|theme }}"
-                            alt="Творческий результат"
-                            class="creative-result-label__dot"
-                        />
-                        <div class="creative-result-label__text">
-                            Проведете время креативно и необычно
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main__right"></div>
-        </div>
-    </div>
+	<div class="main__inner main__inner_soc-links">
+		<div class="main__left">
+			<div class="about-project__left-links left-links">
+				{% partial 'side_soc_links' %}
+			</div>
+		</div>
+		<div class="main__content">
+			<div class="about-project__info">
+				<div class="about-project__left">
+					<div class="about-project__title">О проекте</div>
+					<div class="about-project__btn-submit btn-submit">
+						<object
+							data="{{ 'assets/images/btn-submit.svg'|theme }}"
+							type="image/svg+xml"
+						></object>
+					</div>
+				</div>
+				<div class="about-project__right">
+					<div class="about-project__about1">
+						Заниматься творчеством может каждый. Стань музыкантом,
+						режиссерром, фотографом. Добавь в каждую работу частицу
+						себя.
+					</div>
+					<div class="about-project__about2">
+						Проведи время креативно и необычно на нашем
+						развлекательно - образовательном проекте “Мир рядом”.
+					</div>
+				</div>
+			</div>
+			<div class="about-project__row">
+				<div class="about-project__videobox videobox">
+					<img
+						src="{{ 'assets/images/about_video1.png'|theme }}"
+						alt="Видео 1"
+						class="videobox__video"
+					/>
+					<div class="videobox__label">Видео о нашем проекте</div>
+				</div>
+				<div class="about-project__videobox videobox">
+					<img
+						src="{{ 'assets/images/about_video2.png'|theme }}"
+						alt="Видео 2"
+						class="videobox__video"
+					/>
+					<div class="videobox__label">
+						Создаем трек в стиле эмбиент
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main__right"></div>
+	</div>
+	<div class="about-education">
+		<div class="main__inner main__inner_soc-links">
+			<div class="main__left">
+				<div class="about-education__left-links left-links">
+					<div class="left-links__soc-links">
+						<a class="left-links__soc-link" href="#">facebook</a>
+						<a class="left-links__soc-link" href="#">instagram</a>
+					</div>
+				</div>
+			</div>
+			<div class="main__content">
+				<div class="about-education__algorithm algorithm-education">
+					<div class="algorithm-education__mini-title">
+						Как проходит обучение
+					</div>
+					<div class="algorithm-education__divider-top divider"></div>
+					<div class="algorithm-education__row">
+						<div class="algorithm-education__title">
+							Как проходит<br />обучение
+						</div>
+						<div class="algorithm-education__stages">
+							{% for algorithm_stage in
+							this.theme.algorithm_stages %}
+							<div
+								class="algorithm-education__stage algorithm-stage"
+							>
+								<div class="algorithm-stage__row">
+									<div class="algorithm-stage__dot dot"></div>
+									<div class="algorithm-stage__label">
+										{{ algorithm_stage.about }}
+									</div>
+								</div>
+								{% if loop.last != true %}
+								<div
+									class="algorithm-stage__divider divider"
+								></div>
+								{% endif %}
+							</div>
+							{% endfor %}
+						</div>
+					</div>
+					<div
+						class="algorithm-education__divider-bottom divider"
+					></div>
+				</div>
+			</div>
+			<div class="main__right"></div>
+		</div>
+	</div>
+	<div class="creative-result">
+		<div class="main__inner">
+			<div class="main__left"></div>
+			<div class="main__content">
+				<div class="creative-result__schema">
+					<div class="creative-result__image">
+						<object
+							data="{{ 'assets/images/creative-result.svg'|theme }}"
+							type="image/svg+xml"
+						></object>
+						<div class="creative-result__title">
+							Творческий результат
+						</div>
+					</div>
+					<div
+						class="creative-result__label creative-result-label creative-result-label_n1"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+					<div
+						class="creative-result__label creative-result-label creative-result-label_n2"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+					<div
+						class="creative-result__label creative-result-label creative-result-label_n3"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+					<div
+						class="creative-result__label creative-result-label creative-result-label_n4"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+					<div
+						class="creative-result__label creative-result-label creative-result-label_n5"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+					<div
+						class="creative-result__label creative-result-label creative-result-label_n6"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+				</div>
+				<div class="creative-result__mini-labels">
+					<div
+						class="creative-result__mini-label creative-result-label creative-result-label_mini"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+					<div
+						class="creative-result__mini-label creative-result-label creative-result-label_mini"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+					<div
+						class="creative-result__mini-label creative-result-label creative-result-label_mini"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+					<div
+						class="creative-result__mini-label creative-result-label creative-result-label_mini"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+					<div
+						class="creative-result__mini-label creative-result-label creative-result-label_mini"
+					>
+						<img
+							src="{{ 'assets/images/dot.png'|theme }}"
+							alt="Творческий результат"
+							class="creative-result-label__dot"
+						/>
+						<div class="creative-result-label__text">
+							Проведете время креативно и необычно
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main__right"></div>
+		</div>
+	</div>
 </div>
 <div class="our-telegram">
-    <div class="main__inner">
-        <div class="main__left">
-            <div class="our-telegram__icons our-telegram__icons_left1">
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon"
-                ></object>
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon"
-                ></object>
-            </div>
-        </div>
-        <div class="main__content">
-            <div class="our-telegram__icons our-telegram__icons_left2">
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue_filled.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon our-telegram__icon_main"
-                ></object>
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon"
-                ></object>
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon"
-                ></object>
-            </div>
-            <div class="our-telegram__main-icon">
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon"
-                ></object>
-            </div>
-            <div class="our-telegram__title">
-                Закрытый телеграм - канал для каждого потока
-            </div>
-            <div class="our-telegram__icons our-telegram__icons_right1">
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon"
-                ></object>
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon"
-                ></object>
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue_filled.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon our-telegram__icon_main"
-                ></object>
-            </div>
-        </div>
-        <div class="main__right">
-            <div class="our-telegram__icons our-telegram__icons_right2">
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon"
-                ></object>
-                <object
-                    data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
-                    type="image/svg+xml"
-                    class="our-telegram__icon"
-                ></object>
-            </div>
-        </div>
-    </div>
+	<div class="main__inner">
+		<div class="main__left">
+			<div class="our-telegram__icons our-telegram__icons_left1">
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon"
+				></object>
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon"
+				></object>
+			</div>
+		</div>
+		<div class="main__content">
+			<div class="our-telegram__icons our-telegram__icons_left2">
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue_filled.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon our-telegram__icon_main"
+				></object>
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon"
+				></object>
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon"
+				></object>
+			</div>
+			<div class="our-telegram__main-icon">
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon"
+				></object>
+			</div>
+			<div class="our-telegram__title">
+				Закрытый телеграм - канал для каждого потока
+			</div>
+			<div class="our-telegram__icons our-telegram__icons_right1">
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon"
+				></object>
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon"
+				></object>
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue_filled.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon our-telegram__icon_main"
+				></object>
+			</div>
+		</div>
+		<div class="main__right">
+			<div class="our-telegram__icons our-telegram__icons_right2">
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon"
+				></object>
+				<object
+					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
+					type="image/svg+xml"
+					class="our-telegram__icon"
+				></object>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="work-examples">
-    <div class="main__inner main__inner_soc-links">
-        <div class="main__left">
-            <div class="work-examples__left-links left-links">
-                {% partial 'side_soc_links' %}
-            </div>
-        </div>
-        <div class="main__content">
-            <div class="work-examples__row">
-                <div class="work-examples__left">
-                    <div class="work-examples__title">Примеры<br>работ</div>
-                    <div class="work-examples__btn-submit btn-submit">
-                        <object
-                            data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                            type="image/svg+xml"
-                        ></object>
-                    </div>
-                </div>
-                <div class="work-examples__right">
-                    <div class="work-examples__right-row">
-                        <div class="work-examples__label">музыка</div>
-                        <div class="work-examples__pagination arrows-pagination">
-                            <div class="work-examples__btn-left arrow-left">
-                                <object
-                                    data="{{ 'assets/images/btn-arrow.svg'|theme }}"
-                                    type="image/svg+xml"
-                                ></object>
-                            </div>
-                            <div class="work-examples__btn-right arrow-right">
-                                <object
-                                    data="{{ 'assets/images/btn-arrow.svg'|theme }}"
-                                    type="image/svg+xml"
-                                ></object>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-examples__music-players">
-                        {% for work_example in this.theme.work_examples %}
-                        <div class="work-examples__music-player music-player">
-                            <div class="music-player__inner">
-                                <div class="music-player__circle"><img src="{{ 'assets/images/icons/music_play.png'|theme }}" alt="Плеер" class="music-player__play"></div>
-                                <div class="music-player__music">
-                                    <div class="music-player__music-name">{{ work_example.name }}</div>
-                                    <div class="music-player__music-type">{{ work_example.type }}</div>
-                                </div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <div class="work-examples__pagination-mini arrows-pagination">
-                        <div class="work-examples__btn-left arrow-left">
-                            <object
-                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
-                                type="image/svg+xml"
-                            ></object>
-                        </div>
-                        <div class="work-examples__btn-right arrow-right">
-                            <object
-                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
-                                type="image/svg+xml"
-                            ></object>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main__right"></div>
-    </div>
+	<div class="main__inner main__inner_soc-links">
+		<div class="main__left">
+			<div class="work-examples__left-links left-links">
+				{% partial 'side_soc_links' %}
+			</div>
+		</div>
+		<div class="main__content">
+			<div class="work-examples__row">
+				<div class="work-examples__left">
+					<div class="work-examples__title">Примеры<br />работ</div>
+					<div class="work-examples__btn-submit btn-submit">
+						<object
+							data="{{ 'assets/images/btn-submit.svg'|theme }}"
+							type="image/svg+xml"
+						></object>
+					</div>
+				</div>
+				<div class="work-examples__right">
+					<div class="work-examples__right-row">
+						<div class="work-examples__label">музыка</div>
+						<div
+							class="work-examples__pagination arrows-pagination"
+						>
+							<div class="work-examples__btn-left arrow-left">
+								<object
+									data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+									type="image/svg+xml"
+								></object>
+							</div>
+							<div class="work-examples__btn-right arrow-right">
+								<object
+									data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+									type="image/svg+xml"
+								></object>
+							</div>
+						</div>
+					</div>
+					<div class="work-examples__music-players">
+						{% for work_example in this.theme.work_examples %}
+						<div class="work-examples__music-player music-player">
+							<div class="music-player__inner">
+								<div class="music-player__circle">
+									<img
+										src="{{ 'assets/images/icons/music_play.png'|theme }}"
+										alt="Плеер"
+										class="music-player__play"
+									/>
+								</div>
+								<div class="music-player__music">
+									<div class="music-player__music-name">
+										{{ work_example.name }}
+									</div>
+									<div class="music-player__music-type">
+										{{ work_example.type }}
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+					<div
+						class="work-examples__pagination-mini arrows-pagination"
+					>
+						<div class="work-examples__btn-left arrow-left">
+							<object
+								data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+								type="image/svg+xml"
+							></object>
+						</div>
+						<div class="work-examples__btn-right arrow-right">
+							<object
+								data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+								type="image/svg+xml"
+							></object>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main__right"></div>
+	</div>
 </div>
 <div
-    class="project-authors-block project-authors-block_bg-blue project-authors-block_index"
+	class="project-authors-block project-authors-block_bg-blue project-authors-block_index"
 >
-    <div class="main__inner main__inner_soc-links">
-        <div class="main__left">
-            <div class="project-authors-block__left-links left-links">
-                {% partial 'side_soc_links' %}
-            </div>
-        </div>
-        <div class="main__content">
-            <div class="project-authors">
-                <div class="project-authors__title">Авторы курсов</div>
-                <div class="project-authors__authors">
-                    <div class="project-authors__author">
-                        <img
-                            src="{{ 'assets/images/about_author.png'|theme }}"
-                            alt="Автор"
-                        />
-                    </div>
-                    <div class="project-authors__active-author">
-                        <img
-                            src="{{ 'assets/images/about_author.png'|theme }}"
-                            alt="Автор"
-                        />
-                    </div>
-                    <div class="project-authors__author">
-                        <img
-                            src="{{ 'assets/images/about_author.png'|theme }}"
-                            alt="Автор"
-                        />
-                    </div>
-                </div>
-                <div class="project-authors__author-about author-about">
-                    <div class="author-about__name">Александ Караваев</div>
-                    <div class="author-about__about">
-                        Проведи время креативно и необычно на нашем
-                        развлекательно - образовательном проекте “Мир рядом”.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main__right"></div>
-    </div>
+	<div class="main__inner main__inner_soc-links">
+		<div class="main__left">
+			<div class="project-authors-block__left-links left-links">
+				{% partial 'side_soc_links' %}
+			</div>
+		</div>
+		<div class="main__content">
+			<div class="project-authors">
+				<div class="project-authors__title">Авторы курсов</div>
+				<div class="project-authors__authors">
+					<div class="project-authors__author">
+						<img
+							src="{{ 'assets/images/about_author.png'|theme }}"
+							alt="Автор"
+						/>
+					</div>
+					<div class="project-authors__active-author">
+						<img
+							src="{{ 'assets/images/about_author.png'|theme }}"
+							alt="Автор"
+						/>
+					</div>
+					<div class="project-authors__author">
+						<img
+							src="{{ 'assets/images/about_author.png'|theme }}"
+							alt="Автор"
+						/>
+					</div>
+				</div>
+				<div class="project-authors__author-about author-about">
+					<div class="author-about__name">Александ Караваев</div>
+					<div class="author-about__about">
+						Проведи время креативно и необычно на нашем
+						развлекательно - образовательном проекте “Мир рядом”.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main__right"></div>
+	</div>
 </div>
 <div class="faq">
-    <div class="main__inner main__inner_soc-links">
-        <div class="main__left">
-            <div class="faq__left-links left-links">
-                {% partial 'side_soc_links' %}
-            </div>
-        </div>
-        <div class="main__content">
-            <div class="faq__algorithm">
-                <div class="faq__divider divider"></div>
-                <div class="faq__row">
-                    <div class="faq__left">
-                        <div class="faq__title">Вопрос - ответ</div>
-                        <div class="faq__btn-submit btn-submit">
-                            <object
-                                data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                                type="image/svg+xml"
-                            ></object>
-                        </div>
-                    </div>
-                    <div class="faq__right">
-                        {% for faq in this.theme.faqs %}
-                        <div class="faq__stage faq-stage">
-                            <div class="faq-stage__row">
-                                <div class="faq-stage__block">
-                                    <div class="faq-stage__question">
-                                        {{ faq.question }}
-                                    </div>
-                                    <div class="faq-stage__answer">
-                                        {{ faq.answer }}
-                                    </div>
-                                </div>
-                                <img
-                                    class="faq-stage__more-btn more-btn"
-                                    src="{{ 'assets/images/icons/plus.png'|theme }}"
-                                    alt="Развернуть"
-                                />
-                            </div>
-                            <div class="faq-stage__divider divider"></div>
-                        </div>
-                        {% endfor %}
-                        <div class="faq__more-questions more-questions-btn">
-                            <a href="/faq" class="more-questions-btn__label">
-                                Ещё вопросы
-                            </a>
-                            <div class="more-questions-btn__icon">
-                                <img
-                                    src="{{ 'assets/images/icons/plus.png'|theme }}"
-                                    alt="Ещё вопросы"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq__divider divider"></div>
-            </div>
-        </div>
-        <div class="main__right"></div>
-    </div>
+	<div class="main__inner main__inner_soc-links">
+		<div class="main__left">
+			<div class="faq__left-links left-links">
+				{% partial 'side_soc_links' %}
+			</div>
+		</div>
+		<div class="main__content">
+			<div class="faq__algorithm">
+				<div class="faq__divider divider"></div>
+				<div class="faq__row">
+					<div class="faq__left">
+						<div class="faq__title">Вопрос - ответ</div>
+						<div class="faq__btn-submit btn-submit">
+							<a class="svg-link" href="/faq"
+								><span class="svg-link__span">
+									<object class="svg-link__object"
+										data="{{ 'assets/images/btn-submit.svg'|theme }}"
+										type="image/svg+xml"
+									></object> </span
+							></a>
+						</div>
+					</div>
+					<div class="faq__right">
+						{% for faq in this.theme.faqs %}
+						<div class="faq__stage faq-stage">
+							<div class="faq-stage__row">
+								<div class="faq-stage__block">
+									<div class="faq-stage__question">
+										{{ faq.question }}
+									</div>
+									<div class="faq-stage__answer">
+										{{ faq.answer }}
+									</div>
+								</div>
+								<img
+									class="faq-stage__more-btn more-btn"
+									src="{{ 'assets/images/icons/plus.png'|theme }}"
+									alt="Развернуть"
+								/>
+							</div>
+							<div class="faq-stage__divider divider"></div>
+						</div>
+						{% endfor %}
+						<div class="faq__more-questions more-questions-btn">
+							<a href="/faq" class="more-questions-btn__label">
+								Ещё вопросы
+							</a>
+							<div class="more-questions-btn__icon">
+								<img
+									src="{{ 'assets/images/icons/plus.png'|theme }}"
+									alt="Ещё вопросы"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="faq__divider divider"></div>
+			</div>
+		</div>
+		<div class="main__right"></div>
+	</div>
 </div>
 <div class="index-contacts contact-us">
-    <div class="main__inner main__inner_soc-links">
-        <div class="main__left">
-            <div class="contact-us__left-links left-links">
-                {% partial 'side_soc_links' %}
-            </div>
-        </div>
-        <div class="main__content">
-            <div class="contact-us__title">Контакты</div>
-            <div class="contact-us__row">
-                <div class="contact-us__left">
-                    <div class="contact-us__phone-row phone-row">
-                        <a href="tel:{{ this.theme.phone }}" class="phone-row__phone">{{ this.theme.phone }}</a>
-                        <a href="{{ this.theme.tg_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/telegram.png'|theme }}" alt="Телеграм"></a>
-                        <a href="{{ this.theme.wapp_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}" alt="WhatsApp"></a>
-                    </div>
-                    <div class="contact-us__email">
-                        <a href="mailto:{{ this.theme.email }}">{{ this.theme.email }}</a>
-                    </div>
-                    <div class="contact-us__links">
-                        {% for soc_link in this.theme.soc_links %}
-                            <a href="{{ soc_link.link }}" class="contact-us__link soc-link">{{ soc_link.link_name }}</a>
-                        {% endfor %}
-                    </div>
-                </div>
-                <div class="contact-us__right">
-                    <form class="contact-us__form" data-request="onAddQuestion" data-request-success="contact_form_success()">
-                        <div class="contact-us__fields-row">
-                            <div class="contact-us__input-email text-input">
-                                <input class="text-input__input" id="contact-us-email" name="email" type="text" required>
-                                <label for="contact-us-email" class="text-input__label">Email</label>
-                            </div>
-                            <div class="contact-us__input-phone text-input">
-                                <input class="text-input__input" id="contact-us-phone" name="phone" type="text" required>
-                                <label for="contact-us-phone" class="text-input__label">Телефон</label>
-                            </div>
-                        </div>
-                        <div class="contact-us__input-question text-input">
-                            <input class="text-input__input" id="contact-us-question" name="question" type="text" required>
-                            <label for="contact-us-question" class="text-input__label">Вопрос</label>
-                        </div>
-                        <div class="contact-us__form-row">
-                            <div class="contact-us__agree">Нажимая на кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
-                            <div class="contact-us__btn-submit btn-submit">
-                                <object
-                                    data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                                    type="image/svg+xml"
-                                ></object>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="main__right"></div>
-    </div>
+	<div class="main__inner main__inner_soc-links">
+		<div class="main__left">
+			<div class="contact-us__left-links left-links">
+				{% partial 'side_soc_links' %}
+			</div>
+		</div>
+		<div class="main__content">
+			<div class="contact-us__title">Контакты</div>
+			<div class="contact-us__row">
+				<div class="contact-us__left">
+					<div class="contact-us__phone-row phone-row">
+						<a
+							href="tel:{{ this.theme.phone }}"
+							class="phone-row__phone"
+							>{{ this.theme.phone }}</a
+						>
+						<a
+							href="{{ this.theme.tg_link }}"
+							class="phone-row__soc-icon"
+							><img
+								src="{{ 'assets/images/icons/soc/telegram.png'|theme }}"
+								alt="Телеграм"
+						/></a>
+						<a
+							href="{{ this.theme.wapp_link }}"
+							class="phone-row__soc-icon"
+							><img
+								src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}"
+								alt="WhatsApp"
+						/></a>
+					</div>
+					<div class="contact-us__email">
+						<a href="mailto:{{ this.theme.email }}"
+							>{{ this.theme.email }}</a
+						>
+					</div>
+					<div class="contact-us__links">
+						{% for soc_link in this.theme.soc_links %}
+						<a
+							href="{{ soc_link.link }}"
+							class="contact-us__link soc-link"
+							>{{ soc_link.link_name }}</a
+						>
+						{% endfor %}
+					</div>
+				</div>
+				<div class="contact-us__right">
+					<form
+						class="contact-us__form"
+						data-request="onAddQuestion"
+						data-request-success="contact_form_success()"
+					>
+						<div class="contact-us__fields-row">
+							<div class="contact-us__input-email text-input">
+								<input
+									class="text-input__input"
+									id="contact-us-email"
+									name="email"
+									type="text"
+									required
+								/>
+								<label
+									for="contact-us-email"
+									class="text-input__label"
+									>Email</label
+								>
+							</div>
+							<div class="contact-us__input-phone text-input">
+								<input
+									class="text-input__input"
+									id="contact-us-phone"
+									name="phone"
+									type="text"
+									required
+								/>
+								<label
+									for="contact-us-phone"
+									class="text-input__label"
+									>Телефон</label
+								>
+							</div>
+						</div>
+						<div class="contact-us__input-question text-input">
+							<input
+								class="text-input__input"
+								id="contact-us-question"
+								name="question"
+								type="text"
+								required
+							/>
+							<label
+								for="contact-us-question"
+								class="text-input__label"
+								>Вопрос</label
+							>
+						</div>
+						<div class="contact-us__form-row">
+							<div class="contact-us__agree">
+								Нажимая на кнопку, вы соглашаетесь с политикой
+								обработки персональных данных
+							</div>
+							<div class="contact-us__btn-submit btn-submit">
+								<object
+									data="{{ 'assets/images/btn-submit.svg'|theme }}"
+									type="image/svg+xml"
+								></object>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="main__right"></div>
+	</div>
 </div>

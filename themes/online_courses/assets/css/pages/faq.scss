@@ -1,0 +1,23 @@
+.faq-page {
+
+    &__title {
+        margin-top: 65px;
+        @include title(h2);
+    }
+
+    &__questions {
+        margin-top: 50px;
+    }
+
+    &__question {
+        margin-top: 35px;
+
+        &:nth-child(1) {
+            margin-top: 0px;
+        }
+    }
+
+    &__contacts-us {
+        margin-top: 90px;
+    }
+}

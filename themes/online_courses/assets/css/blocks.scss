@@ -415,6 +415,21 @@
 	opacity: 0.8;
 }
 
+.svg-link {
+	display: inline-block;
+	position: relative; 
+	z-index: 1;
+
+	&__span {
+		display: inline-block;
+	}
+
+	&__object {
+		position: relative;
+		z-index: -1;
+	}
+}
+
 .btn-submit {
 }
 
@@ -735,13 +750,14 @@
 
 	&__question {
 		@include text(p2);
-		opacity: 0.8;
+		font-weight: normal;
 	}
 
 	&__answer {
 		display: none;
 		margin-top: 20px;
 		@include text(p4);
+		font-weight: 300;
 		opacity: 0.8;
 	}
 
