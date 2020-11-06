@@ -4,13 +4,17 @@ layout = "main"
 is_hidden = 0
 
 [contenteditor]
+
+[ContactUs]
 ==
+<?php
 function onTest()
 {
     $value1 = post('value1');
     $value2 = post('value2');
     $this['result'] = $value1 + $value2;
 }
+?>
 ==
 {##}
 <div class="main__inner main__inner_soc-links">
@@ -644,7 +648,7 @@ function onTest()
                     </div>
                 </div>
                 <div class="contact-us__right">
-                    <form class="contact-us__form" data-request="onTest" data-request-success="contact_form_success()">
+                    <form class="contact-us__form" data-request="onAddQuestion" data-request-success="contact_form_success()">
                         <div class="contact-us__fields-row">
                             <div class="contact-us__input-email text-input">
                                 <input class="text-input__input" id="contact-us-email" name="email" type="text" required>

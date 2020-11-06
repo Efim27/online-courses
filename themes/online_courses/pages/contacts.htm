@@ -2,6 +2,8 @@ title = "Контакты"
 url = "/contacts"
 layout = "main"
 is_hidden = 0
+
+[ContactUs]
 ==
 {##}
 <div class="main__inner">
@@ -35,7 +37,7 @@ is_hidden = 0
                     <div class="contact-us__title">Всегда на связи!<br>Пишите нам</div>
                 </div>
                 <div class="contact-us__right">
-                    <form action="/" class="contact-us__form" method="POST">
+                    <form class="contact-us__form" data-request="onAddQuestion" data-request-success="contact_form_success()">
                         <div class="contact-us__fields-row">
                             <div class="contact-us__input-email text-input">
                                 <input class="text-input__input" id="contact-us-email" name="email" type="text" required>
