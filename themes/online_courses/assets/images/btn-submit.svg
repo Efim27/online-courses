@@ -5,11 +5,11 @@
 		transition: all 0.3s;
 	}
 
-	svg:hover circle {
+	svg:hover circle, svg.hover circle {
 		stroke: url(#paint1_linear);
 	}
 
-	svg:hover path {
+	svg:hover path, svg.hover path {
 		fill: url(#paint0_linear);
 	}
 </style>
