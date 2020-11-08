@@ -1,0 +1,39 @@
+title = "Статья"
+url = "/news/:id"
+layout = "main"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Hima\News\Models\News"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "title"
+notFoundMessage = "Record not found"
+==
+
+{% set record = builderDetails.record %}
+<div class="main__inner">
+	<div class="main__left"></div>
+	<div class="main__content">
+        <div class="news-page">
+            <div class="news-page__date">{{ record.created_at|date("d.m.Y") }}</div>
+            <div class="news-page__title">{{ record.title }}</div>
+            <div class="news-page__image" style="background: url({{ record.attachment.path }}) no-repeat 50% 5% / cover;"></div>
+            <div class="news-page__content">{{ record.news_text|raw }}</div>
+            {{ next_record.id }}
+            <div class="news-page__simple-pagination simple-pagination">
+                {% set previous_id = record.previousRecord().id %}
+                {% set next_id = record.nextRecord().id %}
+                {% if previous_id %}
+                    {% set previous_link = "/news/" ~ previous_id %}
+                    {% partial 'blocks/btn_submit_link' classes="simple-pagination__left" direction="left" link=previous_link %}
+                {% endif %}
+                {% if next_id %}
+                    {% set next_link = "/news/" ~ next_id %}
+                    {% partial 'blocks/btn_submit_link' classes="simple-pagination__right" link=next_link %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="main__right"></div>
+</div>

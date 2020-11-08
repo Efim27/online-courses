@@ -6,15 +6,6 @@ is_hidden = 0
 [contenteditor]
 [ContactUs]
 ==
-<?php
-function onTest()
-{
-    $value1 = post('value1');
-    $value2 = post('value2');
-    $this['result'] = $value1 + $value2;
-}
-?>
-==
 {##}
 <div class="main__inner main__inner_soc-links">
 	<div class="main__left">
@@ -133,10 +124,8 @@ function onTest()
 				<div class="about-project__left">
 					<div class="about-project__title">О проекте</div>
 					<div class="about-project__btn-submit btn-submit">
-						<object
-							data="{{ 'assets/images/btn-submit.svg'|theme }}"
-							type="image/svg+xml"
-						></object>
+
+						{% partial 'blocks/btn_submit_link' link='/about' %}
 					</div>
 				</div>
 				<div class="about-project__right">
@@ -595,7 +584,7 @@ function onTest()
 				<div class="faq__row">
 					<div class="faq__left">
 						<div class="faq__title">Вопрос - ответ</div>
-						{% partial 'blocks/svg_link' classes="faq__btn-submit" link="/faq" %}
+						{% partial 'blocks/btn_submit_link' classes="faq__btn-submit" link="/faq" %}
 					</div>
 					<div class="faq__right">
 						{% for faq in this.theme.faqs %}

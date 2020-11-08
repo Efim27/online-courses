@@ -5,5 +5,6 @@
 	<div class="news-card__date">{{ data.created_at|date("d.m.Y") }}</div>
 	<div class="news-card__title">{{ data.title }}</div>
 	<div class="news-card__about">{{ data.about }}</div>
-	{% partial 'blocks/svg_link' classes="news-card__btn-view" link="/faq" %}
+    {% set link = "/news/" ~ data.id %}
+	{% partial 'blocks/btn_submit_link' classes="news-card__btn-view" link=link %}
 </div>

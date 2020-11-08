@@ -287,11 +287,9 @@ pageNumber = "{{ :page }}"
                         <div class="news-card__about">
                             {{ one_news.about }}
                         </div>
-                        <div class="news-card__btn-view btn-submit">
-                            <object
-                                data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                                type="image/svg+xml"
-                            ></object>
+                        <div class="news-card__btn-view">
+                            {% set link = "/news/" ~ one_news.id %}
+                            {% partial 'blocks/btn_submit_link' link=link %}
                         </div>
                     </div>
                     {% endif %}

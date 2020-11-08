@@ -215,4 +215,10 @@
 			@include grid-width(12);
 		}
 	}
+
+	.blog-page {
+		&__news-card {
+			@include grid-width(12);
+		}
+	}
 }

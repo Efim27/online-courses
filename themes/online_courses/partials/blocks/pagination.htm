@@ -1,0 +1,21 @@
+{% if records.lastPage > 1 %}
+    <div class="pagination">
+        {% if records.currentPage > 1 %}
+            <div class="pagination__left">
+                {% set page_link = this.page.baseFileName|page({ (pageParam): (records.currentPage-1) }) %}
+                {% partial 'blocks/btn_submit_link' direction="left" link=page_link %}
+            </div>
+        {% endif %}
+        <div class="pagination__pages">
+            {% for page in 1..records.lastPage %}
+                <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}" class="pagination__page {{ records.currentPage == page ? 'pagination__page_active' : null  }}">{{ page }}</a>
+            {% endfor %}
+        </div>
+        {% if records.lastPage > records.currentPage %}
+            <div class="pagination__right">
+                {% set page_link = this.page.baseFileName|page({ (pageParam): (records.currentPage+1) }) %}
+                {% partial 'blocks/btn_submit_link' link=page_link %}
+            </div>
+        {% endif %}
+    </div>
+{% endif %}

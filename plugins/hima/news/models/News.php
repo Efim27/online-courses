@@ -21,4 +21,14 @@ class News extends Model
      */
     public $rules = [
     ];
+
+    public function previousRecord() {
+        $previousRecord = News::where('id', '<>', $this->id)->where('id','<', $this->id)->orderBy('id', 'DESC')->first();
+        return $previousRecord;
+    }
+
+    public function nextRecord() {
+        $nextRecord = News::where('id', '<>', $this->id)->where('id','>', $this->id)->orderBy('id', 'ASC')->first();
+        return $nextRecord;
+    }
 }

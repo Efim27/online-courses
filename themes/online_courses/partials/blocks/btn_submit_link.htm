@@ -1,0 +1,13 @@
+{% if direction == "left" %}
+	{% set direction_class = "btn-submit_left" %}
+{% else %}
+	{% set direction_class = "" %}
+{% endif %}
+<a class="svg-link {{ classes }}" href="{{ link }}"
+	><span class="svg-link__span btn-submit {{ direction_class }}">
+		<object
+			class="svg-link__object"
+			data="{{ 'assets/images/btn-submit.svg'|theme }}"
+			type="image/svg+xml"
+		></object> </span
+></a>

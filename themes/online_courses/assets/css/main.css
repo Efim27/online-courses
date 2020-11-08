@@ -1333,7 +1333,6 @@ div .project-reviews__btns_mini {
 
 .news {
   margin-top: 120px;
-  margin-bottom: 170px;
 }
 
 .news__title {
@@ -1625,21 +1624,67 @@ div .project-reviews__btns_mini {
 }
 
 .blog-page__news {
-  margin-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: calc(-1 * 50px / 2);
   margin-right: calc(-1 * 50px / 2);
 }
 
 .blog-page__news-card {
+  margin-top: 50px;
   width: calc(100% / 12 * 6 - 50px);
   margin-left: calc(50px / 2);
   margin-right: calc(50px / 2);
+}
+
+.blog-page__pagination {
+  margin-top: 100px;
+}
+
+.news-page {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.news-page__date {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+  opacity: 0.7;
+}
+
+.news-page__title {
+  margin-top: 15px;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.news-page__image {
+  margin-top: 45px;
+  border-radius: 20px;
+  height: 420px;
+}
+
+.news-page__content {
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.news-page__simple-pagination {
+  margin-top: 75px;
 }
 
 .header {
@@ -2004,6 +2049,10 @@ div .side-menu__phone-row {
   opacity: 0.9;
 }
 
+.footer-contacts__row:nth-child(1) {
+  margin-top: 0;
+}
+
 .footer-contacts__soc-icon {
   margin-left: 20px;
   display: -webkit-box;
@@ -2153,6 +2202,70 @@ div .side-menu__phone-row {
 .svg-link__object {
   position: relative;
   z-index: -1;
+}
+
+.btn-submit_left {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination__left {
+  margin-right: 30px;
+}
+
+.pagination__left object {
+  width: 40px;
+}
+
+.pagination__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination__page {
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+  opacity: 0.6;
+}
+
+.pagination__page:nth-child(1) {
+  margin-left: 0px;
+}
+
+.pagination__page_active {
+  background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pagination__right {
+  margin-left: 30px;
+}
+
+.pagination__right object {
+  width: 40px;
+}
+
+.simple-pagination__left {
+  margin-right: 40px;
 }
 
 .arrows-pagination {
@@ -3393,6 +3506,11 @@ div .popup-signup__have-account {
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
+  .blog-page__news-card {
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -3733,6 +3851,50 @@ div .popup-signup__have-account {
   .phone-row__soc-icon img, .phone-row__soc-icon svg {
     width: 21px;
     height: 21px;
+  }
+  .blog-page {
+    margin-top: 0;
+  }
+  .blog-page__news-card {
+    margin-top: 30px;
+  }
+  .news-page {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .news-page__date {
+    font-family: "Montserrat", sans-serif;
+    color: #252733;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.9;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+  .news-page__title {
+    margin-top: 15px;
+    font-family: "Merriweather", serif;
+    color: #252733;
+    font-size: 21px;
+    line-height: 140%;
+    font-size: 18px;
+  }
+  .news-page__image {
+    margin-top: 35px;
+    height: 170px;
+  }
+  .news-page__content {
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    color: #252733;
+    font-size: 18px;
+    line-height: 160%;
+    opacity: 0.9;
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  .news-page__simple-pagination {
+    margin-top: 45px;
   }
 }
 /*# sourceMappingURL=main.css.map */

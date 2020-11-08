@@ -1,0 +1,29 @@
+.news-page {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    &__date {
+        @include text(p2);
+        opacity: 0.7;
+    }
+
+    &__title {
+        margin-top: 15px;
+        @include title(h3);
+    }
+
+    &__image {
+        margin-top: 45px;
+        border-radius: 20px;
+        height: 420px;
+    }
+
+    &__content {
+        margin-top: 50px;
+        @include text(p2);
+    }
+
+    &__simple-pagination {
+        margin-top: 75px;
+    }
+}

@@ -298,6 +298,10 @@
 		margin-top: 14px;
 		display: flex;
 		@include text(p4);
+
+		&:nth-child(1) {
+			margin-top: 0;
+		}
 	}
 
 	&__phone {
@@ -431,6 +435,61 @@
 }
 
 .btn-submit {
+
+	&_left {
+		transform: rotate(180deg);
+	}
+}
+
+.pagination {
+	display: flex;
+	align-items: center;
+
+	&__left {
+		margin-right: 30px;
+
+		object {
+			width: 40px;
+		}
+	}
+
+	&__pages {
+		display: flex;
+		align-items: center;
+	}
+
+	&__page {
+		margin-left: 20px;
+		@include text(p2);
+		opacity: 0.6;
+
+		&:nth-child(1) {
+			margin-left: 0px;
+		}
+
+		&_active {
+			background: $gradient_main;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	&__right {
+		margin-left: 30px;
+
+		object {
+			width: 40px;
+		}
+	}
+}
+
+.simple-pagination {
+	&__left {
+		margin-right: 40px;
+	}
+
+	&__right {
+	}
 }
 
 .arrows-pagination {

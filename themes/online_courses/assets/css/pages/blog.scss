@@ -6,13 +6,17 @@
     }
 
     &__news {
-        margin-top: 55px;
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         @include grid-row;
     }
 
     &__news-card {
+        margin-top: 50px;
         @include grid-width(6);
+    }
+
+    &__pagination {
+        margin-top: 100px;
     }
 }

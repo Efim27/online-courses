@@ -1,5 +1,5 @@
 title = "Блог"
-url = "/blog"
+url = "/blog/:page?"
 layout = "main"
 is_hidden = 0
 
@@ -11,6 +11,7 @@ displayColumn = "title"
 noRecordsMessage = "Новости не найдены"
 detailsPage = "-"
 detailsUrlParameter = "id"
+recordsPerPage = 4
 pageNumber = "{{ :page }}"
 ==
 <div class="main__inner">
@@ -24,6 +25,9 @@ pageNumber = "{{ :page }}"
                     {% partial 'blocks/one_news' data=one_news %}
                 </div>
                 {% endfor %}
+            </div>
+            <div class="blog-page__pagination">
+                {% partial 'blocks/pagination' records=news.records %}
             </div>
         </div>
     </div>
