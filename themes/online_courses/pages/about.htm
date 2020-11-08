@@ -1,7 +1,7 @@
-;;
 title = "О проекте"
 url = "/about"
 layout = "main"
+is_hidden = 0
 
 [builderList news]
 modelClass = "Hima\News\Models\News"
@@ -274,25 +274,27 @@ pageNumber = "{{ :page }}"
             <div class="news__title">Новости</div>
             <div class="news__row">
                 {% for one_news in news.records %}
-                <div class="news__news-card news-card">
-                    <div class="news-card__image">
-                        <img
-                            src="{{ one_news.attachment.path }}"
-                            alt="{{ one_news.title }}"
-                        />
+                    {% if one_news.mini %}
+                    <div class="news__news-card news-card">
+                        <div class="news-card__image">
+                            <img
+                                src="{{ one_news.attachment.path }}"
+                                alt="{{ one_news.title }}"
+                            />
+                        </div>
+                        <div class="news-card__date">{{ one_news.created_at|date("d.m.Y") }}</div>
+                        <div class="news-card__title">{{ one_news.title }}</div>
+                        <div class="news-card__about">
+                            {{ one_news.about }}
+                        </div>
+                        <div class="news-card__btn-view btn-submit">
+                            <object
+                                data="{{ 'assets/images/btn-submit.svg'|theme }}"
+                                type="image/svg+xml"
+                            ></object>
+                        </div>
                     </div>
-                    <div class="news-card__date">{{ one_news.created_at|date("d.m.Y") }}</div>
-                    <div class="news-card__title">{{ one_news.title }}</div>
-                    <div class="news-card__about">
-                        {{ one_news.about }}
-                    </div>
-                    <div class="news-card__btn-view btn-submit">
-                        <object
-                            data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                            type="image/svg+xml"
-                        ></object>
-                    </div>
-                </div>
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>

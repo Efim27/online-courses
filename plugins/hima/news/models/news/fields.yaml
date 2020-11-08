@@ -16,6 +16,11 @@ fields:
         span: full
         required: 1
         type: richeditor
+    mini:
+        label: 'Показывать на странице "О проекте"'
+        span: auto
+        type: switch
+        comment: 'Показывать на странице "О проекте" в блоке "Новости"'
     created_at:
         label: 'Дата создания'
         mode: date
@@ -30,4 +35,10 @@ fields:
         type: datepicker
     attachment:
         label: Изображение
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
         type: fileupload

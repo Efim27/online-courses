@@ -9,3 +9,6 @@
 1.0.4:
     - 'Updated table hima_news_news +timestamps'
     - builder_table_update_hima_news_news_2.php
+1.0.5:
+    - 'Updated table hima_news_news mini'
+    - builder_table_update_hima_news_news_3.php

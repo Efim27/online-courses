@@ -360,3 +360,13 @@ git pull
 ды
 ls
 git pull
+git pull
+git pull
+git push
+git add .
+git commit -m "+questions plugin"
+git push
+ls
+git pull
+git pull
+git pull
