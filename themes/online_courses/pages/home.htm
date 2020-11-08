@@ -595,36 +595,30 @@ function onTest()
 				<div class="faq__row">
 					<div class="faq__left">
 						<div class="faq__title">Вопрос - ответ</div>
-						<div class="faq__btn-submit btn-submit">
-							<a class="svg-link" href="/faq"
-								><span class="svg-link__span">
-									<object class="svg-link__object"
-										data="{{ 'assets/images/btn-submit.svg'|theme }}"
-										type="image/svg+xml"
-									></object> </span
-							></a>
-						</div>
+						{% partial 'blocks/svg_link' classes="faq__btn-submit" link="/faq" %}
 					</div>
 					<div class="faq__right">
 						{% for faq in this.theme.faqs %}
-						<div class="faq__stage faq-stage">
-							<div class="faq-stage__row">
-								<div class="faq-stage__block">
-									<div class="faq-stage__question">
-										{{ faq.question }}
+							{% if faq.mini %}
+							<div class="faq__stage faq-stage">
+								<div class="faq-stage__row">
+									<div class="faq-stage__block">
+										<div class="faq-stage__question">
+											{{ faq.question }}
+										</div>
+										<div class="faq-stage__answer">
+											{{ faq.answer }}
+										</div>
 									</div>
-									<div class="faq-stage__answer">
-										{{ faq.answer }}
-									</div>
+									<img
+										class="faq-stage__more-btn more-btn"
+										src="{{ 'assets/images/icons/plus.png'|theme }}"
+										alt="Развернуть"
+									/>
 								</div>
-								<img
-									class="faq-stage__more-btn more-btn"
-									src="{{ 'assets/images/icons/plus.png'|theme }}"
-									alt="Развернуть"
-								/>
+								<div class="faq-stage__divider divider"></div>
 							</div>
-							<div class="faq-stage__divider divider"></div>
-						</div>
+							{% endif %}
 						{% endfor %}
 						<div class="faq__more-questions more-questions-btn">
 							<a href="/faq" class="more-questions-btn__label">

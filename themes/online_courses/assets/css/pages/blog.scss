@@ -1,0 +1,18 @@
+.blog-page {
+    margin-top: 65px;
+
+    &__title {
+        @include title(h2);
+    }
+
+    &__news {
+        margin-top: 55px;
+        display: flex;
+        justify-content: center;
+        @include grid-row;
+    }
+
+    &__news-card {
+        @include grid-width(6);
+    }
+}

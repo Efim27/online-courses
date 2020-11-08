@@ -65,11 +65,11 @@ $(document).ready(function () {
 	$(window).load(function () {
 		//svg hover
 		$('.svg-link').on('mouseenter', function() {
-			$('.svg-link__object').get(0).contentDocument.getElementsByTagName('svg')[0].classList.add('hover');
+			$(this).find('object').get(0).contentDocument.getElementsByTagName('svg')[0].classList.add('hover');
 		});
 
 		$('.svg-link').on('mouseleave', function() {
-			$('.svg-link__object').get(0).contentDocument.getElementsByTagName('svg')[0].classList.remove('hover');
+			$(this).find('object').get(0).contentDocument.getElementsByTagName('svg')[0].classList.remove('hover');
 		});
 
 		$(".side-menu").addClass('side-menu_loaded');

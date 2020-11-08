@@ -95,3 +95,7 @@ tabs:
                 label: Ответ
                 type: textarea
                 size: large
+              mini:
+                label: Показывать на главной
+                type: switch
+                comment: Показывать на главной странице в блоке "Вопрос - ответ"

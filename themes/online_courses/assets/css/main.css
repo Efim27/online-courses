@@ -1613,6 +1613,35 @@ div .project-reviews__btns_mini {
   margin-top: 90px;
 }
 
+.blog-page {
+  margin-top: 65px;
+}
+
+.blog-page__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 48px;
+  line-height: 140%;
+}
+
+.blog-page__news {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.blog-page__news-card {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
 .header {
   font-family: "Merriweather", serif;
   white-space: nowrap;
