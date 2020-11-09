@@ -1,0 +1,37 @@
+.examples-page {
+    margin-top: 65px;
+    margin-bottom: 70px;
+
+    &__title {
+        @include title(h2);
+    }
+
+    &__type {
+        margin-top: 55px;
+        @include text(p3);
+    }
+
+    &__music-players {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        @include grid-row();
+        margin-left: 1px;
+    }
+
+    &__music-player {
+        margin: 5px;
+        @include grid-width(4);
+
+        &:nth-child(6n) .music-player__circle,
+        &:nth-child(6n-2) .music-player__circle,
+        &:nth-child(6n-4) .music-player__circle {
+            background-color: $color_other_blue;
+        }
+    }
+
+    &__simple-pagination {
+        display: none;
+        margin-top: 50px;
+    }
+}

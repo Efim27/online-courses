@@ -743,11 +743,6 @@
 		flex-shrink: 0;
 	}
 
-	&:nth-child(4n-1) &__circle,
-	&:nth-child(4n-2) &__circle {
-		background-color: $color_other_blue;
-	}
-
 	&__play {
 		width: 17px;
 	}

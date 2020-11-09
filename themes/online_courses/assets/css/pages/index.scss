@@ -526,6 +526,11 @@
     &__music-player {
         @include grid-width(6);
         margin: 5px 15px;
+
+        &:nth-child(4n-1) .music-player__circle,
+        &:nth-child(4n-2) .music-player__circle {
+            background-color: $color_other_blue;
+        }
     }
 }
 

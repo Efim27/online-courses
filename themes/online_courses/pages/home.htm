@@ -124,7 +124,6 @@ is_hidden = 0
 				<div class="about-project__left">
 					<div class="about-project__title">О проекте</div>
 					<div class="about-project__btn-submit btn-submit">
-
 						{% partial 'blocks/btn_submit_link' link='/about' %}
 					</div>
 				</div>
@@ -455,11 +454,8 @@ is_hidden = 0
 			<div class="work-examples__row">
 				<div class="work-examples__left">
 					<div class="work-examples__title">Примеры<br />работ</div>
-					<div class="work-examples__btn-submit btn-submit">
-						<object
-							data="{{ 'assets/images/btn-submit.svg'|theme }}"
-							type="image/svg+xml"
-						></object>
+					<div class="work-examples__btn-submit">
+						{% partial 'blocks/btn_submit_link' link="/examples" %}
 					</div>
 				</div>
 				<div class="work-examples__right">
@@ -484,25 +480,7 @@ is_hidden = 0
 					</div>
 					<div class="work-examples__music-players">
 						{% for work_example in this.theme.work_examples %}
-						<div class="work-examples__music-player music-player">
-							<div class="music-player__inner">
-								<div class="music-player__circle">
-									<img
-										src="{{ 'assets/images/icons/music_play.png'|theme }}"
-										alt="Плеер"
-										class="music-player__play"
-									/>
-								</div>
-								<div class="music-player__music">
-									<div class="music-player__music-name">
-										{{ work_example.name }}
-									</div>
-									<div class="music-player__music-type">
-										{{ work_example.type }}
-									</div>
-								</div>
-							</div>
-						</div>
+							{% partial 'blocks/music_player' classes="work-examples__music-player" data=work_example %}
 						{% endfor %}
 					</div>
 					<div

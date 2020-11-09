@@ -848,6 +848,11 @@ div .work-examples__pagination-mini {
   margin: 5px 15px;
 }
 
+.work-examples__music-player:nth-child(4n-1) .music-player__circle,
+.work-examples__music-player:nth-child(4n-2) .music-player__circle {
+  background-color: #70CBD4;
+}
+
 .header-profile-dropdown {
   margin-left: 30px;
 }
@@ -1746,6 +1751,58 @@ div .project-reviews__btns_mini {
 
 .project-review__btn-more {
   margin-top: 27px;
+}
+
+.examples-page {
+  margin-top: 65px;
+  margin-bottom: 70px;
+}
+
+.examples-page__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 48px;
+  line-height: 140%;
+}
+
+.examples-page__type {
+  margin-top: 55px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.examples-page__music-players {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+  margin-left: 1px;
+}
+
+.examples-page__music-player {
+  margin: 5px;
+  width: calc(100% / 12 * 4 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.examples-page__music-player:nth-child(6n) .music-player__circle,
+.examples-page__music-player:nth-child(6n-2) .music-player__circle,
+.examples-page__music-player:nth-child(6n-4) .music-player__circle {
+  background-color: #70CBD4;
+}
+
+.examples-page__simple-pagination {
+  display: none;
+  margin-top: 50px;
 }
 
 .header {
@@ -2670,11 +2727,6 @@ div .side-menu__phone-row {
       flex-shrink: 0;
 }
 
-.music-player:nth-child(4n-1) .music-player__circle,
-.music-player:nth-child(4n-2) .music-player__circle {
-  background-color: #70CBD4;
-}
-
 .music-player__play {
   width: 17px;
 }
@@ -3411,6 +3463,20 @@ div .popup-signup__have-account {
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
+  .examples-page__music-player {
+    width: calc(100% / 12 * 6 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
+  .examples-page__music-player:nth-child(6n) .music-player__circle,
+  .examples-page__music-player:nth-child(6n-2) .music-player__circle,
+  .examples-page__music-player:nth-child(6n-4) .music-player__circle {
+    background-color: #FFD566;
+  }
+  .examples-page__music-player:nth-child(4n-1) .music-player__circle,
+  .examples-page__music-player:nth-child(4n-2) .music-player__circle {
+    background-color: #70CBD4;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -4031,6 +4097,49 @@ div .popup-signup__have-account {
   }
   .btn-text-limited a {
     font-size: 16px;
+  }
+  .examples-page {
+    margin-top: 25px;
+  }
+  .examples-page__title {
+    font-family: "Merriweather", serif;
+    color: #252733;
+    font-size: 30px;
+    line-height: 140%;
+  }
+  .examples-page__type {
+    display: none;
+  }
+  .examples-page__music-players {
+    margin-top: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * 50px / 2);
+    margin-right: calc(-1 * 50px / 2);
+    margin-left: 1px;
+  }
+  .examples-page__music-player {
+    display: none;
+    margin: 5px 0px;
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
+  .examples-page__music-player:nth-child(-n+4) {
+    display: block;
+  }
+  .examples-page__music-player:nth-child(4n-1) .music-player__circle,
+  .examples-page__music-player:nth-child(4n-2) .music-player__circle {
+    background-color: #FFD566;
+  }
+  .examples-page__music-player:nth-child(2n) .music-player__circle {
+    background-color: #70CBD4;
+  }
+  .examples-page__simple-pagination {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */

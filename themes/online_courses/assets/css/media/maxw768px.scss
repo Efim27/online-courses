@@ -174,4 +174,21 @@
 			@include grid-width(12);
 		}
 	}
+
+	.examples-page {
+		&__music-player {
+			@include grid-width(6);
+
+			&:nth-child(6n) .music-player__circle,
+			&:nth-child(6n-2) .music-player__circle,
+			&:nth-child(6n-4) .music-player__circle {
+				background-color: $color_other_yellow;
+			}
+	
+			&:nth-child(4n-1) .music-player__circle,
+			&:nth-child(4n-2) .music-player__circle {
+				background-color: $color_other_blue;
+			}
+		}
+	}
 }

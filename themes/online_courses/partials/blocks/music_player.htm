@@ -1,0 +1,19 @@
+<div class="music-player {{ classes }}">
+    <div class="music-player__inner">
+        <div class="music-player__circle">
+            <img
+                src="{{ 'assets/images/icons/music_play.png'|theme }}"
+                alt="Плеер"
+                class="music-player__play"
+            />
+        </div>
+        <div class="music-player__music">
+            <div class="music-player__music-name">
+                {{ data.name }}
+            </div>
+            <div class="music-player__music-type">
+                {{ data.type }}
+            </div>
+        </div>
+    </div>
+</div>

@@ -497,4 +497,47 @@
 			font-size: 16px;
 		}
 	}
+
+	.examples-page {
+		margin-top: 25px;
+	
+		&__title {
+			@include title(h4);
+		}
+	
+		&__type {
+			display: none;
+		}
+	
+		&__music-players {
+			margin-top: 45px;
+			display: flex;
+			flex-wrap: wrap;
+			@include grid-row();
+			margin-left: 1px;
+		}
+	
+		&__music-player {
+			display: none;
+			margin: 5px 0px;
+			@include grid-width(12);
+
+			&:nth-child(-n+4) {
+				display: block;
+			}
+	
+			&:nth-child(4n-1) .music-player__circle,
+			&:nth-child(4n-2) .music-player__circle {
+				background-color: $color_other_yellow;
+			}
+
+			&:nth-child(2n) .music-player__circle {
+				background-color: $color_other_blue;
+			}
+		}
+
+		&__simple-pagination {
+			display: block;
+		}
+	}
 }
