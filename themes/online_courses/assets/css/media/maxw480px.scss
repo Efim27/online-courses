@@ -447,4 +447,54 @@
 			margin-top: 45px;
 		}
 	}
+
+	.reviews-page {
+		margin-top: 16px;
+	
+		&__title {
+			@include title(h4);
+		}
+	
+		&__reviews {
+			margin-top: 40px;
+		}
+	
+		&__project-review {
+			margin-top: 30px;
+		}
+	
+		&__pagination {
+			margin-top: 60px;
+		}
+	}
+	
+	.project-review {
+	
+		&__content {
+			margin-top: 25px;
+		}
+
+		&__project-type {
+			font-size: 14px;
+		}
+	
+		&__owner {
+			margin-top: 10px;
+			font-size: 18px;
+		}
+	
+		&__text {
+			font-size: 16px;
+		}
+	
+		&__btn-more {
+			margin-top: 27px;
+		}
+	}
+
+	.btn-text-limited {
+		a {
+			font-size: 16px;
+		}
+	}
 }

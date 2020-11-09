@@ -1,0 +1,20 @@
+<div class="project-review">
+	<div class="project-review__divider divider"></div>
+	<div class="project-review__content">
+		<div class="project-review__left">
+			<div class="project-review__project-type">{{ data.course_type }}</div>
+			<div class="project-review__owner">{{ data.owner_name }},<br>{{ data.owner_city }}</div>
+		</div>
+		<div class="project-review__right">
+			<div class="project-review__text text-limited">{{ data.review_text }}</div>
+			<div class="project-review__btn-more btn-text-limited">
+				<a href="#"
+					>Подробнее
+					<img
+						src="{{ 'assets/images/icons/plus.png'|theme }}"
+						alt="Подробнее"
+				/></a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -293,24 +293,11 @@
 	&__review {
 		margin-top: 38px;
 		@include text(p2);
-	}
-
-	&__btn-more {
-		margin-top: 45px;
-		
-		a {
-			@include text(p2);
-			display: flex;
-			align-items: center;
-		}
-
-		img {
-			width: 21px;
-			height: 21px;
-			flex-shrink: 0;
-			margin-left: 20px;
-		}
-	}
+    }
+    
+    &__btn-more {
+        margin-top: 45px;
+    }
 }
 .main {
 

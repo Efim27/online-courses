@@ -180,7 +180,7 @@ pageNumber = "{{ :page }}"
                     </div>
                 </div>
                 <div class="project-authors__author-about author-about">
-                    <div class="author-about__name">Александ Караваев</div>
+                    <div class="author-about__name">Александр Караваев</div>
                     <div class="author-about__about">
                         Проведи время креативно и необычно на нашем
                         развлекательно - образовательном проекте “Мир рядом”.
@@ -200,11 +200,8 @@ pageNumber = "{{ :page }}"
                     Отзывы <br />
                     о проекте
                 </div>
-                <div class="project-reviews__submit btn-submit">
-                    <object
-                        data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                        type="image/svg+xml"
-                    ></object>
+                <div class="project-reviews__submit">
+                    {% partial 'blocks/btn_submit_link' link='/reviews' %}
                 </div>
             </div>
             <div class="project-reviews__right">
@@ -230,15 +227,15 @@ pageNumber = "{{ :page }}"
                 <div class="project-reviews__sender">
                     Александра, Нижний Новгород
                 </div>
-                <div class="project-reviews__review">
-                    «Проведи время креативно и необычно на нашем развлекательно
+                <div class="project-reviews__review text-limited">
+                    Проведи время креативно и необычно на нашем развлекательно
                     - образовательном проекте “Мир рядом” Проведи время
                     креативно и необычно на нашем развлекательно -
                     образовательном проекте “Мир рядом”. Проведи время креативно
                     и необычно на нашем развлекательно - образовательном проекте
-                    “Мир рядом”...»
+                    “Мир рядом”
                 </div>
-                <div class="project-reviews__btn-more">
+                <div class="project-reviews__btn-more btn-text-limited">
                     <a href="#"
                         >Подробнее
                         <img

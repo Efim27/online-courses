@@ -162,4 +162,16 @@
 			margin-top: 40px;
 		}
 	}
+
+	.project-review {
+
+		&__left {
+			@include grid-width(12);
+		}
+
+		&__right {
+			margin-top: 20px;
+			@include grid-width(12);
+		}
+	}
 }

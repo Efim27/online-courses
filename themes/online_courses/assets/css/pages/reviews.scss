@@ -1,1 +1,63 @@
- 
+.reviews-page {
+    margin-top: 65px;
+
+    &__title {
+        @include title(h2);
+    }
+
+    &__reviews {
+        margin-top: 55px;
+    }
+
+    &__project-review {
+        margin-top: 40px;
+
+        &:nth-child(1) {
+            margin-top: 0px;
+        }
+    }
+
+    &__pagination {
+        margin-top: 90px;
+    }
+}
+
+.project-review {
+
+    &__divider {
+    }
+
+    &__content {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include grid-row();
+    }
+
+    &__left {
+        @include grid-width(4);
+    }
+
+    &__project-type {
+        @include text(p3);
+        opacity: 0.8;
+    }
+
+    &__owner {
+        margin-top: 15px;
+        @include title(h4);
+    }
+
+    &__right {
+        @include grid-width(8);
+    }
+
+    &__text {
+        @include text(p2);
+    }
+
+    &__btn-more {
+        margin-top: 27px;
+    }
+}

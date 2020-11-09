@@ -536,7 +536,7 @@
 .videobox {
 	&__video {
 		cursor: pointer;
-		max-width: 100%;
+		width: 100%;
 	}
 
 	&__label {
@@ -945,4 +945,27 @@
         display: flex;
         justify-content: flex-end;
     }
+}
+
+.text-limited {
+
+	&__hidden {
+		display: none;
+	}
+}
+
+.btn-text-limited {
+	
+	a {
+		@include text(p2);
+		display: flex;
+		align-items: center;
+	}
+
+	img {
+		width: 21px;
+		height: 21px;
+		flex-shrink: 0;
+		margin-left: 20px;
+	}
 }

@@ -1,13 +1,33 @@
+title = "Отзывы"
+url = "/reviews/:page?"
+layout = "main"
+is_hidden = 0
+
+[builderList reviews]
+modelClass = "Hima\Review\Models\Reviews"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "review_text"
+noRecordsMessage = "Отзывы не найдены"
+detailsPage = "-"
+detailsUrlParameter = "id"
+recordsPerPage = 3
+pageNumber = "{{ :page }}"
+==
 <div class="main__inner">
 	<div class="main__left"></div>
 	<div class="main__content">
         <div class="reviews-page">
-            <div class="reviews-page__title"></div>
+            <div class="reviews-page__title">Отзывы</div>
             <div class="reviews-page__reviews">
-                
+                {% for review in reviews.records %}
+                <div class="reviews-page__project-review">
+                    {% partial 'blocks/review' data=review %}
+                </div>
+                {% endfor %}
             </div>
             <div class="reviews-page__pagination">
-
+                {% partial 'blocks/pagination' records=reviews.records %}
             </div>
         </div>
     </div>
