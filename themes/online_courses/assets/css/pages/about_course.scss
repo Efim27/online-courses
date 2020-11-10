@@ -4,13 +4,14 @@
 	&__row {
         margin-top: 25px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         @include grid-row();
 	}
 
 	&__info {
-        @include grid-width(9);
+        @include grid-width(8);
 	}
 
 	&__title {
@@ -34,8 +35,13 @@
         margin: 15px;
     }
 
+    &__svg-btn {
+        @include grid-width(4);
+        display: flex;
+        justify-content: flex-end;
+    }
+
 	&__buy-link {
-        @include grid-width(3);
 	}
 
 	&__image {
@@ -64,7 +70,11 @@
         margin-top: 25px;
         display: flex;
         justify-content: center;
-	}
+    }
+    
+    & > a > span > object {
+        width: 100%;
+    }
 }
 
 .course-info {
@@ -132,6 +142,7 @@
     &__row {
         margin: 25px 0px;
         display: flex;
+        flex-wrap: wrap;
         @include grid-row()
     }
 
@@ -144,12 +155,12 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        margin: -15px -40px;
         @include grid-width(8);
+        @include grid-row();
     }
 
     &__stage {
-        margin: 15px 40px;
-        width: calc(50% - 80px);
+        @include grid-width(6);
+        margin-bottom: 30px;
     }
 }

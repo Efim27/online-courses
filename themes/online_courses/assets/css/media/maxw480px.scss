@@ -269,7 +269,7 @@
 	}
 
 	.algorithm-education {
-		&__title {
+		&__mini-title {
 			font-size: 24px;
 		}
 	}
@@ -605,6 +605,75 @@
 
 		&__more-btn {
 			width: 21px;
+		}
+	}
+
+	.about-course {
+
+		&__title {
+			font-size: 30px;
+		}
+
+		&__about {
+			margin-top: 15px;
+			font-size: 16px;
+		}
+
+		&__tags {
+			margin-top: 25px;
+		}
+
+		&__svg-btn {
+			justify-content: flex-start;
+		}
+	}
+
+	.about-course-buy {
+		max-width: 130px;
+
+		&__price {
+			font-size: 16px;
+		}
+
+		&__arrow {
+			margin-top: 10px;
+
+			object {
+				width: 18px;
+			}
+		}
+	}
+
+	.course-scheme {
+		&__title {
+			font-size: 24px;
+		}
+	}
+
+	.course-stage {
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 30px;
+
+		&__body {
+			font-size: 16px;
+		}
+	}
+
+	.course-info {
+		margin-top: 30px;
+
+		&__title {
+			font-size: 24px;
+		}
+
+		&__content {
+			font-size: 16px;
+		}
+
+		&__comment {
+			margin-top: 25px;
+			font-size: 16px;
 		}
 	}
 }

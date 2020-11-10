@@ -197,4 +197,30 @@
 			@include grid-width(12);
 		}
 	}
+
+	.about-course {
+
+		&__info {
+			@include grid-width(12);
+		}
+
+		&__svg-btn {
+			margin-top: 40px;
+			@include grid-width(12);
+		}
+	}
+
+	.course-scheme {
+
+		&__title {
+			@include grid-width(12);
+			text-align: center;
+		}
+
+		&__stages {
+			@include grid-width(12);
+			margin-top: 45px;
+			margin-bottom: -30px;
+		}
+	}
 }

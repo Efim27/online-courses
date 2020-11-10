@@ -230,4 +230,43 @@
 			flex-direction: column;
 		}
 	}
+
+	.course-info {
+
+		&__title {
+			@include grid-width(12);
+		}
+
+		&__content {
+			margin-top: 30px;
+			@include grid-width(12);
+		}
+	}
+
+	.about-course {
+		&__image {
+			margin-top: 25px;
+			height: 250px;
+		}
+	}
+
+	.course-stage {
+		@include grid-width(12);
+
+		&:nth-child(2n) {
+			display: none;
+		}
+
+		&:nth-last-child() {
+			margin-bottom: 0px;
+		}
+
+		&__stages {
+			margin-bottom: -30px;
+		}
+
+		&__divider {
+			transform: none;
+		}
+	}
 }
