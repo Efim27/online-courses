@@ -299,24 +299,6 @@
     }
 }
 
-.more-questions-btn {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    &__label {
-        @include text(p2);
-    }
-
-    &__icon {
-        margin-left: 15px;
-        
-        img {
-            width: 21px;
-        }
-    }
-}
-
 .index-contacts {
     margin-top: 120px;
     background-color: $color_bg_pink;

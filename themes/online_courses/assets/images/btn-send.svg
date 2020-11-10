@@ -3,13 +3,23 @@
 	svg {
 		cursor: pointer;
 		transition: all 0.3s;
+		opacity: 0.7;
 	}
 
-	svg:hover circle {
+	svg:hover, svg.hover {
+		opacity: 0.9;
+	}
+
+	svg:active, svg.active {
+		opacity: 1;
+	}
+
+	svg:hover circle, svg.hover circle {
 		stroke: url(#paint1_linear);
+		opacity: 0.9;
 	}
 
-	svg:hover path {
+	svg:hover path, svg.hover path {
 		fill: url(#paint0_linear);
 	}
 </style>
