@@ -63,8 +63,11 @@
         @include title(h4);
     }
 
-    &__close {
+    &__more-btn {
+    }
 
+    &__content {
+        display: none;
     }
 
     &__divider {

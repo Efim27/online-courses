@@ -102,6 +102,11 @@ $(document).ready(function () {
 		$(this).prev().find(".faq-stage__answer").toggle("slow");
 	});
 
+	$(".course-page-block__more-btn").click(function () {
+		$(this).toggleClass("more-btn_close");
+		$(this).parent().parent().find(".course-page-block__content").toggle("slow");
+	});
+
 	$(window).load(function () {
 		//svg hover
 		$(".svg-link").on("mouseenter", function () {

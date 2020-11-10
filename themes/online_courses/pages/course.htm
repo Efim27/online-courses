@@ -4,7 +4,7 @@ layout = "main"
 is_hidden = 0
 
 [session]
-security = "user"
+security = "all"
 redirect = "home"
 
 [builderDetails]
@@ -14,7 +14,6 @@ modelKeyColumn = "slug"
 displayColumn = "slug"
 notFoundMessage = "Курс не найден"
 ==
-
 {% set record = builderDetails.record %}
 <div class="main__inner">
 	<div class="main__left"></div>
@@ -30,7 +29,7 @@ notFoundMessage = "Курс не найден"
                 {% endfor %}
             </div>
             <div class="course-page__blocks">
-                {% for block in record.block %}
+                {% for block in record.blocks %}
                     {% partial 'blocks/course_block' block=block classes="course-page__block" %}
                 {% endfor %}
             </div>

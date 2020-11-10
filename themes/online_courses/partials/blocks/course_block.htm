@@ -1,18 +1,23 @@
 <div class="course-page__block course-page-block">
-    <div class="course-page-block__row">
-        <div class="course-page-block__title">Блок 1. Введение в курс</div>
-        <div class="course-page-block__close">
-            <object
-                data="{{ 'assets/images/icons/close.svg'|theme }}"
-                type="image/svg+xml"
-            ></object>
-        </div>
-    </div>
-    <div class="course-page-block__main-divider divider"></div>
-    <div class="course-page-block__lessons">
-        {% partial 'blocks/course_lesson' lesson=lesson classes="course-page-block__lesson" %}
-        <div class="course-page-block__lesson-divider divider"></div>
-        {% partial 'blocks/course_lesson' lesson=lesson classes="course-page-block__lesson" %}
-    </div>
-    <div class="course-page-block__divide divider"></div>
+	<div class="course-page-block__row">
+		<div class="course-page-block__title">
+			Блок {{ block.number }}. {{ block.title }}
+		</div>
+		<img
+			class="course-page-block__more-btn more-btn"
+			src="{{ 'assets/images/icons/plus.png'|theme }}"
+			alt="Развернуть"
+		/>
+	</div>
+	<div class="course-page-block__main-divider divider"></div>
+	<div class="course-page-block__content">
+		<div class="course-page-block__lessons">
+			{% for lesson in block.lessons %} {% partial 'blocks/course_lesson'
+			lesson=lesson classes="course-page-block__lesson" %} {% if loop.last
+			!= true %}
+			<div class="course-page-block__lesson-divider divider"></div>
+			{% endif %} {% endfor %}
+		</div>
+		<div class="course-page-block__divide divider"></div>
+	</div>
 </div>

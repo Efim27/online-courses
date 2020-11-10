@@ -2059,6 +2059,10 @@ div .project-reviews__btns_mini-loaded {
   line-height: 140%;
 }
 
+.course-page-block__content {
+  display: none;
+}
+
 .course-page-block__main-divider {
   margin-top: 30px;
 }
