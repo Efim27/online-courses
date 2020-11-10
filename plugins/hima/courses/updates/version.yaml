@@ -21,3 +21,9 @@
 1.0.8:
     - 'Updated table hima_courses_blocks +nums'
     - builder_table_update_hima_courses_blocks.php
+1.0.9:
+    - 'Updated table hima_courses_courses +slug'
+    - builder_table_update_hima_courses_courses_2.php
+1.0.10:
+    - 'Updated table hima_courses_types +slag'
+    - builder_table_update_hima_courses_types.php
