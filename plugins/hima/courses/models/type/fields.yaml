@@ -3,3 +3,10 @@ fields:
         label: Название
         span: full
         type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text

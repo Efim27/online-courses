@@ -27,3 +27,6 @@
 1.0.10:
     - 'Updated table hima_courses_types +slag'
     - builder_table_update_hima_courses_types.php
+1.0.11:
+    - 'Updated table hima_courses_types slug'
+    - builder_table_update_hima_courses_types_2.php

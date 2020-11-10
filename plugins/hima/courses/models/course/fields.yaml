@@ -13,3 +13,10 @@ fields:
         size: ''
         span: full
         type: richeditor
+    slug:
+        label: Slug
+        span: full
+        preset:
+            field: title
+            type: slug
+        type: text
