@@ -9,7 +9,9 @@ class News extends Model
 {
     use \October\Rain\Database\Traits\Validation;
 
-    public $attachOne = ['attachment' => ['System\Models\File']];
+    public $attachOne = [
+        'attachment' => ['System\Models\File']
+    ];
 
     /**
      * @var string The database table used by the model.

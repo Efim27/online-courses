@@ -15,6 +15,12 @@ class Block extends Model
      */
     public $timestamps = false;
 
+    public $belongsTo = [
+        'course' => ['Hima\Courses\Models\Course']
+    ];
+    public $hasMany = [
+        'lessons' => ['Hima\Courses\Models\Lesson']
+    ];
 
     /**
      * @var string The database table used by the model.

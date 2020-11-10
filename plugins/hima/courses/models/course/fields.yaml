@@ -20,3 +20,24 @@ fields:
             field: title
             type: slug
         type: text
+    type:
+        label: Тип
+        nameFrom: name
+        descriptionFrom: Название
+        span: full
+        type: relation
+    tags:
+        label: Тэги
+        nameFrom: name
+        descriptionFrom: Название
+        span: full
+        type: relation
+    attachment:
+        label: Изображение
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload

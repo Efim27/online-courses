@@ -15,6 +15,9 @@ class Type extends Model
      */
     public $timestamps = false;
 
+    public $hasMany = [
+        'courses' => ['Hima\Courses\Models\Course']
+    ];
 
     /**
      * @var string The database table used by the model.
