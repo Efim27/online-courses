@@ -410,3 +410,28 @@ ls
 cd themes/online_courses/pages/
 ls
 git pull
+ls
+git pull
+ls
+git add .
+git commit -m "+plugin courses"
+git push
+git add .
+git commit -m "plugin courses add slags"
+git push
+git add .
+git commit -m "plugin courses slug auto"
+git push
+ls
+nano gitp.sh 
+git pull
+git add .
+git commit -m "plugin courses relation fields"
+git pull
+git push
+git pull
+git pull
+git add .
+git commit -m "plugin courses +files fields"
+git push
+git pull

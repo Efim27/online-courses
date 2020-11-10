@@ -9,3 +9,9 @@ fields:
         span: full
         required: 1
         type: text
+    course:
+        label: Курс
+        nameFrom: title
+        descriptionFrom: description
+        span: full
+        type: relation

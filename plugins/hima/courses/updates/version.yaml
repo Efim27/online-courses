@@ -69,3 +69,6 @@
 1.0.24:
     - 'Updated table hima_courses_tags nullable fix'
     - builder_table_update_hima_courses_tags_5.php
+1.0.25:
+    - 'Updated table hima_courses_blocks nullable fk'
+    - builder_table_update_hima_courses_blocks_4.php
