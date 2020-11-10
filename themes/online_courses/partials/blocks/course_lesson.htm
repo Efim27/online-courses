@@ -1,7 +1,7 @@
 <div class="course-page-lesson {{ classes }}">
     <div class="course-page-lesson__num">{{ lesson.number }} урок</div>
     <div class="course-page-lesson__video">
-        <img src="{{ 'assets/images/about_video1.png'|theme }}" alt="Видео">
+        <img src="{{ lesson.attachment.path }}" alt="Видео">
     </div>
     <div class="course-page-lesson__info">
         <div class="course-page-lesson__about">{{ lesson.about }}</div>
