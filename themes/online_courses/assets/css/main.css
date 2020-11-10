@@ -1909,8 +1909,8 @@ div .project-reviews__btns_mini-loaded {
 }
 
 .settings-my-data__inputs {
-  margin-top: 35px;
   margin: -15px -25px;
+  margin-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3880,6 +3880,15 @@ div .popup-signup__have-account {
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
+  }
+  .settings-password {
+    margin-bottom: 70px;
+  }
+  .settings-password__input-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

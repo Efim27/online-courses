@@ -222,4 +222,12 @@
 			@include grid-width(12);
 		}
 	}
+
+	.settings-password {
+		margin-bottom: 70px;
+
+		&__input-row {
+			flex-direction: column;
+		}
+	}
 }

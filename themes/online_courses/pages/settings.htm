@@ -6,6 +6,11 @@ is_hidden = 0
 [session]
 security = "user"
 redirect = "home"
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
 ==
 <div class="main__inner">
 	<div class="main__left"></div>
@@ -16,33 +21,37 @@ redirect = "home"
                 <a href="/mycourses" class="tabs__tab">мои курсы</a>
                 <a href="#" class="tabs__tab tabs__tab_active">настройки профиля</a>
             </div>
-            <form class="settings-page__form settings-my-data">
+            {{ form_ajax('onUpdate') }}
+            <div class="settings-page__form settings-my-data">
                 <div class="settings-my-data__title">Личные данные</div>
                 <div class="settings-my-data__inputs">
-                    <div class="settings-my-data__input">{% partial 'blocks/text_input' id="settings-my-data-name" name="name" label="Имя" %}</div>
-                    <div class="settings-my-data__input">{% partial 'blocks/text_input' id="settings-my-data-surname" name="surname" label="Фамилия" %}</div>
-                    <div class="settings-my-data__input">{% partial 'blocks/text_input' id="settings-my-data-email" name="email" label="Email" %}</div>
-                    <div class="settings-my-data__input">{% partial 'blocks/text_input' id="settings-my-data-phone" name="phone" label="Телефон" %}</div>
+                    <div class="settings-my-data__input">{% partial 'blocks/text_input' value=user.name id="settings-my-data-name" name="name" label="Имя" %}</div>
+                    <div class="settings-my-data__input">{% partial 'blocks/text_input' value=user.surname id="settings-my-data-surname" name="surname" label="Фамилия" %}</div>
+                    <div class="settings-my-data__input">{% partial 'blocks/text_input' value=user.email id="settings-my-data-email" name="email" label="Email" %}</div>
+                    <div class="settings-my-data__input">{% partial 'blocks/text_input' value=user.iu_telephone id="settings-my-data-phone" name="iu_telephone" label="Телефон" %}</div>
                 </div>
                 <button class="settings-my-data__btn main-btn">
                     <div class="main-btn__content">
                         <div class="main-btn__text">Сохранить</div>
                     </div>
                 </button>
-            </form>
-            <form class="settings-page__form settings-password">
+            </div>
+            {{ form_close() }}
+            {{ form_ajax('onUpdate') }}
+            <div class="settings-page__form settings-password">
                 <div class="settings-password__title">Смена пароля</div>
-                <div class="settings-password__input settings-password__input_first">{% partial 'blocks/text_input' id="settings-password-password" name="password" label="Текущий пароль" %}</div>
+                <div class="settings-password__input settings-password__input_first">{% partial 'blocks/text_input' type="password" id="settings-password-password" name="password_current" label="Текущий пароль" %}</div>
                 <div class="settings-password__input-row">
-                    <div class="settings-password__input">{% partial 'blocks/text_input' id="settings-password-new-password" name="new-password" label="Новый пароль" %}</div>
-                    <div class="settings-password__input">{% partial 'blocks/text_input' id="settings-password-new-password2" name="new-password2" label="Повторите новый пароль" %}</div>
+                    <div class="settings-password__input">{% partial 'blocks/text_input' id="settings-password-new-password" type="password" name="password" label="Новый пароль" %}</div>
+                    <div class="settings-password__input">{% partial 'blocks/text_input' id="settings-password-new-password2" type="password" name="password_confirmation" label="Повторите новый пароль" %}</div>
                 </div>
                 <button class="settings-password__btn main-btn">
                     <div class="main-btn__content">
                         <div class="main-btn__text">Сохранить</div>
                     </div>
                 </button>
-            </form>
+            </div>
+            {{ form_close() }}
         </div>
     </div>
     <div class="main__right"></div>

@@ -53,12 +53,17 @@ function contact_form_success() {
 	alert("Вы успешно отправили нам вопрос");
 }
 
-let project_review_slider = new Glide(".project-review", {
-	type: 'carousel',
-	perView: 1,
-	focusAt: 'center'
-})
-project_review_slider.mount();
+if ($('.project-review').length > 0) {
+	let project_review_slider = new Glide(".project-review", {
+		type: 'carousel',
+		perView: 1,
+		focusAt: 'center'
+	})
+	project_review_slider.mount();
+}
+else {
+	project_review_slider = null;
+}
 
 $(document).ready(function () {
 	$(document).mousedown(function (e) {
