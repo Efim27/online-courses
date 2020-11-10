@@ -1,0 +1,10 @@
+name: Block
+form: $/hima/courses/models/block/fields.yaml
+modelClass: Hima\Courses\Models\Block
+defaultRedirect: hima/courses/block
+create:
+    redirect: 'hima/courses/block/update/:id'
+    redirectClose: hima/courses/block
+update:
+    redirect: hima/courses/block
+    redirectClose: hima/courses/block

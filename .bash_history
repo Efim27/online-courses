@@ -370,3 +370,43 @@ ls
 git pull
 git pull
 git pull
+git add .
+git commit -m "news plugin +migration"
+git pull
+git pull
+git push
+git pull
+git pull
+ls
+cd ..
+ls
+cd ..
+ls
+ls
+cd ..
+ls
+cd webpar3z
+cd mir
+ls
+ls
+cd ~
+ls
+cd config/
+ls
+nano app.php 
+nano broadcasting.php 
+cd ..
+nano .env
+ls
+ls -a
+cd config/
+ls
+ls -a
+nano app.php 
+nano cms.php 
+nano environment.php 
+cd ..
+ls
+cd themes/online_courses/pages/
+ls
+git pull

@@ -1,0 +1,23 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table hima_courses_courses'
+    - builder_table_create_hima_courses_courses.php
+1.0.3:
+    - 'Created table hima_courses_types'
+    - builder_table_create_hima_courses_types.php
+1.0.4:
+    - 'Updated table hima_courses_courses +timestamps'
+    - builder_table_update_hima_courses_courses.php
+1.0.5:
+    - 'Created table hima_courses_tags'
+    - builder_table_create_hima_courses_tags.php
+1.0.6:
+    - 'Created table hima_courses_blocks'
+    - builder_table_create_hima_courses_blocks.php
+1.0.7:
+    - 'Created table hima_courses_lessons'
+    - builder_table_create_hima_courses_lessons.php
+1.0.8:
+    - 'Updated table hima_courses_blocks +nums'
+    - builder_table_update_hima_courses_blocks.php

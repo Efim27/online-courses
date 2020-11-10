@@ -1,0 +1,12 @@
+list: $/hima/courses/models/lesson/columns.yaml
+modelClass: Hima\Courses\Models\Lesson
+title: Lesson
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'hima/courses/lesson/update/:id'

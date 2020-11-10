@@ -1,0 +1,4 @@
+title: Block
+modelClass: Hima\Courses\Models\Block
+toolbar:
+    buttons: reorder_toolbar

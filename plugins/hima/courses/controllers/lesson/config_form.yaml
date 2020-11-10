@@ -1,0 +1,10 @@
+name: Lesson
+form: $/hima/courses/models/lesson/fields.yaml
+modelClass: Hima\Courses\Models\Lesson
+defaultRedirect: hima/courses/lesson
+create:
+    redirect: 'hima/courses/lesson/update/:id'
+    redirectClose: hima/courses/lesson
+update:
+    redirect: hima/courses/lesson
+    redirectClose: hima/courses/lesson

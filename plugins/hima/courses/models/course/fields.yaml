@@ -1,0 +1,15 @@
+fields:
+    title:
+        label: Название
+        span: full
+        type: text
+    about:
+        label: 'Краткое описание'
+        size: small
+        span: full
+        type: textarea
+    content:
+        label: Описание
+        size: ''
+        span: full
+        type: richeditor

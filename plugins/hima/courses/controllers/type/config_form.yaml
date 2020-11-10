@@ -1,0 +1,10 @@
+name: Type
+form: $/hima/courses/models/type/fields.yaml
+modelClass: Hima\Courses\Models\Type
+defaultRedirect: hima/courses/type
+create:
+    redirect: 'hima/courses/type/update/:id'
+    redirectClose: hima/courses/type
+update:
+    redirect: hima/courses/type
+    redirectClose: hima/courses/type

@@ -1,0 +1,10 @@
+name: Tag
+form: $/hima/courses/models/tag/fields.yaml
+modelClass: Hima\Courses\Models\Tag
+defaultRedirect: hima/courses/tag
+create:
+    redirect: 'hima/courses/tag/update/:id'
+    redirectClose: hima/courses/tag
+update:
+    redirect: hima/courses/tag
+    redirectClose: hima/courses/tag

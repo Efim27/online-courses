@@ -1,0 +1,10 @@
+name: Course
+form: $/hima/courses/models/course/fields.yaml
+modelClass: Hima\Courses\Models\Course
+defaultRedirect: hima/courses/course
+create:
+    redirect: 'hima/courses/course/update/:id'
+    redirectClose: hima/courses/course
+update:
+    redirect: hima/courses/course
+    redirectClose: hima/courses/course

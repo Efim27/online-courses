@@ -1,0 +1,32 @@
+plugin:
+    name: 'hima.courses::lang.plugin.name'
+    description: 'hima.courses::lang.plugin.description'
+    author: Hima
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Курсы
+        url: hima/courses/course
+        icon: icon-book
+        sideMenu:
+            side-menu-item5:
+                label: Курсы
+                url: hima/courses/course
+                icon: icon-book
+            side-menu-item2:
+                label: Блоки
+                url: hima/courses/block
+                icon: icon-pencil-square-o
+            side-menu-item3:
+                label: Уроки
+                url: hima/courses/lesson
+                icon: icon-pencil
+            side-menu-item:
+                label: Типы
+                url: hima/courses/type
+                icon: icon-sitemap
+            side-menu-item4:
+                label: Тэги
+                url: hima/courses/tag
+                icon: icon-slack

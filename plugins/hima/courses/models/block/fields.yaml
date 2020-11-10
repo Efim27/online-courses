@@ -1,0 +1,9 @@
+fields:
+    title:
+        label: Название
+        span: full
+        type: text
+    number:
+        label: 'Номер блока'
+        span: full
+        type: text
