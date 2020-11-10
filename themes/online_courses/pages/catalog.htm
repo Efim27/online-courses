@@ -1,7 +1,17 @@
-;;
 title = "Все курсы"
 url = "/catalog"
 layout = "main"
+is_hidden = 0
+
+[builderList]
+modelClass = "Hima\Courses\Models\Course"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 {##}
 <div class="main__inner">
@@ -10,7 +20,9 @@ layout = "main"
         <div class="all-courses">
             <div class="all-courses__title">Все курсы</div>
             <div class="all-courses__cards">
-                {% partial 'blocks/course_card' classes="all-courses__card" btn=true %}
+                {% for course in builderList.records %}
+                    {% partial 'blocks/course_card' classes="all-courses__card" data=course btn=true %}
+                {% endfor %}
             </div>
         </div>
     </div>

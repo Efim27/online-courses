@@ -30,8 +30,9 @@ notFoundMessage = "Курс не найден"
                 {% endfor %}
             </div>
             <div class="course-page__blocks">
-                {% partial 'blocks/course_block' block=block classes="course-page__block" %}
-                {% partial 'blocks/course_block' block=block classes="course-page__block" %}
+                {% for block in record.block %}
+                    {% partial 'blocks/course_block' block=block classes="course-page__block" %}
+                {% endfor %}
             </div>
             <button class="main-btn course-page__question-btn">
                 <div class="main-btn__content">
