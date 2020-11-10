@@ -544,4 +544,17 @@
 	.type {
 		font-size: 16px;
 	}
+
+	.course-about {
+
+		&__status {
+			width: 100%;
+		}
+
+		&__btn {
+			width: 100%;
+			margin-left: 0px;
+			margin-top: 25px;
+		}
+	}
 }

@@ -1,0 +1,6 @@
+{% set file_data = file.getFilename()|split('.') %}
+<a href="{{ file.getPath() }}" class="file {{ classes }}" download="">
+    <img src="{{ 'assets/images/icons/download.png'|theme }}" alt="Скачать" class="file_image">
+    <div class="file__name">{{ file_data[0] }}</div>
+    <div class="file__about">{{ file_data[1] }}, {{ file.getSizeAttribute() }}</div>
+</a>

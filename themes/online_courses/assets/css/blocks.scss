@@ -989,3 +989,24 @@
         }
     }
 }
+
+.file {
+	display: flex;
+	align-items: center;
+
+	&_image {
+		max-width: 19px;
+	}
+
+	&__name {
+		margin-left: 25px;
+		@include text(p2);
+		opacity: 0.9;
+	}
+
+	&__about {
+		margin-left: 20px;
+		@include text(p2);
+		opacity: 0.7;
+	}
+}

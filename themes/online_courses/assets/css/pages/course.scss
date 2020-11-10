@@ -1,0 +1,113 @@
+.course-page {
+    margin-top: 25px;
+
+    &__type {
+        @include text(p3);
+        opacity: 0.7;
+    }
+
+    &__title {
+        margin-top: 15px;
+        @include title(h2);
+    }
+
+    &__content {
+        margin-top: 40px;
+        @include text(p2);
+    }
+
+    &__files-title {
+        margin-top: 85px;
+        @include title(h6);
+    }
+
+    &__files {
+        margin-top: 40px;
+    }
+
+    &__file {
+        margin-top: 25px;
+
+        &:nth-child(1) {
+            margin-top: 0px;
+        }
+    }
+
+    &__blocks {
+        margin-top: 80px;
+    }
+
+    &__block {
+        margin-top: 29px;
+
+        &:nth-child(1) {
+            margin-top: 0px;
+        }
+    }
+
+    &__question-btn {
+        margin-top: 100px;
+        max-width: 360px;
+    }
+}
+
+.course-page-block {
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        @include title(h4);
+    }
+
+    &__close {
+
+    }
+
+    &__divider {
+    }
+
+    &__main-divider {
+        margin-top: 30px;
+    }
+
+    &__lessons {
+
+    }
+}
+
+.course-page-lesson {
+    padding: 60px 0px;
+    display: flex;
+    align-items: center;
+    @include grid-row();
+
+    &__num {
+        @include grid-width(2);
+        @include text(p3);
+    }
+
+    &__info {
+        @include grid-width(6);
+    }
+
+    &__about {
+        @include text(p2);
+    }
+
+    &__files {
+        margin-top: 35px;
+    }
+
+    &__video {
+        @include grid-width(4);
+        cursor: pointer;
+
+        img{
+            max-width: 300px;
+        }
+    }
+}

@@ -1864,6 +1864,8 @@ div .project-reviews__btns_mini-loaded {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .course-about__status {
@@ -1879,6 +1881,8 @@ div .project-reviews__btns_mini-loaded {
 
 .course-about__btn {
   margin-left: 10px;
+  display: block;
+  width: 50%;
   max-width: 265px;
 }
 
@@ -1965,6 +1969,152 @@ div .project-reviews__btns_mini-loaded {
 .settings-password__btn {
   margin-top: 60px;
   max-width: 350px;
+}
+
+.course-page {
+  margin-top: 25px;
+}
+
+.course-page__type {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
+  opacity: 0.7;
+}
+
+.course-page__title {
+  margin-top: 15px;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 48px;
+  line-height: 140%;
+}
+
+.course-page__content {
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.course-page__files-title {
+  margin-top: 85px;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 21px;
+  line-height: 140%;
+}
+
+.course-page__files {
+  margin-top: 40px;
+}
+
+.course-page__file {
+  margin-top: 25px;
+}
+
+.course-page__file:nth-child(1) {
+  margin-top: 0px;
+}
+
+.course-page__blocks {
+  margin-top: 80px;
+}
+
+.course-page__block {
+  margin-top: 29px;
+}
+
+.course-page__block:nth-child(1) {
+  margin-top: 0px;
+}
+
+.course-page__question-btn {
+  margin-top: 100px;
+  max-width: 360px;
+}
+
+.course-page-block__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-page-block__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 30px;
+  line-height: 140%;
+}
+
+.course-page-block__main-divider {
+  margin-top: 30px;
+}
+
+.course-page-lesson {
+  padding: 60px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.course-page-lesson__num {
+  width: calc(100% / 12 * 2 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.course-page-lesson__info {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.course-page-lesson__about {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.course-page-lesson__files {
+  margin-top: 35px;
+}
+
+.course-page-lesson__video {
+  width: calc(100% / 12 * 4 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+  cursor: pointer;
+}
+
+.course-page-lesson__video img {
+  max-width: 300px;
 }
 
 .header {
@@ -3243,6 +3393,41 @@ div .side-menu__phone-row {
   color: #ffffff;
 }
 
+.file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.file_image {
+  max-width: 19px;
+}
+
+.file__name {
+  margin-left: 25px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.file__about {
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+  opacity: 0.7;
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -4357,6 +4542,14 @@ div .popup-signup__have-account {
   }
   .type {
     font-size: 16px;
+  }
+  .course-about__status {
+    width: 100%;
+  }
+  .course-about__btn {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 25px;
   }
 }
 /*# sourceMappingURL=main.css.map */

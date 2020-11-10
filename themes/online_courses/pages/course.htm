@@ -1,0 +1,44 @@
+title = "Курс"
+url = "/courses/:slug"
+layout = "main"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "home"
+
+[builderDetails]
+modelClass = "Hima\Courses\Models\Course"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "slug"
+notFoundMessage = "Курс не найден"
+==
+
+{% set record = builderDetails.record %}
+<div class="main__inner">
+	<div class="main__left"></div>
+	<div class="main__content">
+        <div class="course-page">
+            <div class="course-page__type">{{ record.type.name }}</div>
+            <div class="course-page__title">Музыкальный конструктор</div>
+            <div class="course-page__content">{{ record.content|raw }}</div>
+            <div class="course-page__files-title">Материалы для курса</div>
+            <div class="course-page__files">
+                {% for file in record.files %}
+                    {% partial 'blocks/file' file=file classes="course-page__file" %}
+                {% endfor %}
+            </div>
+            <div class="course-page__blocks">
+                {% partial 'blocks/course_block' block=block classes="course-page__block" %}
+                {% partial 'blocks/course_block' block=block classes="course-page__block" %}
+            </div>
+            <button class="main-btn course-page__question-btn">
+                <div class="main-btn__content">
+                    <div class="main-btn__text">Задать вопрос</div>
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="main__right"></div>
+</div>

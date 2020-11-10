@@ -6,6 +6,16 @@ is_hidden = 0
 [session]
 security = "user"
 redirect = "home"
+
+[builderList]
+modelClass = "Hima\Courses\Models\Course"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 <div class="main__inner">
 	<div class="main__left"></div>
@@ -17,58 +27,24 @@ redirect = "home"
                 <a href="/settings" class="tabs__tab">настройки профиля</a>
             </div>
             <div class="mycourses-page__courses">
+                {% for course in builderList.records %}
                 <div class="mycourses-page__course-block">
                     <div class="mycourses-page__course">
-                        {% partial 'blocks/course_card' %}
+                        {% partial 'blocks/course_card' data=course %}
                     </div>
                     <div class="mycourses-page__course-about course-about">
                         <div class="course-about__status">Курс оплачен</div>
-                        <button class="course-about__btn main-btn">
-                            <div class="main-btn__content">
-                                <div class="main-btn__text">Начать обучение</div>
-                            </div>
-                        </button>
+                        {% set link = "/courses/" ~ course.slug %}
+                        <a href="{{ link }}" class="course-about__btn">
+                            <button class="main-btn">
+                                <div class="main-btn__content">
+                                    <div class="main-btn__text">Начать обучение</div>
+                                </div>
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <div class="mycourses-page__course-block">
-                    <div class="mycourses-page__course">
-                        {% partial 'blocks/course_card' %}
-                    </div>
-                    <div class="mycourses-page__course-about course-about">
-                        <div class="course-about__status">Курс оплачен</div>
-                        <button class="course-about__btn main-btn">
-                            <div class="main-btn__content">
-                                <div class="main-btn__text">Начать обучение</div>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <div class="mycourses-page__course-block">
-                    <div class="mycourses-page__course">
-                        {% partial 'blocks/course_card' %}
-                    </div>
-                    <div class="mycourses-page__course-about course-about">
-                        <div class="course-about__status">Курс оплачен</div>
-                        <button class="course-about__btn main-btn">
-                            <div class="main-btn__content">
-                                <div class="main-btn__text">Начать обучение</div>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <div class="mycourses-page__course-block">
-                    <div class="mycourses-page__course">
-                        {% partial 'blocks/course_card' %}
-                    </div>
-                    <div class="mycourses-page__course-about course-about">
-                        <div class="course-about__status">Курс оплачен</div>
-                        <button class="course-about__btn main-btn">
-                            <div class="main-btn__content">
-                                <div class="main-btn__text">Начать обучение</div>
-                            </div>
-                        </button>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

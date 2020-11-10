@@ -1,0 +1,18 @@
+<div class="course-page__block course-page-block">
+    <div class="course-page-block__row">
+        <div class="course-page-block__title">Блок 1. Введение в курс</div>
+        <div class="course-page-block__close">
+            <object
+                data="{{ 'assets/images/icons/close.svg'|theme }}"
+                type="image/svg+xml"
+            ></object>
+        </div>
+    </div>
+    <div class="course-page-block__main-divider divider"></div>
+    <div class="course-page-block__lessons">
+        {% partial 'blocks/course_lesson' lesson=lesson classes="course-page-block__lesson" %}
+        <div class="course-page-block__lesson-divider divider"></div>
+        {% partial 'blocks/course_lesson' lesson=lesson classes="course-page-block__lesson" %}
+    </div>
+    <div class="course-page-block__divide divider"></div>
+</div>

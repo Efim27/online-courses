@@ -1,0 +1,15 @@
+<div class="course-page-lesson {{ classes }}">
+    <div class="course-page-lesson__num">1 урок</div>
+    <div class="course-page-lesson__video">
+        <img src="{{ 'assets/images/about_video1.png'|theme }}" alt="Видео">
+    </div>
+    <div class="course-page-lesson__info">
+        <div class="course-page-lesson__about">Как устроено обучение на портале мир рядом
+            Какие программы используем</div>
+        <div class="course-page-lesson__files">
+            {% for file in record.files %}
+                {% partial 'blocks/file' file=file classes="course-page-block__file" %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

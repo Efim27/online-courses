@@ -94,12 +94,7 @@ is_hidden = 0
 							18 часов практики
 						</div>
 					</div>
-					<div class="musical-constructor__btn-submit btn-submit">
-						<object
-							data="{{ 'assets/images/btn-submit.svg'|theme }}"
-							type="image/svg+xml"
-						></object>
-					</div>
+					{% partial 'blocks/btn_submit_link' classes="musical-constructor__btn-submit" link="/courses/music-dev" %}
 				</div>
 				<div class="musical-constructor__image">
 					<img
