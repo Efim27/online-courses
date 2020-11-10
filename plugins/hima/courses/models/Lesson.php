@@ -12,6 +12,9 @@ class Lesson extends Model
     public $attachOne = [
         'attachment' => ['System\Models\File']
     ];
+    public $attachMany = [
+        'files' => ['System\Models\File']
+    ];
     public $belongsTo = [
         'block' => ['Hima\Courses\Models\Block']
     ];

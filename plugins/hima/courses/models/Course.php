@@ -12,6 +12,9 @@ class Course extends Model
     public $attachOne = [
         'attachment' => ['System\Models\File']
     ];
+    public $attachMany = [
+        'files' => ['System\Models\File']
+    ];
     public $belongsTo = [
         'type' => ['Hima\Courses\Models\Type']
     ];
