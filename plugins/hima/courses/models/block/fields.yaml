@@ -2,8 +2,10 @@ fields:
     title:
         label: Название
         span: full
+        required: 1
         type: text
     number:
         label: 'Номер блока'
         span: full
+        required: 1
         type: text

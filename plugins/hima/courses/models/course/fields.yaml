@@ -2,20 +2,24 @@ fields:
     title:
         label: Название
         span: full
+        required: 1
         type: text
     about:
         label: 'Краткое описание'
-        size: small
+        size: large
         span: full
+        required: 1
         type: textarea
     content:
         label: Описание
         size: ''
         span: full
+        required: 1
         type: richeditor
     slug:
         label: Slug
         span: full
+        required: 1
         preset:
             field: title
             type: slug
@@ -25,6 +29,7 @@ fields:
         nameFrom: name
         descriptionFrom: Название
         span: full
+        required: 1
         type: relation
     tags:
         label: Тэги
@@ -40,4 +45,15 @@ fields:
             mode: crop
             extension: auto
         span: full
+        required: 1
         type: fileupload
+    tag_color:
+        label: 'Цвет тэгов'
+        options:
+            tag_border-yellow: Желтый
+            tag_border-red: Красный
+            tag_border-violet: Фиолетовый
+            tag_border-green: Зеленый
+        span: full
+        required: 1
+        type: radio

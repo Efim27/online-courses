@@ -2,9 +2,21 @@ fields:
     number:
         label: Номер
         span: full
+        required: 1
         type: text
     about:
         label: 'Краткое описание'
         size: small
         span: full
+        required: 1
         type: textarea
+    attachment:
+        label: Видео
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        required: 1
+        type: fileupload
