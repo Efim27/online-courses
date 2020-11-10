@@ -20,3 +20,12 @@ fields:
         span: full
         required: 1
         type: fileupload
+    files:
+        label: 'Материалы для урока'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload

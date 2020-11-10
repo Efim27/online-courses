@@ -57,3 +57,12 @@ fields:
         span: full
         required: 1
         type: radio
+    files:
+        label: 'Материалы для курса'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
