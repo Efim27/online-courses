@@ -2075,12 +2075,14 @@ div .project-reviews__btns_mini-loaded {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: calc(-1 * 50px / 2);
   margin-right: calc(-1 * 50px / 2);
 }
 
 .course-page-lesson__num {
-  width: calc(100% / 12 * 2 - 50px);
+  width: calc(100% / 12 * 1 - 50px);
   margin-left: calc(50px / 2);
   margin-right: calc(50px / 2);
   font-family: "Montserrat", sans-serif;
@@ -2092,7 +2094,7 @@ div .project-reviews__btns_mini-loaded {
 }
 
 .course-page-lesson__info {
-  width: calc(100% / 12 * 6 - 50px);
+  width: calc(100% / 12 * 7 - 50px);
   margin-left: calc(50px / 2);
   margin-right: calc(50px / 2);
 }
@@ -2115,10 +2117,11 @@ div .project-reviews__btns_mini-loaded {
   margin-left: calc(50px / 2);
   margin-right: calc(50px / 2);
   cursor: pointer;
+  max-width: 300px;
 }
 
 .course-page-lesson__video img {
-  max-width: 300px;
+  max-width: 100%;
 }
 
 .header {
@@ -3659,6 +3662,22 @@ div .popup-signup__have-account {
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
+  .course-page-lesson__num {
+    width: calc(100% / 12 * 2 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
+  .course-page-lesson__video {
+    width: calc(100% / 12 * 10 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
+  .course-page-lesson__info {
+    margin-top: 10px;
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -4554,6 +4573,45 @@ div .popup-signup__have-account {
     width: 100%;
     margin-left: 0px;
     margin-top: 25px;
+  }
+  .course-page-lesson__num {
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
+  .course-page-lesson__video {
+    margin-top: 10px;
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
+  .course-page-lesson__info {
+    margin-top: 10px;
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
+  .course-page__type {
+    font-size: 14px;
+  }
+  .course-page__title {
+    font-size: 30px;
+  }
+  .course-page__content {
+    margin-top: 35px;
+    font-size: 18px;
+  }
+  .course-page__files-title {
+    margin-top: 50px;
+  }
+  .course-page__files {
+    margin-top: 25px;
+  }
+  .course-page-block__title {
+    font-size: 24px;
+  }
+  .course-page-block__more-btn {
+    width: 21px;
   }
 }
 /*# sourceMappingURL=main.css.map */

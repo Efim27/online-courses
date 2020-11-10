@@ -78,7 +78,6 @@
     }
 
     &__lessons {
-
     }
 }
 
@@ -86,15 +85,16 @@
     padding: 60px 0px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     @include grid-row();
 
     &__num {
-        @include grid-width(2);
+        @include grid-width(1);
         @include text(p3);
     }
 
     &__info {
-        @include grid-width(6);
+        @include grid-width(7);
     }
 
     &__about {
@@ -108,9 +108,10 @@
     &__video {
         @include grid-width(4);
         cursor: pointer;
+        max-width: 300px;
 
         img{
-            max-width: 300px;
+            max-width: 100%;
         }
     }
 }

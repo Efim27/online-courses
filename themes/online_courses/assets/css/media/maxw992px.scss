@@ -64,4 +64,20 @@
 			@include grid-width(6);
 		}
 	}
+
+	.course-page-lesson {
+
+		&__num {
+			@include grid-width(2);
+		}
+
+		&__video {
+			@include grid-width(10);
+		}
+
+		&__info {
+			margin-top: 10px;
+			@include grid-width(12);
+		}
+	}
 }
