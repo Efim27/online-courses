@@ -191,4 +191,10 @@
 			}
 		}
 	}
+
+	.mycourses-page {
+		&__course-block {
+			@include grid-width(12);
+		}
+	}
 }

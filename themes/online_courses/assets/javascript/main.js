@@ -53,6 +53,13 @@ function contact_form_success() {
 	alert("Вы успешно отправили нам вопрос");
 }
 
+let project_review_slider = new Glide(".project-review", {
+	type: 'carousel',
+	perView: 1,
+	focusAt: 'center'
+})
+project_review_slider.mount();
+
 $(document).ready(function () {
 	$(document).mousedown(function (e) {
 		var popup = $(".popup__content");
@@ -110,6 +117,14 @@ $(document).ready(function () {
 
 		$(".side-menu").addClass("side-menu_loaded");
 		$(".popup").addClass("popup_loaded");
+		$('.project-reviews__btns_mini').addClass("project-reviews__btns_mini-loaded");
+
+		$('.project-reviews__btn-left object').svg_click(function() {
+			project_review_slider.go('<');
+		});
+		$('.project-reviews__btn-right object').svg_click(function() {
+			project_review_slider.go('>');
+		});
 
 		$(".side-menu-btn object").svg_click(function () {
 			$(".side-menu").show("slow");

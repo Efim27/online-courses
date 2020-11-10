@@ -1283,6 +1283,13 @@ div .work-examples__pagination-mini {
 }
 
 div .project-reviews__btns_mini {
+  z-index: -1;
+  opacity: 0;
+}
+
+div .project-reviews__btns_mini-loaded {
+  z-index: 11;
+  opacity: 1;
   display: none;
 }
 
@@ -1803,6 +1810,161 @@ div .project-reviews__btns_mini {
 .examples-page__simple-pagination {
   display: none;
   margin-top: 50px;
+}
+
+.mycourses-page {
+  margin-top: 65px;
+}
+
+.mycourses-page__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 48px;
+  line-height: 140%;
+}
+
+.mycourses-page__tabs {
+  margin-top: 45px;
+}
+
+.mycourses-page__courses {
+  margin: 0px -10px;
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.mycourses-page__course-block {
+  margin: 25px 10px;
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.mycourses-page__course-about {
+  margin-top: 45px;
+  max-width: 520px;
+}
+
+.course-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-about__status {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.course-about__btn {
+  margin-left: 10px;
+  max-width: 265px;
+}
+
+.settings-page {
+  margin-top: 70px;
+}
+
+.settings-page__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 48px;
+  line-height: 140%;
+}
+
+.settings-page__tabs {
+  margin-top: 55px;
+}
+
+.settings-my-data {
+  margin-top: 65px;
+}
+
+.settings-my-data__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 30px;
+  line-height: 140%;
+}
+
+.settings-my-data__inputs {
+  margin-top: 35px;
+  margin: -15px -25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.settings-my-data__input {
+  width: 100%;
+  max-width: 350px;
+  margin: 15px 25px;
+}
+
+.settings-my-data__btn {
+  margin-top: 60px;
+  max-width: 350px;
+}
+
+.settings-password {
+  margin-top: 90px;
+}
+
+.settings-password__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 30px;
+  line-height: 140%;
+}
+
+.settings-password__input {
+  width: 100%;
+  max-width: 350px;
+}
+
+.settings-password__input_first {
+  margin-top: 50px;
+}
+
+.settings-password__input-row {
+  margin: -25px;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.settings-password__input-row .settings-password__input {
+  margin: 15px 25px;
+}
+
+.settings-password__btn {
+  margin-top: 60px;
+  max-width: 350px;
 }
 
 .header {
@@ -3044,6 +3206,43 @@ div .side-menu__phone-row {
   margin-left: 20px;
 }
 
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -35px;
+  margin-right: -35px;
+}
+
+.tabs__tab {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
+  white-space: nowrap;
+  margin: 10px 35px;
+}
+
+.tabs__tab_active {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.9;
+  color: #ffffff;
+  padding: 2px 30px;
+  background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
+  border-radius: 20px;
+}
+
+.tabs__tab_active:hover {
+  color: #ffffff;
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -3477,6 +3676,11 @@ div .popup-signup__have-account {
   .examples-page__music-player:nth-child(4n-2) .music-player__circle {
     background-color: #70CBD4;
   }
+  .mycourses-page__course-block {
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -3580,6 +3784,7 @@ div .popup-signup__have-account {
     padding: 50px 0px;
   }
   .project-reviews__content {
+    padding: 0px 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3602,7 +3807,7 @@ div .popup-signup__have-account {
     margin-top: 30px;
   }
   .project-reviews__btns_main {
-    display: none;
+    opacity: 0;
   }
   div .project-reviews__btns_mini {
     display: -webkit-box;
@@ -4140,6 +4345,9 @@ div .popup-signup__have-account {
   }
   .examples-page__simple-pagination {
     display: block;
+  }
+  .type {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */

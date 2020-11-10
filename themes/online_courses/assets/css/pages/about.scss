@@ -275,7 +275,14 @@
 	}
 
 	div &__btns_mini {
-		display: none;
+        z-index: -1;
+        opacity: 0;
+        
+        &-loaded {
+            z-index: 11;
+            opacity: 1;
+            display: none;
+        }
 	}
 
 	&__btn-left {

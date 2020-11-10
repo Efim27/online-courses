@@ -27,6 +27,7 @@ function onStart()
     <meta name="title" content="{{ this.page.meta_title }}">
 	<link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
 	<link rel="stylesheet" href="{{ 'assets/css/main.css'|theme }}">
+	<link rel="stylesheet" href="{{ 'assets/vendor/glide/css/glide.core.min.css'|theme }}">
 	{% styles %}
 </head>
 
@@ -42,6 +43,7 @@ function onStart()
 	</main>
 	{% partial 'footer' %}
 	<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
+	<script src="{{ 'assets/vendor/glide/js/glide.min.js'|theme }}"></script>
 	<script src="{{ 'assets/javascript/main.js'|theme }}"></script>
     {% framework extras %}
     {% scripts %}

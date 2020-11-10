@@ -11,20 +11,8 @@
             </div>
         </div>
         <div class="popup-signin__form">
-            <div class="popup-signin__input-phone text-input">
-                <input class="text-input__input" id="signin-email" type="text" name="login" required>
-                <label for="signin-email" class="text-input__label">Введите Email</label>
-            </div>
-            <div class="popup-signin__input-password text-input">
-                <input class="text-input__input" id="signin-password" type="password" name="password" required>
-                <label for="signin-password" class="text-input__label">Введите пароль</label>
-                <div class="text-input__toggle-pswd">
-                    <object
-                        data="{{ 'assets/images/icons/toggle_pswd.svg'|theme }}"
-                        type="image/svg+xml"
-                    ></object>
-                </div>
-            </div>
+            {% partial 'blocks/text_input' classes="popup-signin__input-password" id="signin-email" name="login" label="Введите Email" %}
+            {% partial 'blocks/text_input' classes="popup-signin__input-password" id="signin-password" name="password" toggle_visibility="true" type="password" label="Введите пароль" %}
             <div class="text-input__rule">Не менее 8 символов</div>
             <button class="popup-signin__btn main-btn">
                 <div class="main-btn__content">

@@ -1,0 +1,76 @@
+title = "Мои курсы"
+url = "/mycourses"
+layout = "main"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "home"
+==
+<div class="main__inner">
+	<div class="main__left"></div>
+	<div class="main__content">
+        <div class="mycourses-page">
+            <div class="mycourses-page__title">{{ user.name }} {{ user.surname }}</div>
+            <div class="mycourses-page__tabs tabs">
+                <a href="#" class="tabs__tab tabs__tab_active">мои курсы</a>
+                <a href="/settings" class="tabs__tab">настройки профиля</a>
+            </div>
+            <div class="mycourses-page__courses">
+                <div class="mycourses-page__course-block">
+                    <div class="mycourses-page__course">
+                        {% partial 'blocks/course_card' %}
+                    </div>
+                    <div class="mycourses-page__course-about course-about">
+                        <div class="course-about__status">Курс оплачен</div>
+                        <button class="course-about__btn main-btn">
+                            <div class="main-btn__content">
+                                <div class="main-btn__text">Начать обучение</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="mycourses-page__course-block">
+                    <div class="mycourses-page__course">
+                        {% partial 'blocks/course_card' %}
+                    </div>
+                    <div class="mycourses-page__course-about course-about">
+                        <div class="course-about__status">Курс оплачен</div>
+                        <button class="course-about__btn main-btn">
+                            <div class="main-btn__content">
+                                <div class="main-btn__text">Начать обучение</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="mycourses-page__course-block">
+                    <div class="mycourses-page__course">
+                        {% partial 'blocks/course_card' %}
+                    </div>
+                    <div class="mycourses-page__course-about course-about">
+                        <div class="course-about__status">Курс оплачен</div>
+                        <button class="course-about__btn main-btn">
+                            <div class="main-btn__content">
+                                <div class="main-btn__text">Начать обучение</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="mycourses-page__course-block">
+                    <div class="mycourses-page__course">
+                        {% partial 'blocks/course_card' %}
+                    </div>
+                    <div class="mycourses-page__course-about course-about">
+                        <div class="course-about__status">Курс оплачен</div>
+                        <button class="course-about__btn main-btn">
+                            <div class="main-btn__content">
+                                <div class="main-btn__text">Начать обучение</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main__right"></div>
+</div>

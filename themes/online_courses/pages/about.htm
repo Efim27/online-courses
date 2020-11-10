@@ -12,6 +12,16 @@ noRecordsMessage = "Новости не найдены"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[builderList reviews]
+modelClass = "Hima\Review\Models\Reviews"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "review_text"
+noRecordsMessage = "Отзывы не найдены"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
 {##}
 <div class="main__inner">
@@ -205,58 +215,63 @@ pageNumber = "{{ :page }}"
                 </div>
             </div>
             <div class="project-reviews__right">
-                <div class="project-reviews__row">
-                    <div class="project-reviews__type">музыка</div>
-                    <div
-                        class="project-reviews__btns project-reviews__btns_main arrows-pagination"
-                    >
-                        <div class="project-reviews__btn-left arrow-left">
-                            <object
-                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
-                                type="image/svg+xml"
-                            ></object>
-                        </div>
-                        <div class="project-reviews__btn-right arrow-right">
-                            <object
-                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
-                                type="image/svg+xml"
-                            ></object>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-reviews__sender">
-                    Александра, Нижний Новгород
-                </div>
-                <div class="project-reviews__review text-limited">
-                    Проведи время креативно и необычно на нашем развлекательно
-                    - образовательном проекте “Мир рядом” Проведи время
-                    креативно и необычно на нашем развлекательно -
-                    образовательном проекте “Мир рядом”. Проведи время креативно
-                    и необычно на нашем развлекательно - образовательном проекте
-                    “Мир рядом”
-                </div>
-                <div class="project-reviews__btn-more btn-text-limited">
-                    <a href="#"
-                        >Подробнее
-                        <img
-                            src="{{ 'assets/images/icons/plus.png'|theme }}"
-                            alt="Подробнее"
-                    /></a>
-                </div>
-                <div
-                    class="project-reviews__btns project-reviews__btns_mini arrows-pagination"
-                >
-                    <div class="project-reviews__btn-left arrow-left">
-                        <object
-                            data="{{ 'assets/images/btn-arrow.svg'|theme }}"
-                            type="image/svg+xml"
-                        ></object>
-                    </div>
-                    <div class="project-reviews__btn-right arrow-right">
-                        <object
-                            data="{{ 'assets/images/btn-arrow.svg'|theme }}"
-                            type="image/svg+xml"
-                        ></object>
+                <div class="glide project-review">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            {% for review in reviews.records %}
+                            <li class="glide__slide project-reviews__slide">
+                                <div class="project-reviews__row">
+                                    <div class="project-reviews__type">{{ review.course_type }}</div>
+                                    <div
+                                        class="project-reviews__btns project-reviews__btns_main arrows-pagination"
+                                    >
+                                        <div class="project-reviews__btn-left arrow-left">
+                                            <object
+                                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+                                                type="image/svg+xml"
+                                            ></object>
+                                        </div>
+                                        <div class="project-reviews__btn-right arrow-right">
+                                            <object
+                                                data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+                                                type="image/svg+xml"
+                                            ></object>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-reviews__sender">
+                                    {{ review.owner_name }}, {{ review.owner_city }}
+                                </div>
+                                <div class="project-reviews__review text-limited">
+                                    {{ review.review_text }}
+                                </div>
+                                <div class="project-reviews__btn-more btn-text-limited">
+                                    <a href="#"
+                                        >Подробнее
+                                        <img
+                                            src="{{ 'assets/images/icons/plus.png'|theme }}"
+                                            alt="Подробнее"
+                                    /></a>
+                                </div>
+                                <div
+                                    class="project-reviews__btns project-reviews__btns_mini arrows-pagination"
+                                >
+                                    <div class="project-reviews__btn-left arrow-left">
+                                        <object
+                                            data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+                                            type="image/svg+xml"
+                                        ></object>
+                                    </div>
+                                    <div class="project-reviews__btn-right arrow-right">
+                                        <object
+                                            data="{{ 'assets/images/btn-arrow.svg'|theme }}"
+                                            type="image/svg+xml"
+                                        ></object>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
             </div>

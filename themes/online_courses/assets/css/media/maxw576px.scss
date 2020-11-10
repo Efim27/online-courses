@@ -113,6 +113,7 @@
 		padding: 50px 0px;
 
 		&__content {
+			padding: 0px 20px;
 			justify-content: center;
 			flex-direction: column;
 		}
@@ -129,7 +130,7 @@
 		}
 
 		&__btns_main {
-			display: none;
+			opacity: 0;
 		}
 
 		div &__btns_mini {

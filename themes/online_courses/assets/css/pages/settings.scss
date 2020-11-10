@@ -1,0 +1,73 @@
+.settings-page {
+    margin-top: 70px;
+
+    &__title {
+        @include title(h2);
+    }
+
+    &__tabs {
+        margin-top: 55px;
+    }
+
+    &__form {
+    }
+}
+
+.settings-my-data {
+    margin-top: 65px;
+
+    &__title {
+        @include title(h4);
+    }
+
+    &__inputs {
+        margin-top: 35px;
+        margin: -15px -25px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 350px;
+        margin: 15px 25px;
+    }
+
+    &__btn {
+        margin-top: 60px;
+        max-width: 350px;
+    }
+}
+
+.settings-password {
+    margin-top: 90px;
+
+    &__title {
+        @include title(h4);
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 350px;
+
+        &_first {
+            margin-top: 50px;
+        }
+    }
+
+    &__input-row {
+        margin: -25px;
+        margin-top: 15px;
+        display: flex;
+
+        .settings-password__input {
+            margin: 15px 25px;
+        }
+    }
+
+    &__btn {
+        margin-top: 60px;
+        max-width: 350px;
+    }
+}

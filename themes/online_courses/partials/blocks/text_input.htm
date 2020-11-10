@@ -1,0 +1,12 @@
+<div class="text-input {{ classes }}">
+    <input class="text-input__input" id="{{ id }}" type="{{ type ? type : 'text' }}" name="{{ name }}" required>
+    <label for="{{ id }}" class="text-input__label">{{ label }}</label>
+    {% if toggle_visibility %}
+    <div class="text-input__toggle-pswd">
+        <object
+            data="{{ 'assets/images/icons/toggle_pswd.svg'|theme }}"
+            type="image/svg+xml"
+        ></object>
+    </div>
+    {% endif %}
+</div>

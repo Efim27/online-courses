@@ -11,9 +11,9 @@ is_hidden = 0
 			<div class="examples-page__title">Примеры работ</div>
 			<div class="examples-page__type">музыка</div>
 			<div class="examples-page__music-players">
-				{% for work_example in this.theme.work_examples %} {% partial
-				'blocks/music_player' classes="examples-page__music-player"
-				data=work_example %} {% endfor %}
+                {% for work_example in this.theme.work_examples %}
+                    {% partial 'blocks/music_player' classes="examples-page__music-player" data=work_example %}
+                {% endfor %}
 			</div>
 			<div class="examples-page__simple-pagination">
 				<div class="arrows-pagination">

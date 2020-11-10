@@ -1,0 +1,47 @@
+.mycourses-page {
+    margin-top: 65px;
+
+    &__title {
+        @include title(h2);
+    }
+
+    &__tabs {
+        margin-top: 45px;
+    }
+
+    &__courses {
+        margin: 0px -10px;
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @include grid-row();
+    }
+
+    &__course-block {
+        margin: 25px 10px;
+        @include grid-width(6);
+    }
+
+    &__course-about {
+        margin-top: 45px;
+        max-width: 520px;
+    }
+}
+
+.course-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__status {
+        @include text(p3);
+        opacity: 0.5;
+        font-style: italic;
+    }
+
+    &__btn {
+        margin-left: 10px;
+        max-width: 265px;
+    }
+}
