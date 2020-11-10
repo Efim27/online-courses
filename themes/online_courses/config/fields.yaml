@@ -69,6 +69,18 @@ tabs:
                 label: Описание
                 type: textarea
                 size: small
+        audience_stages:
+          type: repeater
+          label: Для кого этот курс
+          comment: Краткое описание аудитории
+          titleFrom: about
+          tab: Контент
+          form:
+            fields:
+              about:
+                label: Описание
+                type: textarea
+                size: small
         our_worths:
           type: repeater
           label: Наши ценности

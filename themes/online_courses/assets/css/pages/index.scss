@@ -193,142 +193,6 @@
     }
 }
 
-.creative-result {
-    background-color: $color_bg_pink;
-    padding-bottom: 110px;
-
-    &__schema {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__image {
-        position: relative;
-        display: flex;
-        justify-content: center;
-
-        object {
-            max-width: 140%;
-        }
-    }
-
-    &__title {
-        position: absolute;
-        @include title(h3);
-        background: $gradient_main;
-        -webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		width: 250px;
-		height: 100px;
-        text-align: center;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 250px;
-        height: 100px;
-        margin: auto;
-    }
-
-    &__label {
-        position: absolute;
-    }
-
-    &__mini-labels {
-        display: none;
-        position: relative;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        @include grid-row();
-        margin-top: -10px;
-    }
-}
-
-.creative-result-label {
-    max-width: 350px;
-    display: flex;
-    justify-content: space-between;
-	align-items: center;
-	
-	&_n1 {
-		margin-left: -650px;
-		margin-top: -300px;
-
-		.creative-result-label__dot {
-			order: 1;
-		}
-	}
-
-	&_n2 {
-		margin-left: -810px;
-
-		.creative-result-label__dot {
-			order: 1;
-		}
-	}
-
-	&_n3 {
-		margin-left: -690px;
-		margin-top: 300px;
-
-		.creative-result-label__dot {
-			order: 1;
-		}
-	}
-
-	&_n4 {
-		margin-left: 690px;
-		margin-top: -300px;
-
-		.creative-result-label__text {
-			margin-left: 42px;
-		}
-	}
-
-	&_n5 {
-		margin-left: 810px;
-
-		.creative-result-label__text {
-			margin-left: 42px;
-		}
-	}
-
-	&_n6 {
-		margin-left: 660px;
-		margin-top: 300px;
-
-		.creative-result-label__text {
-			margin-left: 42px;
-		}
-    }
-    
-    &_mini {
-        margin-top: 10px;
-        @include grid-width(6);
-        align-items: flex-start;
-
-        .creative-result-label__dot {
-            margin-top: 10px;
-        }
-
-        .creative-result-label__text {
-            margin-left: 20px;
-        }
-    }
-
-    &__dot {
-        width: 20px;
-        height: 20px;
-        flex-shrink: 0;
-    }
-
-    &__text {
-        @include text(p2);
-    }
-}
-
 .our-telegram {
 	margin-top: 100px;
 
@@ -446,8 +310,10 @@
 
     &__icon {
         margin-left: 15px;
-        width: 21px;
-        height: 21px;
+        
+        img {
+            width: 21px;
+        }
     }
 }
 
@@ -456,82 +322,6 @@
     background-color: $color_bg_pink;
     padding-top: 120px;
     padding-bottom: 130px;
-}
-
-.work-examples {
-    margin-top: 140px;
-
-    &__left-links {
-        margin-top: 130px;
-    }
-
-    &__row {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        @include grid-row();
-    }
-
-    &__left {
-        @include grid-width(4);
-    }
-
-    &__right {
-        @include grid-width(8);
-    }
-
-    &__title {
-        @include title(h3);
-    }
-
-    &__btn-submit {
-        margin-top: 50px;
-    }
-
-    &__right-row {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__label {
-        @include text(p4);
-        opacity: 0.7;
-    }
-
-    &__pagination {
-        margin-left: 10px;
-    }
-
-    div &__pagination-mini {
-        display: none;
-    }
-
-    &__btn-left {
-    }
-
-    &__btn-right {
-        margin-left: 50px;
-    }
-
-    &__music-players {
-        margin: -5px -15px;
-        margin-top: 25px;
-        padding-left: 25px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        @include grid-row();
-    }
-
-    &__music-player {
-        @include grid-width(6);
-        margin: 5px 15px;
-
-        &:nth-child(4n-1) .music-player__circle,
-        &:nth-child(4n-2) .music-player__circle {
-            background-color: $color_other_blue;
-        }
-    }
 }
 
 .header-profile-dropdown {
@@ -557,4 +347,22 @@
             margin-top: 0px;
         }
     }
+}
+
+.about-education-home {
+    margin-top: 120px;
+    background-color: #F2FFFE;
+}
+
+.creative-result-home {
+    background-color: $color_bg_pink;
+}
+
+.work-examples-home {
+	margin-top: 140px;
+}
+
+.project-authors-block-index {
+	margin-top: 140px;
+    background-color: $color_bg_blue;
 }

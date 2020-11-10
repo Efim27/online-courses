@@ -1,0 +1,155 @@
+.about-course {
+    margin-top: 35px;
+
+	&__row {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @include grid-row();
+	}
+
+	&__info {
+        @include grid-width(9);
+	}
+
+	&__title {
+        @include title(h2);
+	}
+
+	&__about {
+        margin-top: 20px;
+        @include text(p1);
+	}
+
+	&__tags {
+        margin: -15px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    &__tag {
+        margin: 15px;
+    }
+
+	&__buy-link {
+        @include grid-width(3);
+	}
+
+	&__image {
+        margin-top: 70px;
+        height: 420px;
+        border-radius: 20px;
+        background: url(../images/course_bgimage.png) no-repeat 50% 0% / cover;
+	}
+}
+
+.about-course-buy {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	&__center {
+        position: absolute;
+	}
+
+	&__price {
+        @include text(p1);
+	}
+
+	&__arrow {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+	}
+}
+
+.course-info {
+    margin-top: 100px;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        @include grid-row();
+    }
+
+    &__title {
+        @include title(h3);
+        @include grid-width(4);
+    }
+
+    &__content {
+        @include grid-width(8);
+    }
+
+    &__about {
+        @include text(p2);
+    }
+
+    &__video {
+        margin-top: 60px;
+        max-width: 400px;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__comment {
+        margin-top: 40px;
+        @include text(p2);
+    }
+}
+
+.work-examples-about-course {
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+
+.about-education-about-course {
+    background-color: $color_bg_cream;
+}
+
+.creative-result-about-course {
+    background-color: $color_bg_blue;
+}
+
+.project-authors-block-about-course {
+    margin-top: 110px;
+    background-color: $color_bg_cream;
+}
+
+.course-scheme {
+    margin-top: 50px;
+
+    &__divider {
+    }
+
+    &__row {
+        margin: 25px 0px;
+        display: flex;
+        @include grid-row()
+    }
+
+    &__title {
+        @include title(h3);
+        @include grid-width(4);
+    }
+
+    &__stages {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: -15px -40px;
+        @include grid-width(8);
+    }
+
+    &__stage {
+        margin: 15px 40px;
+        width: calc(50% - 80px);
+    }
+}

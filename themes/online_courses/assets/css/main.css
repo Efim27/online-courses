@@ -410,181 +410,6 @@ a, a:hover, a:active, a:visited {
   margin-top: 235px;
 }
 
-.creative-result {
-  background-color: #FFF3F9;
-  padding-bottom: 110px;
-}
-
-.creative-result__schema {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.creative-result__image {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.creative-result__image object {
-  max-width: 140%;
-}
-
-.creative-result__title {
-  position: absolute;
-  font-family: "Merriweather", serif;
-  color: #252733;
-  font-size: 36px;
-  line-height: 140%;
-  background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 250px;
-  height: 100px;
-  text-align: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 250px;
-  height: 100px;
-  margin: auto;
-}
-
-.creative-result__label {
-  position: absolute;
-}
-
-.creative-result__mini-labels {
-  display: none;
-  position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: calc(-1 * 50px / 2);
-  margin-right: calc(-1 * 50px / 2);
-  margin-top: -10px;
-}
-
-.creative-result-label {
-  max-width: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.creative-result-label_n1 {
-  margin-left: -650px;
-  margin-top: -300px;
-}
-
-.creative-result-label_n1 .creative-result-label__dot {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.creative-result-label_n2 {
-  margin-left: -810px;
-}
-
-.creative-result-label_n2 .creative-result-label__dot {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.creative-result-label_n3 {
-  margin-left: -690px;
-  margin-top: 300px;
-}
-
-.creative-result-label_n3 .creative-result-label__dot {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.creative-result-label_n4 {
-  margin-left: 690px;
-  margin-top: -300px;
-}
-
-.creative-result-label_n4 .creative-result-label__text {
-  margin-left: 42px;
-}
-
-.creative-result-label_n5 {
-  margin-left: 810px;
-}
-
-.creative-result-label_n5 .creative-result-label__text {
-  margin-left: 42px;
-}
-
-.creative-result-label_n6 {
-  margin-left: 660px;
-  margin-top: 300px;
-}
-
-.creative-result-label_n6 .creative-result-label__text {
-  margin-left: 42px;
-}
-
-.creative-result-label_mini {
-  margin-top: 10px;
-  width: calc(100% / 12 * 6 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.creative-result-label_mini .creative-result-label__dot {
-  margin-top: 10px;
-}
-
-.creative-result-label_mini .creative-result-label__text {
-  margin-left: 20px;
-}
-
-.creative-result-label__dot {
-  width: 20px;
-  height: 20px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
-.creative-result-label__text {
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-weight: 300;
-  font-size: 21px;
-  line-height: 160%;
-  opacity: 0.8;
-}
-
 .our-telegram {
   margin-top: 100px;
 }
@@ -740,8 +565,10 @@ a, a:hover, a:active, a:visited {
 
 .more-questions-btn__icon {
   margin-left: 15px;
+}
+
+.more-questions-btn__icon img {
   width: 21px;
-  height: 21px;
 }
 
 .index-contacts {
@@ -749,108 +576,6 @@ a, a:hover, a:active, a:visited {
   background-color: #FFF3F9;
   padding-top: 120px;
   padding-bottom: 130px;
-}
-
-.work-examples {
-  margin-top: 140px;
-}
-
-.work-examples__left-links {
-  margin-top: 130px;
-}
-
-.work-examples__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: calc(-1 * 50px / 2);
-  margin-right: calc(-1 * 50px / 2);
-}
-
-.work-examples__left {
-  width: calc(100% / 12 * 4 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-}
-
-.work-examples__right {
-  width: calc(100% / 12 * 8 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-}
-
-.work-examples__title {
-  font-family: "Merriweather", serif;
-  color: #252733;
-  font-size: 36px;
-  line-height: 140%;
-}
-
-.work-examples__btn-submit {
-  margin-top: 50px;
-}
-
-.work-examples__right-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.work-examples__label {
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-size: 18px;
-  line-height: 160%;
-  opacity: 0.9;
-  opacity: 0.7;
-}
-
-.work-examples__pagination {
-  margin-left: 10px;
-}
-
-div .work-examples__pagination-mini {
-  display: none;
-}
-
-.work-examples__btn-right {
-  margin-left: 50px;
-}
-
-.work-examples__music-players {
-  margin: -5px -15px;
-  margin-top: 25px;
-  padding-left: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: calc(-1 * 50px / 2);
-  margin-right: calc(-1 * 50px / 2);
-}
-
-.work-examples__music-player {
-  width: calc(100% / 12 * 6 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-  margin: 5px 15px;
-}
-
-.work-examples__music-player:nth-child(4n-1) .music-player__circle,
-.work-examples__music-player:nth-child(4n-2) .music-player__circle {
-  background-color: #70CBD4;
 }
 
 .header-profile-dropdown {
@@ -881,6 +606,24 @@ div .work-examples__pagination-mini {
 
 .header-profile-dropdown__link:nth-child(1) {
   margin-top: 0px;
+}
+
+.about-education-home {
+  margin-top: 120px;
+  background-color: #F2FFFE;
+}
+
+.creative-result-home {
+  background-color: #FFF3F9;
+}
+
+.work-examples-home {
+  margin-top: 140px;
+}
+
+.project-authors-block-index {
+  margin-top: 140px;
+  background-color: #F2FFFE;
 }
 
 .project-about {
@@ -2124,6 +1867,231 @@ div .project-reviews__btns_mini-loaded {
   max-width: 100%;
 }
 
+.about-course {
+  margin-top: 35px;
+}
+
+.about-course__row {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.about-course__info {
+  width: calc(100% / 12 * 9 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.about-course__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 48px;
+  line-height: 140%;
+}
+
+.about-course__about {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.9;
+}
+
+.about-course__tags {
+  margin: -15px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-course__tag {
+  margin: 15px;
+}
+
+.about-course__buy-link {
+  width: calc(100% / 12 * 3 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.about-course__image {
+  margin-top: 70px;
+  height: 420px;
+  border-radius: 20px;
+  background: url(../images/course_bgimage.png) no-repeat 50% 0%/cover;
+}
+
+.about-course-buy {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-course-buy__center {
+  position: absolute;
+}
+
+.about-course-buy__price {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.9;
+}
+
+.about-course-buy__arrow {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.course-info {
+  margin-top: 100px;
+}
+
+.course-info__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.course-info__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+  width: calc(100% / 12 * 4 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.course-info__content {
+  width: calc(100% / 12 * 8 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.course-info__about {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.course-info__video {
+  margin-top: 60px;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.course-info__video img {
+  width: 100%;
+}
+
+.course-info__comment {
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.work-examples-about-course {
+  margin-top: 100px;
+  margin-bottom: 5px;
+}
+
+.about-education-about-course {
+  background-color: #FFF7E0;
+}
+
+.creative-result-about-course {
+  background-color: #F2FFFE;
+}
+
+.project-authors-block-about-course {
+  margin-top: 110px;
+  background-color: #FFF7E0;
+}
+
+.course-scheme {
+  margin-top: 50px;
+}
+
+.course-scheme__row {
+  margin: 25px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.course-scheme__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+  width: calc(100% / 12 * 4 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.course-scheme__stages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px -40px;
+  width: calc(100% / 12 * 8 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.course-scheme__stage {
+  margin: 15px 40px;
+  width: calc(50% - 80px);
+}
+
 .header {
   font-family: "Merriweather", serif;
   white-space: nowrap;
@@ -2626,6 +2594,10 @@ div .side-menu__phone-row {
   opacity: 0.8;
 }
 
+.divider_yellow {
+  background: #FFD566;
+}
+
 .svg-link {
   display: inline-block;
   position: relative;
@@ -2886,16 +2858,8 @@ div .side-menu__phone-row {
 
 .project-authors-block {
   display: block;
-}
-
-.project-authors-block_index {
-  margin-top: 140px;
   padding-top: 110px;
   padding-bottom: 120px;
-}
-
-.project-authors-block_bg-blue {
-  background-color: #F2FFFE;
 }
 
 .project-authors-block__left-links {
@@ -3433,6 +3397,312 @@ div .side-menu__phone-row {
   line-height: 160%;
   opacity: 0.8;
   opacity: 0.7;
+}
+
+.work-examples__left-links {
+  margin-top: 130px;
+}
+
+.work-examples__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.work-examples__left {
+  width: calc(100% / 12 * 4 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.work-examples__right {
+  width: calc(100% / 12 * 8 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.work-examples__title {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+.work-examples__btn-submit {
+  margin-top: 50px;
+}
+
+.work-examples__right-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work-examples__label {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.9;
+  opacity: 0.7;
+}
+
+.work-examples__pagination {
+  margin-left: 10px;
+}
+
+div .work-examples__pagination-mini {
+  display: none;
+}
+
+.work-examples__btn-right {
+  margin-left: 50px;
+}
+
+.work-examples__music-players {
+  margin: -5px -15px;
+  margin-top: 25px;
+  padding-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.work-examples__music-player {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+  margin: 5px 15px;
+}
+
+.work-examples__music-player:nth-child(4n-1) .music-player__circle,
+.work-examples__music-player:nth-child(4n-2) .music-player__circle {
+  background-color: #70CBD4;
+}
+
+.creative-result {
+  padding-bottom: 110px;
+}
+
+.creative-result__schema {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creative-result__image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.creative-result__image object {
+  max-width: 140%;
+}
+
+.creative-result__title {
+  position: absolute;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+  background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 250px;
+  height: 100px;
+  margin: auto;
+}
+
+.creative-result__label {
+  position: absolute;
+}
+
+.creative-result__mini-labels {
+  display: none;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+  margin-top: -10px;
+}
+
+.creative-result-label {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.creative-result-label_n1 {
+  margin-left: -650px;
+  margin-top: -300px;
+}
+
+.creative-result-label_n1 .creative-result-label__dot {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.creative-result-label_n2 {
+  margin-left: -810px;
+}
+
+.creative-result-label_n2 .creative-result-label__dot {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.creative-result-label_n3 {
+  margin-left: -690px;
+  margin-top: 300px;
+}
+
+.creative-result-label_n3 .creative-result-label__dot {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.creative-result-label_n4 {
+  margin-left: 690px;
+  margin-top: -300px;
+}
+
+.creative-result-label_n4 .creative-result-label__text {
+  margin-left: 42px;
+}
+
+.creative-result-label_n5 {
+  margin-left: 810px;
+}
+
+.creative-result-label_n5 .creative-result-label__text {
+  margin-left: 42px;
+}
+
+.creative-result-label_n6 {
+  margin-left: 660px;
+  margin-top: 300px;
+}
+
+.creative-result-label_n6 .creative-result-label__text {
+  margin-left: 42px;
+}
+
+.creative-result-label_mini {
+  margin-top: 10px;
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.creative-result-label_mini .creative-result-label__dot {
+  margin-top: 10px;
+}
+
+.creative-result-label_mini .creative-result-label__text {
+  margin-left: 20px;
+}
+
+.creative-result-label__dot {
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.creative-result-label__text {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.course-stage__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.course-stage__body {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 160%;
+  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.course-stage__more-btn {
+  margin-left: 10px;
+  margin-top: 7px;
+  width: 21px;
+  height: 21px;
+}
+
+.course-stage__content {
+  margin-top: 20px;
+}
+
+.course-stage__divider {
+  margin-top: 25px;
 }
 
 .popup {

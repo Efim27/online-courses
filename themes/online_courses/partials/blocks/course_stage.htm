@@ -1,0 +1,17 @@
+<div class="course-stage {{ classes }}">
+    <div class="course-stage__row">
+        <div class="course-stage__body">
+            <div class="course-stage__name">{{ name }}</div>
+            <div class="course-stage__lessons">{{ lessons }}</div>
+        </div>
+        <img
+            class="course-stage__more-btn more-btn"
+            src="{{ 'assets/images/icons/plus.png'|theme }}"
+            alt="Развернуть"
+        />
+    </div>
+    <div class="course-stage__content"></div>
+    {% if last != true %}
+        <div class="course-stage__divider divider divider_yellow"></div>
+    {% endif %}
+</div>

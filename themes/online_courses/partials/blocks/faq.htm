@@ -1,0 +1,57 @@
+<div class="faq">
+	<div class="main__inner main__inner_soc-links">
+		<div class="main__left">
+			<div class="faq__left-links left-links">
+				{% partial 'side_soc_links' %}
+			</div>
+		</div>
+		<div class="main__content">
+			<div class="faq__algorithm">
+				<div class="faq__divider divider"></div>
+				<div class="faq__row">
+					<div class="faq__left">
+						<div class="faq__title">Вопрос - ответ</div>
+						{% partial 'blocks/btn_submit_link' classes="faq__btn-submit" link="/faq" %}
+					</div>
+					<div class="faq__right">
+						{% for faq in this.theme.faqs %}
+							{% if faq.mini %}
+							<div class="faq__stage faq-stage">
+								<div class="faq-stage__row">
+									<div class="faq-stage__block">
+										<div class="faq-stage__question">
+											{{ faq.question }}
+										</div>
+										<div class="faq-stage__answer">
+											{{ faq.answer }}
+										</div>
+									</div>
+									<img
+										class="faq-stage__more-btn more-btn"
+										src="{{ 'assets/images/icons/plus.png'|theme }}"
+										alt="Развернуть"
+									/>
+								</div>
+								<div class="faq-stage__divider divider"></div>
+							</div>
+							{% endif %}
+						{% endfor %}
+						<div class="faq__more-questions more-questions-btn">
+							<a href="/faq" class="more-questions-btn__label">
+								Ещё вопросы
+							</a>
+							<div class="more-questions-btn__icon">
+								<img
+									src="{{ 'assets/images/icons/plus.png'|theme }}"
+									alt="Ещё вопросы"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="faq__divider divider"></div>
+			</div>
+		</div>
+		<div class="main__right"></div>
+	</div>
+</div>
