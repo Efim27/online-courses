@@ -10,10 +10,7 @@ is_hidden = 0
 <div class="main__inner main__inner_soc-links">
 	<div class="main__left">
 		<div class="main__left-links left-links left-links_bold">
-			<div class="left-links__soc-links">
-				<a class="left-links__soc-link" href="#">facebook</a>
-				<a class="left-links__soc-link" href="#">instagram</a>
-			</div>
+			{% partial 'side_soc_links' %}
 		</div>
 	</div>
 	<div class="main__content">
@@ -68,31 +65,20 @@ is_hidden = 0
 		<div class="main__content">
 			<div class="musical-constructor__row">
 				<div class="musical-constructor__info">
-					<span class="musical-constructor__tag-main tag"
-						>музыка</span
-					>
+					{% component 'contenteditor' file="home/musical-constructor__tag-main.htm"
+					fixture="span" class="musical-constructor__tag-main tag" %}
 					<div class="musical-constructor__title">
-						Музыкальный <br />конструктор
+						{% component 'contenteditor' file="home/musical-constructor__title.htm" class="" %}
 						<img
 							src="{{ 'assets/images/icons/music_black.png'|theme }}"
 							alt="Музыкальный конструктор"
 						/>
 					</div>
-					<div class="musical-constructor__about">
-						Стань музыкантом. Собери 21 музыкальную композицию в
-						разных музыкальных стилях, с помощью наших видео и
-						иллюстраций.
-					</div>
+					{% component 'contenteditor' file="home/musical-constructor__about.htm" class="musical-constructor__about" fixture="div" %}
 					<div class="musical-constructor__tags">
-						<div class="musical-constructor__tag tag tag_filled">
-							24 видео
-						</div>
-						<div class="musical-constructor__tag tag tag_filled">
-							21 композиция
-						</div>
-						<div class="musical-constructor__tag tag tag_filled">
-							18 часов практики
-						</div>
+						{% component 'contenteditor' file="home/musical-constructor__tag1.htm" class="musical-constructor__tag tag tag_filled" fixture="div" %}
+						{% component 'contenteditor' file="home/musical-constructor__tag2.htm" class="musical-constructor__tag tag tag_filled" fixture="div" %}
+						{% component 'contenteditor' file="home/musical-constructor__tag3.htm" class="musical-constructor__tag tag tag_filled" fixture="div" %}
 					</div>
 					{% partial 'blocks/btn_submit_link' classes="musical-constructor__btn-submit" link="/about_course" %}
 				</div>
@@ -123,15 +109,10 @@ is_hidden = 0
 					</div>
 				</div>
 				<div class="about-project__right">
-					<div class="about-project__about1">
-						Заниматься творчеством может каждый. Стань музыкантом,
-						режиссерром, фотографом. Добавь в каждую работу частицу
-						себя.
-					</div>
-					<div class="about-project__about2">
-						Проведи время креативно и необычно на нашем
-						развлекательно - образовательном проекте “Мир рядом”.
-					</div>
+					{% component 'contenteditor' file="home/about-project__about1.htm"
+					fixture="div" class="about-project__about1" %}
+					{% component 'contenteditor' file="home/about-project__about2.htm"
+					fixture="div" class="about-project__about2" %}
 				</div>
 			</div>
 			<div class="about-project__row">
@@ -141,7 +122,8 @@ is_hidden = 0
 						alt="Видео 1"
 						class="videobox__video"
 					/>
-					<div class="videobox__label">Видео о нашем проекте</div>
+					{% component 'contenteditor' file="home/videobox__label1.htm"
+					fixture="div" class="videobox__label" %}
 				</div>
 				<div class="about-project__videobox videobox">
 					<img
@@ -149,9 +131,8 @@ is_hidden = 0
 						alt="Видео 2"
 						class="videobox__video"
 					/>
-					<div class="videobox__label">
-						Создаем трек в стиле эмбиент
-					</div>
+					{% component 'contenteditor' file="home/videobox__label2.htm"
+					fixture="div" class="videobox__label" %}
 				</div>
 			</div>
 		</div>
@@ -169,14 +150,12 @@ is_hidden = 0
 			</div>
 			<div class="main__content">
 				<div class="about-education__algorithm algorithm-education">
-					<div class="algorithm-education__mini-title">
-						Как проходит обучение
-					</div>
+					{% component 'contenteditor' file="home/algorithm-education__mini-title.htm"
+					fixture="div" class="algorithm-education__mini-title" %}
 					<div class="algorithm-education__divider-top divider"></div>
 					<div class="algorithm-education__row">
-						<div class="algorithm-education__title">
-							Как проходит<br />обучение
-						</div>
+						{% component 'contenteditor' file="home/algorithm-education__mini-title.htm"
+							fixture="div" class="algorithm-education__title" %}
 						<div class="algorithm-education__stages">
 							{% for algorithm_stage in
 							this.theme.algorithm_stages %}
@@ -249,9 +228,8 @@ is_hidden = 0
 					class="our-telegram__icon"
 				></object>
 			</div>
-			<div class="our-telegram__title">
-				Закрытый телеграм - канал для каждого потока
-			</div>
+			{% component 'contenteditor' file="home/our-telegram__title.htm"
+					fixture="div" class="our-telegram__title" %}
 			<div class="our-telegram__icons our-telegram__icons_right1">
 				<object
 					data="{{ 'assets/images/icons/soc/telegram_blue.svg'|theme }}"
