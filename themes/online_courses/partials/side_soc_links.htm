@@ -1,7 +1,9 @@
 <div class="left-links__soc-links">
 	{% for soc_link in this.theme.side_soc_links %}
-	<a href="{{ soc_link.link }}" class="left-links__soc-link"
-		>{{ soc_link.link_name }}</a
-	>
+		{% if soc_link.link != '/' %}
+			<a href="{{ soc_link.link }}" class="left-links__soc-link"
+				>{{ soc_link.link_name }}</a
+			>
+		{% endif %}
 	{% endfor %}
 </div>

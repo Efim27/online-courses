@@ -8,8 +8,12 @@ tabs:
         Вопрос-ответ: icon-question-circle
 
     fields:
+        header_phone:
+            label: Телефон в меню
+            default: +7 (495) 123 45 56
+            tab: Контакты
         phone:
-            label: Телефон
+            label: Телефон в подвале и боковом меню
             default: +7 (495) 123 45 56
             tab: Контакты
         email:

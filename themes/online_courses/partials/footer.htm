@@ -12,13 +12,19 @@
 				<div class="footer__contacts footer-contacts">
 					<div class="footer-contacts__row phone-row phone-row_mini">
 						<a href="tel:{{ this.theme.phone }}" class="phone-row__phone">{{ this.theme.phone }}</a>
+						{% if this.theme.tg_link != '/' %}
 						<a href="{{ this.theme.tg_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/telegram.png'|theme }}" alt="Телеграм"></a>
+						{% endif %}
+						{% if this.theme.wapp_link != '/' %}
 						<a href="{{ this.theme.wapp_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}" alt="WhatsApp"></a>
+						{% endif %}
 					</div>
-					<div class="footer-contacts__row"><a href="mailto:hello@world.com">{{ this.theme.email }}</a></div>
+					<div class="footer-contacts__row"><a href="mailto:{{ this.theme.email }}">{{ this.theme.email }}</a></div>
 					<div class="footer-contacts__row">
 						{% for soc_link in this.theme.soc_links %}
-							<a href="{{ soc_link.link }}" class="footer-contacts__soc soc-link">{{ soc_link.link_name }}</a>
+							{% if soc_link.link != '/' %}
+								<a href="{{ soc_link.link }}" class="footer-contacts__soc soc-link">{{ soc_link.link_name }}</a>
+							{% endif %}
 						{% endfor %}
 					</div>
 				</div>

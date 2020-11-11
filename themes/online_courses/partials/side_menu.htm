@@ -18,15 +18,21 @@
 		<div class="side-menu__contacts">
 			<div class="side-menu__phone-row phone-row">
 				<a href="tel:{{ this.theme.phone }}" class="phone-row__phone">{{ this.theme.phone }}</a>
+				{% if this.theme.tg_link != '/' %}
 				<a href="{{ this.theme.tg_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/telegram.png'|theme }}" alt="Телеграм"></a>
+				{% endif %}
+				{% if this.theme.wapp_link != '/' %}
 				<a href="{{ this.theme.wapp_link }}" class="phone-row__soc-icon"><img src="{{ 'assets/images/icons/soc/whatsapp.png'|theme }}" alt="WhatsApp"></a>
+				{% endif %}
 			</div>
 			<div class="side-menu__email">
 				<a href="mailto:{{ this.theme.email }}">{{ this.theme.email }}</a>
 			</div>
             <div class="side-menu__soc-links">
 				{% for soc_link in this.theme.soc_links %}
-					<a href="{{ soc_link.link }}" class="side-menu__soc-link soc-link">{{ soc_link.link_name }}</a>
+					{% if soc_link.link != '/' %}
+						<a href="{{ soc_link.link }}" class="side-menu__soc-link soc-link">{{ soc_link.link_name }}</a>
+					{% endif %}
 				{% endfor %}
 			</div>
 		</div>
