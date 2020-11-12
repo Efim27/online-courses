@@ -5,6 +5,7 @@ tabs:
         Контакты: icon-address-book-o
         Соц. Сети: icon-comments
         Контент: icon-pencil
+        Главная: icon-bookmark-o
         Вопрос-ответ: icon-question-circle
 
     fields:
@@ -96,6 +97,24 @@ tabs:
                 label: Описание
                 type: textarea
                 size: small
+        home_main_title:
+            label: Начало заголовка
+            default: Творческий результат
+            tab: Главная
+        home_main_title_add:
+          type: repeater
+          label: Продолжение заголовка
+          titleFrom: text
+          tab: Главная
+          form:
+            fields:
+              text:
+                label: Текст
+                type: textarea
+                size: small
+              color:
+                label: Цвет текста
+                type: colorpicker
         faqs:
           type: repeater
           label: Вопрос-ответ

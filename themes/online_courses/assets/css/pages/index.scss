@@ -1,208 +1,209 @@
 .welcome {
-    margin-top: 30px;
+	margin-top: 30px;
 
-    &__row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @include grid-row();
-    }
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include grid-row();
+	}
 
-    &__left {
-        @include grid-width(6);
-    }
+	&__left {
+		@include grid-width(6);
+	}
 
-    &__right {
-        @include grid-width(5);
-    }
+	&__right {
+		@include grid-width(5);
+	}
 
-    &__icons {
-        margin-top: 35px;
-        display: flex;
-        align-items: center;
-    }
+	&__icons {
+		margin-top: 35px;
+		display: flex;
+		align-items: center;
+	}
 
-    &__icon {
-        margin-left: 35px;
+	&__icon {
+		margin-left: 35px;
 
-        &:nth-child(1) {
-            margin-left: 0px;
-            width: 25px;
-            height: 25px;
-        }
+		&:nth-child(1) {
+			margin-left: 0px;
+			width: 25px;
+			height: 25px;
+		}
 
-        &:nth-child(2) {
-            width: 28px;
-            height: 25px;
-        }
+		&:nth-child(2) {
+			width: 28px;
+			height: 25px;
+		}
 
-        &:nth-child(3) {
-            width: 25px;
-            height: 20px;
-        }
-    }
+		&:nth-child(3) {
+			width: 25px;
+			height: 20px;
+		}
+	}
 
-    &__about {
-        width: calc(100% - 50px);
-        @include text(p1);
-        margin-top: 30px;
-    }
+	&__about {
+		width: calc(100% - 50px);
+		@include text(p1);
+		margin-top: 30px;
+	}
 
-    &__image {
-        position: relative;
-        margin-top: 40px;
-        height: 400px;
-        background: url(../images/index_welcome.png) no-repeat 50% 50% / cover;
-        border-radius: 20px;
-    }
+	&__image {
+		position: relative;
+		margin-top: 40px;
+		height: 400px;
+		background: url(../images/index_welcome.png) no-repeat 50% 50% / cover;
+		border-radius: 20px;
+	}
 
-    &__arrow-in-circle {
-        position: absolute;
-        top: 82px;
-        right: 70px;
-    }
+	&__arrow-in-circle {
+		position: absolute;
+		top: 82px;
+		right: 70px;
+	}
 }
 
 .welcome-title {
-    width: calc(100% - 50px);
-    @include title(h1);
-    position: relative;
+	width: calc(100% - 50px);
+	@include title(h1);
+	position: relative;
 
-    &__circle {
-        position: absolute;
-    }
+	&__circle {
+		position: absolute;
+	}
 }
 
 .musical-constructor {
-    margin-top: 120px;
-    padding: 75px 0px;
-    background-color: $color_bg_cream;
+	margin-top: 120px;
+	padding: 75px 0px;
+	background-color: $color_bg_cream;
 
-    &__left-links {
-        margin-top: 120px;
-    }
+	&__left-links {
+		margin-top: 120px;
+	}
 
-    &__row {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        @include grid-row();
-    }
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@include grid-row();
+	}
 
-    &__info {
-        @include grid-width(5);
-    }
+	&__info {
+		@include grid-width(5);
+	}
 
-    &__tag {
-        margin: 10px;
-    }
+	&__tag {
+		margin: 10px;
+	}
 
-    &__title {
-        margin-top: 24px;
-        display: inline-block;
-        width: 100%;
-        @include title(h3);
+	&__title {
+		margin-top: 24px;
+		display: inline-block;
+		width: 100%;
+		@include title(h3);
 
-        img {
-            width: 32px;
-            margin-left: 10px;
-        }
-    }
+		img {
+			width: 32px;
+			margin-left: 10px;
+		}
+	}
 
-    &__about {
-        margin-top: 25px;
-        @include text(p3);
-    }
+	&__about {
+		margin-top: 25px;
+		@include text(p3);
+	}
 
-    &__tags {
-        margin: -10px;
-        margin-top: 18px;
-        display: flex;
-        flex-wrap: wrap;
-    }
+	&__tags {
+		margin: -10px;
+		margin-top: 18px;
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-    &__btn-submit {
-        margin-top: 55px;
-    }
+	&__btn-submit {
+		margin-top: 55px;
+	}
 
-    &__image {
-        border-radius: 20px;
-        @include grid-width(6);
+	&__image {
+		border-radius: 20px;
+		@include grid-width(6);
 
-        img {
-            max-width: 100%;
-        }
-    }
+		img {
+			max-width: 100%;
+		}
+	}
 }
 
 .about-project {
-    margin-top: 115px;
+	margin-top: 115px;
 
-    &__left-links {
-        margin-top: 135px;
-    }
+	&__left-links {
+		margin-top: 135px;
+	}
 
-    &__info {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        @include grid-row();
-    }
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@include grid-row();
+	}
 
-    &__left {
-        @include grid-width(3);
-    }
+	&__left {
+		@include grid-width(3);
+	}
 
-    &__title {
-        @include title(h3);
-    }
+	&__title {
+		@include title(h3);
+	}
 
-    &__btn-submit {
-        margin-top: 50px;
-    }
+	&__btn-submit {
+		margin-top: 50px;
+	}
 
-    &__right {
-        @include grid-width(8);
-    }
+	&__right {
+		@include grid-width(8);
+	}
 
-    &__about1 {
-        @include text(p1);
-    }
+	&__about1 {
+		@include text(p1);
+	}
 
-    &__about2 {
-        margin-top: 50px;
-        @include text(p2);
-    }
+	&__about2 {
+		margin-top: 50px;
+		@include text(p2);
+	}
 
-    &__row {
-        margin-top: 85px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        @include grid-row();
-    }
+	&__row {
+		margin-top: 85px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@include grid-row();
+	}
 
-    &__videobox {
-        @include grid-width(6);
-    }
+	&__videobox {
+		@include grid-width(6);
+	}
 }
 
 .about-education {
-    &__left-links {
-        margin-top: 235px;
-    }
+	&__left-links {
+		margin-top: 235px;
+	}
 }
 
 .our-telegram {
 	margin-top: 100px;
 
-	.main__left, .main__right {
+	.main__left,
+	.main__right {
 		flex-shrink: 1;
-    }
-    
-    .main__right {
-        position: relative;
-    }
+	}
+
+	.main__right {
+		position: relative;
+	}
 
 	&__icons {
 		width: 100%;
@@ -223,7 +224,7 @@
 		}
 
 		&_right2 {
-            position: absolute;
+			position: absolute;
 			bottom: 0px;
 			justify-content: flex-start;
 		}
@@ -233,111 +234,111 @@
 		width: 30px;
 		height: 30px;
 		margin: 0 30px;
-    }
-    
-    &__main-icon {
-        display: flex;
-        justify-content: center;
-        display: none;
-    }
+	}
+
+	&__main-icon {
+		display: flex;
+		justify-content: center;
+		display: none;
+	}
 
 	&__title {
 		margin: 55px 0px;
 		@include title(h3);
 		text-align: center;
 		background: $gradient_main;
-        -webkit-background-clip: text;
+		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 }
 
 .faq {
-    margin-top: 120px;
+	margin-top: 120px;
 
-    &__left-links {
-        margin-top: 120px;
-    }
+	&__left-links {
+		margin-top: 120px;
+	}
 
-    &__btn-submit {
-        margin-top: 50px;
-    }
+	&__btn-submit {
+		margin-top: 50px;
+	}
 
-    &__divider {
-    }
+	&__divider {
+	}
 
-    &__row {
-        margin-top: 25px;
-        margin-bottom: 45px;
-        @include grid-row();
+	&__row {
+		margin-top: 25px;
+		margin-bottom: 45px;
+		@include grid-row();
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-    }
+	}
 
-    &__left {
-        @include grid-width(4);
-    }
+	&__left {
+		@include grid-width(4);
+	}
 
-    &__right {
-        @include grid-width(8);
-    }
+	&__right {
+		@include grid-width(8);
+	}
 
-    &__title {
-        @include title(h3);
-    }
+	&__title {
+		@include title(h3);
+	}
 
-    &__stage {
-        margin-top: 25px;
+	&__stage {
+		margin-top: 25px;
 
-        &:nth-child(1) {
-            margin-top: 10px;
-        }
-    }
+		&:nth-child(1) {
+			margin-top: 10px;
+		}
+	}
 
-    &__more-questions {
-        margin-top: 45px;
-    }
+	&__more-questions {
+		margin-top: 45px;
+	}
 }
 
 .index-contacts {
-    margin-top: 120px;
-    background-color: $color_bg_pink;
-    padding-top: 120px;
-    padding-bottom: 130px;
+	margin-top: 120px;
+	background-color: $color_bg_pink;
+	padding-top: 120px;
+	padding-bottom: 130px;
 }
 
 .header-profile-dropdown {
-    margin-left: 30px;
+	margin-left: 30px;
 
-    &__filler {
-        height: 20px;
-    }
+	&__filler {
+		height: 20px;
+	}
 
-    &__inner {
-        background-color: $color_bg_secondary;
-        padding: 25px 20px;
-        border-radius: 10px;
-    }
+	&__inner {
+		background-color: $color_bg_secondary;
+		padding: 25px 20px;
+		border-radius: 10px;
+	}
 
-    &__link {
-        display: block;
-        margin-top: 20px;
-        @include text(p5);
-        opacity: 0.9;
+	&__link {
+		display: block;
+		margin-top: 20px;
+		@include text(p5);
+		opacity: 0.9;
 
-        &:nth-child(1) {
-            margin-top: 0px;
-        }
-    }
+		&:nth-child(1) {
+			margin-top: 0px;
+		}
+	}
 }
 
 .about-education-home {
-    margin-top: 120px;
-    background-color: #F2FFFE;
+	margin-top: 120px;
+	background-color: #f2fffe;
 }
 
 .creative-result-home {
-    background-color: $color_bg_pink;
+	background-color: $color_bg_pink;
 }
 
 .work-examples-home {
@@ -346,5 +347,43 @@
 
 .project-authors-block-index {
 	margin-top: 140px;
-    background-color: $color_bg_blue;
+	background-color: $color_bg_blue;
+}
+
+.welcome-title-content {
+    margin-bottom: 80px;
+
+    &__start {
+    }
+
+    &__end {
+    }
+    
+    &__word {
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+.letter {
+	display: inline-block;
+	position: relative;
+	float: left;
+	transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+    white-space: pre;
+}
+
+.letter.out {
+	transform: rotateX(90deg);
+	transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+	transform: rotateX(-90deg);
+}
+
+.letter.in {
+	transform: rotateX(0deg);
+	transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

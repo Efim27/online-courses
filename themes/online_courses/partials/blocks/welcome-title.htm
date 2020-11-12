@@ -1,0 +1,8 @@
+<div class="welcome-title-content">
+	<p class="welcome-title-content__start">{{ this.theme.home_main_title }}</p>
+	<p class="welcome-title-content__end">
+        {% for word in this.theme.home_main_title_add %}
+            <span class="welcome-title-content__word" style="color: {{ word.color }}">{{ word.text }}</span>
+        {% endfor %}
+    </p>
+</div>
