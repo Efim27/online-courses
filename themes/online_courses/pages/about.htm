@@ -22,59 +22,43 @@ noRecordsMessage = "Отзывы не найдены"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[contenteditor]
 ==
 {##}
 <div class="main__inner">
     <div class="main__left"></div>
     <div class="main__content">
         <div class="project-about">
-            <div class="project-about__label">о проекте</div>
+            {% component 'contenteditor' file="about/project-about__label.htm"
+					fixture="div" class="project-about__label" %}
             <div class="project-about__row">
                 <div class="project-about__info">
-                    <div class="project-about__title">Мир рядом</div>
-                    <div class="project-about__description">
-                        Развлекательно-образовательный проект. Помогаем раскрыть
-                        окружающий мир через творчество
-                    </div>
+                    {% component 'contenteditor' file="about/project-about__title.htm"
+                            fixture="div" class="project-about__title" %}
+                    {% component 'contenteditor' file="about/project-about__description.htm"
+					fixture="div" class="project-about__description" %}
                 </div>
                 <div class="project-about__statistics">
+                    {% for cell in this.theme.about_statistics_blocks %}
                     <div class="project-about__cell cell">
-                        <div class="cell__value">5</div>
-                        <div class="cell__label">направлений</div>
+                        <div class="cell__value">{{ cell.value }}</div>
+                        <div class="cell__label">{{ cell.text }}</div>
                     </div>
-                    <div class="project-about__cell cell">
-                        <div class="cell__value">10</div>
-                        <div class="cell__label">лет опыта</div>
-                    </div>
-                    <div class="project-about__cell cell">
-                        <div class="cell__value">200+</div>
-                        <div class="cell__label">видео</div>
-                    </div>
-                    <div class="project-about__cell cell">
-                        <div class="cell__value">100+</div>
-                        <div class="cell__label">студентов</div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
             <div class="project-about__image"></div>
         </div>
         <div class="project-aim">
             <div class="project-aim__row">
-                <div class="project-aim__aim">Наша цель</div>
+                {% component 'contenteditor' file="about/project-aim__aim.htm"
+					fixture="div" class="project-aim__aim" %}
                 <div class="project-aim__description">
-                    <div class="project-aim__title">
-                        Заниматься творчеством может каждый. Стань музыкантом,
-                        режиссерром, фотографом. Добавь в каждую работу частицу
-                        себя.
-                    </div>
-                    <div class="project-aim__about">
-                        Проведи время креативно и необычно на нашем
-                        развлекательно - образовательном проекте “Мир рядом”
-                        Проведи время креативно и необычно на нашем
-                        развлекательно - образовательном проекте “Мир рядом”.
-                        Проведи время креативно и необычно на нашем
-                        развлекательно - образовательном проекте “Мир рядом”
-                    </div>
+                    {% component 'contenteditor' file="about/project-aim__title.htm"
+					fixture="div" class="project-aim__title" %}
+                    {% component 'contenteditor' file="about/project-aim__about.htm"
+					fixture="div" class="project-aim__about" %}
                 </div>
             </div>
             <div class="project-aim__images">
