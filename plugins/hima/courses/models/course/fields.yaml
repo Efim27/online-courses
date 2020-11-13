@@ -68,7 +68,7 @@ fields:
         type: fileupload
     preview:
         label: 'О чем курс'
-        nameFrom: name
+        nameFrom: about_mini
         descriptionFrom: description
         span: full
         required: 1
