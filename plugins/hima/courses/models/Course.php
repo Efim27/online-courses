@@ -18,11 +18,13 @@ class Course extends Model
     public $belongsTo = [
         'type' => ['Hima\Courses\Models\Type']
     ];
+    public $belongsToMany = [
+        'tags' => ['Hima\Courses\Models\Tag', 'table' => 'hima_courses_course_tag']
+    ];
     public $hasOne = [
         'preview' => ['Hima\Courses\Models\Preview']
     ];
     public $hasMany = [
-        'tags' => ['Hima\Courses\Models\Tag'],
         'blocks' => ['Hima\Courses\Models\Block'],
     ];
 
