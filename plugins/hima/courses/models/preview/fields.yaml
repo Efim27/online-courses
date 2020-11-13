@@ -1,0 +1,17 @@
+fields:
+    about_mini:
+        label: 'Мини описание'
+        size: small
+        span: full
+        required: 1
+        type: textarea
+    about:
+        label: 'О чем курс'
+        size: large
+        span: full
+        type: textarea
+    video_about:
+        label: 'Описание видео'
+        span: full
+        required: 1
+        type: text

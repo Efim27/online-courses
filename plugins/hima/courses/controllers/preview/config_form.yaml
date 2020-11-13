@@ -1,0 +1,10 @@
+name: Preview
+form: $/hima/courses/models/preview/fields.yaml
+modelClass: Hima\Courses\Models\Preview
+defaultRedirect: hima/courses/preview
+create:
+    redirect: 'hima/courses/preview/update/:id'
+    redirectClose: hima/courses/preview
+update:
+    redirect: hima/courses/preview
+    redirectClose: hima/courses/preview

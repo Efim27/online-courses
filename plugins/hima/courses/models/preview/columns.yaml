@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: id
+        type: number
+    about_mini:
+        label: about_mini
+        type: text
+    about:
+        label: about
+        type: text
+    video_about:
+        label: video_about
+        type: text

@@ -1,0 +1,4 @@
+title: Preview
+modelClass: Hima\Courses\Models\Preview
+toolbar:
+    buttons: reorder_toolbar

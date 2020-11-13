@@ -14,6 +14,10 @@ navigation:
                 label: Курсы
                 url: hima/courses/course
                 icon: icon-book
+            side-menu-item6:
+                label: 'О курсе'
+                url: hima/courses/preview
+                icon: icon-info-circle
             side-menu-item2:
                 label: Блоки
                 url: hima/courses/block

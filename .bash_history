@@ -435,3 +435,22 @@ git add .
 git commit -m "plugin courses +files fields"
 git push
 git pull
+git add .
+git commit -m "relation fields"
+git push
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+ls
+cd ..
+ls
+git pull
+git pull
+ls
+git pull
