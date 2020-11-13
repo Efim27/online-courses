@@ -1095,7 +1095,14 @@
     }
 
     div &__pagination-mini {
-        display: none;
+		opacity: 0;
+		z-index: -1;
+
+		&-loaded {
+			opacity: 1;
+			z-index: 1;
+			display: none;
+		}
     }
 
     &__btn-left {

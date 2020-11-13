@@ -3549,6 +3549,13 @@ div .side-menu__phone-row {
 }
 
 div .work-examples__pagination-mini {
+  opacity: 0;
+  z-index: -1;
+}
+
+div .work-examples__pagination-mini-loaded {
+  opacity: 1;
+  z-index: 1;
   display: none;
 }
 

@@ -5,6 +5,7 @@ var text_limit = 250;
 $.fn.svg_click = function (click_func) {
 	this.each(function () {
 		let svgDoc = this.contentDocument;
+		console.log(svgDoc);
 		let svg = svgDoc.getElementsByTagName("svg")[0];
 		svg.addEventListener("click", click_func, false);
 	});
@@ -54,7 +55,7 @@ function contact_form_success() {
 }
 
 if ($(".project-review").length > 0) {
-	let project_review_slider = new Glide(".project-review", {
+	var project_review_slider = new Glide(".project-review", {
 		type: "carousel",
 		perView: 1,
 		focusAt: "center",
@@ -65,7 +66,7 @@ if ($(".project-review").length > 0) {
 }
 
 if ($(".work-examples__slider").length > 0) {
-	let project_review_slider = new Glide(".work-examples__slider", {
+	var work_examples_slider = new Glide(".work-examples__slider", {
 		type: "carousel",
 		perView: 2,
 		breakpoints: {
@@ -74,9 +75,9 @@ if ($(".work-examples__slider").length > 0) {
 			}
 		}
 	});
-	project_review_slider.mount();
+	work_examples_slider.mount();
 } else {
-	project_review_slider = null;
+	work_examples_slider = null;
 }
 
 
@@ -146,9 +147,19 @@ $(document).ready(function () {
 
 		$(".side-menu").addClass("side-menu_loaded");
 		$(".popup").addClass("popup_loaded");
+		$(".work-examples__pagination-mini").addClass(
+			"work-examples__pagination-mini-loaded"
+		);
 		$(".project-reviews__btns_mini").addClass(
 			"project-reviews__btns_mini-loaded"
 		);
+
+		$(".work-examples__btn-left object").svg_click(function () {
+			work_examples_slider.go("<");
+		});
+		$(".work-examples__btn-right object").svg_click(function () {
+			work_examples_slider.go(">");
+		});
 
 		$(".project-reviews__btn-left object").svg_click(function () {
 			project_review_slider.go("<");
