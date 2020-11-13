@@ -1106,21 +1106,15 @@
     }
 
     &__music-players {
-        margin: -5px -15px;
+        margin: -5px 0px;
         margin-top: 25px;
         padding-left: 25px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        @include grid-row();
     }
 
     &__music-player {
-        @include grid-width(6);
-        margin: 5px 15px;
+        margin: 5px 0px;
 
-        &:nth-child(4n-1) .music-player__circle,
-        &:nth-child(4n-2) .music-player__circle {
+        &:nth-child(2n) .music-player__circle {
             background-color: $color_other_blue;
         }
     }
@@ -1298,7 +1292,6 @@
 
 .arrow-in-circle {
 	&__circle {
-
 	}
 
 	&__arrow {

@@ -64,6 +64,22 @@ if ($(".project-review").length > 0) {
 	project_review_slider = null;
 }
 
+if ($(".work-examples__slider").length > 0) {
+	let project_review_slider = new Glide(".work-examples__slider", {
+		type: "carousel",
+		perView: 2,
+		breakpoints: {
+			576: {
+				perView: 1
+			}
+		}
+	});
+	project_review_slider.mount();
+} else {
+	project_review_slider = null;
+}
+
+
 $(document).ready(function () {
 	$(document).mousedown(function (e) {
 		var popup = $(".popup__content");

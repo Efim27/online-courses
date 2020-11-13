@@ -291,14 +291,6 @@
 
 	.work-examples {
 		margin-top: 80px;
-
-		&__music-player {
-			@include grid-width(12);
-
-			&:nth-child(2n) {
-				display: none;
-			}
-		}
 	}
 
 	.project-authors-block {

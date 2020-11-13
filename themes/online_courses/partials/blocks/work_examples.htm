@@ -33,10 +33,20 @@
 							</div>
 						</div>
 					</div>
-					<div class="work-examples__music-players">
-						{% for work_example in this.theme.work_examples %}
-							{% partial 'blocks/music_player' classes="work-examples__music-player" data=work_example %}
-						{% endfor %}
+					<div class="glide work-examples__slider">
+						<div class="glide__track" data-glide-el="track">
+							<ul class="glide__slides">
+								{% for example_block in this.theme.work_examples|batch(4) %}
+								<li class="glide__slide">
+									<div class="work-examples__music-players">
+										{% for work_example in example_block %}
+											{% partial 'blocks/music_player' classes="work-examples__music-player" data=work_example %}
+										{% endfor %}
+									</div>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
 					</div>
 					<div
 						class="work-examples__pagination-mini arrows-pagination"

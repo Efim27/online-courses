@@ -3557,30 +3557,16 @@ div .work-examples__pagination-mini {
 }
 
 .work-examples__music-players {
-  margin: -5px -15px;
+  margin: -5px 0px;
   margin-top: 25px;
   padding-left: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: calc(-1 * 50px / 2);
-  margin-right: calc(-1 * 50px / 2);
 }
 
 .work-examples__music-player {
-  width: calc(100% / 12 * 6 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-  margin: 5px 15px;
+  margin: 5px 0px;
 }
 
-.work-examples__music-player:nth-child(4n-1) .music-player__circle,
-.work-examples__music-player:nth-child(4n-2) .music-player__circle {
+.work-examples__music-player:nth-child(2n) .music-player__circle {
   background-color: #70CBD4;
 }
 
@@ -4743,14 +4729,6 @@ div .popup-signup__have-account {
   }
   .work-examples {
     margin-top: 80px;
-  }
-  .work-examples__music-player {
-    width: calc(100% / 12 * 12 - 50px);
-    margin-left: calc(50px / 2);
-    margin-right: calc(50px / 2);
-  }
-  .work-examples__music-player:nth-child(2n) {
-    display: none;
   }
   .project-authors-block_index {
     margin-top: 50px;
