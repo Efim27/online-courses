@@ -1170,94 +1170,6 @@ div .project-reviews__btns_mini-loaded {
           justify-content: space-between;
 }
 
-.course-card {
-  margin-bottom: 52px;
-  max-width: 520px;
-}
-
-.course-card:nth-last-child() {
-  margin-bottom: 20px;
-}
-
-.course-card__image {
-  position: relative;
-}
-
-.course-card__image img {
-  width: 100%;
-}
-
-.course-card__types {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-}
-
-.course-card__type {
-  margin-left: 20px;
-}
-
-.course-card__type:nth-child(1) {
-  margin-left: 0px;
-}
-
-.course-card__about {
-  margin-top: 30px;
-}
-
-.course-card__name {
-  font-family: "Merriweather", serif;
-  color: #252733;
-  font-size: 30px;
-  line-height: 140%;
-}
-
-.course-card__description {
-  margin-top: 22px;
-  font-family: "Montserrat", sans-serif;
-  color: #252733;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 160%;
-  opacity: 0.8;
-}
-
-.course-card__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 31px;
-}
-
-.course-card__tags {
-  max-width: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.course-card__tag {
-  margin-right: 15px;
-  margin-bottom: 20px;
-}
-
-.course-card__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-bottom: 20px;
-}
-
 .contacts__contacts-us {
   margin-top: 110px;
 }
@@ -3804,6 +3716,97 @@ div .work-examples__pagination-mini-loaded {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.course-card {
+  margin-bottom: 52px;
+  max-width: 520px;
+}
+
+.course-card:nth-last-child() {
+  margin-bottom: 20px;
+}
+
+.course-card__image {
+  position: relative;
+}
+
+.course-card__image img {
+  width: 100%;
+}
+
+.course-card__types {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.course-card__type {
+  margin-left: 20px;
+}
+
+.course-card__type:nth-child(1) {
+  margin-left: 0px;
+}
+
+.course-card__about {
+  margin-top: 30px;
+}
+
+.course-card__name {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 30px;
+  line-height: 140%;
+}
+
+.course-card__description {
+  margin-top: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.course-card__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 31px;
+}
+
+.course-card__tags {
+  max-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.course-card__tag {
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.course-card__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
 }
 
 .popup {
