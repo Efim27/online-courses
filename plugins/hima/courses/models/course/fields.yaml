@@ -66,3 +66,10 @@ fields:
             extension: auto
         span: full
         type: fileupload
+    preview:
+        label: 'О чем курс'
+        nameFrom: name
+        descriptionFrom: description
+        span: full
+        required: 1
+        type: relation

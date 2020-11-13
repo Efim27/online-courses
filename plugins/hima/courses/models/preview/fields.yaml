@@ -10,6 +10,16 @@ fields:
         size: large
         span: full
         type: textarea
+    attachment:
+        label: Видео
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        required: 1
+        type: fileupload
     video_about:
         label: 'Описание видео'
         span: full

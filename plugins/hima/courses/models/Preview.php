@@ -15,6 +15,13 @@ class Preview extends Model
      */
     public $timestamps = false;
 
+    public $belongsTo = [
+        'course' => ['Hima\Courses\Models\Course']
+    ];
+    public $attachOne = [
+        'attachment' => ['System\Models\File']
+    ];
+
 
     /**
      * @var string The database table used by the model.
