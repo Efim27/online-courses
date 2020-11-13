@@ -27,6 +27,10 @@ class Course extends Controller
             $clone = $original->replicate();
             $clone->title = "Копия ".$clone->title;
             $clone->slug = now()->timestamp."_".$clone->slug;
+            $attachment = new \System\Models\File;
+            $attachment->fromUrl($original->attachment->getPath(), now()->timestamp.'.png');
+            $attachment->save();
+            $clone->attachment()->add($attachment);
             $clone->save();
         }
 
