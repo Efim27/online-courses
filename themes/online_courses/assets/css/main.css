@@ -3792,6 +3792,14 @@ div .work-examples__pagination-mini {
   margin-top: 25px;
 }
 
+.arrow-in-circle__arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -4439,9 +4447,6 @@ div .popup-signup__have-account {
   .algorithm-stage__label {
     margin-left: 20px;
   }
-  .welcome__arrow-in-circle {
-    display: none;
-  }
   .creative-result__title {
     height: 75px;
     font-family: "Merriweather", serif;
@@ -5080,6 +5085,18 @@ div .popup-signup__have-account {
   }
   .welcome-title-content {
     margin-bottom: 40px;
+  }
+  .welcome__arrow-in-circle {
+    top: 52px;
+    right: 50px;
+  }
+  .arrow-in-circle__circle {
+    width: 160px;
+    height: 160px;
+  }
+  .arrow-in-circle__arrow {
+    width: 16px;
+    height: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */

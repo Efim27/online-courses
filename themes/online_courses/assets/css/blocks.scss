@@ -1296,3 +1296,15 @@
 	}
 }
 
+.arrow-in-circle {
+	&__circle {
+
+	}
+
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
