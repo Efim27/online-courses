@@ -2,6 +2,7 @@
 
 use Backend\Classes\Controller;
 use BackendMenu;
+use Hima\Courses\Models\Lesson as LessonModel;
 
 class Lesson extends Controller
 {
@@ -15,5 +16,19 @@ class Lesson extends Controller
     {
         parent::__construct();
         BackendMenu::setContext('Hima.Courses', 'main-menu-item', 'side-menu-item3');
+    }
+
+    public function onClone() {
+        $checked_items_ids = input('checked');
+
+        foreach ($checked_items_ids as $id) {
+            $original = LessonModel::where("id", $id)->first();
+
+            $clone = $original->replicate();
+            $clone->save();
+        }
+
+        \Flash::success('Вы успешно скопировали записи');
+        return $this->listRefresh();
     }
 }

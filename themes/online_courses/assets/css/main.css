@@ -3016,8 +3016,20 @@ div .side-menu__phone-row {
   pointer-events: none;
 }
 
+.music-player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.music-player__gap {
+  width: 25px;
+}
+
 .music-player__inner {
-  padding: 25px 0px;
+  width: 100%;
+  padding: 25px;
+  padding-left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3491,6 +3503,7 @@ div .side-menu__phone-row {
 }
 
 .work-examples__row {
+  width: calc(100% - 50px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

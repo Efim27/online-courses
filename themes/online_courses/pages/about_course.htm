@@ -2,24 +2,31 @@ title = "Подробнее о курсе"
 url = "/about_course/:slug"
 layout = "main"
 is_hidden = 0
+
+[builderDetails]
+modelClass = "Hima\Courses\Models\Course"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "info"
+notFoundMessage = "Record not found"
 ==
+{% set record = builderDetails.record %}
 <div class="main__inner">
 	<div class="main__left"></div>
 	<div class="main__content">
-		<div class="about-course-page">
+		<div class="about-course-page">{% component 'builderDetails' %}
 			<div class="about-course">
-				<span class="about-course__tag-type tag">музыка</span>
+				<span class="about-course__tag-type tag">{{ record.type.name }}</span>
 				<div class="about-course__row">
 					<div class="about-course__info">
-						<div class="about-course__title">Музыкальный конструктор</div>
+						<div class="about-course__title">{{ record.title }}</div>
 						<div class="about-course__about">
-							Стань музыкантом. композицию в разных музыкальных стилях, с помощью наших видео и иллюстраций. 
+							{{ record.preview.about_mini }}
 						</div>
 						<div class="about-course__tags">
-							<div class="about-course__tag tag tag_filled">24 видео</div>
-							<div class="about-course__tag tag tag_filled">21 композиция</div>
-							<div class="about-course__tag tag tag_filled">18 часов практики</div>
-							<div class="about-course__tag tag tag_filled">доступ навсегда</div>
+							{% for tag in record.tags %}
+								<div class="about-course__tag tag tag_filled">{{ tag.name }}</div>
+							{% endfor %}
 						</div>
 					</div>
 					<div class="about-course__svg-btn">
@@ -43,11 +50,11 @@ is_hidden = 0
 				<div class="course-info__row">
 					<div class="course-info__title">О чем этот курс?</div>
 					<div class="course-info__content">
-						<div class="course-info__about">Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом” Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”. Проведи время креативно и необычно на нашем развлекательно - образовательном проекте “Мир рядом”</div>
+						<div class="course-info__about">{{ record.preview.about }}</div>
 						<div class="course-info__video">
-							<img src="{{ 'assets/images/about_video2.png'|theme }}" alt="Видео">
+							<img src="{{ record.preview.attachment.path }}" alt="Видео">
 						</div>
-						<div class="course-info__comment">Пример урока, Создаем трек в стиле эмбиент</div>
+						<div class="course-info__comment">{{ record.preview.video_about }}</div>
 					</div>
 				</div>
 			</div>

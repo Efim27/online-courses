@@ -720,8 +720,16 @@
 }
 
 .music-player {
+	display: flex;
+
+	&__gap {
+		width: 25px;
+	}
+
 	&__inner {
-		padding: 25px 0px;
+		width: 100%;
+		padding: 25px;
+		padding-left: 0px;
 		display: flex;
 		border-radius: 20px;
 		background-color: $color_bg_blue;
@@ -1058,6 +1066,7 @@
     }
 
     &__row {
+		width: calc(100% - 50px);
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
