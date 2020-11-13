@@ -78,3 +78,6 @@
 1.0.27:
     - 'Updated table hima_courses_preview fk nullable'
     - builder_table_update_hima_courses_preview.php
+1.0.28:
+    - 'Created table hima_courses_course_tag'
+    - builder_table_create_hima_courses_course_tag.php

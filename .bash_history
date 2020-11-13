@@ -454,3 +454,15 @@ git pull
 git pull
 ls
 git pull
+ls
+git pull
+git add .
+git commit -m "course plugin +preview"
+git push
+git pull
+git add .
+git commit -m "course preview fk nullable"
+git push
+git add .
+git commit -m "course preview fk about_mini"
+git push
