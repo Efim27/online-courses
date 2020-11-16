@@ -25,3 +25,26 @@ fields:
         span: full
         required: 1
         type: text
+    work_examples:
+        label: 'Примеры работ'
+        prompt: 'Загрузить новый пример'
+        span: full
+        type: repeater
+        form:
+            fields:
+                name:
+                    label: Название
+                    span: auto
+                    required: 1
+                    type: text
+                type:
+                    label: Жанр
+                    span: auto
+                    required: 1
+                    type: text
+                example:
+                    label: Файл
+                    mode: file
+                    span: full
+                    required: 1
+                    type: mediafinder

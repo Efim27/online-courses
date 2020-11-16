@@ -466,3 +466,10 @@ git push
 git add .
 git commit -m "course preview fk about_mini"
 git push
+git pull
+git pull
+git pull
+git add .
+git commit -m "course course_tag pivot"
+git push
+git pull
