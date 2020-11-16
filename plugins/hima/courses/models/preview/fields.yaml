@@ -48,3 +48,65 @@ fields:
                     span: full
                     required: 1
                     type: mediafinder
+    audience:
+        label: 'Для кого этот курс'
+        prompt: 'Добавить новый блок'
+        span: full
+        type: repeater
+        form:
+            fields:
+                audience_about:
+                    label: Описание
+                    size: small
+                    span: full
+                    required: 1
+                    type: textarea
+    faq:
+        label: Вопрос-ответ
+        prompt: 'Добавить новый блок'
+        span: full
+        type: repeater
+        form:
+            fields:
+                question:
+                    label: Вопрос
+                    span: full
+                    required: 1
+                    type: text
+                answer:
+                    label: Ответ
+                    size: large
+                    span: full
+                    required: 1
+                    type: textarea
+    creative_result_n1:
+        label: 'Творческий результат 1'
+        span: full
+        placeholder: ''
+        required: 1
+        type: text
+    creative_result_n2:
+        label: 'Творческий результат 2'
+        span: full
+        required: 1
+        type: text
+    creative_result_n3:
+        label: 'Творческий результат 3'
+        span: full
+        required: 1
+        type: text
+    creative_result_n4:
+        label: 'Творческий результат 4'
+        span: full
+        required: 1
+        type: text
+    creative_result_n5:
+        label: 'Творческий результат 5'
+        span: full
+        required: 1
+        type: text
+    creative_result_n6:
+        label: 'Творческий результат 6'
+        span: full
+        required: 1
+        type: text
