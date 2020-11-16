@@ -81,7 +81,7 @@ if ($(".work-examples__slider").length > 0) {
 
 function music_player_stop(dom_e) {
 	dom_e.find('img').hide();
-	dom_e.find('img.music-player__play_stopped').show();
+	dom_e.find('img').first().show();
 	let audio = dom_e.parent().parent().find('audio').get(0);
 	audio.pause();
 	return audio;
@@ -93,8 +93,6 @@ $(document).ready(function () {
 		var popup = $(".popup__content");
 		if (!popup.is(e.target) && popup.has(e.target).length === 0) {
 			popup.parent().hide("slow");
-			e.find('img').hide();
-			e.find('img').first().show();
 		}
 	});
 
@@ -105,7 +103,7 @@ $(document).ready(function () {
 				music_player_stop($(this));
 			});
 			audio.play();
-			e.find('img').hide();
+			$(this).find('img').hide();
 			$(this).find('img').last().show();
 		}
 	});
