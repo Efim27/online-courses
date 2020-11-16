@@ -106,6 +106,10 @@ $(document).ready(function () {
 			$(this).find('img').hide();
 			$(this).find('img').last().show();
 		}
+		else {
+			dom_e.find('img').hide();
+			dom_e.find('img').first().show();
+		}
 	});
 
 	$(".text-limited").text_limit();
