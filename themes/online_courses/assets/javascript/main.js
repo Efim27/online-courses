@@ -91,11 +91,10 @@ $(document).ready(function () {
 	$('.music-player__circle').click(function() {
 		$(this).find('img').toggle();
 		let audio = $(this).parent().parent().find('audio').get(0);
-		if (audio.paused == false) {
-			audio.pause();
-		} else {
-			audio.play();
+		$('audio').each(function() {
+			$(this).get(0).pause();
 		}
+		audio.play();
 	});
 
 	$(".text-limited").text_limit();
