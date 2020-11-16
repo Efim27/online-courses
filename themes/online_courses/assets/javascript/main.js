@@ -94,6 +94,7 @@ $(document).ready(function () {
 		if (!popup.is(e.target) && popup.has(e.target).length === 0) {
 			popup.parent().hide("slow");
 			e.find('img').hide();
+			e.find('img').first().show();
 		}
 	});
 
@@ -104,7 +105,8 @@ $(document).ready(function () {
 				music_player_stop($(this));
 			});
 			audio.play();
-			$(this).find('img').first().show();
+			e.find('img').hide();
+			$(this).find('img').last().show();
 		}
 	});
 
