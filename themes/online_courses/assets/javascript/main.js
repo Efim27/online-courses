@@ -5,7 +5,6 @@ var text_limit = 250;
 $.fn.svg_click = function (click_func) {
 	this.each(function () {
 		let svgDoc = this.contentDocument;
-		console.log(svgDoc);
 		let svg = svgDoc.getElementsByTagName("svg")[0];
 		svg.addEventListener("click", click_func, false);
 	});
@@ -86,6 +85,16 @@ $(document).ready(function () {
 		var popup = $(".popup__content");
 		if (!popup.is(e.target) && popup.has(e.target).length === 0) {
 			popup.parent().hide("slow");
+		}
+	});
+
+	$('.music-player__circle').click(function() {
+		$(this).find('img').toggle();
+		let audio = $(this).parent().parent().find('audio').get(0);
+		if (audio.paused == false) {
+			audio.pause();
+		} else {
+			audio.play();
 		}
 	});
 
@@ -197,19 +206,22 @@ $(document).ready(function () {
 				.toggleAttr("type", "text", "password");
 		});
 	});
-
-	changeWord();
-	setInterval(changeWord, 4000);
 });
 
 var words = document.getElementsByClassName("welcome-title-content__word");
-var wordArray = [];
-var currentWord = 0;
+if (words.length) {
+	var wordArray = [];
+	var currentWord = 0;
 
-words[currentWord].style.opacity = 1;
-for (var i = 0; i < words.length; i++) {
-	splitLetters(words[i]);
+	words[currentWord].style.opacity = 1;
+	for (var i = 0; i < words.length; i++) {
+		splitLetters(words[i]);
+	}
+
+	changeWord();
+	setInterval(changeWord, 4000);
 }
+
 
 function changeWord() {
 	var cw = wordArray[currentWord];

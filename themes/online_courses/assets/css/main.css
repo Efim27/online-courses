@@ -2973,6 +2973,10 @@ div .side-menu__phone-row {
   width: 17px;
 }
 
+.music-player__play_stopped {
+  display: none;
+}
+
 .music-player__music {
   margin-left: 25px;
 }
