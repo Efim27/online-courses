@@ -97,11 +97,11 @@ $(document).ready(function () {
 	});
 
 	$('.music-player__circle').click(function() {
-		let music_player = $(this)
+		let music_player = $(this);
 		let audio = music_player_stop($(this));
 		if (audio.paused) {
 			$('.music-player__circle').each(function() {
-				if ($(this).is(music_player)) {
+				if (!$(this).is(music_player)) {
 					music_player_stop($(this));
 				}
 			});
