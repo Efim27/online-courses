@@ -1,3 +1,4 @@
+==
 <div class="music-player {{ classes }}">
     <div class="music-player__gap"></div>
     <div class="music-player__inner">
@@ -6,6 +7,11 @@
                 src="{{ 'assets/images/icons/music_play.png'|theme }}"
                 alt="Плеер"
                 class="music-player__play"
+            />
+            <img
+                src="{{ 'assets/images/icons/music_play.png'|theme }}"
+                alt="Плеер"
+                class="music-player__play music-player__play_stopped"
             />
         </div>
         <div class="music-player__music">
@@ -17,4 +23,5 @@
             </div>
         </div>
     </div>
+    <audio src="{{ data.example|media }}" class="music-player__audio"></audio>
 </div>
