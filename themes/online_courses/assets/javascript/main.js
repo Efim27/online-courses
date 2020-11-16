@@ -100,7 +100,7 @@ $(document).ready(function () {
 		let audio = music_player_stop($(this));
 		if (audio.paused) {
 			$('.music-player__circle').each(function() {
-				$(this).get(0).pause();
+				music_player_stop($(this));
 			});
 			audio.play();
 		}
