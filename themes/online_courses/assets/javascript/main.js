@@ -111,8 +111,6 @@ $(document).ready(function () {
 		}
 		else {
 			music_player_stop($(this));
-			dom_e.find('img').hide();
-			dom_e.find('img').first().show();
 		}
 	});
 

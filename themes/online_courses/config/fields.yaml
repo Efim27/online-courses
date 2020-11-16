@@ -63,6 +63,8 @@ tabs:
                 label: Название
               type:
                 label: Жанр
+              example:
+                type: mediafinder
         audience_stages:
           type: repeater
           label: Для кого этот курс
