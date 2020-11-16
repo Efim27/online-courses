@@ -93,6 +93,7 @@ $(document).ready(function () {
 		var popup = $(".popup__content");
 		if (!popup.is(e.target) && popup.has(e.target).length === 0) {
 			popup.parent().hide("slow");
+			e.find('img').hide();
 		}
 	});
 
@@ -103,6 +104,7 @@ $(document).ready(function () {
 				music_player_stop($(this));
 			});
 			audio.play();
+			$(this).find('img').first().show();
 		}
 	});
 
