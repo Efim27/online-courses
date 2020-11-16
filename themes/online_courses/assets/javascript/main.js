@@ -80,10 +80,10 @@ if ($(".work-examples__slider").length > 0) {
 }
 
 function music_player_stop(dom_e) {
-	dom_e.find('img').toggle();
+	dom_e.find('img').hide();
+	dom_e.find('img.music-player__play_stopped').show();
 	let audio = dom_e.parent().parent().find('audio').get(0);
 	audio.pause();
-
 	return audio;
 }
 
