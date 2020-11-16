@@ -786,11 +786,12 @@
 	}
 
     &__title {
-        @include title(h3);
+		@include title(h3);
+		width: 30%;
     }
 
     &__stages {
-        max-width: 610px;
+        width: 70%;
     }
 
     &__stage {

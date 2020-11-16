@@ -2975,10 +2975,11 @@ div .side-menu__phone-row {
   color: #252733;
   font-size: 36px;
   line-height: 140%;
+  width: 30%;
 }
 
 .algorithm-education__stages {
-  max-width: 610px;
+  width: 70%;
 }
 
 .algorithm-education__stage {
@@ -4317,6 +4318,7 @@ div .popup-signup__have-account {
   }
   .algorithm-education__stage {
     padding-left: 0px;
+    width: 100%;
   }
   .videobox {
     margin-top: 35px;
