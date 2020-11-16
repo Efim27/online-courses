@@ -1,3 +1,4 @@
+==
 <div class="work-examples {{ add_classes }}">
 	<div class="main__inner main__inner_soc-links">
 		<div class="main__left">
@@ -36,7 +37,10 @@
 					<div class="glide work-examples__slider">
 						<div class="glide__track" data-glide-el="track">
 							<ul class="glide__slides">
-								{% for example_block in this.theme.work_examples|batch(4) %}
+							    {% if work_examples is not defined or work_examples is empty %}
+							         {% set work_examples = this.theme.work_examples %}
+							    {% endif %}
+								{% for example_block in work_examples|batch(4) %}
 								<li class="glide__slide">
 									<div class="work-examples__music-players">
 										{% for work_example in example_block %}
