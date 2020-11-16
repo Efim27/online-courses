@@ -93,7 +93,7 @@ $(document).ready(function () {
 		let audio = $(this).parent().parent().find('audio').get(0);
 		$('audio').each(function() {
 			$(this).get(0).pause();
-		}
+		});
 		audio.play();
 	});
 
