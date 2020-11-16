@@ -79,6 +79,14 @@ if ($(".work-examples__slider").length > 0) {
 	work_examples_slider = null;
 }
 
+function music_player_stop(dom_e) {
+	dom_e.find('img').toggle();
+	let audio = dom_e.parent().parent().find('audio').get(0);
+	audio.pause();
+
+	return audio;
+}
+
 
 $(document).ready(function () {
 	$(document).mousedown(function (e) {
@@ -89,12 +97,13 @@ $(document).ready(function () {
 	});
 
 	$('.music-player__circle').click(function() {
-		$(this).find('img').toggle();
-		let audio = $(this).parent().parent().find('audio').get(0);
-		$('audio').each(function() {
-			$(this).get(0).pause();
-		});
-		audio.play();
+		let audio = music_player_stop($(this));
+		if (audio.paused) {
+			$('.music-player__circle').each(function() {
+				$(this).get(0).pause();
+			});
+			audio.play();
+		}
 	});
 
 	$(".text-limited").text_limit();
