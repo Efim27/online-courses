@@ -98,7 +98,7 @@ $(document).ready(function () {
 
 	$('.music-player__circle').click(function() {
 		let music_player = $(this);
-		let audio = music_player_stop($(this));
+		let audio = music_player.parent().parent().find('audio').get(0);
 		if (audio.paused) {
 			$('.music-player__circle').each(function() {
 				if (!$(this).is(music_player)) {
@@ -110,6 +110,7 @@ $(document).ready(function () {
 			$(this).find('img').last().show();
 		}
 		else {
+			music_player_stop($(this));
 			dom_e.find('img').hide();
 			dom_e.find('img').first().show();
 		}
