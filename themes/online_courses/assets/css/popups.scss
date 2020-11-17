@@ -134,3 +134,69 @@
         opacity: 0.9;
     }
 }
+
+.popup-buy-course {
+
+    &__content {
+        max-width: 760px;
+    }
+
+    &__form {
+    }
+
+    &__card {
+        margin-top: 35px;
+    }
+
+    &__after-buy {
+        margin-top: 35px;
+        @include text(p3);
+    }
+
+    &__submit-row {
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-wrap: wrap;
+        @include grid-row();
+    }
+
+    &__btn {
+        @include grid-width(6);
+    }
+
+    &__regulations {
+        @include grid-width(6);
+        @include text(p5);
+    }
+}
+
+.course-cell {
+    background: $color_bg_secondary;
+    border-radius: 20px;
+    padding: 17px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__img {
+        width: 85px;
+        height: 85px;
+        border-radius: 10px;
+    }
+
+    &__label {
+        @include title(h6);
+        max-width: 300px;
+    }
+
+    &__price {
+        @include text(p1);
+    }
+
+    &__close {
+    }
+}
+

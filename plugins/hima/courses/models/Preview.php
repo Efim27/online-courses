@@ -19,7 +19,8 @@ class Preview extends Model
         'course' => ['Hima\Courses\Models\Course']
     ];
     public $attachOne = [
-        'attachment' => ['System\Models\File']
+        'attachment' => ['System\Models\File'],
+        'attachment_big' => ['System\Models\File']
     ];
 
     protected $jsonable = ['work_examples', 'audience', 'authors', 'faq'];

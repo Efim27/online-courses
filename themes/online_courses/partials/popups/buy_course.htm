@@ -1,0 +1,32 @@
+<div class="popup popup-buy-course">
+	<div class="popup__content popup-buy-course__content">
+		<div class="popup__first-row">
+			<div class="popup__title">Ваш заказ</div>
+			<div class="popup__close">
+				<object
+					data="{{ 'assets/images/icons/close.svg'|theme }}"
+					type="image/svg+xml"
+				></object>
+			</div>
+        </div>
+        <div class="popup-buy-course__card course-cell">
+            <img src="{{ record.attachment.path }}" alt="{{ data.title }}" class="course-cell__img">
+            <div class="course-cell__label">{{ data.title }}</div>
+            <div class="course-cell__price">6 900 руб.</div>
+        </div>
+        <div class="popup-buy-course__after-buy">После оплаты вы получите доступ к видео-урокам в вашем Личном кабинете в разделе Мои курсы</div>
+		<div class="popup-buy-course__form">
+			<div class="popup-buy-course__submit-row">
+				<button class="popup-buy-course__btn main-btn">
+					<div class="main-btn__content">
+						<div class="main-btn__text">Оформить заказ</div>
+					</div>
+				</button>
+				<div class="popup-buy-course__regulations">
+					Нажимая на кнопку, вы соглашаетесь с политикой обработки
+					персональных данных
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

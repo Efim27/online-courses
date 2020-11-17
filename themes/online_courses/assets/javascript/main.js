@@ -138,6 +138,12 @@ $(document).ready(function () {
 		$(".popup-signup").show("slow").css("display", "flex");
 	});
 
+	$(".buy-course-link").click(function (e) {
+		e.preventDefault();
+		$(".popup").hide("slow");
+		$(".popup-buy-course").show("slow").css("display", "flex");
+	});
+
 	$(".faq-stage__more-btn").click(function () {
 		$(this).toggleClass("more-btn_close");
 		$(this).prev().find(".faq-stage__answer").toggle("slow");

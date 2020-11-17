@@ -223,4 +223,10 @@
 			margin-bottom: -30px;
 		}
 	}
+
+	.course-cell {
+		&__img {
+			display: none;
+		}
+	}
 }

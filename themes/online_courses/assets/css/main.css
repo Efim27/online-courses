@@ -1457,9 +1457,6 @@ div .project-reviews__btns_mini-loaded {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: calc(-1 * 50px / 2);
@@ -3973,6 +3970,96 @@ div .popup-signup__have-account {
   opacity: 0.9;
 }
 
+.popup-buy-course__content {
+  max-width: 760px;
+}
+
+.popup-buy-course__card {
+  margin-top: 35px;
+}
+
+.popup-buy-course__after-buy {
+  margin-top: 35px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.popup-buy-course__submit-row {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * 50px / 2);
+  margin-right: calc(-1 * 50px / 2);
+}
+
+.popup-buy-course__btn {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+}
+
+.popup-buy-course__regulations {
+  width: calc(100% / 12 * 6 - 50px);
+  margin-left: calc(50px / 2);
+  margin-right: calc(50px / 2);
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+}
+
+.course-cell {
+  background: #EDF5F4;
+  border-radius: 20px;
+  padding: 17px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.course-cell__img {
+  width: 85px;
+  height: 85px;
+  border-radius: 10px;
+}
+
+.course-cell__label {
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 21px;
+  line-height: 140%;
+  max-width: 300px;
+}
+
+.course-cell__price {
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.9;
+}
+
 @media screen and (max-width: 1200px) {
   .creative-result-label {
     display: none;
@@ -4292,6 +4379,9 @@ div .popup-signup__have-account {
     margin-top: 45px;
     margin-bottom: -30px;
   }
+  .course-cell__img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -4531,6 +4621,19 @@ div .popup-signup__have-account {
   .course-stage__divider {
     -webkit-transform: none;
             transform: none;
+  }
+  .course-cell__label {
+    width: 100%;
+  }
+  .course-cell__price {
+    margin-top: 15px;
+  }
+  .popup-buy-course__btn {
+    width: 100%;
+  }
+  .popup-buy-course__regulations {
+    margin-top: 15px;
+    width: 100%;
   }
 }
 
@@ -5104,6 +5207,18 @@ div .popup-signup__have-account {
   .arrow-in-circle__arrow {
     width: 16px;
     height: 40px;
+  }
+  .popup-buy-course__after-buy {
+    font-size: 14px;
+  }
+  .popup-buy-course__regulations {
+    font-size: 10px;
+  }
+  .course-cell__label {
+    font-size: 16px;
+  }
+  .course-cell__price {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */

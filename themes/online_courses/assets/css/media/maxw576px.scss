@@ -264,4 +264,25 @@
 			transform: none;
 		}
 	}
+
+	.course-cell {
+		&__label {
+			width: 100%;
+		}
+
+		&__price {
+			margin-top: 15px;
+		}
+	}
+
+	.popup-buy-course {
+		&__btn {
+			width: 100%;
+		}
+
+		&__regulations {
+			margin-top: 15px;
+			width: 100%;
+		}
+	}
 }
