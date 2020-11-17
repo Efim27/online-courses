@@ -84,3 +84,6 @@
 1.0.29:
     - 'Updated table hima_courses_preview add dynamic fields'
     - builder_table_update_hima_courses_preview_2.php
+1.0.30:
+    - 'Updated table hima_courses_courses +price'
+    - builder_table_update_hima_courses_courses_6.php

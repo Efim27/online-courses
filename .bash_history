@@ -1,19 +1,3 @@
-ls
-ды
-ls
-vim index.php 
-ls
-rm index.php 
-git clone https://github.com/Efim27/online-courses.git
-ls
-cp online-courses/* .
-cp -r online-courses/* .
-ls
-cp -r online-courses/.* .
-ls
-git pull
-ls
-git pull
 git pull
 git pull
 git pull
@@ -473,3 +457,44 @@ git add .
 git commit -m "course course_tag pivot"
 git push
 git pull
+ls
+git pull
+git pull
+git add .
+git commit -m "+dynamic fields, work examples form"
+git push
+git add .
+git commit -m "work_examples echo"
+git push
+git add .
+git commit -m "music_player audio btns"
+git push
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+bash gitp.sh 
+bash gitp.sh 
+bash gitp.sh 
+bash gitp.sh 
+rm themes/online_courses/content/home/algorithm-education__title.htm 
+bash gitp.sh 
+git add .
+git commit -m "algorith education fix"
+git push
+git add .
+git commit -m "Add dynamic fields to preview w.o. authors"
+git push

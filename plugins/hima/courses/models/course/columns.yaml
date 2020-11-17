@@ -23,3 +23,11 @@ columns:
         label: updated_at
         type: datetime
         sortable: true
+    slug:
+        label: slug
+        type: text
+        sortable: true
+    price:
+        label: price
+        type: number
+        sortable: true

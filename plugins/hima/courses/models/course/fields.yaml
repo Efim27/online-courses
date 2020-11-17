@@ -16,6 +16,11 @@ fields:
         span: full
         required: 1
         type: richeditor
+    price:
+        label: Цена
+        span: full
+        required: 1
+        type: number
     slug:
         label: Slug
         span: full

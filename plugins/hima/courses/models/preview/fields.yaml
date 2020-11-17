@@ -10,6 +10,12 @@ fields:
         size: large
         span: full
         type: textarea
+    attachment_big:
+        label: 'Большое изображение обзоре курса'
+        mode: image
+        span: full
+        required: 1
+        type: mediafinder
     attachment:
         label: Видео
         mode: file
