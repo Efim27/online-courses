@@ -37,9 +37,9 @@
 					<div class="glide work-examples__slider">
 						<div class="glide__track" data-glide-el="track">
 							<ul class="glide__slides">
-							    {% if work_examples is not defined or work_examples is empty %}
-							         {% set work_examples = this.theme.work_examples %}
-							    {% endif %}
+								{% if work_examples is not defined or work_examples is empty %}
+									{% set work_examples = this.theme.work_examples %}
+								{% endif %}
 								{% for example_block in work_examples|batch(4) %}
 								<li class="glide__slide">
 									<div class="work-examples__music-players">

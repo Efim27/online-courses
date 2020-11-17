@@ -14,26 +14,27 @@
 						{% partial 'blocks/btn_submit_link' classes="faq__btn-submit" link="/faq" %}
 					</div>
 					<div class="faq__right">
-						{% for faq in this.theme.faqs %}
-							{% if faq.mini %}
-							<div class="faq__stage faq-stage">
-								<div class="faq-stage__row">
-									<div class="faq-stage__block">
-										<div class="faq-stage__question">
-											{{ faq.question }}
+						{% set faqs = data ?? this.theme.faqs %}
+						{% for faq in faqs %}
+							{% if faq.mini or faq.mini is not defined %}
+								<div class="faq__stage faq-stage">
+									<div class="faq-stage__row">
+										<div class="faq-stage__block">
+											<div class="faq-stage__question">
+												{{ faq.question }}
+											</div>
+											<div class="faq-stage__answer">
+												{{ faq.answer }}
+											</div>
 										</div>
-										<div class="faq-stage__answer">
-											{{ faq.answer }}
-										</div>
+										<img
+											class="faq-stage__more-btn more-btn"
+											src="{{ 'assets/images/icons/plus.png'|theme }}"
+											alt="Развернуть"
+										/>
 									</div>
-									<img
-										class="faq-stage__more-btn more-btn"
-										src="{{ 'assets/images/icons/plus.png'|theme }}"
-										alt="Развернуть"
-									/>
+									<div class="faq-stage__divider divider"></div>
 								</div>
-								<div class="faq-stage__divider divider"></div>
-							</div>
 							{% endif %}
 						{% endfor %}
 						<div class="faq__more-questions more-questions-btn">

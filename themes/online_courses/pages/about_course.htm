@@ -79,14 +79,14 @@ notFoundMessage = "Record not found"
 					</div>
 					<div class="algorithm-education__stages">
 						{% for audience_stage in
-						this.theme.audience_stages %}
+						record.preview.audience %}
 						<div
 							class="algorithm-education__stage algorithm-stage"
 						>
 							<div class="algorithm-stage__row">
 								<div class="algorithm-stage__dot dot"></div>
 								<div class="algorithm-stage__label">
-									{{ audience_stage.about }}
+									{{ audience_stage.audience_about }}
 								</div>
 							</div>
 							{% if loop.last != true %}
@@ -107,7 +107,7 @@ notFoundMessage = "Record not found"
 	</div>
 </div>
 
-{% partial 'blocks/creative_result' classes='creative-result-about-course' %}
+{% partial 'blocks/creative_result' classes='creative-result-about-course' data=record.preview %}
 <div class="course-scheme">
 	<div class="main__inner">
 		<div class="main__left"></div>
@@ -116,14 +116,12 @@ notFoundMessage = "Record not found"
 			<div class="course-scheme__row">
 				<div class="course-scheme__title">Программа курса</div>
 				<div class="course-scheme__stages">
-					{% partial 'blocks/course_stage' classes="course-scheme__stage" name="Введение" lessons="2 урока" %}
-					{% partial 'blocks/course_stage' classes="course-scheme__stage" name="Введение" lessons="2 урока" %}
-					{% partial 'blocks/course_stage' classes="course-scheme__stage" name="Знакомство с программой" lessons="3 урока" %}
-					{% partial 'blocks/course_stage' classes="course-scheme__stage" name="Знакомство с программой" lessons="3 урока" %}
-					{% partial 'blocks/course_stage' classes="course-scheme__stage" name="Мой первый трек" lessons="1 урок" %}
-					{% partial 'blocks/course_stage' classes="course-scheme__stage" name="Мой первый трек" lessons="1 урок" %}
-					{% partial 'blocks/course_stage' classes="course-scheme__stage" name="Электроника" lessons="6 уроков" last="true" %}
-					{% partial 'blocks/course_stage' classes="course-scheme__stage" name="Электроника" lessons="6 уроков" last="true" %}
+					{% for course_block in record.blocks %}
+						{% set lessons_count = course_block.lessons|length %}
+						{% set lesson_label = tools.plural_form(lessons_count, ['урок', 'урока', 'уроков']) %}
+						{% set lesson_text = lessons_count ~ ' ' ~ lesson_label %}
+						{% partial 'blocks/course_stage' classes="course-scheme__stage" name=course_block.title lessons=lesson_text last="true" %}
+					{% endfor %}
 				</div>
 			</div>
 			<div class="course-scheme__divider divider divider_yellow"></div>
@@ -132,4 +130,4 @@ notFoundMessage = "Record not found"
 	</div>
 </div>
 {% partial 'blocks/project_authors' classes='project-authors-block-about-course' %}
-{% partial 'blocks/faq' %}
+{% partial 'blocks/faq' data=record.preview.faq %}

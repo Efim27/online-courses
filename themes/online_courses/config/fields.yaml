@@ -77,6 +77,30 @@ tabs:
                 label: Описание
                 type: textarea
                 size: small
+        content_creative_result1:
+            label: Творческий результат 1
+            default: Проведете время креативно и необычно 1
+            tab: Контент
+        content_creative_result2:
+            label: Творческий результат 2
+            default: Проведете время креативно и необычно 2
+            tab: Контент
+        content_creative_result3:
+            label: Творческий результат 3
+            default: Проведете время креативно и необычно 3
+            tab: Контент
+        content_creative_result4:
+            label: Творческий результат 4
+            default: Проведете время креативно и необычно 4
+            tab: Контент
+        content_creative_result5:
+            label: Творческий результат 5
+            default: Проведете время креативно и необычно 5
+            tab: Контент
+        content_creative_result6:
+            label: Творческий результат 6
+            default: Проведете время креативно и необычно 6
+            tab: Контент
         home_main_title:
             label: Начало заголовка
             default: Творческий результат
@@ -93,30 +117,6 @@ tabs:
               color:
                 label: Цвет текста
                 type: colorpicker
-        home_creative_result1:
-            label: Творческий результат 1
-            default: Проведете время креативно и необычно 1
-            tab: Главная
-        home_creative_result2:
-            label: Творческий результат 2
-            default: Проведете время креативно и необычно 2
-            tab: Главная
-        home_creative_result3:
-            label: Творческий результат 3
-            default: Проведете время креативно и необычно 3
-            tab: Главная
-        home_creative_result4:
-            label: Творческий результат 4
-            default: Проведете время креативно и необычно 4
-            tab: Главная
-        home_creative_result5:
-            label: Творческий результат 5
-            default: Проведете время креативно и необычно 5
-            tab: Главная
-        home_creative_result6:
-            label: Творческий результат 6
-            default: Проведете время креативно и необычно 6
-            tab: Главная
         about_statistics_blocks:
           type: repeater
           label: Блоки статистики
