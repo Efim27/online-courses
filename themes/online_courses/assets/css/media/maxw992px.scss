@@ -80,4 +80,34 @@
 			@include grid-width(12);
 		}
 	}
+
+	.work-examples {
+		&__left {
+			@include grid-width(12);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__btn-submit {
+			margin-top: 0px;
+		}
+
+		&__right {
+			@include grid-width(12);
+		}
+
+		&__right-row {
+			display: none;
+		}
+
+		div &__pagination-mini {
+			display: flex;
+			margin-top: 50px;
+		}
+
+		&__row {
+			width: 100%;
+		}
+	}
 }

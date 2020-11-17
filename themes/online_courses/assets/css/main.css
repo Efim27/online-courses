@@ -4143,6 +4143,40 @@ div .popup-signup__have-account {
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
+  .work-examples__left {
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .work-examples__btn-submit {
+    margin-top: 0px;
+  }
+  .work-examples__right {
+    width: calc(100% / 12 * 12 - 50px);
+    margin-left: calc(50px / 2);
+    margin-right: calc(50px / 2);
+  }
+  .work-examples__right-row {
+    display: none;
+  }
+  div .work-examples__pagination-mini {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
+  .work-examples__row {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -4240,37 +4274,6 @@ div .popup-signup__have-account {
   .our-telegram .main__right {
     -ms-flex-negative: 20;
         flex-shrink: 20;
-  }
-  .work-examples__left {
-    width: calc(100% / 12 * 12 - 50px);
-    margin-left: calc(50px / 2);
-    margin-right: calc(50px / 2);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .work-examples__btn-submit {
-    margin-top: 0px;
-  }
-  .work-examples__right {
-    width: calc(100% / 12 * 12 - 50px);
-    margin-left: calc(50px / 2);
-    margin-right: calc(50px / 2);
-  }
-  .work-examples__right-row {
-    display: none;
-  }
-  div .work-examples__pagination-mini {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 50px;
   }
   .project-authors__authors {
     -webkit-box-pack: center;
@@ -4404,6 +4407,9 @@ div .popup-signup__have-account {
   }
   .algorithm-education__title {
     display: none;
+  }
+  .algorithm-education__stages {
+    width: 100%;
   }
   .algorithm-education__stage {
     padding-left: 0px;

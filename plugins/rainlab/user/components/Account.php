@@ -207,7 +207,11 @@ class Account extends ComponentBase
 
             $data['login'] = trim($data['login']);
 
-            $validation = Validator::make($data, $rules);
+            $customMessages = [
+                'login.required' => 'We need to know your e-mail address!',
+            ];
+
+            $validation = Validator::make($data, $rules, $customMessages);
             if ($validation->fails()) {
                 throw new ValidationException($validation);
             }
