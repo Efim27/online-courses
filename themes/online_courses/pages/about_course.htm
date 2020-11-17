@@ -34,7 +34,7 @@ notFoundMessage = "Record not found"
 							{% set buy_popup = user ? 'buy-course-link' : 'signin-link' %}
 							{% partial 'blocks/btn_submit_link' classes=buy_popup svg_path='assets/images/buy_btn.svg'|theme %}
 							<div class="about-course-buy__center">
-								<div class="about-course-buy__price">6 900 руб.</div>
+								<div class="about-course-buy__price">{{ record.price }} руб.</div>
 								<div class="about-course-buy__arrow">
 									<object
 										data="{{ 'assets/images/icons/arrow.svg'|theme }}"
@@ -45,7 +45,7 @@ notFoundMessage = "Record not found"
 						</div>
 					</div>
 				</div>
-				<div class="about-course__image" style="background: url({{ record.preview.attachment_big.path }}) no-repeat 50% 0%/cover;"></div>
+				<div class="about-course__image" style="background: url({{ record.preview.attachment_big|media }}) no-repeat 50% 0%/cover;"></div>
 			</div>
 			<div class="course-info">
 				<div class="course-info__row">
