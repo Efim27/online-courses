@@ -1,16 +1,3 @@
-git pull
-git pull
-git pull
-git pull
-git pull
-git pull
-ls
-git pull
-git pull
-git pull
-git pull
-vim
-ls
 cd config/
 vim database.php 
 ls
@@ -498,3 +485,16 @@ git push
 git add .
 git commit -m "Add dynamic fields to preview w.o. authors"
 git push
+ls
+git pull
+git pull
+git add .
+git commit -m "courses +price, preview +attachment_big"
+git push
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull

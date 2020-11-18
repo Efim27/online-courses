@@ -11,11 +11,15 @@ fields:
         span: full
         type: textarea
     attachment_big:
-        label: 'Большое изображение обзоре курса'
-        mode: image
+        label: 'Большое изображение из описания курса'
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
         span: full
         required: 1
-        type: mediafinder
+        type: fileupload
     attachment:
         label: Видео
         mode: file
@@ -31,6 +35,30 @@ fields:
         span: full
         required: 1
         type: text
+    authors:
+        label: 'Авторы курса'
+        prompt: 'Добавить автора'
+        span: full
+        type: repeater
+        form:
+            fields:
+                image:
+                    label: Фотография
+                    mode: file
+                    span: full
+                    required: 1
+                    type: mediafinder
+                name:
+                    label: 'Имя и фамилия'
+                    span: full
+                    required: 1
+                    type: text
+                about:
+                    label: Описание
+                    size: small
+                    span: full
+                    required: 1
+                    type: textarea
     work_examples:
         label: 'Примеры работ'
         prompt: 'Загрузить новый пример'
