@@ -29,6 +29,8 @@ class User extends UserBase
         'username' => 'required|between:2,255|unique:users',
         'password' => 'required:create|between:8,255|confirmed',
         'password_confirmation' => 'required_with:password|between:8,255',
+        'name' => 'required|between:2,255',
+        'surname' => 'required|between:2,255',
         'iu_telephone' => ['required', 'regex:/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/']
     ];
 

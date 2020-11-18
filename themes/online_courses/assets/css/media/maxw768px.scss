@@ -203,4 +203,16 @@
 			display: none;
 		}
 	}
+
+	.project-authors-block {
+		&__left {
+			min-width: 0px;
+			width: 0px;
+		}
+
+		&__right {
+			min-width: 0px;
+			width: 0px;
+		}
+	}
 }

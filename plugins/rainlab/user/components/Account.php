@@ -208,7 +208,11 @@ class Account extends ComponentBase
             $data['login'] = trim($data['login']);
 
             $customMessages = [
-                'login.required' => 'We need to know your e-mail address!',
+                'login.required' => 'Поле "E-mail" обязательно для заполнения',
+                'login.between' => 'Поле "E-mail" должно содержать от 2 до 255 символов',
+                'login.email' => 'Поле "E-mail" имеет неверный формат',
+                'password.required' => 'Поле "Пароль" обязательно для заполнения',
+                'password.between' => 'Поле "Пароль" должно содержать от 8 до 255 символов'
             ];
 
             $validation = Validator::make($data, $rules, $customMessages);
@@ -241,7 +245,25 @@ class Account extends ComponentBase
 
             Event::fire('rainlab.user.beforeAuthenticate', [$this, $credentials]);
 
-            $user = Auth::authenticate($credentials, $remember);
+            try {
+                $user = Auth::authenticate($credentials, true);
+            } catch (\October\Rain\Auth\AuthException $e) {
+                $authMessage = $e->getMessage();
+                // for error messages see October\Rain\Auth\Manager
+                if (strrpos($authMessage,'hashed credential') !== false) {
+                    $message = 'Вы ввели неверный пароль от аккаунта';
+                } elseif (strrpos($authMessage,'user was not found') !== false) {
+                    $message = 'Аккаунт не найден';
+                } elseif (strrpos($authMessage,'not activated') !== false) {
+                    $message = 'Невозможно войти в аккаунт, поскольку он не активирован';
+                } else {
+                    throw $e;
+                }
+
+                throw new AuthException($message);
+                // now throw custom exception or return something to ajax request
+            }
+
             if ($user->isBanned()) {
                 Auth::logout();
                 throw new AuthException(/*Sorry, this user is currently not activated. Please contact us for further assistance.*/'rainlab.user::lang.account.banned');
@@ -296,9 +318,28 @@ class Account extends ComponentBase
                 unset($rules['username']);
             }
 
-            $validation = Validator::make($data, $rules);
+            $customMessages = [
+                'email.required' => 'Поле "E-mail" обязательно для заполнения',
+                'email.between' => 'Поле "E-mail" должно содержать от 2 до 255 символов',
+                'email.email' => 'Поле "E-mail" имеет неверный формат',
+                'email.unique' => 'Данная электронная почта уже привязана к другому аккаунту',
+                'name.required' => 'Поле "Имя" обязательно для заполнения',
+                'name.between' => 'Поле "Имя" должно содержать от 2 до 255 символов',
+                'name.required' => 'Поле "Фамилия" обязательно для заполнения',
+                'name.between' => 'Поле "Фамилия" должно содержать от 2 до 255 символов',
+                'password.required' => 'Поле "Пароль" обязательно для заполнения',
+                'password.between' => 'Поле "Пароль" должно содержать от 8 до 255 символов',
+                'iu_telephone.required' => 'Поле "Телефон" обязательно для заполнения',
+                'iu_telephone.regex' => 'Поле "Телефон" имеет неверный формат',
+            ];
+
+            $validation = Validator::make($data, $rules, $customMessages);
             if ($validation->fails()) {
                 throw new ValidationException($validation);
+            }
+
+            if ($data['password'] != $data['password2']) {
+                throw new AuthException('Введенные пароли не совпадают');
             }
 
             /*
