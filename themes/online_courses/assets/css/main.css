@@ -857,6 +857,7 @@ a, a:hover, a:active, a:visited {
 
 .worth-card {
   position: relative;
+  width: 100%;
   max-width: 540px;
   height: 200px;
   background: #F2FFFE;
