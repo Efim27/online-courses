@@ -21,6 +21,23 @@
         padding: 50px 40px;
         background-color: white;
         border-radius: 20px;
+        max-height: 90%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    &__content::-webkit-scrollbar {
+        display: none;
+    }
+
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+    
+    ::-webkit-scrollbar-track-piece{
+        background-color: transparent;
+        -webkit-border-radius: 6px;
     }
 
     &__first-row {

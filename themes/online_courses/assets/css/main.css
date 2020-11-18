@@ -3856,6 +3856,23 @@ div .work-examples__pagination-mini-loaded {
   padding: 50px 40px;
   background-color: white;
   border-radius: 20px;
+  max-height: 90%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.popup__content::-webkit-scrollbar {
+  display: none;
+}
+
+.popup ::-webkit-scrollbar {
+  width: 0px;
+}
+
+.popup ::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 6px;
 }
 
 .popup__first-row {
