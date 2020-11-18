@@ -145,44 +145,7 @@ pageNumber = "{{ :page }}"
         <div class="main__right"></div>
     </div>
 </div>
-<div class="project-authors-block">
-    <div class="main__inner">
-        <div class="main__left"></div>
-        <div class="main__content">
-            <div class="project-authors-about project-authors">
-                <div class="project-authors__title">Авторы курсов</div>
-                <div class="project-authors__authors">
-                    <div class="project-authors__author">
-                        <img
-                            src="{{ 'assets/images/about_author.png'|theme }}"
-                            alt="Автор"
-                        />
-                    </div>
-                    <div class="project-authors__active-author">
-                        <img
-                            src="{{ 'assets/images/about_author.png'|theme }}"
-                            alt="Автор"
-                        />
-                    </div>
-                    <div class="project-authors__author">
-                        <img
-                            src="{{ 'assets/images/about_author.png'|theme }}"
-                            alt="Автор"
-                        />
-                    </div>
-                </div>
-                <div class="project-authors__author-about author-about">
-                    <div class="author-about__name">Александр Караваев</div>
-                    <div class="author-about__about">
-                        Проведи время креативно и необычно на нашем
-                        развлекательно - образовательном проекте “Мир рядом”.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="main__right"></div>
-    </div>
-</div>
+{% partial 'blocks/project_authors' classes_in_content='project-authors-about' %}
 <div class="project-reviews">
     <div class="main__inner">
         <div class="main__left"></div>
