@@ -127,20 +127,18 @@ pageNumber = "{{ :page }}"
                 <div class="about-education__videobox videobox">
                     <img
                         class="videobox__video"
-                        src="{{ 'assets/images/about_video1.png'|theme }}"
-                        alt="Видео 1"
+                        src="{{ this.theme.about_video1|media }}"
+                        alt="{{ this.theme.about_video_label1 }}"
                     />
-                    <div class="videobox__label">Видео о нашем проекте</div>
+                    <div class="videobox__label">{{ this.theme.about_video_label1 }}</div>
                 </div>
                 <div class="about-education__videobox videobox">
                     <img
                         class="videobox__video"
-                        src="{{ 'assets/images/about_video2.png'|theme }}"
-                        alt="Видео 2"
+                        src="{{ this.theme.about_video2|media }}"
+                        alt="{{ this.theme.about_video_label2 }}"
                     />
-                    <div class="videobox__label">
-                        Создаем трек в стиле эмбиент
-                    </div>
+                    <div class="videobox__label">{{ this.theme.about_video_label2 }}</div>
                 </div>
             </div>
         </div>

@@ -5,6 +5,9 @@ var text_limit = 250;
 $.fn.svg_click = function (click_func) {
 	this.each(function () {
 		let svgDoc = this.contentDocument;
+		if (!svgDoc) {
+			return
+		}
 		let svg = svgDoc.getElementsByTagName("svg")[0];
 		svg.addEventListener("click", click_func, false);
 	});

@@ -124,21 +124,19 @@ is_hidden = 0
 			<div class="about-project__row">
 				<div class="about-project__videobox videobox">
 					<img
-						src="{{ 'assets/images/about_video1.png'|theme }}"
-						alt="Видео 1"
+						src="{{ this.theme.home_video1|media }}"
+						alt="{{ this.theme.home_video_label1 }}"
 						class="videobox__video"
 					/>
-					{% component 'contenteditor' file="home/videobox__label1.htm"
-					fixture="div" class="videobox__label" %}
+					<div class="videobox__label">{{ this.theme.home_video_label1 }}</div>
 				</div>
 				<div class="about-project__videobox videobox">
 					<img
-						src="{{ 'assets/images/about_video2.png'|theme }}"
-						alt="Видео 2"
+						src="{{ this.theme.home_video2|media }}"
+						alt="{{ this.theme.home_video_label2 }}"
 						class="videobox__video"
 					/>
-					{% component 'contenteditor' file="home/videobox__label2.htm"
-					fixture="div" class="videobox__label" %}
+					<div class="videobox__label">{{ this.theme.home_video_label2 }}</div>
 				</div>
 			</div>
 		</div>

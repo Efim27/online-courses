@@ -117,6 +117,22 @@ tabs:
               color:
                 label: Цвет текста
                 type: colorpicker
+        home_video1:
+          type: mediafinder
+          label: Видео 1
+          tab: Главная
+        home_video_label1:
+            label: Подпись к видео 1
+            default: Видео о нашем проекте
+            tab: Главная
+        home_video2:
+          type: mediafinder
+          label: Видео 2
+          tab: Главная
+        home_video_label2:
+            label: Подпись к видео 2
+            default: Видео о нашем проекте
+            tab: Главная
         about_statistics_blocks:
           type: repeater
           label: Блоки статистики
@@ -151,6 +167,22 @@ tabs:
                 label: Описание
                 type: textarea
                 size: small
+        about_video1:
+          type: mediafinder
+          label: Видео 1
+          tab: О проекте
+        about_video_label1:
+            label: Подпись к видео 1
+            default: Видео о нашем проекте
+            tab: О проекте
+        about_video2:
+          type: mediafinder
+          label: Видео 2
+          tab: О проекте
+        about_video_label2:
+            label: Подпись к видео 2
+            default: Видео о нашем проекте
+            tab: О проекте
         faqs:
           type: repeater
           label: Вопрос-ответ

@@ -2,6 +2,7 @@
 <style>
     svg {
         animation: rotate 10s linear infinite;
+        overflow: hidden;
     }
 
     @keyframes rotate {
