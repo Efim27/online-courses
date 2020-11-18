@@ -323,35 +323,42 @@ is_hidden = 0
 						class="contact-us__form"
 						data-request="onAddQuestion"
 						data-request-success="contact_form_success()"
+						data-request-validate
 					>
 						<div class="contact-us__fields-row">
-							<div class="contact-us__input-email text-input">
-								<input
-									class="text-input__input"
-									id="contact-us-email"
-									name="email"
-									type="text"
-									required
-								/>
-								<label
-									for="contact-us-email"
-									class="text-input__label"
-									>Email</label
-								>
+							<div class="text-input-block">
+								<div class="contact-us__input-email text-input">
+									<input
+										class="text-input__input"
+										id="contact-us-email"
+										name="email"
+										type="text"
+										required
+									/>
+									<label
+										for="contact-us-email"
+										class="text-input__label"
+										>Email</label
+									>
+								</div>
+								<div data-validate-for="email" class="form-error-label"></div>
 							</div>
-							<div class="contact-us__input-phone text-input">
-								<input
-									class="text-input__input"
-									id="contact-us-phone"
-									name="phone"
-									type="text"
-									required
-								/>
-								<label
-									for="contact-us-phone"
-									class="text-input__label"
-									>Телефон</label
-								>
+							<div class="text-input-block">
+								<div class="contact-us__input-phone text-input">
+									<input
+										class="text-input__input"
+										id="contact-us-phone"
+										name="phone"
+										type="text"
+										required
+									/>
+									<label
+										for="contact-us-phone"
+										class="text-input__label"
+										>Телефон</label
+									>
+								</div>
+								<div data-validate-for="phone" class="form-error-label"></div>
 							</div>
 						</div>
 						<div class="contact-us__input-question text-input">
@@ -368,6 +375,7 @@ is_hidden = 0
 								>Вопрос</label
 							>
 						</div>
+						<div data-validate-for="question" class="form-error-label"></div>
 						<div class="contact-us__form-row">
 							<div class="contact-us__agree">
 								Нажимая на кнопку, вы соглашаетесь с политикой

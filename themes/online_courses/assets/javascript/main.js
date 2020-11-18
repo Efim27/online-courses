@@ -293,3 +293,31 @@ function splitLetters(word) {
 
 	wordArray.push(letters);
 }
+
+$(window).on('ajaxInvalidField', function(event, fieldElement, fieldName, errorMsg, isFirst) {
+	var $field = $(fieldElement).closest('.text-input__input')
+	console.log($(fieldElement))
+
+    if (!$field.length) {
+        return
+    }
+
+    event.preventDefault()
+
+	$field.addClass('text-input__has-error')
+
+    $(window).one('ajaxErrorMessage', function(event, message){
+		event.preventDefault()
+    })
+})
+
+// удаляем класс ошибки
+$(document).on('ajaxPromise', '[data-request]', function() {
+    var $form = $(this).closest('form')
+
+    if (!$form.length)
+        return
+
+	$('.text-input__has-error').removeClass('text-input__has-error')
+    $('.has-error').removeClass('has-error')
+})

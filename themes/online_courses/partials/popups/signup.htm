@@ -1,4 +1,4 @@
-{{ form_ajax('onRegister') }}
+{{ form_ajax('onRegister', { 'data-request-validate': true }) }}
 <div class="popup popup-signup">
     <div class="popup__content popup-signup__content">
         <div class="popup__first-row">
@@ -12,12 +12,18 @@
         </div>
         <div class="popup-signup__form">
             {% partial 'blocks/text_input' classes="popup-signup__input-password" id="signup-email" name="email" label="Введите Email" %}
+            <div data-validate-for="email" class="form-error-label"></div>
             {% partial 'blocks/text_input' classes="popup-signup__input-password" id="signup-phone" name="iu_telephone" label="Введите телефон" %}
+            <div data-validate-for="iu_telephone" class="form-error-label"></div>
             {% partial 'blocks/text_input' classes="popup-signup__input-password" id="signup-name" name="name" label="Введите имя" %}
+            <div data-validate-for="name" class="form-error-label"></div>
             {% partial 'blocks/text_input' classes="popup-signup__input-password" id="signup-surname" name="surname" label="Введите фамилию" %}
+            <div data-validate-for="surname" class="form-error-label"></div>
             {% partial 'blocks/text_input' classes="popup-signup__input-password" id="signup-password" name="password" type="password" label="Придумайте пароль" %}
+            <div data-validate-for="password" class="form-error-label"></div>
             <div class="text-input__rule">Не менее 8 символов</div>
             {% partial 'blocks/text_input' classes="popup-signup__input-password" id="signup-password2" name="password2" type="password" label="Повторите пароль" %}
+            <div data-validate-for="password2" class="form-error-label"></div>
             <button class="popup-signup__btn main-btn">
                 <div class="main-btn__content">
                     <div class="main-btn__text">Зарегистрироваться</div>

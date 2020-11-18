@@ -326,13 +326,12 @@
 			margin-top: 15px;
 		}
 
-		&__input-email {
+		.text-input-block {
 			@include grid-width(12);
 		}
 
-		&__input-phone {
+		.text-input-block:nth-child(2) {
 			margin-top: 25px;
-			@include grid-width(12);
 		}
 
 		&__input-question {

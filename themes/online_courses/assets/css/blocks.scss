@@ -655,7 +655,7 @@
 	position: relative;
 	color: $color_text_black;
 
-	&::after {
+	&:after {
 		content: '';
 		position: absolute;
 		width: 100%;
@@ -666,10 +666,24 @@
 		left: 0px;
 	}
 
+	&__has-error {
+		color: #FF5555;
+	}
+
+	&__has-error &__input {
+		color: #FF5555;
+		opacity: 0.8;
+	}
+
+	&__has-error ~ &:after {
+		content: '';
+		background: #FF5555;
+		opacity: 0.8;
+	}
+
 	&__input {
 		background-color: transparent;
 		border: 0;
-		//border-bottom: 1px solid #0032c3;
 		outline: none;
 		transition: 0.2s ease-in-out;
 		box-sizing: border-box;
@@ -707,7 +721,7 @@
 
 	input:valid,
 	input:focus {
-		border-bottom: 1px solid #0092b6;
+		//border-bottom: 1px solid #0092b6;
 	}
 
 	input:valid + label,
@@ -717,6 +731,12 @@
 		top: -30px;
 		pointer-events: none;
 	}
+}
+
+.form-error-label {
+	margin-top: 10px;
+	@include text(p5);
+	color: #FF5555;
 }
 
 .music-player {
@@ -1000,15 +1020,11 @@
         @include grid-row();
         display: flex;
         flex-wrap: wrap;
-    }
+	}
 
-    &__input-email {
-        @include grid-width(6);
-    }
-
-    &__input-phone {
-        @include grid-width(6);
-    }
+	.text-input-block {
+		@include grid-width(6);
+	}
 
     &__input-question {
         margin-top: 32px;

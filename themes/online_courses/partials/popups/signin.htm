@@ -1,4 +1,4 @@
-{{ form_ajax('onSignin') }}
+{{ form_ajax('onSignin', { 'data-request-validate': true }) }}
 <div class="popup popup-signin">
     <div class="popup__content popup-signin__content">
         <div class="popup__first-row">
@@ -12,10 +12,10 @@
         </div>
         <div class="popup-signin__form">
             {% partial 'blocks/text_input' classes="popup-signin__input-password" id="signin-email" name="login" label="Введите Email" %}
-            <span data-validate-for="login"></span>
+            <div data-validate-for="login" class="form-error-label"></div>
             {% partial 'blocks/text_input' classes="popup-signin__input-password" id="signin-password" name="password" toggle_visibility="true" type="password" label="Введите пароль" %}
+            <div data-validate-for="password" class="form-error-label"></div>
             <div class="text-input__rule">Не менее 8 символов</div>
-            <span data-validate-for="password"></span>
             <button class="popup-signin__btn main-btn">
                 <div class="main-btn__content">
                     <div class="main-btn__text">Войти</div>

@@ -2798,7 +2798,7 @@ div .side-menu__phone-row {
   color: #252733;
 }
 
-.text-input::after {
+.text-input:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -2808,6 +2808,21 @@ div .side-menu__phone-row {
   background: linear-gradient(125.47deg, #0032C3 -14.22%, #0077BA 26.9%, #00B1B2 65.53%, #00C8AF 83.95%);
   bottom: 0px;
   left: 0px;
+}
+
+.text-input__has-error {
+  color: #FF5555;
+}
+
+.text-input__has-error .text-input__input {
+  color: #FF5555;
+  opacity: 0.8;
+}
+
+.text-input__has-error ~ .text-input:after {
+  content: '';
+  background: #FF5555;
+  opacity: 0.8;
 }
 
 .text-input__input {
@@ -2864,17 +2879,23 @@ div .side-menu__phone-row {
   font-size: 16px;
 }
 
-.text-input input:valid,
-.text-input input:focus {
-  border-bottom: 1px solid #0092b6;
-}
-
 .text-input input:valid + label,
 .text-input input:focus + label {
   font-size: 16px;
   opacity: 0.7;
   top: -30px;
   pointer-events: none;
+}
+
+.form-error-label {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.7;
+  color: #FF5555;
 }
 
 .music-player {
@@ -3256,13 +3277,7 @@ div .side-menu__phone-row {
       flex-wrap: wrap;
 }
 
-.contact-us__input-email {
-  width: calc(100% / 12 * 6 - 50px);
-  margin-left: calc(50px / 2);
-  margin-right: calc(50px / 2);
-}
-
-.contact-us__input-phone {
+.contact-us .text-input-block {
   width: calc(100% / 12 * 6 - 50px);
   margin-left: calc(50px / 2);
   margin-right: calc(50px / 2);
@@ -4910,16 +4925,13 @@ div .popup-signup__have-account {
   .contact-us__links {
     margin-top: 15px;
   }
-  .contact-us__input-email {
+  .contact-us .text-input-block {
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
     margin-right: calc(50px / 2);
   }
-  .contact-us__input-phone {
+  .contact-us .text-input-block:nth-child(2) {
     margin-top: 25px;
-    width: calc(100% / 12 * 12 - 50px);
-    margin-left: calc(50px / 2);
-    margin-right: calc(50px / 2);
   }
   .contact-us__input-question {
     margin-top: 25px;
