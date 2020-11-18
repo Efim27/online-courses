@@ -130,6 +130,6 @@ notFoundMessage = "Record not found"
 		<div class="main__right"></div>
 	</div>
 </div>
-{% partial 'blocks/project_authors' classes='project-authors-block-about-course' %}
+{% partial 'blocks/project_authors' classes='project-authors-block-about-course' project_authors=record.preview.authors %}
 {% partial 'blocks/faq' data=record.preview.faq %}
 {% partial 'popups/buy_course' data=record %}

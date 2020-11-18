@@ -11,7 +11,10 @@
 				<div class="glide project-authors__slider">
 					<div class="glide__track" data-glide-el="track">
 						<ul class="glide__slides project-authors__authors">
-							{% for project_author in this.theme.project_authors %}
+							{% if project_authors is not defined or project_authors is empty %}
+								{% set project_authors = this.theme.project_authors %}
+							{% endif %}
+							{% for project_author in project_authors %}
 								<li class="glide__slide project-authors__author">
 									<div class="project-authors__author-image">
 										<img
