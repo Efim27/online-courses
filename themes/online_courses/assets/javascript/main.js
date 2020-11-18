@@ -82,6 +82,22 @@ if ($(".work-examples__slider").length > 0) {
 	work_examples_slider = null;
 }
 
+if ($(".project-authors__slider").length > 0) {
+	var project_authors_slider = new Glide(".project-authors__slider", {
+		type: "carousel",
+		perView: 3,
+		focusAt: 'center',
+		breakpoints: {
+			1200: {
+				perView: 1
+			}
+		}
+	});
+	project_authors_slider.mount();
+} else {
+	project_authors_slider = null;
+}
+
 function music_player_stop(dom_e) {
 	dom_e.find('img').hide();
 	dom_e.find('img').first().show();

@@ -77,6 +77,19 @@ tabs:
                 label: Описание
                 type: textarea
                 size: small
+        project_authors:
+          type: repeater
+          label: Авторы курсов
+          titleFrom: name
+          tab: Контент
+          form:
+            fields:
+              name:
+                label: Имя и фамилия автора
+              about:
+                label: Описание
+              image:
+                type: mediafinder
         content_creative_result1:
             label: Творческий результат 1
             default: Проведете время креативно и необычно 1

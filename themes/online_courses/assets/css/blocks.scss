@@ -160,7 +160,7 @@
 
 	&__soc-icon {
 		margin: 15px;
-	
+
 		img {
 			width: 24px;
 		}
@@ -425,7 +425,7 @@
 
 .svg-link {
 	display: inline-block;
-	position: relative; 
+	position: relative;
 	z-index: 1;
 
 	&__span {
@@ -439,7 +439,6 @@
 }
 
 .btn-submit {
-
 	&_left {
 		transform: rotate(180deg);
 	}
@@ -567,19 +566,47 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
 	}
 
 	&__author {
-		@include grid-width(3);
+		width: 100%;
+		max-width: 200px;
+	}
+
+	&__author-image {
 		display: flex;
 		justify-content: center;
+		align-items: center;
+		height: 450px;
 
 		img {
 			max-width: 100%;
 			height: 150px;
 			filter: grayscale(100%);
 			border-radius: 50%;
+		}
+	}
+
+	.glide__slide--active {
+		@include grid-width(6);
+		min-width: 475px;
+
+		& .project-authors__author-image {
+			max-width: 475px;
+			height: 450px;
+			background: url(../images/about_center_author.png) no-repeat 50% 50% /
+				cover;
+			background-size: 700px;
+		}
+
+		& img {
+			filter: none;
+			width: calc(100% - 150px);
+			height: calc(100% - 150px);
+		}
+
+		& .project-authors__author-about {
+			display: block;
 		}
 	}
 
@@ -593,17 +620,13 @@
 		background: url(../images/about_center_author.png) no-repeat 50% 50% /
 			cover;
 		background-size: 700px;
-
-		img {
-			max-width: 100%;
-			border-radius: 50%;
-		}
 	}
 
 	&__author-about {
 		margin-top: 50px;
 		max-width: 500px;
 		text-align: center;
+		display: none;
 	}
 }
 
@@ -621,7 +644,7 @@
 .project-authors-block {
 	display: block;
 	padding-top: 110px;
-    padding-bottom: 120px;
+	padding-bottom: 120px;
 
 	&__left-links {
 		margin-top: 220px;
@@ -656,7 +679,7 @@
 	color: $color_text_black;
 
 	&:after {
-		content: '';
+		content: "";
 		position: absolute;
 		width: 100%;
 		height: 1px;
@@ -667,17 +690,17 @@
 	}
 
 	&__has-error {
-		color: #FF5555;
+		color: #ff5555;
 	}
 
 	&__has-error &__input {
-		color: #FF5555;
+		color: #ff5555;
 		opacity: 0.8;
 	}
 
 	&__has-error ~ &:after {
-		content: '';
-		background: #FF5555;
+		content: "";
+		background: #ff5555;
 		opacity: 0.8;
 	}
 
@@ -736,7 +759,7 @@
 .form-error-label {
 	margin-top: 10px;
 	@include text(p5);
-	color: #FF5555;
+	color: #ff5555;
 }
 
 .music-player {
@@ -792,12 +815,12 @@
 }
 
 .algorithm-education {
-    &__row {
-        margin-top: 28px;
-        display: flex;
-        justify-content: space-between;
+	&__row {
+		margin-top: 28px;
+		display: flex;
+		justify-content: space-between;
 	}
-	
+
 	&__mini-title {
 		display: none;
 		@include title(h3);
@@ -805,66 +828,64 @@
 		margin-bottom: 20px;
 	}
 
-    &__title {
+	&__title {
 		@include title(h3);
 		width: 30%;
-    }
+	}
 
-    &__stages {
-        width: 70%;
-    }
+	&__stages {
+		width: 70%;
+	}
 
-    &__stage {
-        margin-top: 22px;
-        padding-left: 36px;
+	&__stage {
+		margin-top: 22px;
+		padding-left: 36px;
 
-        &:nth-child(1) {
-            margin-top: 0px;
-        }
-    }
+		&:nth-child(1) {
+			margin-top: 0px;
+		}
+	}
 
-    &__divider-top {
+	&__divider-top {
 		margin-bottom: 36px;
 	}
-	
+
 	&__divider-bottom {
 		margin-top: 36px;
-    }
+	}
 }
 
 .algorithm-stage {
-
 	&__row {
 		display: flex;
 	}
 
-    &__dot {
+	&__dot {
 		margin-top: 8px;
-    }
+	}
 
-    &__label {
+	&__label {
 		margin-left: 46px;
 		@include text(p2);
 		opacity: 0.9;
 	}
-	
+
 	&__divider {
 		margin-top: 36px;
-    }
+	}
 }
 
 .faq-stage {
-
-    &__row {
-        @include grid-row();
+	&__row {
+		@include grid-row();
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-    }
+	}
 
-    &__label {
-        @include grid-width(7);
-        @include text(p2);
+	&__label {
+		@include grid-width(7);
+		@include text(p2);
 		opacity: 0.8;
 	}
 
@@ -885,16 +906,16 @@
 		opacity: 0.8;
 	}
 
-    &__more-btn {
-        @include grid-width(1);
-        flex-shrink: 0;
-        width: 25px;
-        height: 25px;
-    }
+	&__more-btn {
+		@include grid-width(1);
+		flex-shrink: 0;
+		width: 25px;
+		height: 25px;
+	}
 
-    &__divider {
-        margin-top: 30px;
-    }
+	&__divider {
+		margin-top: 30px;
+	}
 }
 
 .main-btn {
@@ -942,11 +963,11 @@
 }
 
 .more-questions-btn {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 	cursor: pointer;
 	opacity: 0.7;
-	
+
 	&:hover &__label {
 		opacity: 0.9;
 	}
@@ -959,107 +980,104 @@
 		opacity: 0.3;
 	}
 
-    &__label {
-        @include text(p2);
-    }
+	&__label {
+		@include text(p2);
+	}
 
-    &__icon {
-        margin-left: 15px;
-        
-        img {
-            width: 21px;
-        }
-    }
+	&__icon {
+		margin-left: 15px;
+
+		img {
+			width: 21px;
+		}
+	}
 }
 
 .contact-us {
+	&__left-links {
+		margin-top: 130px;
+	}
 
-    &__left-links {
-        margin-top: 130px;
-    }
-
-    &__row {
+	&__row {
 		margin-top: 45px;
-        @include grid-row();
+		@include grid-row();
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-    }
+	}
 
-    &__left {
-        @include grid-width(4);
-    }
+	&__left {
+		@include grid-width(4);
+	}
 
-    &__right {
-        @include grid-width(6);
-    }
+	&__right {
+		@include grid-width(6);
+	}
 
-    &__title {
-        @include title(h3);
-    }
+	&__title {
+		@include title(h3);
+	}
 
-    &__email {
-        @include text(p1);
-        margin-top: 22px;
-    }
+	&__email {
+		@include text(p1);
+		margin-top: 22px;
+	}
 
-    &__links {
-        display: flex;
-        margin: 0 -10px;
-        margin-top: 45px;
-    }
+	&__links {
+		display: flex;
+		margin: 0 -10px;
+		margin-top: 45px;
+	}
 
-    &__link {
-        margin: 10px;
-    }
+	&__link {
+		margin: 10px;
+	}
 
-    &__form {
-    }
+	&__form {
+	}
 
-    &__fields-row {
-        @include grid-row();
-        display: flex;
-        flex-wrap: wrap;
+	&__fields-row {
+		@include grid-row();
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.text-input-block {
 		@include grid-width(6);
 	}
 
-    &__input-question {
-        margin-top: 32px;
-    }
+	&__input-question {
+		margin-top: 32px;
+	}
 
-    &__form-row {
-        margin-top: 30px;
-        @include grid-row();
+	&__form-row {
+		margin-top: 30px;
+		@include grid-row();
 		display: flex;
 		flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
+		justify-content: space-between;
+		align-items: center;
+	}
 
-    &__agree {
-        @include text(p5);
-        @include grid-width(8);
-    }
+	&__agree {
+		@include text(p5);
+		@include grid-width(8);
+	}
 
-    &__btn-submit {
-        @include grid-width(4);
-        display: flex;
-        justify-content: flex-end;
-    }
+	&__btn-submit {
+		@include grid-width(4);
+		display: flex;
+		justify-content: flex-end;
+	}
 }
 
 .text-limited {
-
 	&__hidden {
 		display: none;
 	}
 }
 
 .btn-text-limited {
-	
 	a {
 		@include text(p2);
 		display: flex;
@@ -1080,23 +1098,23 @@
 	margin-left: -35px;
 	margin-right: -35px;
 
-    &__tab {
+	&__tab {
 		@include text(p3);
 		white-space: nowrap;
-        margin: 10px 35px;
+		margin: 10px 35px;
 
-        &_active {
-            @include text(p4);
-            color: $color_text_white;
-            padding: 2px 30px;
-            background: $gradient_main;
+		&_active {
+			@include text(p4);
+			color: $color_text_white;
+			padding: 2px 30px;
+			background: $gradient_main;
 			border-radius: 20px;
-			
+
 			&:hover {
 				color: $color_text_white;
 			}
-        }
-    }
+		}
+	}
 }
 
 .file {
@@ -1121,50 +1139,49 @@
 }
 
 .work-examples {
+	&__left-links {
+		margin-top: 130px;
+	}
 
-    &__left-links {
-        margin-top: 130px;
-    }
-
-    &__row {
+	&__row {
 		width: calc(100% - 50px);
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        @include grid-row();
-    }
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@include grid-row();
+	}
 
-    &__left {
-        @include grid-width(4);
-    }
+	&__left {
+		@include grid-width(4);
+	}
 
-    &__right {
-        @include grid-width(8);
-    }
+	&__right {
+		@include grid-width(8);
+	}
 
-    &__title {
-        @include title(h3);
-    }
+	&__title {
+		@include title(h3);
+	}
 
-    &__btn-submit {
-        margin-top: 50px;
-    }
+	&__btn-submit {
+		margin-top: 50px;
+	}
 
-    &__right-row {
-        display: flex;
-        justify-content: space-between;
-    }
+	&__right-row {
+		display: flex;
+		justify-content: space-between;
+	}
 
-    &__label {
-        @include text(p4);
-        opacity: 0.7;
-    }
+	&__label {
+		@include text(p4);
+		opacity: 0.7;
+	}
 
-    &__pagination {
-        margin-left: 10px;
-    }
+	&__pagination {
+		margin-left: 10px;
+	}
 
-    div &__pagination-mini {
+	div &__pagination-mini {
 		opacity: 0;
 		z-index: -1;
 
@@ -1173,89 +1190,88 @@
 			z-index: 1;
 			display: none;
 		}
-    }
+	}
 
-    &__btn-left {
-    }
+	&__btn-left {
+	}
 
-    &__btn-right {
-        margin-left: 50px;
-    }
+	&__btn-right {
+		margin-left: 50px;
+	}
 
-    &__music-players {
-        margin: -5px 0px;
-        margin-top: 25px;
-        padding-left: 25px;
-    }
+	&__music-players {
+		margin: -5px 0px;
+		margin-top: 25px;
+		padding-left: 25px;
+	}
 
-    &__music-player {
-        margin: 5px 0px;
+	&__music-player {
+		margin: 5px 0px;
 
-        &:nth-child(2n) .music-player__circle {
-            background-color: $color_other_blue;
-        }
-    }
+		&:nth-child(2n) .music-player__circle {
+			background-color: $color_other_blue;
+		}
+	}
 }
 
-
 .creative-result {
-    padding-bottom: 110px;
+	padding-bottom: 110px;
 
-    &__schema {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+	&__schema {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-    &__image {
-        position: relative;
-        display: flex;
-        justify-content: center;
+	&__image {
+		position: relative;
+		display: flex;
+		justify-content: center;
 
-        object {
-            max-width: 140%;
-        }
-    }
+		object {
+			max-width: 140%;
+		}
+	}
 
-    &__title {
-        position: absolute;
-        @include title(h3);
-        background: $gradient_main;
-        -webkit-background-clip: text;
+	&__title {
+		position: absolute;
+		@include title(h3);
+		background: $gradient_main;
+		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		width: 250px;
 		height: 100px;
-        text-align: center;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 250px;
-        height: 100px;
-        margin: auto;
-    }
+		text-align: center;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 250px;
+		height: 100px;
+		margin: auto;
+	}
 
-    &__label {
-        position: absolute;
-    }
+	&__label {
+		position: absolute;
+	}
 
-    &__mini-labels {
-        display: none;
-        position: relative;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        @include grid-row();
-        margin-top: -10px;
-    }
+	&__mini-labels {
+		display: none;
+		position: relative;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@include grid-row();
+		margin-top: -10px;
+	}
 }
 
 .creative-result-label {
-    max-width: 350px;
-    display: flex;
-    justify-content: space-between;
+	max-width: 350px;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	
+
 	&_n1 {
 		margin-left: -650px;
 		margin-top: -300px;
@@ -1306,35 +1322,34 @@
 		.creative-result-label__text {
 			margin-left: 42px;
 		}
-    }
-    
-    &_mini {
-        margin-top: 10px;
-        @include grid-width(6);
-        align-items: flex-start;
+	}
 
-        .creative-result-label__dot {
-            margin-top: 10px;
-        }
+	&_mini {
+		margin-top: 10px;
+		@include grid-width(6);
+		align-items: flex-start;
 
-        .creative-result-label__text {
-            margin-left: 20px;
-        }
-    }
+		.creative-result-label__dot {
+			margin-top: 10px;
+		}
 
-    &__dot {
-        width: 20px;
-        height: 20px;
-        flex-shrink: 0;
-    }
+		.creative-result-label__text {
+			margin-left: 20px;
+		}
+	}
 
-    &__text {
-        @include text(p2);
-    }
+	&__dot {
+		width: 20px;
+		height: 20px;
+		flex-shrink: 0;
+	}
+
+	&__text {
+		@include text(p2);
+	}
 }
 
 .course-stage {
-
 	&__row {
 		display: flex;
 		justify-content: space-between;

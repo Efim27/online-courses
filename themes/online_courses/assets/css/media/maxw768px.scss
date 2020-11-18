@@ -88,16 +88,12 @@
 	}
 
 	.project-authors {
-		&__authors {
-			justify-content: center;
+		&__about_image {
+			margin: 0 auto;
 		}
 
-		&__active-author {
-			@include grid-width(12);
-		}
-
-		&__author {
-			display: none;
+		&__author-about {
+			margin: 0 auto;
 		}
 	}
 
