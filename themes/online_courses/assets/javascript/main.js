@@ -320,8 +320,6 @@ $(window).on('ajaxInvalidField', function(event, fieldElement, fieldName, errorM
 
     event.preventDefault()
 
-	$field.addClass('text-input__has-error')
-
     $(window).one('ajaxErrorMessage', function(event, message){
 		event.preventDefault()
     })
@@ -332,8 +330,7 @@ $(document).on('ajaxPromise', '[data-request]', function() {
     var $form = $(this).closest('form')
 
     if (!$form.length)
-        return
+		return
 
-	$('.text-input__has-error').removeClass('text-input__has-error')
     $('.has-error').removeClass('has-error')
 })
