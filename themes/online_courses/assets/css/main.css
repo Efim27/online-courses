@@ -4402,6 +4402,15 @@ div .popup-signup__have-account {
   .examples-page__music-player:nth-child(4n-2) .music-player__circle {
     background-color: #70CBD4;
   }
+  .mycourses-page {
+    margin-top: 25px;
+  }
+  .mycourses-page__tabs {
+    margin-top: 30px;
+  }
+  .mycourses-page__courses {
+    margin-top: 25px;
+  }
   .mycourses-page__course-block {
     width: calc(100% / 12 * 12 - 50px);
     margin-left: calc(50px / 2);
@@ -4441,6 +4450,23 @@ div .popup-signup__have-account {
   .project-authors-block__right {
     min-width: 0px;
     width: 0px;
+  }
+  .course-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .course-card__image img {
+    width: auto;
+    max-width: 100%;
+    max-height: 480px;
   }
 }
 
