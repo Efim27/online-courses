@@ -51,7 +51,7 @@ notFoundMessage = "Курс не найден"
 				<div class="course-info__row">
 					<div class="course-info__title">О чем этот курс?</div>
 					<div class="course-info__content">
-						<div class="course-info__about">{{ record.preview.about }}</div>
+						<div class="course-info__about">{{ record.preview.about|raw }}</div>
 						<div class="course-info__video">
 							<img src="{{ record.preview.attachment.path }}" alt="Видео">
 						</div>
