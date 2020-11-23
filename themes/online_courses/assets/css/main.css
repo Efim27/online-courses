@@ -643,6 +643,10 @@ a, a:hover, a:active, a:visited {
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.work-materials-home {
+  margin-top: 120px;
+}
+
 .project-about {
   margin-top: 25px;
 }
@@ -3715,6 +3719,7 @@ div .work-examples__pagination-mini-loaded {
   font-size: 21px;
   line-height: 160%;
   opacity: 0.8;
+  margin: 0 20px;
 }
 
 .course-stage__row {
@@ -3848,6 +3853,35 @@ div .work-examples__pagination-mini-loaded {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 20px;
+}
+
+.work-materials__slider {
+  position: relative;
+  height: 120px;
+}
+
+.work-materials__content {
+  height: 120px;
+  cursor: pointer;
+}
+
+.work-materials__slider-arrow {
+  height: 100%;
+  width: 45px;
+  background-color: #252733;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 0px;
+}
+
+.work-materials__slider-left {
+  left: 0px;
+}
+
+.work-materials__slider-right {
+  right: 0px;
 }
 
 .popup {
@@ -4114,6 +4148,39 @@ div .popup-signup__have-account {
   font-size: 24px;
   line-height: 160%;
   opacity: 0.9;
+}
+
+.popup-img-more__content {
+  width: 90vw;
+}
+
+.popup-img-more__img-card {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-img-more__img {
+  max-width: 100%;
+}
+
+.popup-img-more__about {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #252733;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1200px) {
@@ -4467,6 +4534,9 @@ div .popup-signup__have-account {
     width: auto;
     max-width: 100%;
     max-height: 480px;
+  }
+  .work-materials__controls {
+    display: none;
   }
 }
 
@@ -5311,6 +5381,9 @@ div .popup-signup__have-account {
   }
   .project-authors-block {
     padding: 30px 0px;
+  }
+  .work-materials-home {
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */

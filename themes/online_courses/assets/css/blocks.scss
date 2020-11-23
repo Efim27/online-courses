@@ -1346,6 +1346,7 @@
 
 	&__text {
 		@include text(p2);
+		margin: 0 20px;
 	}
 }
 
@@ -1460,5 +1461,40 @@
 		display: flex;
 		align-items: flex-end;
 		margin-bottom: 20px;
+	}
+}
+
+.work-materials {
+
+	&__slider {
+		position: relative;
+		height: 120px;
+	}
+
+	&__content {
+		height: 120px;
+		cursor: pointer;
+	}
+
+	&__controls {
+	}
+
+	&__slider-arrow {
+		height: 100%;
+		width: 45px;
+		background-color: $color_text_black;
+		color: $color_text_white;
+		cursor: pointer;
+		outline: none;
+		position: absolute;
+		top: 0px;
+	}
+	
+	&__slider-left {
+		left: 0px;
+	}
+
+	&__slider-right {
+		right: 0px;
 	}
 }

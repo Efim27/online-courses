@@ -90,6 +90,17 @@ tabs:
                 label: Описание
               image:
                 type: mediafinder
+        work_materials:
+          type: repeater
+          label: Материалы курса
+          titleFrom: about
+          tab: Контент
+          form:
+            fields:
+              about:
+                label: Описание
+              image:
+                type: mediafinder
         content_creative_result1:
             label: Творческий результат 1
             default: Проведете время креативно и необычно 1

@@ -1,0 +1,31 @@
+<div class="work-materials {{ add_classes }}">
+	<div class="main__inner">
+        <div class="work-materials__slider glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    {% for work_material in this.theme.work_materials %}
+                        <li class="glide__slide">
+                            <input type="hidden" name="work-materials-img-src" value="{{ work_material.image|media }}">
+                            <div class="work-materials__content" style="background: url({{ work_material.image|media }}) no-repeat 50% 50% / cover;"></div>
+                            <input type="hidden" name="work-materials-img-about" value="{{ work_material.about }}">
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="glide__arrows work-materials__controls" data-glide-el="controls">
+                <button
+                    class="glide__arrow work-materials__slider-left work-materials__slider-arrow"
+                    data-glide-dir="<"
+                >
+                    <
+                </button>
+                <button
+                    class="glide__arrow work-materials__slider-right work-materials__slider-arrow"
+                    data-glide-dir=">"
+                >
+                    >
+                </button>
+            </div>
+        </div>
+	</div>
+</div>
