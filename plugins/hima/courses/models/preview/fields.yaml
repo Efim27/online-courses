@@ -6,10 +6,11 @@ fields:
         required: 1
         type: textarea
     about:
-        label: 'О чем курс'
-        size: large
+        label: 'О курсе'
+        size: ''
         span: full
-        type: textarea
+        required: 1
+        type: richeditor
     attachment_big:
         label: 'Большое изображение из описания курса'
         mode: file

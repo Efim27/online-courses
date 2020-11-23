@@ -1,15 +1,3 @@
-cd config/
-vim database.php 
-ls
-vim database.php 
-vim database.php 
-cd ..
-php artisan migrate
-ls
-php artisan october:up
-ls
-php artisan dsadsa
-ls
 php artisan dsadsa;
 ls
 pwd
@@ -496,5 +484,17 @@ git pull
 git pull
 git pull
 git pull
+git pull
+git pull
+git pull
+bash gitp.sh 
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+ls
 git pull
 git pull
