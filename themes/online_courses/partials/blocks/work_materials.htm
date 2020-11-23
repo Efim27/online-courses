@@ -5,9 +5,9 @@
                 <ul class="glide__slides">
                     {% for work_material in this.theme.work_materials %}
                         <li class="glide__slide">
-                            <input type="hidden" name="work-materials-img-src" value="{{ work_material.image|media }}">
+                            <input type="hidden" class="work-materials__img-src" name="work-materials-img-src" value="{{ work_material.image|media }}">
                             <div class="work-materials__content" style="background: url({{ work_material.image|media }}) no-repeat 50% 50% / cover;"></div>
-                            <input type="hidden" name="work-materials-img-about" value="{{ work_material.about }}">
+                            <input type="hidden" class="work-materials__img-about" name="work-materials-img-about" value="{{ work_material.about }}">
                         </li>
                     {% endfor %}
                 </ul>

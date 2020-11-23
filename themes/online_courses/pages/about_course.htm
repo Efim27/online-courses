@@ -109,6 +109,9 @@ notFoundMessage = "Курс не найден"
 </div>
 
 {% partial 'blocks/creative_result' classes='creative-result-about-course' data=record.preview %}
+{% partial 'blocks/work_materials' add_classes='work-materials-about-course' %}
+{# {% partial 'blocks/project_authors' classes='project-authors-block-about-course' project_authors=record.preview.authors %} #}
+
 <div class="course-scheme">
 	<div class="main__inner">
 		<div class="main__left"></div>
@@ -130,6 +133,5 @@ notFoundMessage = "Курс не найден"
 		<div class="main__right"></div>
 	</div>
 </div>
-{# {% partial 'blocks/project_authors' classes='project-authors-block-about-course' project_authors=record.preview.authors %} #}
 {% partial 'blocks/faq' data=record.preview.faq %}
 {% partial 'popups/buy_course' data=record %}

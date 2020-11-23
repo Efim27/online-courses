@@ -242,4 +242,12 @@
 			display: none;
 		}
 	}
+
+	.popup-img-more {
+		&__img {
+			width: 100%;
+			max-width: none;
+			order: -1;
+		}
+	}
 }

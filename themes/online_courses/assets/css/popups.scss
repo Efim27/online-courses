@@ -230,8 +230,45 @@
         align-items: center;
     }
 
+    &__img-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__arrow {
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        @include title(h3);
+        cursor: pointer;
+        opacity: 0.5;
+        transition: all 0.5s;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+
+        &_left {
+        }
+
+        &_right {
+        }
+
+        &_not-active {
+            opacity: 0.3;
+        }
+    }
+
     &__img {
-        max-width: 100%;
+        max-width: calc(100% - 150px)
     }
 
     &__about {

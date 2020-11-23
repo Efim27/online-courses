@@ -643,10 +643,6 @@ a, a:hover, a:active, a:visited {
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.work-materials-home {
-  margin-top: 120px;
-}
-
 .project-about {
   margin-top: 25px;
 }
@@ -1990,6 +1986,10 @@ div .project-reviews__btns_mini-loaded {
   margin-left: calc(50px / 2);
   margin-right: calc(50px / 2);
   margin-bottom: 30px;
+}
+
+.work-materials-about-course {
+  margin-top: 50px;
 }
 
 .header {
@@ -3857,11 +3857,10 @@ div .work-examples__pagination-mini-loaded {
 
 .work-materials__slider {
   position: relative;
-  height: 120px;
 }
 
 .work-materials__content {
-  height: 120px;
+  height: 200px;
   cursor: pointer;
 }
 
@@ -4168,8 +4167,54 @@ div .popup-signup__have-account {
           align-items: center;
 }
 
+.popup-img-more__img-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popup-img-more__arrow {
+  padding: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Merriweather", serif;
+  color: #252733;
+  font-size: 36px;
+  line-height: 140%;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.popup-img-more__arrow:hover {
+  opacity: 0.9;
+}
+
+.popup-img-more__arrow:active {
+  opacity: 1;
+}
+
+.popup-img-more__arrow_not-active {
+  opacity: 0.3;
+}
+
 .popup-img-more__img {
-  max-width: 100%;
+  max-width: calc(100% - 150px);
 }
 
 .popup-img-more__about {
@@ -4536,6 +4581,13 @@ div .popup-signup__have-account {
   }
   .work-materials__controls {
     display: none;
+  }
+  .popup-img-more__img {
+    width: 100%;
+    max-width: none;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 }
 
@@ -5383,6 +5435,10 @@ div .popup-signup__have-account {
   }
   .work-materials-home {
     margin-top: 50px;
+  }
+  .popup-img-more__arrow {
+    padding: 10px;
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=main.css.map */
