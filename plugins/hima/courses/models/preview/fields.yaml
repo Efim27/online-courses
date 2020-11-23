@@ -145,3 +145,22 @@ fields:
         span: full
         required: 1
         type: text
+    materials:
+        label: 'Материалы курса'
+        prompt: 'Добавить новый материал'
+        span: full
+        type: repeater
+        form:
+            fields:
+                image:
+                    label: Изображение
+                    mode: file
+                    span: full
+                    required: 1
+                    type: mediafinder
+                about:
+                    label: Описание
+                    size: ''
+                    span: full
+                    required: 1
+                    type: textarea
