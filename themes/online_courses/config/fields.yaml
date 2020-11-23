@@ -220,7 +220,7 @@ tabs:
                 size: small
               answer:
                 label: Ответ
-                type: textarea
+                type: richeditor
                 size: large
               mini:
                 label: Показывать на главной
