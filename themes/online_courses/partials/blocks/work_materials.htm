@@ -3,7 +3,7 @@
         <div class="work-materials__slider glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    {% for work_material in this.theme.work_materials %}
+                    {% for work_material in materials %}
                         <li class="glide__slide">
                             <input type="hidden" class="work-materials__img-src" name="work-materials-img-src" value="{{ work_material.image|media }}">
                             <div class="work-materials__content" style="background: url({{ work_material.image|media }}) no-repeat 50% 50% / cover;"></div>

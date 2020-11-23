@@ -109,7 +109,7 @@ notFoundMessage = "Курс не найден"
 </div>
 
 {% partial 'blocks/creative_result' classes='creative-result-about-course' data=record.preview %}
-{% partial 'blocks/work_materials' add_classes='work-materials-about-course' %}
+{% partial 'blocks/work_materials' add_classes='work-materials-about-course' materials=record.preview.materials %}
 {# {% partial 'blocks/project_authors' classes='project-authors-block-about-course' project_authors=record.preview.authors %} #}
 
 <div class="course-scheme">

@@ -23,7 +23,7 @@ class Preview extends Model
         'attachment_big' => ['System\Models\File']
     ];
 
-    protected $jsonable = ['work_examples', 'audience', 'authors', 'faq'];
+    protected $jsonable = ['work_examples', 'audience', 'authors', 'faq', 'materials'];
 
     /**
      * @var string The database table used by the model.
