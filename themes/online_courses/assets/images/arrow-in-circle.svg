@@ -5,6 +5,11 @@
         overflow: hidden;
     }
 
+    svg path {
+        fill: red;
+        stroke: red;
+    }
+
     @keyframes rotate {
     to {
         transform: rotate(360deg);
