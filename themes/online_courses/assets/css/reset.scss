@@ -88,6 +88,7 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
+    font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
 }
@@ -146,4 +147,8 @@ table {
 a, a:hover, a:active, a:visited {
     color: $color_text_black;
     text-decoration: none;
+}
+
+strong {
+    font-weight: normal;
 }
