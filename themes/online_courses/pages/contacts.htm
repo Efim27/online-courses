@@ -31,40 +31,7 @@ is_hidden = 0
                 </div>
             </div>
         </div>
-        <div class="contacts__contacts-us contacts-us">
-            <div class="contact-us__row">
-                <div class="contact-us__left">
-                    <div class="contact-us__title">Всегда на связи!<br>Пишите нам</div>
-                </div>
-                <div class="contact-us__right">
-                    <form class="contact-us__form" data-request="onAddQuestion" data-request-success="contact_form_success()">
-                        <div class="contact-us__fields-row">
-                            <div class="contact-us__input-email text-input">
-                                <input class="text-input__input" id="contact-us-email" name="email" type="text" required>
-                                <label for="contact-us-email" class="text-input__label">Email</label>
-                            </div>
-                            <div class="contact-us__input-phone text-input">
-                                <input class="text-input__input" id="contact-us-phone" name="phone" type="text" required>
-                                <label for="contact-us-phone" class="text-input__label">Телефон</label>
-                            </div>
-                        </div>
-                        <div class="contact-us__input-question text-input">
-                            <input class="text-input__input" id="contact-us-question" name="question" type="text" required>
-                            <label for="contact-us-question" class="text-input__label">Вопрос</label>
-                        </div>
-                        <div class="contact-us__form-row">
-                            <div class="contact-us__agree">Нажимая на кнопку, вы соглашаетесь с политикой обработки персональных данных</div>
-                            <div class="contact-us__btn-submit btn-submit">
-                                <object
-                                    data="{{ 'assets/images/btn-submit.svg'|theme }}"
-                                    type="image/svg+xml"
-                                ></object>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        {% partial 'blocks/contact_us_mini' classes="contacts__contacts-us" %}
     </div>
     <div class="main__right"></div>
 </div>
