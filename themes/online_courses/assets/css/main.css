@@ -3206,13 +3206,6 @@ div .side-menu__phone-row {
 }
 
 .more-questions-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
   opacity: 0.7;
 }
 
@@ -3235,13 +3228,16 @@ div .side-menu__phone-row {
   font-size: 21px;
   line-height: 160%;
   opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .more-questions-btn__icon {
   margin-left: 15px;
-}
-
-.more-questions-btn__icon img {
   width: 21px;
 }
 
