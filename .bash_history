@@ -1,24 +1,3 @@
-php artisan dsadsa;
-ls
-pwd
-php artisan
-ls
-php
-]
-s
-p
-[
-]
-ls -dsadas
-ls -z
-php artisan october:up
-ls
-php artisan october:up > echo_cmd
-less echo_cmd 
-tail echo_cmd 
-php artisan october:up > echo_cmd
-tail echo_cmd 
-php artisan october:update
 ls -z
 php arti
 php artisan
@@ -496,5 +475,26 @@ git pull
 git pull
 git pull
 ls
+git pull
+git pull
+git add .
+git commit -m "fix пред. правок"
+git push
+git pull
+git pull
+bash gitp.sh 
+git pull
+git pull
+git pull
+git add .
+git commit -m "change dynamic content"
+git push
+git pull
+git pull
+git add .
+git commit -m "course preview +materials"
+git push
+git pull
+git pull
 git pull
 git pull
