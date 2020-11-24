@@ -376,7 +376,6 @@ function splitLetters(word) {
 
 $(window).on('ajaxInvalidField', function(event, fieldElement, fieldName, errorMsg, isFirst) {
 	var $field = $(fieldElement).closest('.text-input__input')
-	console.log($(fieldElement))
 
     if (!$field.length) {
         return
