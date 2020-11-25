@@ -96,6 +96,7 @@
 
     &__about {
         @include text(p2);
+        opacity: 0.9;
     }
 
     &__video {
