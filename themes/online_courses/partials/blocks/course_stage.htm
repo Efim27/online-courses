@@ -4,7 +4,7 @@
             <div class="course-stage__name">{{ course_block.title }}</div>
             <div class="course-stage__list">
                 {% for lesson in course_block.lessons %}
-                    <div class="course-stage__lesson">{{ lesson.number }}. {{ lesson.about }}</div>
+                    <div class="course-stage__lesson"><span class="course-stage__lesson-num">{{ lesson.number }}.</span> {{ lesson.about }}</div>
                 {% endfor %}
             </div>
             <div class="course-stage__lessons">{{ lessons }}</div>

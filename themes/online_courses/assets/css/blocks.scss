@@ -1360,6 +1360,12 @@
 
 	&__list {
 		display: none;
+		margin-top: 15px;
+	}
+
+	&__lesson-num {
+		font-weight: 500;
+		opacity: 0.9;
 	}
 
 	&__name {

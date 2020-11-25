@@ -153,7 +153,6 @@
 
     &__stages {
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
         @include grid-width(8);
         @include grid-row();

@@ -1978,9 +1978,6 @@ div .project-reviews__btns_mini-loaded {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: calc(100% / 12 * 8 - 50px);
@@ -3749,6 +3746,12 @@ div .work-examples__pagination-mini-loaded {
 
 .course-stage__list {
   display: none;
+  margin-top: 15px;
+}
+
+.course-stage__lesson-num {
+  font-weight: 500;
+  opacity: 0.9;
 }
 
 .course-stage__more-btn {
