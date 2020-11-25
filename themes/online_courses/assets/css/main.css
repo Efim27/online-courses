@@ -1828,7 +1828,7 @@ div .project-reviews__btns_mini-loaded {
 
 .about-course__image {
   margin-top: 70px;
-  height: 420px;
+  height: 520px;
   border-radius: 20px;
 }
 
@@ -3725,6 +3725,7 @@ div .work-examples__pagination-mini-loaded {
   line-height: 160%;
   opacity: 0.8;
   margin: 0 20px;
+  text-align: center;
 }
 
 .course-stage__row {
@@ -3744,6 +3745,10 @@ div .work-examples__pagination-mini-loaded {
   line-height: 160%;
   opacity: 0.8;
   opacity: 0.9;
+}
+
+.course-stage__list {
+  display: none;
 }
 
 .course-stage__more-btn {

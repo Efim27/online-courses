@@ -232,6 +232,13 @@ $(document).ready(function () {
 		$(this).prev().find(".faq-stage__answer").toggle("slow");
 	});
 
+	$(".course-stage__more-btn").click(function () {
+		$(this).toggleClass("more-btn_close");
+		let block_body = $(this).prev();
+		block_body.find(".course-stage__lessons").toggle("slow");
+		block_body.find(".course-stage__list").toggle("slow");
+	});
+
 	$(".course-page-block__more-btn").click(function () {
 		$(this).toggleClass("more-btn_close");
 		$(this)

@@ -12,11 +12,13 @@
 	<div class="course-page-block__main-divider divider"></div>
 	<div class="course-page-block__content">
 		<div class="course-page-block__lessons">
-			{% for lesson in block.lessons %} {% partial 'blocks/course_lesson'
-			lesson=lesson classes="course-page-block__lesson" %} {% if loop.last
-			!= true %}
-			<div class="course-page-block__lesson-divider divider"></div>
-			{% endif %} {% endfor %}
+			{% for lesson in block.lessons %}
+				{% partial 'blocks/course_lesson'
+				lesson=lesson classes="course-page-block__lesson" %}
+				{% if loop.last != true %}
+					<div class="course-page-block__lesson-divider divider"></div>
+				{% endif %}
+			{% endfor %}
 		</div>
 		<div class="course-page-block__divide divider"></div>
 	</div>

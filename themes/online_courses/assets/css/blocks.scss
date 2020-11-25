@@ -1343,6 +1343,7 @@
 	&__text {
 		@include text(p2);
 		margin: 0 20px;
+		text-align: center;
 	}
 }
 
@@ -1355,6 +1356,10 @@
 	&__body {
 		@include text(p2);
 		opacity: 0.9;
+	}
+
+	&__list {
+		display: none;
 	}
 
 	&__name {

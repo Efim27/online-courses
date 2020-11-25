@@ -45,7 +45,7 @@ notFoundMessage = "Курс не найден"
 						</div>
 					</div>
 				</div>
-				<div class="about-course__image" style="background: url({{ record.preview.attachment_big.path }}) no-repeat 50% 0%/cover;"></div>
+				<div class="about-course__image" style="background: url({{ record.preview.attachment_big.path }}) no-repeat 50% 40%/cover;"></div>
 			</div>
 			<div class="course-info">
 				<div class="course-info__row">
@@ -124,7 +124,7 @@ notFoundMessage = "Курс не найден"
 						{% set lessons_count = course_block.lessons|length %}
 						{% set lesson_label = tools.plural_form(lessons_count, ['урок', 'урока', 'уроков']) %}
 						{% set lesson_text = lessons_count ~ ' ' ~ lesson_label %}
-						{% partial 'blocks/course_stage' classes="course-scheme__stage" name=course_block.title lessons=lesson_text last="true" %}
+						{% partial 'blocks/course_stage' classes="course-scheme__stage" course_block=course_block lessons=lesson_text last="true" %}
 					{% endfor %}
 				</div>
 			</div>

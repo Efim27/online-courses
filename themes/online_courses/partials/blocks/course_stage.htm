@@ -1,16 +1,19 @@
 <div class="course-stage {{ classes }}">
     <div class="course-stage__row">
         <div class="course-stage__body">
-            <div class="course-stage__name">{{ name }}</div>
+            <div class="course-stage__name">{{ course_block.title }}</div>
+            <div class="course-stage__list">
+                {% for lesson in course_block.lessons %}
+                    <div class="course-stage__lesson">{{ lesson.number }}. {{ lesson.about }}</div>
+                {% endfor %}
+            </div>
             <div class="course-stage__lessons">{{ lessons }}</div>
         </div>
-        {#
         <img
             class="course-stage__more-btn more-btn"
             src="{{ 'assets/images/icons/plus.png'|theme }}"
             alt="Развернуть"
         />
-        #}
     </div>
     <div class="course-stage__content"></div>
     {% if last != true %}
