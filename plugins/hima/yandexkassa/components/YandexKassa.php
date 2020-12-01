@@ -12,8 +12,8 @@ use YandexCheckout\Client;
 
 class YandexKassa extends ComponentBase
 {
-    public $secret_key = Settings::get('secret_key');
-    public $shop_id = Settings::get('shop_id');
+    public $secret_key;
+    public $shop_id;
 
     public function componentDetails()
     {
@@ -30,6 +30,9 @@ class YandexKassa extends ComponentBase
 
     public function onRun()
     {
+        $this->secret_key = Settings::get('secret_key');
+        $this->shop_id = Settings::get('shop_id');
+
         if (empty($this->secret_key) || empty($this->shop_id)) {
             return Response::make('Ошибка Яндекс Кассы!<br> Значения <b>secret_key</b> или <b>shop_id</b> пустые. Определите их в настройках.', 500);
         }
