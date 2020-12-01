@@ -63,7 +63,7 @@ class YandexKassa extends ComponentBase
                 ),
                 'capture' => true,
                 'description' => "Курс: \"{$course->title}\"",
-                'metadata' => (object) array(
+                'metadata' => array(
                     'user_id' => $user->id,
                     'course_id' => $course->id
                 )
