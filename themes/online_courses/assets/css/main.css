@@ -4105,10 +4105,14 @@ div .popup-signup__have-account {
   margin-right: calc(-1 * 50px / 2);
 }
 
-.popup-buy-course__btn {
+.popup-buy-course__btn-link {
   width: calc(100% / 12 * 6 - 50px);
   margin-left: calc(50px / 2);
   margin-right: calc(50px / 2);
+}
+
+.popup-buy-course__btn {
+  width: 100%;
 }
 
 .popup-buy-course__regulations {
