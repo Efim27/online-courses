@@ -38,7 +38,7 @@ class YandexKassa extends ComponentBase
             return Response::make('Ошибка Яндекс Кассы!<br> Значения <b>secret_key</b> или <b>shop_id</b> пустые. Определите их в настройках.', 500);
         }
 
-        $course_slug =  $this->property('course_slug');
+        $course_slug = $this->property('course_slug');
         if (empty($course_slug)) {
             return;
         }
@@ -70,6 +70,5 @@ class YandexKassa extends ComponentBase
         );
 
         $this->buy_link = $payment["confirmation"]["confirmation_url"];
-        exit();
     }
 }
