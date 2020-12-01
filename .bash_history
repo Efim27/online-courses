@@ -1,16 +1,3 @@
-ls -z
-php arti
-php artisan
-composer
-composer install
-ls
-ls
-cd bootstrap/
-ls
-cd ..
-ls
-cd vendor/
-ls
 cd ..
 ls
 curl -s https://octobercms.com/api/installer | php
@@ -494,6 +481,19 @@ git pull
 git add .
 git commit -m "course preview +materials"
 git push
+git pull
+git pull
+git pull
+git pull
+git add .
+git commit -m "static-dynamic is changed"
+git pull
+git push
+ls
+ls
+git pull
+git pull
+git pull
 git pull
 git pull
 git pull
