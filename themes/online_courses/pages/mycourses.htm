@@ -6,16 +6,6 @@ is_hidden = 0
 [session]
 security = "user"
 redirect = "home"
-
-[builderList]
-modelClass = "Hima\Courses\Models\Course"
-scope = "-"
-scopeValue = "{{ :scope }}"
-displayColumn = "title"
-noRecordsMessage = "No records found"
-detailsPage = "-"
-detailsUrlParameter = "id"
-pageNumber = "{{ :page }}"
 ==
 <div class="main__inner">
 	<div class="main__left"></div>
@@ -27,7 +17,8 @@ pageNumber = "{{ :page }}"
                 <a href="/settings" class="tabs__tab">настройки профиля</a>
             </div>
             <div class="mycourses-page__courses">
-                {% for course in builderList.records %}
+                {% set courses = user.courses %}
+                {% for course in courses %}
                 <div class="mycourses-page__course-block">
                     <div class="mycourses-page__course">
                         {% partial 'blocks/course_card' data=course %}

@@ -25,7 +25,7 @@ Route::post('/yandex_kassa', function () {
 
     $payment = $notification->getObject();
     if($payment->getStatus() === PaymentStatus::SUCCEEDED) {
-        $course = Course::get($payment->metadata->course_id);
+        $course = Course::find($payment->metadata->course_id);
         $course->users->attach($payment->metadata->user_id);
         return Response::make('Ok', 200);
     }
