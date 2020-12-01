@@ -28,9 +28,9 @@ Route::post('/yandex_kassa', function () {
         $course = Course::find($payment->metadata['course_id']);
         $user_id = (int) $payment->metadata['user_id'];
         file_put_contents('log1', print_r($user_id ,true), FILE_APPEND);
-        $user = Course::find($user_id);
+        $user = User::find($user_id);
         file_put_contents('log1', print_r($user ,true), FILE_APPEND);
-        $user->users->attach($course);
+        $user->courses->attach($course);
         return Response::make('Ok', 200);
     }
 });
