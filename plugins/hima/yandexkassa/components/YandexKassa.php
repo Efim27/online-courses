@@ -12,8 +12,8 @@ use YandexCheckout\Client;
 
 class YandexKassa extends ComponentBase
 {
-    public $secret_key;
-    public $shop_id;
+    public $secret_key = Settings::get('secret_key');
+    public $shop_id = Settings::get('shop_id');
 
     public function componentDetails()
     {
@@ -30,9 +30,6 @@ class YandexKassa extends ComponentBase
 
     public function onRun()
     {
-        $this->secret_key = Settings::get('secret_key');
-        $this->shop_id = Settings::get('shop_id');
-
         if (empty($this->secret_key) || empty($this->shop_id)) {
             return Response::make('Ошибка Яндекс Кассы!<br> Значения <b>secret_key</b> или <b>shop_id</b> пустые. Определите их в настройках.', 500);
         }
@@ -45,6 +42,9 @@ class YandexKassa extends ComponentBase
         $domain = Request::root();
 
         $yak_client = new Client();
+        dump($this->secret_key);
+        dump($this->shop_id);
+        die();
         $yak_client->setAuth($this->secret_key, $this->shop_id);
         $yak_id_key = uniqid("{$course->id} {$user->id} $timestamp", true);
 
