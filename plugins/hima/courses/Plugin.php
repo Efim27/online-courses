@@ -18,7 +18,7 @@ class Plugin extends PluginBase
     public function boot()
     {
         UserModel::extend(function($model) {
-            $model->belongsToMany['courses'] = ['Hima\Courses\Models\Course', 'table' => 'hima_courses_course_tag'];
+            $model->belongsToMany['courses'] = ['Hima\Courses\Models\Course', 'table' => 'hima_courses_course_user'];
         }); 
     }
 }
