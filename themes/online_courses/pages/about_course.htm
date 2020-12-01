@@ -9,12 +9,16 @@ identifierValue = "{{ :slug }}"
 modelKeyColumn = "slug"
 displayColumn = "info"
 notFoundMessage = "Курс не найден"
+
+[YandexKassa]
+course_slug = "{{ :slug }}"
 ==
 {% set record = builderDetails.record %}
 <div class="main__inner">
 	<div class="main__left"></div>
 	<div class="main__content">
-		<div class="about-course-page">{% component 'builderDetails' %}
+		<div class="about-course-page">
+			{% component 'builderDetails' %}
 			<div class="about-course">
 				<span class="about-course__tag-type tag">{{ record.type.name }}</span>
 				<div class="about-course__row">

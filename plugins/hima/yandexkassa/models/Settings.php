@@ -1,29 +1,21 @@
 <?php namespace Hima\Yandexkassa\Models;
 
+use Config;
 use Model;
+use October\Rain\Database\Traits\Validation as ValidationTrait;
 
 /**
  * Model
  */
 class Settings extends Model
 {
-    use \October\Rain\Database\Traits\Validation;
-    
-    /*
-     * Disable timestamps by default.
-     * Remove this line if timestamps are defined in the database table.
-     */
-    public $timestamps = false;
+    use ValidationTrait;
 
-
-    /**
-     * @var string The database table used by the model.
-     */
-    public $table = 'hima_yandexkassa_settings';
-
-    /**
-     * @var array Validation rules
-     */
-    public $rules = [
+    public $implement = [
+        \System\Behaviors\SettingsModel::class
     ];
+
+    public $settingsCode = 'hima_yandexkassa_settings';
+    public $settingsFields = 'fields.yaml';
+    public $rules = [];
 }

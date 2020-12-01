@@ -1,0 +1,9 @@
+fields:
+    secret_key:
+        label: secret_key
+        span: full
+        type: text
+    shop_id:
+        label: shop_id
+        span: full
+        type: number

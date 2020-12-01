@@ -15,10 +15,6 @@ class Tag extends Model
      */
     public $timestamps = false;
 
-    public $belongsTo = [
-        'course' => ['Hima\Courses\Models\Course']
-    ];
-
     /**
      * @var string The database table used by the model.
      */

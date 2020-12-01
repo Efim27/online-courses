@@ -19,7 +19,8 @@ class Course extends Model
         'type' => ['Hima\Courses\Models\Type']
     ];
     public $belongsToMany = [
-        'tags' => ['Hima\Courses\Models\Tag', 'table' => 'hima_courses_course_tag']
+        'tags' => ['Hima\Courses\Models\Tag', 'table' => 'hima_courses_course_tag'],
+        'users' => ['RainLab\User\Models\User', 'table' => 'hima_courses_course_tag']
     ];
     public $hasOne = [
         'preview' => ['Hima\Courses\Models\Preview']
