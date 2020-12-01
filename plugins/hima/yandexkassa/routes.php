@@ -5,6 +5,7 @@ require __DIR__.'/vendor/yandex-checkout-sdk-php-master/autoload.php';
 use Zen\Robots\Controllers\Generate;
 use Hima\Courses\Models\Course;
 use Response;
+use DB;
 
 use YandexCheckout\Model\Notification\NotificationSucceeded;
 use YandexCheckout\Model\Notification\NotificationWaitingForCapture;
@@ -25,9 +26,10 @@ Route::post('/yandex_kassa', function () {
 
     $payment = $notification->getObject();
     if($payment->getStatus() === PaymentStatus::SUCCEEDED) {
-        $course = Course::find($payment->metadata['course_id']);
-        $course->users->attach($payment->metadata['user_id']);
-        $course->save();
+        DB::table('hima_courses_course_user')->insert([
+            'course_id' => $payment->metadata['course_id'],
+            'user_id' => $payment->metadata['user_id']
+        ]);
         return Response::make('Ok', 200);
     }
 });
