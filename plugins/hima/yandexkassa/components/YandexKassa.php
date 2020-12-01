@@ -45,9 +45,6 @@ class YandexKassa extends ComponentBase
         $domain = Request::root();
 
         $yak_client = new Client();
-        dump($this->secret_key);
-        dump($this->shop_id);
-        die();
         $yak_client->setAuth($this->secret_key, $this->shop_id);
         $yak_id_key = uniqid("{$course->id} {$user->id} $timestamp", true);
 
