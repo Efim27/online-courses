@@ -90,3 +90,6 @@
 1.0.31:
     - 'Updated table hima_courses_preview +materials'
     - builder_table_update_hima_courses_preview_3.php
+1.0.32:
+    - 'Created table hima_courses_course_user'
+    - builder_table_create_hima_courses_course_user.php

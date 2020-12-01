@@ -1,0 +1,6 @@
+plugin:
+    name: 'hima.yandexkassa::lang.plugin.name'
+    description: 'hima.yandexkassa::lang.plugin.description'
+    author: Hima
+    icon: oc-icon-money
+    homepage: ''
