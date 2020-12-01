@@ -24,8 +24,13 @@ Route::post('/yandex_kassa', function () {
     }
 
     $payment = $notification->getObject();
+    file_put_contents('log1', print_r($payment ,true), FILE_APPEND);
+    file_put_contents('log1', print_r($payment->metadata ,true), FILE_APPEND);
+    file_put_contents('log1', print_r($payment->metadata['course_id'] ,true), FILE_APPEND);
+    file_put_contents('log1', print_r($payment->metadata['user_id'] ,true), FILE_APPEND);
     if($payment->getStatus() === PaymentStatus::SUCCEEDED) {
         $course = Course::find($payment->metadata['course_id']);
+        file_put_contents('log1', print_r($course ,true), FILE_APPEND);
         $course->users->attach($payment->metadata['user_id']);
         return Response::make('Ok', 200);
     }
