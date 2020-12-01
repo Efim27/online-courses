@@ -1,6 +1,6 @@
 <?php namespace Hima\YandexKassa\Components;
 
-require dirname(__DIR__, 1).'\vendor\yandex-checkout-sdk-php-master\autoload.php';
+require dirname(__DIR__, 1).'/vendor/yandex-checkout-sdk-php-master/autoload.php';
 
 use Cms\Classes\ComponentBase;
 use Hima\Yandexkassa\Models\Settings;
