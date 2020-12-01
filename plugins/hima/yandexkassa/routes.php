@@ -11,7 +11,7 @@ use YandexCheckout\Model\Notification\NotificationWaitingForCapture;
 use YandexCheckout\Model\NotificationEventType;
 use YandexCheckout\Model\PaymentStatus;
 
-Route::get('/yandex_kassa', function () {
+Route::post('/yandex_kassa', function () {
     $source = file_get_contents('php://input');
     $requestBody = json_decode($source, true);
 
