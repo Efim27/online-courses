@@ -39,19 +39,17 @@ class YandexKassa extends ComponentBase
         }
 
         $course_slug = $this->property('course_slug');
-        if (empty($course_slug)) {
+        $course = Course::where('slug', '=', $course_slug)->first();
+        $user = Auth::getUser();
+        if (empty($course_slug) || empty($course) || empty($user)) {
             return;
         }
 
-        $course = Course::where('slug', '=', $course_slug)->first();
-        $user = Auth::getUser();
-
-        $timestamp = time();
         $domain = Request::root();
 
         $yak_client = new Client();
         $yak_client->setAuth($this->shop_id, $this->secret_key);
-        $yak_id_key = uniqid("{$course->id} {$user->id} $timestamp", true);
+        $yak_id_key = uniqid("{$course->id} {$user->id}", true);
 
         $payment = $yak_client->createPayment(
             array(
@@ -65,10 +63,14 @@ class YandexKassa extends ComponentBase
                 ),
                 'capture' => true,
                 'description' => "Курс: \"{$course->title}\"",
+                'metadata' => array(
+                    'user_id' => $user->id,
+                    'course_id' => $course->id
+                )
             ),
             $yak_id_key
         );
 
-        $this->buy_link = $payment["confirmation"]["confirmation_url"];
+        $this->buy_link = $payment->getConfirmation()->getConfirmationUrl();
     }
 }
