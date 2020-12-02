@@ -1,83 +1,3 @@
-cd ..
-ls
-curl -s https://octobercms.com/api/installer | php
-ls
-cd online-courses/
-ls
-cd ..
-ls
-rm echo_cmd 
-ls
-php artisan
-ls
-pwd
-php artisan
-php artisan list
-ls
-cd config/
-ls
-vim database.php 
-vim database.php 
-cd ..
-ls
-git pull
-ls
-cd storage/
-ls
-cd framework/
-ls
-rm *
-rm -rm *
-rm -rf *
-ls
-cd ..
-cd ..
-ls
-git pull
-ls
-git pull
-git pull
-git pull
-git pull
-cd config/
-ls
-cd ..
-cd storage/framework/
-rm -rf *
-cd ..
-cd ..
-git pull
-ls
-git pull
-cd ./storage/framework/cd ./storage/framework/
-rm -rf *
-cd -
-git pull
-git pull
-touch clear_cache.sh
-nano clear_cache.sh
-ls
-bash clear_cache.sh 
-ls
-git pull
-bash clear_cache.sh 
-git pull
-ls
-nano clear_cache.sh 
-bash clear_cache.sh 
-nano clear_cache.sh 
-bash clear_cache.sh 
-nano clear_cache.sh 
-cd storage/framework/
-ls
-cd -
-ls
-git pull
-bash clear_cache.sh 
-php artisan cache:clear
-cd storage/
-ls
-php artisan cache:clear
 php artisan cache:clear
 cd ..
 php artisan cache:clear
@@ -495,6 +415,86 @@ git pull
 git pull
 git pull
 git pull
+git pull
+git pull
+git pull
+git add .
+git commit -m "bank content"
+git push
+mkdir /home/w/webpar3z/mir/public_html/storage/cms/combiner
+git add .
+git commit -m "_plugin yandex kassa"
+git push
+ls
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+ls
+cd themes/online_courses/pages/
+cd ..
+cd partials/
+cd popups/
+nano buy_course.htm 
+nano buy_course.htm 
+cd ../..
+cd pages/
+nano about_course.htm 
+cd ~
+ls
+bahs gitp.sh 
+bahs gitp.sh 
+bash gitp.sh 
+git pull
+git pull
+git pull
+git pull
+cd plugins/hima/yandexkassa/
+nano routes.php 
+cd ~
+ls
+tail log1 
+cd -
+nano routes.php 
+cd ~
+rm log1 
+cd -
+nano routes.php 
+nano routes.php 
+nano routes.php 
+nano routes.php 
+nano routes.php 
+cd ~
+nano log1 
+cd -
+nano log1 
+nano routes.php 
+cd ~
+bash gitp.sh 
+bash gitp.sh 
+git pull
+cd -
+nano routes.php 
+cd ~
+nano log1 
+bash gitp.sh 
+git pull
+git pull
+git pull
+rm log1 
+cd -
+cd ~
+nano log1 
+rm log1 
+git pull
+git pull
+nano log1 
+git pull
+nano log1 
+git pull
+nano log1 
 git pull
 git pull
 git pull
