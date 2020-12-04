@@ -3,7 +3,6 @@
 require __DIR__.'/vendor/yandex-checkout-sdk-php-master/autoload.php';
 
 use Zen\Robots\Controllers\Generate;
-use Hima\Courses\Models\Course;
 use Response;
 use DB;
 
