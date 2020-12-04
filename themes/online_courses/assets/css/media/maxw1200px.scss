@@ -12,4 +12,10 @@
 			display: flex;
 		}
 	}
+
+	.creative-result-label {
+		&__text {
+			text-align: left;
+		}
+	}
 }

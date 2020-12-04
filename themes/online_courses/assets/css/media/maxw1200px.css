@@ -12,5 +12,8 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .creative-result-label__text {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=maxw1200px.css.map */

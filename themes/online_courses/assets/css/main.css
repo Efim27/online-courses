@@ -4260,6 +4260,9 @@ div .popup-signup__have-account {
     display: -ms-flexbox;
     display: flex;
   }
+  .creative-result-label__text {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 992px) {
