@@ -5091,8 +5091,14 @@ div .popup-signup__have-account {
   .our-telegram {
     margin-top: 50px;
   }
+  .our-telegram__title {
+    font-size: 24px;
+  }
   .work-examples {
     margin-top: 80px;
+  }
+  .work-examples__title {
+    font-size: 24px;
   }
   .project-authors-block_index {
     margin-top: 50px;
@@ -5101,6 +5107,9 @@ div .popup-signup__have-account {
   }
   .faq {
     margin-top: 35px;
+  }
+  .faq__title {
+    font-size: 24px;
   }
   .contact-us {
     margin-top: 50px;
