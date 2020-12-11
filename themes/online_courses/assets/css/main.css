@@ -4,7 +4,6 @@
     v2.0 | 20110126
     License: none (public domain)
 */
-@import url(c:\Users\efim-\Desktop\projects\online-courses\themes\online_courses\assets\css\safari.css);
 html,
 body,
 div,
@@ -5472,5 +5471,33 @@ div .popup-signup__have-account {
     padding: 10px;
     font-size: 24px;
   }
+}
+
+.safari_browser .creative-result-label_n1 {
+  margin-left: -325px;
+  margin-top: -150px;
+}
+
+.safari_browser .creative-result-label_n2 {
+  margin-left: -405px;
+}
+
+.safari_browser .creative-result-label_n3 {
+  margin-left: -345px;
+  margin-top: 150px;
+}
+
+.safari_browser .creative-result-label_n4 {
+  margin-left: 345px;
+  margin-top: -150px;
+}
+
+.safari_browser .creative-result-label_n5 {
+  margin-left: 405px;
+}
+
+.safari_browser .creative-result-label_n6 {
+  margin-left: 330px;
+  margin-top: 150px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,28 @@
-_::-webkit-full-page-media, _:future, :root .safari_only {
-
-    color:#0000FF; 
-    background-color:#CCCCCC;
+.safari_browser .creative-result-label_n1 {
+  margin-left: -325px;
+  margin-top: -150px;
 }
+
+.safari_browser .creative-result-label_n2 {
+  margin-left: -405px;
+}
+
+.safari_browser .creative-result-label_n3 {
+  margin-left: -345px;
+  margin-top: 150px;
+}
+
+.safari_browser .creative-result-label_n4 {
+  margin-left: 345px;
+  margin-top: -150px;
+}
+
+.safari_browser .creative-result-label_n5 {
+  margin-left: 405px;
+}
+
+.safari_browser .creative-result-label_n6 {
+  margin-left: 330px;
+  margin-top: 150px;
+}
+/*# sourceMappingURL=safari.css.map */

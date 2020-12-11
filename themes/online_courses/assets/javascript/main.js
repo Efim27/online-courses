@@ -1,3 +1,8 @@
+var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (isSafari) {
+	$(document.body).addClass('safari_browser');
+}
+
 //Ограничение по кол-ву символов текст
 var text_limit = 250;
 
