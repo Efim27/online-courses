@@ -311,7 +311,7 @@ $(document).ready(function () {
 		else {
 			//side menu burger
 			$(".side-menu-btn img").hide();
-			$(".side-menu-btn object").click(function () {
+			$(".side-menu-btn object").svg_click(function () {
 				$(".side-menu").show("slow");
 			});
 			//side menu close
