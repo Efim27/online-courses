@@ -9,7 +9,8 @@ $.fn.svg_click = function (click_func) {
 			return
 		}
 		let svg = svgDoc.getElementsByTagName("svg")[0];
-		svg.addEventListener("click", click_func, false);
+		svg.addEventListener("click", click_func, false); 
+		svg.addEventListener("touchstart", click_func, false);
 	});
 };
 
