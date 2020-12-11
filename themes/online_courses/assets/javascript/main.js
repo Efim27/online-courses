@@ -295,17 +295,26 @@ $(document).ready(function () {
 			project_review_slider.go(">");
 		});
 
-		$(".side-menu-btn object").svg_click(function () {
-			$(".side-menu").show("slow");
-		});
-
+		//side menu btns
 		if (isSafari) {
+			//side menu burger
+			$(".side-menu-btn object").hide();
+			$(".side-menu-btn img").click(function () {
+				$(".side-menu").show("slow");
+			});
+			//side menu close
 			$(".side-menu__close object").hide();
 			$(".side-menu__close img").click(function () {
 				$(".side-menu").hide("slow");
 			});
 		}
 		else {
+			//side menu burger
+			$(".side-menu-btn img").hide();
+			$(".side-menu-btn object").click(function () {
+				$(".side-menu").show("slow");
+			});
+			//side menu close
 			$(".side-menu__close img").hide();
 			$(".side-menu__close object").svg_click(function () {
 				$(".side-menu").hide("slow");
