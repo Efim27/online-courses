@@ -1,6 +1,5 @@
 @import "settings.scss";
 @import "reset.scss";
-@import "normalize.scss";
 @import "mixins.scss";
 
 //страницы
@@ -12,3 +11,6 @@
 
 //media styles
 @import "media.scss";
+
+//safari only styles
+@import "safari.css";
