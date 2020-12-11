@@ -299,9 +299,18 @@ $(document).ready(function () {
 			$(".side-menu").show("slow");
 		});
 
-		$(".side-menu__close object").svg_click(function () {
-			$(".side-menu").hide("slow");
-		});
+		if (isSafari) {
+			$(".side-menu__close object").hide();
+			$(".side-menu__close img").click(function () {
+				$(".side-menu").hide("slow");
+			});
+		}
+		else {
+			$(".side-menu__close img").hide();
+			$(".side-menu__close object").svg_click(function () {
+				$(".side-menu").hide("slow");
+			});
+		}
 
 		$(".contact-us__btn-submit object").svg_click(function () {
 			$(".contact-us__form").submit();
