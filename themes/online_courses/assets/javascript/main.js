@@ -139,14 +139,18 @@ function music_player_stop(dom_e) {
 	return audio;
 }
 
-//side menu btns
+//header btns
 if (isSafari) {
+	//login
+	$(".header-profile-dropdown object").hide();
     //side menu burger
     $(".side-menu-btn object").hide();
     //side menu close
     $(".side-menu__close object").hide();
 }
 else {
+	//login
+	$(".header-profile-dropdown img").hide();
     //side menu burger
     $(".side-menu-btn img").hide();
     //side menu close
