@@ -2250,6 +2250,20 @@ div .side-menu__phone-row {
   height: auto;
 }
 
+.header-profile-dropdown object, .header-profile-dropdown img {
+  width: 100%;
+  max-width: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.burger-dropdown object, .burger-dropdown img {
+  width: 100%;
+  max-width: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 .footer {
   margin-top: 100px;
 }

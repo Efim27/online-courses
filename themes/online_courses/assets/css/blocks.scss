@@ -201,7 +201,20 @@
 	}
 }
 
+.header-profile-dropdown {
+	object, img {
+		width: 100%;
+		max-width: 16px;
+		flex-shrink: 0;
+	}
+}
+
 .burger-dropdown {
+	object, img {
+		width: 100%;
+		max-width: 30px;
+		flex-shrink: 0;
+	}
 }
 
 //footer
