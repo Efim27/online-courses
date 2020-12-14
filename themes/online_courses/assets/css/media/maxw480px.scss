@@ -743,7 +743,7 @@
 	}
 
 	.video-frame {
-		height: auto;
+		min-height: auto;
 		max-height: 200px;
 	}
 }

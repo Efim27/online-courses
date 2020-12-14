@@ -5494,7 +5494,7 @@ div .popup-signup__have-account {
     font-size: 24px;
   }
   .video-frame {
-    height: auto;
+    min-height: auto;
     max-height: 200px;
   }
 }
