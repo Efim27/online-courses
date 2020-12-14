@@ -126,22 +126,8 @@ pageNumber = "{{ :page }}"
                 <div class="algorithm-education__divider-bottom divider"></div>
             </div>
             <div class="about-education__videos">
-                <div class="about-education__videobox videobox">
-                    <img
-                        class="videobox__video"
-                        src="{{ this.theme.about_video1|media }}"
-                        alt="{{ this.theme.about_video_label1 }}"
-                    />
-                    <div class="videobox__label">{{ this.theme.about_video_label1 }}</div>
-                </div>
-                <div class="about-education__videobox videobox">
-                    <img
-                        class="videobox__video"
-                        src="{{ this.theme.about_video2|media }}"
-                        alt="{{ this.theme.about_video_label2 }}"
-                    />
-                    <div class="videobox__label">{{ this.theme.about_video_label2 }}</div>
-                </div>
+                {% partial 'blocks/videobox' classes='about-education__videobox' video_link=this.theme.about_video_link1 video_label=this.theme.about_video_label1 video_type=this.theme.about_video_type1 %}
+                {% partial 'blocks/videobox' classes='about-education__videobox' video_link=this.theme.about_video_link2 video_label=this.theme.about_video_label2 video_type=this.theme.about_video_type2 %}
             </div>
         </div>
         <div class="main__right"></div>

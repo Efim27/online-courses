@@ -116,22 +116,8 @@ is_hidden = 0
 				</div>
 			</div>
 			<div class="about-project__row">
-				<div class="about-project__videobox videobox">
-					<img
-						src="{{ this.theme.home_video1|media }}"
-						alt="{{ this.theme.home_video_label1 }}"
-						class="videobox__video"
-					/>
-					<div class="videobox__label">{{ this.theme.home_video_label1 }}</div>
-				</div>
-				<div class="about-project__videobox videobox">
-					<img
-						src="{{ this.theme.home_video2|media }}"
-						alt="{{ this.theme.home_video_label2 }}"
-						class="videobox__video"
-					/>
-					<div class="videobox__label">{{ this.theme.home_video_label2 }}</div>
-				</div>
+				{% partial 'blocks/videobox' classes='about-project__videobox' video_link=this.theme.home_video_link1 video_label=this.theme.home_video_label1 video_type=this.theme.home_video_type1 %}
+				{% partial 'blocks/videobox' classes='about-project__videobox' video_link=this.theme.home_video_link2 video_label=this.theme.home_video_label2 video_type=this.theme.home_video_type2 %}
 			</div>
 		</div>
 		<div class="main__right"></div>
