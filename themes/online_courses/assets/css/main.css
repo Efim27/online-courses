@@ -4630,6 +4630,9 @@ div .popup-signup__have-account {
         -ms-flex-order: -1;
             order: -1;
   }
+  .video-frame {
+    min-height: 240px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -5490,8 +5493,9 @@ div .popup-signup__have-account {
     padding: 10px;
     font-size: 24px;
   }
-  .video-frame__video {
-    min-height: 200px;
+  .video-frame {
+    height: auto;
+    max-height: 200px;
   }
 }
 
