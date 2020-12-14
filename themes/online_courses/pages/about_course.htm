@@ -57,7 +57,11 @@ course_slug = "{{ :slug }}"
 					<div class="course-info__content">
 						<div class="course-info__about">{{ record.preview.about|raw }}</div>
 						<div class="course-info__video">
-							<img src="{{ record.preview.attachment.path }}" alt="Видео">
+							{% if record.preview.video_type == 'youtube' %}
+								<iframe src="{{ record.preview.video_link }}" class="video-frame videobox__video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+							{% else %}
+								<iframe src="{{ record.preview.video_link }}" class="video-frame videobox__video" frameborder="0" allow="autoplay; fullscreen"></iframe>
+							{% endif %}
 						</div>
 						<div class="course-info__comment">{{ record.preview.video_about }}</div>
 					</div>

@@ -1,7 +1,11 @@
 <div class="course-page-lesson {{ classes }}">
     <div class="course-page-lesson__num">{{ lesson.number }} урок</div>
     <div class="course-page-lesson__video">
-        <img src="{{ lesson.attachment.path }}" alt="Видео">
+        {% if lesson.video_type == 'youtube' %}
+			<iframe src="{{ lesson.video_link }}" class="video-frame videobox__video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+		{% else %}
+			<iframe src="{{ lesson.video_link }}" class="video-frame videobox__video" frameborder="0" allow="autoplay; fullscreen"></iframe>
+		{% endif %}
     </div>
     <div class="course-page-lesson__info">
         <div class="course-page-lesson__about">{{ lesson.about }}</div>
