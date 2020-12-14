@@ -93,3 +93,15 @@
 1.0.32:
     - 'Created table hima_courses_course_user'
     - builder_table_create_hima_courses_course_user.php
+1.0.33:
+    - 'Updated table hima_courses_courses video'
+    - builder_table_update_hima_courses_courses_7.php
+1.0.34:
+    - 'Updated table hima_courses_preview video'
+    - builder_table_update_hima_courses_preview_4.php
+1.0.35:
+    - 'Updated table hima_courses_lessons video'
+    - builder_table_update_hima_courses_lessons_3.php
+1.0.36:
+    - 'Updated table hima_courses_courses -video'
+    - builder_table_update_hima_courses_courses_8.php

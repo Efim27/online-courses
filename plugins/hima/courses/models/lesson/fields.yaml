@@ -4,22 +4,25 @@ fields:
         span: full
         required: 1
         type: text
+    video_link:
+        label: 'Ссылка для видео'
+        span: full
+        required: 1
+        type: text
+    video_type:
+        label: 'Видео хостинг'
+        options:
+            youtube: YouTube
+            vimeo: Vimeo
+        span: full
+        required: 1
+        type: radio
     about:
         label: 'Краткое описание'
         size: small
         span: full
         required: 1
         type: textarea
-    attachment:
-        label: Видео
-        mode: file
-        useCaption: true
-        thumbOptions:
-            mode: crop
-            extension: auto
-        span: full
-        required: 1
-        type: fileupload
     files:
         label: 'Материалы для урока'
         mode: file

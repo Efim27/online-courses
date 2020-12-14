@@ -21,16 +21,19 @@ fields:
         span: full
         required: 1
         type: fileupload
-    attachment:
-        label: Видео
-        mode: file
-        useCaption: true
-        thumbOptions:
-            mode: crop
-            extension: auto
+    video_link:
+        label: 'Ссылка для видео'
         span: full
         required: 1
-        type: fileupload
+        type: text
+    video_type:
+        label: 'Видео хостинг'
+        options:
+            youtube: YouTube
+            vimeo: Vimeo
+        span: full
+        required: 1
+        type: radio
     video_about:
         label: 'Описание видео'
         span: full

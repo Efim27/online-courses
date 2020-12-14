@@ -1,25 +1,3 @@
-php artisan cache:clear
-cd ..
-php artisan cache:clear
-php artisan cache:clear
-php artisan cache:clear
-ls
-system ctl
-httpd/etc/init.d/apache2 restart.
-/etc/init.d/apache2 restart
-systemd
-systemclt
-apache2ctl restart
-service apache2 restart
-service
-service --status-all
-apache
-apache2
-php
-./artisan
-ls
-sudo ./artisan
-ls
 php artisan 
 php --ini
 nano /etc/php5/apache2/php.ini
@@ -495,6 +473,28 @@ git pull
 nano log1 
 git pull
 nano log1 
+git pull
+git pull
+git pull
+ls
+git add .
+git commit -m "yak final"
+git pull
+git push
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
 git pull
 git pull
 git pull
