@@ -2,9 +2,9 @@
     <div class="course-page-lesson__num">{{ lesson.number }} урок</div>
     <div class="course-page-lesson__video">
         {% if lesson.video_type == 'youtube' %}
-			<iframe src="{{ lesson.video_link }}" class="video-frame videobox__video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			<iframe src="{{ lesson.video_link }}" class="video-frame video-frame_lesson videobox__video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 		{% else %}
-			<iframe src="{{ lesson.video_link }}" class="video-frame videobox__video" frameborder="0" allow="autoplay; fullscreen"></iframe>
+			<iframe src="{{ lesson.video_link }}" class="video-frame video-frame_lesson videobox__video" frameborder="0" allow="autoplay; fullscreen"></iframe>
 		{% endif %}
     </div>
     <div class="course-page-lesson__info">

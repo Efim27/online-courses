@@ -3913,6 +3913,10 @@ div .work-examples__pagination-mini-loaded {
   border-radius: 20px;
 }
 
+.video-frame_course {
+  min-height: 200px;
+}
+
 .popup {
   position: fixed;
   top: 0;
