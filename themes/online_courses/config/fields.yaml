@@ -133,10 +133,6 @@ tabs:
         home_video_link1:
             label: Ссылка для видео 1
             tab: Главная
-        home_video_label1:
-            label: Подпись к видео 1
-            default: Видео о нашем проекте
-            tab: Главная
         home_video_type1:
             label: Видео хостинг для видео 1
             type: radio
@@ -145,12 +141,12 @@ tabs:
             options:
                 youtube: YouTube
                 vimeo: Vimeo
+        home_video_label1:
+            label: Подпись к видео 1
+            default: Видео о нашем проекте
+            tab: Главная
         home_video_link2:
             label: Ссылка для видео 2
-            tab: Главная
-        home_video_label2:
-            label: Подпись к видео 2
-            default: Видео о нашем проекте
             tab: Главная
         home_video_type2:
             label: Видео хостинг для видео 2
@@ -160,6 +156,10 @@ tabs:
             options:
                 youtube: YouTube
                 vimeo: Vimeo
+        home_video_label2:
+            label: Подпись к видео 2
+            default: Видео о нашем проекте
+            tab: Главная
         about_statistics_blocks:
           type: repeater
           label: Блоки статистики
@@ -197,10 +197,6 @@ tabs:
         about_video_link1:
             label: Ссылка для видео 1
             tab: О проекте
-        about_video_label1:
-            label: Подпись к видео 1
-            default: Видео о нашем проекте
-            tab: О проекте
         about_video_type1:
             label: Видео хостинг для видео 1
             type: radio
@@ -209,12 +205,12 @@ tabs:
             options:
                 youtube: YouTube
                 vimeo: Vimeo
+        about_video_label1:
+            label: Подпись к видео 1
+            default: Видео о нашем проекте
+            tab: О проекте
         about_video_link2:
             label: Ссылка для видео 2
-            tab: О проекте
-        about_video_label2:
-            label: Подпись к видео 2
-            default: Видео о нашем проекте
             tab: О проекте
         about_video_type2:
             label: Видео хостинг для видео 2
@@ -224,6 +220,10 @@ tabs:
             options:
                 youtube: YouTube
                 vimeo: Vimeo
+        about_video_label2:
+            label: Подпись к видео 2
+            default: Видео о нашем проекте
+            tab: О проекте
         faqs:
           type: repeater
           label: Вопрос-ответ

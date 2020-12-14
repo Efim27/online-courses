@@ -2,7 +2,7 @@
 	{% if video_type == 'youtube' %}
 		<iframe src="{{ video_link }}" class="videobox__video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 	{% else %}
-	<iframe src="{{ video_link }}" frameborder="0" allow="autoplay; fullscreen"></iframe>
+		<iframe src="{{ video_link }}" class="videobox__video" frameborder="0" allow="autoplay; fullscreen"></iframe>
 	{% endif %}
 	<div class="videobox__label">{{ video_label }}</div>
 </div>
