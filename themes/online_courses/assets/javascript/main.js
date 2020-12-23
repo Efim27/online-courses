@@ -1,5 +1,4 @@
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-isSafari = true;
 if (isSafari) {
 	$(document.body).addClass('safari_browser');
 }
