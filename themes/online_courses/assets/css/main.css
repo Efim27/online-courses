@@ -2300,7 +2300,7 @@ div .side-menu__phone-row {
   height: 2px;
   -webkit-transform: scaleY(0.5);
           transform: scaleY(0.5);
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .burger-icon__line:nth-child(1) {
