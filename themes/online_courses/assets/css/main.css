@@ -2154,9 +2154,12 @@ div .project-reviews__btns_mini-loaded {
 }
 
 .side-menu__close {
+  width: 100%;
+  max-width: 20px;
   position: absolute;
   right: 0px;
   top: 0px;
+  cursor: pointer;
 }
 
 .side-menu__link {

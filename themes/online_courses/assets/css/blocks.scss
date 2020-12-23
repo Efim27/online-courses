@@ -102,9 +102,12 @@
 	}
 
 	&__close {
+		width: 100%;
+		max-width: 20px;
 		position: absolute;
 		right: 0px;
 		top: 0px;
+		cursor: pointer;
 	}
 
 	&__links {
