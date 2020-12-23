@@ -221,6 +221,7 @@
 
 .burger-icon {
 	flex-shrink: 0;
+	cursor: pointer;
 
 	&__line {
 		background-color: $color_text_black;
