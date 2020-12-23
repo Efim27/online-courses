@@ -2275,7 +2275,7 @@ div .side-menu__phone-row {
 
 .header-profile-dropdown object, .header-profile-dropdown img {
   width: 100%;
-  max-width: 16px;
+  max-width: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   cursor: pointer;
