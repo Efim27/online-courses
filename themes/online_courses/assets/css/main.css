@@ -2289,6 +2289,33 @@ div .side-menu__phone-row {
   cursor: pointer;
 }
 
+.burger-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.burger-icon__line {
+  background-color: #252733;
+  height: 1px;
+  margin-top: 8px;
+}
+
+.burger-icon__line:nth-child(1) {
+  margin-top: 0px;
+}
+
+.burger-icon__line_w1 {
+  width: 12px;
+}
+
+.burger-icon__line_w2 {
+  width: 30px;
+}
+
+.burger-icon__line_w3 {
+  width: 22px;
+}
+
 .footer {
   margin-top: 100px;
 }

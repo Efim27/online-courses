@@ -140,7 +140,7 @@ function music_player_stop(dom_e) {
 }
 
 //header btns
-if (isSafari) {
+if (isSafari || true) {
 	//login
 	$(".header-profile-dropdown object").hide();
     //side menu burger
@@ -152,7 +152,7 @@ else {
 	//login
 	$(".header-profile-dropdown img").hide();
     //side menu burger
-    $(".side-menu-btn img").hide();
+    $(".side-menu-btn .burger-icon").hide();
     //side menu close
     $(".side-menu__close img").hide();
 }

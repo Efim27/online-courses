@@ -219,6 +219,33 @@
 	}
 }
 
+.burger-icon {
+	flex-shrink: 0;
+
+	&__line {
+		background-color: $color_text_black;
+		height: 1px;
+		margin-top: 8px;
+
+		&:nth-child(1) {
+			margin-top: 0px;
+		}
+
+		&_w1 {
+			width: 12px;
+		}
+
+		&_w2 {
+			width: 30px;
+		}
+
+		&_w3 {
+			width: 22px;
+		}
+	}
+}
+
+
 //footer
 .footer {
 	margin-top: 100px;
