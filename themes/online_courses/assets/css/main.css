@@ -2296,7 +2296,9 @@ div .side-menu__phone-row {
 
 .burger-icon__line {
   background-color: #252733;
-  height: 1px;
+  height: 2px;
+  -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
   margin-top: 8px;
 }
 

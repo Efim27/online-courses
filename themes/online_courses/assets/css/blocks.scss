@@ -224,7 +224,8 @@
 
 	&__line {
 		background-color: $color_text_black;
-		height: 1px;
+		height: 2px;
+		transform: scaleY(0.5);
 		margin-top: 8px;
 
 		&:nth-child(1) {
