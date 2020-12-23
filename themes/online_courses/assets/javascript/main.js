@@ -316,7 +316,7 @@ $(document).ready(function () {
 		//side menu btns events
 		if (isSafari) {
 			//side menu burger
-			$(".side-menu-btn img").click(function () {
+			$(".side-menu-btn .burger-icon").click(function () {
 				$(".side-menu").show("slow");
 			});
 			//side menu close
