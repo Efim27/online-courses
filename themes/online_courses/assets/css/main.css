@@ -2278,6 +2278,7 @@ div .side-menu__phone-row {
   max-width: 16px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  cursor: pointer;
 }
 
 .side-menu-btn object, .side-menu-btn img {
@@ -2285,6 +2286,7 @@ div .side-menu__phone-row {
   max-width: 30px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  cursor: pointer;
 }
 
 .footer {
