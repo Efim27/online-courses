@@ -1,5 +1,5 @@
 var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-if (isSafari || true) {
+if (isSafari) {
 	$(document.body).addClass('safari_browser');
 }
 
@@ -140,7 +140,7 @@ function music_player_stop(dom_e) {
 }
 
 //header btns
-if (isSafari) {
+if (isSafari || true) {
 	//login
 	$(".header-profile-dropdown object").hide();
     //side menu burger
