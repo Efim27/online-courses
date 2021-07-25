@@ -3,8 +3,6 @@
 require __DIR__.'/vendor/yandex-checkout-sdk-php-master/autoload.php';
 
 use Zen\Robots\Controllers\Generate;
-use Response;
-use DB;
 
 use YandexCheckout\Model\Notification\NotificationSucceeded;
 use YandexCheckout\Model\Notification\NotificationWaitingForCapture;
