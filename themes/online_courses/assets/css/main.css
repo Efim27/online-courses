@@ -3624,6 +3624,11 @@ div .work-examples__pagination-mini-loaded {
   background-color: #70CBD4;
 }
 
+.buy-course-block {
+  background-color: #F2FFFE;
+  padding-bottom: 50px;
+}
+
 .creative-result {
   padding-bottom: 110px;
 }
