@@ -1,36 +1,3 @@
-php artisan 
-php --ini
-nano /etc/php5/apache2/php.ini
-php artisan 
-ls
-cd config/
-ls
-nano cache.php 
-nano cache.php 
-cd ..
-cd config/
-ls
-cd ../storage/
-ls
-cd framework/
-ls
-cd ..
-ls -la
-cd framework/
-ls -la
-cd ..
-history
-ls
-cd framework/
-rm -rf *
-cd ../..
-rm -rf *
-ls
-git clone https://github.com/Efim27/online-courses.git
-ls
-cp -r online-courses/* .
-ls
-cd online-courses/
 rm -rf *
 cd ..
 rm online-courses/
@@ -498,3 +465,36 @@ git pull
 git pull
 git pull
 git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+ls
+git status
+ls
+gitp
+nano gitp.sh 
+git pull
+history
+git stash
+git status
+git pull
+git stash apply
