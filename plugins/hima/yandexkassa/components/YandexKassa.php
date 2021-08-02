@@ -43,7 +43,8 @@ class YandexKassa extends ComponentBase
         $course = Course::where('slug', '=', $course_slug)->first();
         $user = Auth::getUser();
 
-        Log::debug('1');
+        Log::debug('1 '.$course_slug.' ');
+        dd($course);
         if (empty($course_slug) || empty($course) || empty($user)) {
             return;
         }
