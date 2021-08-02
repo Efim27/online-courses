@@ -27,7 +27,13 @@ class YandexKassa extends ComponentBase
 
     public function defineProperties()
     {
-        return [];
+        return [
+            'course_slug' => [
+                'title'             => 'course_slug',
+                'default'           => ':slug',
+                'type'              => 'string'
+            ]
+        ];
     }
 
     public function onRun()
