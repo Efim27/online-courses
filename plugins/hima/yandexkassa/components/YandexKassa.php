@@ -41,9 +41,12 @@ class YandexKassa extends ComponentBase
         $course_slug = $this->property('course_slug');
         $course = Course::where('slug', '=', $course_slug)->first();
         $user = Auth::getUser();
+
+        Log::debug('1');
         if (empty($course_slug) || empty($course) || empty($user)) {
             return;
         }
+        Log::debug('2');
 
         $domain = Request::root();
 
@@ -51,6 +54,7 @@ class YandexKassa extends ComponentBase
         $yak_client->setAuth($this->shop_id, $this->secret_key);
         $yak_id_key = uniqid("{$course->id} {$user->id}", true);
 
+        Log::debug('3');
         $payment = $yak_client->createPayment(
             array(
                 'amount' => array(
@@ -71,6 +75,8 @@ class YandexKassa extends ComponentBase
             $yak_id_key
         );
 
+        Log::debug('4');
         $this->buy_link = $payment->getConfirmation()->getConfirmationUrl();
+        Log::debug($this->buy_link);
     }
 }
