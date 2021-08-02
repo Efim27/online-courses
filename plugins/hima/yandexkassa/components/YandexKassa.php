@@ -9,6 +9,7 @@ use Auth;
 use Request;
 use Response;
 use YandexCheckout\Client;
+use Illuminate\Support\Facades\Log;
 
 class YandexKassa extends ComponentBase
 {
