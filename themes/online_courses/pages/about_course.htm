@@ -11,7 +11,6 @@ displayColumn = "info"
 notFoundMessage = "Курс не найден"
 
 [YandexKassa]
-course_slug = "{{ :slug }}"
 ==
 {% set record = builderDetails.record %}
 <div class="main__inner">
@@ -34,9 +33,11 @@ course_slug = "{{ :slug }}"
 						</div>
 					</div>
 					<div class="about-course__svg-btn">
+                        {#
 						<div class="about-course__buy-link about-course-buy">
 							{% set buy_popup = user ? 'buy-course-link' : 'signin-link' %}
-							{% partial 'blocks/btn_submit_link' classes=buy_popup svg_path='assets/images/buy_btn.svg'|theme %}
+						    {% partial 'blocks/btn_submit_link' classes=buy_popup svg_path='assets/images/buy_btn1.css'|theme %} 
+							{% partial 'buy_btn' %}
 							<div class="about-course-buy__center">
 								<div class="about-course-buy__price">{{ record.price }} руб.</div>
 								<div class="about-course-buy__arrow">
@@ -47,6 +48,7 @@ course_slug = "{{ :slug }}"
 								</div>
 							</div>
 						</div>
+                        #}
 					</div>
 				</div>
 				<div class="about-course__image" style="background: url({{ record.preview.attachment_big.path }}) no-repeat 50% 40%/cover;"></div>
@@ -119,7 +121,8 @@ course_slug = "{{ :slug }}"
 {% partial 'blocks/creative_result' classes='creative-result-about-course' data=record.preview %}
 <div class="buy-course-block about-course-buy">
 	{% set buy_popup = user ? 'buy-course-link' : 'signin-link' %}
-	{% partial 'blocks/btn_submit_link' classes=buy_popup svg_path='assets/images/buy_btn.svg'|theme %}
+	{# {% partial 'blocks/btn_submit_link' classes=buy_popup svg_path='assets/images/buy_btn.svg'|theme %} #}
+	{% partial 'buy_btn' classes=buy_popup %}
 	<div class="about-course-buy__center">
 		<div class="about-course-buy__price">{{ record.price }} руб.</div>
 		<div class="about-course-buy__arrow">

@@ -1,11 +1,3 @@
-rm -rf *
-cd ..
-rm online-courses/
-rm -r online-courses/
-cp -r online-courses/.* .
-ls -la
-rm -rf online-courses/
-ls
 cd config/
 ls
 nano database.php 
@@ -498,3 +490,11 @@ git stash
 git status
 git pull
 git stash apply
+git status
+git stash
+git pull
+git pull
+git status
+git stash
+git pull
+git stash pop
